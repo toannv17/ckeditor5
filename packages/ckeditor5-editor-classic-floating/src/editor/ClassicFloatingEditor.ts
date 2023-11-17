@@ -11,12 +11,15 @@ import ClassicFloatingEditorUI from '../ui/ClassicFloatingEditorUI';
 import ClassicFloatingEditorUIView from '../ui/ClassicFloatingEditorUIView';
 
 import {
+	type EditorConfig,
+} from './EditorConfig';
+
+import {
 	Editor,
 	Context,
 	DataApiMixin,
 	ElementApiMixin,
 	attachToForm,
-	type EditorConfig,
 	type EditorReadyEvent
 } from 'ckeditor5/src/core';
 import {getDataFromElement, CKEditorError} from 'ckeditor5/src/utils';
@@ -65,10 +68,7 @@ export default class ClassicFloatingEditor extends DataApiMixin(ElementApiMixin(
 	 * {@link module:editor-classic/classicfloatingeditor~ClassicFloatingEditor.create `ClassicFloatingEditor.create()`}.
 	 * @param config The editor configuration.
 	 */
-	protected constructor(sourceElementOrData: HTMLElement | string, config: EditorConfig & {
-		containerElement?: HTMLElement;
-		panelAbsolute?: boolean
-	} = {}) {
+	protected constructor(sourceElementOrData: HTMLElement | string, config: EditorConfig = {}) {
 		// If both `config.initialData` is set and initial data is passed as the constructor parameter, then throw.
 		if (!isElement(sourceElementOrData) && config.initialData !== undefined) {
 			// Documented in core/editor/editorconfig.jsdoc.

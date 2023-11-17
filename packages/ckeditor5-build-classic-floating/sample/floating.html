@@ -60,7 +60,7 @@
 			box-shadow: #00000040 0 25px 50px -12px;
 			overflow-y: auto;
 			overscroll-behavior: contain;
-			transform: translate(0px,0px) rotate(0) skew(0) skewY(0) scaleX(1) scaleY(1);
+			transform: translate(0px, 0px) rotate(0) skew(0) skewY(0) scaleX(1) scaleY(1);
 		}
 
 		.modal .modal-backdrop {
@@ -70,7 +70,7 @@
 </head>
 <body>
 <dialog class="modal">
-	<div class="modal-box">
+	<div id="modal-1" class="modal-box">
 
 		<h1>CKEditor 5 – classic floating editor build – development sample</h1>
 
@@ -187,7 +187,10 @@
 
 <script src="../build/ckeditor.js"></script>
 <script>
-	ClassicEditor.create(document.querySelector('#editor'))
+	ClassicFloatingEditor.create(document.querySelector('#editor'), {
+		containerElement: document.getElementById('modal-1'),
+		panelAbsolute: true
+	})
 		.then(editor => {
 			window.editor = editor;
 		})
