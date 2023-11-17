@@ -38,9 +38,11 @@ export default class StickyPanelView extends View {
 	 */
 	public readonly content: ViewCollection;
 
-	declare public containerElement: HTMLElement | Document;
+	declare public containerElement: HTMLElement | Window;
 	declare public panelAbsolute: boolean;
-	declare public containerScrollY: number;
+	declare public position: string | null;
+	declare public panel_height: number;
+	declare public panel_width: number;
 
 	/**
 	 * Controls whether the sticky panel should be active.
@@ -158,12 +160,12 @@ export default class StickyPanelView extends View {
 
 		const bind = this.bindTemplate;
 
-		this.containerElement = containerElement || global.document;
+		this.containerElement = containerElement || global.window;
 		this.panelAbsolute = panelAbsolute;
 
-		console.log(containerElement, panelAbsolute);
-
-		this.set('containerScrollY', 0);
+		this.set('position', null);
+		this.set('panel_height', 0);
+		this.set('panel_width', 0);
 		this.set('isActive', false);
 		this.set('isSticky', false);
 		this.set('limiterElement', null);
@@ -187,9 +189,12 @@ export default class StickyPanelView extends View {
 				],
 				style: {
 					display: bind.to('isSticky', isSticky => isSticky ? 'block' : 'none'),
-					height: bind.to('isSticky', isSticky => {
-						return isSticky ? toPx(this._contentPanelRect.height) : null;
-					})
+					height: bind.to('panel_height', value => {
+						return toPx(value);
+					}),
+					width: bind.to('panel_width', value => {
+						return toPx(value);
+					}),
 				}
 			}
 		}).render() as HTMLElement;
@@ -206,22 +211,13 @@ export default class StickyPanelView extends View {
 					bind.if('_isStickyToTheBottomOfLimiter', 'ck-sticky-panel__content_sticky_bottom-limit')
 				],
 				style: {
+					position: bind.to('position', position => {
+						return position;
+					}),
+
 					width: bind.to('isSticky', isSticky => {
 						return isSticky ? toPx(this._contentPanelPlaceholder.getBoundingClientRect().width) : null;
 					}),
-
-					// top: bind.to('containerScrollY', () => {
-					// 	if (this.isActive && this.panelAbsolute && this.limiterElement) {
-					// 		let limiterRect = this.limiterElement.getBoundingClientRect().toJSON();
-					// 		if ("getBoundingClientRect" in this.containerElement) {
-					// 			let containerRect = this.containerElement.getBoundingClientRect();
-					// 			limiterRect.top -= containerRect.top;
-					// 			limiterRect.y -= containerRect.y;
-					// 		}
-					// 		return toPx(Math.abs(limiterRect.y));
-					// 	}
-					// 	return this._stickyTopOffset ? toPx(this._stickyTopOffset) : this._stickyTopOffset;
-					// }),
 
 					top: bind.to('_stickyTopOffset', value => value ? toPx(value) : value),
 					bottom: bind.to('_stickyBottomOffset', value => value ? toPx(value) : value),
@@ -275,27 +271,24 @@ export default class StickyPanelView extends View {
 	public checkIfShouldBeSticky(): void {
 		// @if CK_DEBUG_STICKYPANEL // RectDrawer.clear();
 
-		console.log('limiterElement', this.isActive, this.limiterElement);
-
-
 		if (!this.limiterElement || !this.isActive) {
 			this._unstick();
 
 			return;
 		}
 
-		// if ("scrollY" in this.containerElement) {
-		// 	this.containerScrollY = this.containerElement.scrollY as number;
-		// } else {
-		// 	"scrollTop" in this.containerElement && (this.containerScrollY = this.containerElement.scrollTop as number);
-		// }
+		this.panel_height = this._contentPanelRect.height;
+		this.panel_width = this._contentPanelRect.width;
 
 		const limiterRect = new Rect(this.limiterElement);
 
 		let visibleLimiterRect = limiterRect.getVisible();
 
 		if (visibleLimiterRect) {
-			const windowRect = new Rect(global.window);
+			const windowRect = new Rect(this.containerElement);
+
+			limiterRect.top -= windowRect.top;
+			limiterRect.bottom -= windowRect.top;
 
 			windowRect.top += this.viewportTopOffset;
 			windowRect.height -= this.viewportTopOffset;
@@ -342,13 +335,25 @@ export default class StickyPanelView extends View {
 				// Check if sticking the panel to the bottom of the limiter does not cause it to suddenly
 				// move upwards if there's not enough space for it.
 				if (limiterRect.bottom - stickyBottomOffset > limiterRect.top + this._contentPanelRect.height) {
-					this._stickToBottomOfLimiter(stickyBottomOffset);
+					if (this.panelAbsolute) {
+
+					} else {
+						this._stickToBottomOfLimiter(stickyBottomOffset);
+					}
 				} else {
 					this._unstick();
 				}
 			} else {
 				if (this._contentPanelRect.height + this.limiterBottomOffset < limiterRect.height) {
-					this._stickToTopOfAncestors(visibleLimiterTop);
+					if (this.panelAbsolute) {
+						if (limiterRect.top < 0 && -limiterRect.top < limiterRect.height-this.limiterBottomOffset) {
+							this._stickToTopOfAncestors(-limiterRect.top, 'absolute');
+						} else {
+							this._unstick();
+						}
+					} else {
+						this._stickToTopOfAncestors(visibleLimiterTop, null);
+					}
 				} else {
 					this._unstick();
 				}
@@ -378,12 +383,13 @@ export default class StickyPanelView extends View {
 	 * @private
 	 * @param topOffset
 	 */
-	private _stickToTopOfAncestors(topOffset: number) {
+	private _stickToTopOfAncestors(topOffset: number | null, position: string | null) {
 		this.isSticky = true;
 		this._isStickyToTheBottomOfLimiter = false;
-		this._stickyTopOffset = topOffset;
 		this._stickyBottomOffset = null;
+		this._stickyTopOffset = topOffset;
 		this._marginLeft = toPx(-global.window.scrollX);
+		this.position = position;
 	}
 
 	/**
@@ -398,6 +404,7 @@ export default class StickyPanelView extends View {
 		this._stickyTopOffset = null;
 		this._stickyBottomOffset = stickyBottomOffset;
 		this._marginLeft = toPx(-global.window.scrollX);
+		this.position = null;
 	}
 
 	/**
@@ -411,6 +418,7 @@ export default class StickyPanelView extends View {
 		this._stickyTopOffset = null;
 		this._stickyBottomOffset = null;
 		this._marginLeft = null;
+		this.position = null;
 	}
 
 	/**
