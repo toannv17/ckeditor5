@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic-floating",
+  "name": "ckeditor5-build-classic-floating",
   "version": "40.1.0",
   "description": "The classic floating editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
@@ -36,7 +36,7 @@
     "@ckeditor/ckeditor5-ckfinder": "40.1.0",
     "@ckeditor/ckeditor5-cloud-services": "40.1.0",
     "@ckeditor/ckeditor5-easy-image": "40.1.0",
-    "@ckeditor/ckeditor5-editor-classic-floating": "40.1.0",
+    "ckeditor5-editor-classic-floating": "40.1.0",
     "@ckeditor/ckeditor5-essentials": "40.1.0",
     "@ckeditor/ckeditor5-heading": "40.1.0",
     "@ckeditor/ckeditor5-image": "40.1.0",

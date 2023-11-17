@@ -4,7 +4,7 @@
  */
 
 // The editor creator to use.
-import { ClassicFloatingEditor as ClassicFloatingEditorBase } from '@ckeditor/ckeditor5-editor-classic-floating';
+import { ClassicFloatingEditor as ClassicFloatingEditorBase } from 'ckeditor5-editor-classic-floating';
 
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { UploadAdapter } from '@ckeditor/ckeditor5-adapter-ckfinder';

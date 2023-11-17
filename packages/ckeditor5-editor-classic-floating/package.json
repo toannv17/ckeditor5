@@ -1,5 +1,5 @@
 {
-    "name": "@ckeditor/ckeditor5-editor-classic-floating",
+    "name": "ckeditor5-editor-classic-floating",
     "version": "40.1.0",
     "private": false,
     "description": "The Classic Floating editor implementation for CKEditor 5.",
@@ -34,13 +34,13 @@
         "webpack": "^5.58.1",
         "webpack-cli": "^4.9.0"
     },
-    "author": "CKSource (http://cksource.com/)",
+    "author": "Toan Nguyen && CKSource (http://cksource.com/)",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://ckeditor.com/ckeditor-5",
-    "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+    "homepage": "https://github.com/toannv17",
+    "bugs": "https://github.com/toannv17/ckeditor5/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ckeditor/ckeditor5.git",
+        "url": "https://github.com/toannv17/ckeditor5.git",
         "directory": "packages/ckeditor5-editor-classic-floating"
     },
     "files": [
