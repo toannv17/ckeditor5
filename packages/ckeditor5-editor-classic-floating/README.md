@@ -5,15 +5,15 @@ CKEditor&nbsp;5 classic editor implementation
 [![Coverage Status](https://coveralls.io/repos/github/ckeditor/ckeditor5/badge.svg?branch=master)](https://coveralls.io/github/ckeditor/ckeditor5?branch=master)
 [![Build Status](https://travis-ci.com/ckeditor/ckeditor5.svg?branch=master)](https://app.travis-ci.com/github/ckeditor/ckeditor5)
 
-The classic editor implementation for CKEditor&nbsp;5.
+The classic floating editor implementation for CKEditor&nbsp;5.
 
-This package contains the [`ClassicEditor`](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) class. Follow there to learn more about this type of editor and how to initialize it.
+This package contains the [`ClassicFloatingEditor`](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) class. Follow there to learn more about this type of editor and how to initialize it.
 
-This package contains the source version of the classic editor. This kind of editor implementation is also available as a ready-to-use [classic build](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic). Read more about [CKEditor&nbsp;5 predefined builds](https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/predefined-builds.html) in the CKEditor&nbsp;5 documentation.
+This package contains the source version of the classic floating editor. This kind of editor implementation is also available as a ready-to-use [classic build](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic). Read more about [CKEditor&nbsp;5 predefined builds](https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/predefined-builds.html) in the CKEditor&nbsp;5 documentation.
 
 ## Documentation
 
-See the [`@ckeditor/ckeditor5-editor-classic` package](https://ckeditor.com/docs/ckeditor5/latest/api/editor-classic.html) page in [CKEditor&nbsp;5 documentation](https://ckeditor.com/docs/ckeditor5/latest/).
+See the [`@ckeditor/ckeditor5-editor-classic-floating` package](https://ckeditor.com/docs/ckeditor5/latest/api/editor-classic.html) page in [CKEditor&nbsp;5 documentation](https://ckeditor.com/docs/ckeditor5/latest/).
 
 ## License
 
