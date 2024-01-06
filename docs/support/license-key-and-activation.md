@@ -9,13 +9,14 @@ menu-title: License key and activation
 
 This article explains how to activate a commercial license of CKEditor&nbsp;5 and the following CKEditor premium features:
 
-* Non-real-time collaboration features, including:
+* Asynchronous collaboration features, including:
 	* {@link features/track-changes Track changes}
 	* {@link features/comments Comments}
 	* {@link features/revision-history Revision history}
 * {@link features/pagination Pagination}
-* {@link features/ai-assistant AI Assistant}
+* {@link features/ai-assistant-overview AI Assistant}
 * The Productivity Pack that includes:
+	* {@link features/case-change Case change}
 	* {@link features/document-outline Document outline}
 	* {@link features/format-painter Format painter}
 	* {@link features/paste-from-office-enhanced Paste from Office enhanced}

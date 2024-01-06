@@ -10,21 +10,20 @@
  */
 
 import type { CloudServices, InitializedToken } from '@ckeditor/ckeditor5-cloud-services';
-import { CKEditorError, logError } from 'ckeditor5/src/utils';
-import { Plugin } from 'ckeditor5/src/core';
+import { CKEditorError, logError } from 'ckeditor5/src/utils.js';
+import { Plugin } from 'ckeditor5/src/core.js';
 import {
 	convertMimeTypeToExtension,
 	getContentTypeOfUrl,
 	getFileExtension,
 	getWorkspaceId,
 	sendHttpRequest
-} from './utils';
+} from './utils.js';
 
 const DEFAULT_CKBOX_THEME_NAME = 'lark';
 
 /**
- * The CKBox editing feature. It introduces the {@link module:ckbox/ckboxcommand~CKBoxCommand CKBox command} and
- * {@link module:ckbox/ckboxuploadadapter~CKBoxUploadAdapter CKBox upload adapter}.
+ * The CKBox utilities plugin.
  */
 export default class CKBoxUtils extends Plugin {
 	/**

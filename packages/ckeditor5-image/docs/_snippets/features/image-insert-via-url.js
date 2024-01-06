@@ -28,6 +28,10 @@ ClassicEditor
 				top: window.getViewportTopOffsetConfig()
 			}
 		},
+		ckbox: {
+			allowExternalImagesEditing: [ /^data:/, 'origin' ],
+			forceDemoLabel: true
+		},
 		image: {
 			toolbar: [
 				'imageStyle:inline',
@@ -35,7 +39,10 @@ ClassicEditor
 				'imageStyle:breakText',
 				'|',
 				'ckboxImageEdit'
-			]
+			],
+			insert: {
+				integrations: [ 'url' ]
+			}
 		},
 		cloudServices: CS_CONFIG
 	} )

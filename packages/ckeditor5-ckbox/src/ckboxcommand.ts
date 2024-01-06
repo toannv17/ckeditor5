@@ -9,9 +9,9 @@
  * @module ckbox/ckboxcommand
  */
 
-import type { Writer } from 'ckeditor5/src/engine';
-import { Command, type Editor } from 'ckeditor5/src/core';
-import { createElement, toMap } from 'ckeditor5/src/utils';
+import type { Writer } from 'ckeditor5/src/engine.js';
+import { Command, type Editor } from 'ckeditor5/src/core.js';
+import { createElement, toMap } from 'ckeditor5/src/utils.js';
 
 import type {
 	CKBoxAssetDefinition,
@@ -20,9 +20,9 @@ import type {
 	CKBoxAssetLinkAttributesDefinition,
 	CKBoxAssetLinkDefinition,
 	CKBoxRawAssetDefinition
-} from './ckboxconfig';
+} from './ckboxconfig.js';
 
-import { blurHashToDataUrl, getImageUrls } from './utils';
+import { blurHashToDataUrl, getImageUrls } from './utils.js';
 
 // Defines the waiting time (in milliseconds) for inserting the chosen asset into the model. The chosen asset is temporarily stored in the
 // `CKBoxCommand#_chosenAssets` and it is removed from there automatically after this time. See `CKBoxCommand#_chosenAssets` for more
@@ -126,6 +126,7 @@ export default class CKBoxCommand extends Command {
 	 * - language The language for CKBox dialog.
 	 * - tokenUrl The token endpoint URL.
 	 * - serviceOrigin The base URL of the API service.
+	 * - forceDemoLabel Whether to force "Powered by CKBox" link.
 	 * - dialog.onClose The callback function invoked after closing the CKBox dialog.
 	 * - assets.onChoose The callback function invoked after choosing the assets.
 	 */
@@ -138,6 +139,7 @@ export default class CKBoxCommand extends Command {
 			language: ckboxConfig.language,
 			tokenUrl: ckboxConfig.tokenUrl,
 			serviceOrigin: ckboxConfig.serviceOrigin,
+			forceDemoLabel: ckboxConfig.forceDemoLabel,
 			dialog: {
 				onClose: () => this.fire<CKBoxEvent<'close'>>( 'ckbox:close' )
 			},

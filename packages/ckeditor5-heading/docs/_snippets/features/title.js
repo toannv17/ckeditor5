@@ -8,13 +8,11 @@
 import { BalloonEditor as BalloonEditorBase } from '@ckeditor/ckeditor5-editor-balloon';
 
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { UploadAdapter } from '@ckeditor/ckeditor5-adapter-ckfinder';
 import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
 import { BlockToolbar } from '@ckeditor/ckeditor5-ui';
 import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
 import { CKBox, CKBoxImageEdit } from '@ckeditor/ckeditor5-ckbox';
-import { CKFinder } from '@ckeditor/ckeditor5-ckfinder';
 import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 import { Heading, Title } from '@ckeditor/ckeditor5-heading';
 import { Image, ImageInsert, ImageCaption, ImageStyle, ImageToolbar, ImageUpload, PictureEditing } from '@ckeditor/ckeditor5-image';
@@ -27,13 +25,12 @@ import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
-import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config';
+import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 class BalloonEditor extends BalloonEditorBase {}
 
 BalloonEditor.builtinPlugins = [
 	Essentials,
-	UploadAdapter,
 	Autoformat,
 	BlockToolbar,
 	Bold,
@@ -41,7 +38,6 @@ BalloonEditor.builtinPlugins = [
 	BlockQuote,
 	CKBox,
 	CKBoxImageEdit,
-	CKFinder,
 	CloudServices,
 	EasyImage,
 	Heading,
@@ -120,6 +116,9 @@ BalloonEditor
 			viewportOffset: {
 				top: window.getViewportTopOffsetConfig()
 			}
+		},
+		ckbox: {
+			allowExternalImagesEditing: [ /^data:/, 'origin' ]
 		},
 		blockToolbar: [
 			'bulletedList',
