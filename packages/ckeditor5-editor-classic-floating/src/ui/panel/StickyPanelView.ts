@@ -155,12 +155,12 @@ export default class StickyPanelView extends View {
 	/**
 	 * @inheritDoc
 	 */
-	constructor(locale?: Locale, containerElement?: HTMLElement, panelAbsolute: boolean = false) {
+	constructor(locale?: Locale, containerEl?: HTMLElement, panelAbsolute: boolean = false) {
 		super(locale);
 
 		const bind = this.bindTemplate;
 
-		this.containerElement = containerElement || global.window;
+		this.containerElement = containerEl || global.window;
 		this.panelAbsolute = panelAbsolute;
 
 		this.set('position', null);

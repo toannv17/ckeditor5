@@ -91,7 +91,7 @@ export default class ClassicFloatingEditor extends DataApiMixin(ElementApiMixin(
 		const shouldToolbarGroupWhenFull = !this.config.get('toolbar.shouldNotGroupWhenFull');
 		const view = new ClassicFloatingEditorUIView(this.locale, this.editing.view, {
 			shouldToolbarGroupWhenFull,
-			containerElement: config.containerElement,
+			containerEl: config.containerEl,
 			panelAbsolute: config.panelAbsolute
 		});
 

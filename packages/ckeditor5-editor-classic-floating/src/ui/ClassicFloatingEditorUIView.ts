@@ -51,13 +51,13 @@ export default class ClassicFloatingEditorUIView extends BoxedEditorUIView {
 		editingView: View,
 		options: {
 			shouldToolbarGroupWhenFull?: boolean;
-			containerElement?: HTMLElement;
+			containerEl?: HTMLElement;
 			panelAbsolute?: boolean;
 		} = {}
 	) {
 		super(locale);
 
-		this.stickyPanel = new StickyPanelView(locale, options.containerElement, options.panelAbsolute);
+		this.stickyPanel = new StickyPanelView(locale, options.containerEl, options.panelAbsolute);
 
 		this.toolbar = new ToolbarView(locale, {
 			shouldGroupWhenFull: options.shouldToolbarGroupWhenFull

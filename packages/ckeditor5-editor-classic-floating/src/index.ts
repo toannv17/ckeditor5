@@ -8,3 +8,4 @@
  */
 
 export { default as ClassicFloatingEditor } from './editor/ClassicFloatingEditor';
+export * from './editor/EditorConfig';

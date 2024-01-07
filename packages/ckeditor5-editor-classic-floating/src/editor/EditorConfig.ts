@@ -3,6 +3,6 @@ import {
 } from 'ckeditor5/src/core';
 
 export interface EditorConfig extends EditorConfigBase {
-	containerElement?: HTMLElement;
+	containerEl?: HTMLElement;
 	panelAbsolute?: boolean
 }
