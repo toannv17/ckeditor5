@@ -129,11 +129,9 @@
     "fs-extra": "^11.1.1",
     "glob": "^10.2.5",
     "http-server": "^14.1.1",
-    "husky": "^8.0.2",
     "ini": "^4.1.1",
     "is-relative-url": "^3.0.0",
     "js-yaml": "^4.1.0",
-    "lint-staged": "^12.0.0",
     "listr2": "^6.5.0",
     "minimatch": "^5.1.0",
     "minimist": "^1.2.5",
@@ -202,17 +200,6 @@
     "collect-svg-icons": "node scripts/collect-svg-icons.js",
     "check-dependencies": "ckeditor5-dev-dependency-checker",
     "check-dependencies:versions-match": "node ./scripts/ci/check-dependencies-versions-match.js"
-  },
-  "lint-staged": {
-    "**/*.{js,ts}": [
-      "eslint --quiet"
-    ],
-    "**/*.css": [
-      "stylelint --quiet --allow-empty-input"
-    ],
-    "**/(*.{js,ts,css}|package.json)": [
-      "ckeditor5-dev-dependency-checker --quiet"
-    ]
   },
   "eslintIgnore": [
     "build/**",

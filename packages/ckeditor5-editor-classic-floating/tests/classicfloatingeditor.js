@@ -5,9 +5,9 @@
 
 /* globals document, Event, console */
 
-import ClassicEditor from '../src/classiceditor.js';
-import ClassicEditorUI from '../src/classiceditorui.js';
-import ClassicEditorUIView from '../src/classiceditoruiview.js';
+import ClassicFloatingEditor from '../src/editor/ClassicFloatingEditor.js';
+import ClassicFloatingEditorUI from '../src/ui/ClassicFloatingEditorUI.js';
+import ClassicFloatingEditorUIView from '../src/ui/ClassicFloatingEditorUIView.js';
 
 import HtmlDataProcessor from '@ckeditor/ckeditor5-engine/src/dataprocessor/htmldataprocessor.js';
 
@@ -25,7 +25,7 @@ import testUtils from '@ckeditor/ckeditor5-core/tests/_utils/utils.js';
 import ArticlePluginSet from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
 import { describeMemoryUsage, testMemoryUsage } from '@ckeditor/ckeditor5-core/tests/_utils/memory.js';
 
-describe( 'ClassicEditor', () => {
+describe( 'ClassicFloatingEditor', () => {
 	let editor, editorElement;
 
 	testUtils.createSinonSandbox();
@@ -45,7 +45,7 @@ describe( 'ClassicEditor', () => {
 
 	describe( 'constructor()', () => {
 		beforeEach( () => {
-			editor = new ClassicEditor( editorElement );
+			editor = new ClassicFloatingEditor( editorElement );
 		} );
 
 		it( 'uses HTMLDataProcessor', () => {
@@ -53,7 +53,7 @@ describe( 'ClassicEditor', () => {
 		} );
 
 		it( 'mixes ElementApiMixin', () => {
-			expect( ClassicEditor.prototype ).have.property( 'updateSourceElement' ).to.be.a( 'function' );
+			expect( ClassicFloatingEditor.prototype ).have.property( 'updateSourceElement' ).to.be.a( 'function' );
 		} );
 
 		it( 'creates main root element', () => {
@@ -75,7 +75,7 @@ describe( 'ClassicEditor', () => {
 				evt.preventDefault();
 			} );
 
-			return ClassicEditor.create( textarea, {
+			return ClassicFloatingEditor.create( textarea, {
 				plugins: [ Paragraph ]
 			} ).then( editor => {
 				expect( textarea.value ).to.equal( '' );
@@ -97,14 +97,14 @@ describe( 'ClassicEditor', () => {
 
 		describe( 'ui', () => {
 			it( 'creates the UI using BoxedEditorUI classes', () => {
-				expect( editor.ui ).to.be.instanceof( ClassicEditorUI );
-				expect( editor.ui.view ).to.be.instanceof( ClassicEditorUIView );
+				expect( editor.ui ).to.be.instanceof( ClassicFloatingEditorUI );
+				expect( editor.ui.view ).to.be.instanceof( ClassicFloatingEditorUIView );
 			} );
 
 			describe( 'automatic toolbar items groupping', () => {
 				it( 'should be on by default', () => {
 					const editorElement = document.createElement( 'div' );
-					const editor = new ClassicEditor( editorElement );
+					const editor = new ClassicFloatingEditor( editorElement );
 
 					expect( editor.ui.view.toolbar.options.shouldGroupWhenFull ).to.be.true;
 
@@ -113,7 +113,7 @@ describe( 'ClassicEditor', () => {
 
 				it( 'can be disabled using config.toolbar.shouldNotGroupWhenFull', () => {
 					const editorElement = document.createElement( 'div' );
-					const editor = new ClassicEditor( editorElement, {
+					const editor = new ClassicFloatingEditor( editorElement, {
 						toolbar: {
 							shouldNotGroupWhenFull: true
 						}
@@ -131,13 +131,13 @@ describe( 'ClassicEditor', () => {
 				const editorElement = document.createElement( 'div' );
 				editorElement.innerHTML = '<p>Foo</p>';
 
-				const editor = new ClassicEditor( editorElement );
+				const editor = new ClassicFloatingEditor( editorElement );
 
 				expect( editor.config.get( 'initialData' ) ).to.equal( '<p>Foo</p>' );
 			} );
 
 			it( 'if not set, is set using data passed in constructor', () => {
-				const editor = new ClassicEditor( '<p>Foo</p>' );
+				const editor = new ClassicFloatingEditor( '<p>Foo</p>' );
 
 				expect( editor.config.get( 'initialData' ) ).to.equal( '<p>Foo</p>' );
 			} );
@@ -146,7 +146,7 @@ describe( 'ClassicEditor', () => {
 				const editorElement = document.createElement( 'div' );
 				editorElement.innerHTML = '<p>Foo</p>';
 
-				const editor = new ClassicEditor( editorElement, { initialData: '<p>Bar</p>' } );
+				const editor = new ClassicFloatingEditor( editorElement, { initialData: '<p>Bar</p>' } );
 
 				expect( editor.config.get( 'initialData' ) ).to.equal( '<p>Bar</p>' );
 			} );
@@ -154,7 +154,7 @@ describe( 'ClassicEditor', () => {
 			it( 'it should throw if config.initialData is set and initial data is passed in constructor', () => {
 				expect( () => {
 					// eslint-disable-next-line no-new
-					new ClassicEditor( '<p>Foo</p>', { initialData: '<p>Bar</p>' } );
+					new ClassicFloatingEditor( '<p>Foo</p>', { initialData: '<p>Bar</p>' } );
 				} ).to.throw( CKEditorError, 'editor-create-initial-data' );
 			} );
 		} );
@@ -162,7 +162,7 @@ describe( 'ClassicEditor', () => {
 
 	describe( 'create()', () => {
 		beforeEach( () => {
-			return ClassicEditor
+			return ClassicFloatingEditor
 				.create( editorElement, {
 					plugins: [ Paragraph, Bold ]
 				} )
@@ -175,8 +175,8 @@ describe( 'ClassicEditor', () => {
 			return editor.destroy();
 		} );
 
-		it( 'creates an instance which inherits from the ClassicEditor', () => {
-			expect( editor ).to.be.instanceof( ClassicEditor );
+		it( 'creates an instance which inherits from the ClassicFloatingEditor', () => {
+			expect( editor ).to.be.instanceof( ClassicFloatingEditor );
 		} );
 
 		it( 'loads data from the editor element', () => {
@@ -184,16 +184,16 @@ describe( 'ClassicEditor', () => {
 		} );
 
 		// #53
-		it( 'creates an instance of a ClassicEditor child class', () => {
-			class CustomClassicEditor extends ClassicEditor {}
+		it( 'creates an instance of a ClassicFloatingEditor child class', () => {
+			class CustomClassicFloatingEditor extends ClassicFloatingEditor {}
 
-			return CustomClassicEditor
+			return CustomClassicFloatingEditor
 				.create( editorElement, {
 					plugins: [ Paragraph, Bold ]
 				} )
 				.then( newEditor => {
-					expect( newEditor ).to.be.instanceof( CustomClassicEditor );
-					expect( newEditor ).to.be.instanceof( ClassicEditor );
+					expect( newEditor ).to.be.instanceof( CustomClassicFloatingEditor );
+					expect( newEditor ).to.be.instanceof( ClassicFloatingEditor );
 
 					expect( newEditor.getData() ).to.equal( '<p><strong>foo</strong> bar</p>' );
 
@@ -203,10 +203,10 @@ describe( 'ClassicEditor', () => {
 
 		it( 'should not require config object', () => {
 			// Just being safe with `builtinPlugins` static property.
-			class CustomClassicEditor extends ClassicEditor {}
-			CustomClassicEditor.builtinPlugins = [ Paragraph, Bold ];
+			class CustomClassicFloatingEditor extends ClassicFloatingEditor {}
+			CustomClassicFloatingEditor.builtinPlugins = [ Paragraph, Bold ];
 
-			return CustomClassicEditor.create( editorElement )
+			return CustomClassicFloatingEditor.create( editorElement )
 				.then( newEditor => {
 					expect( newEditor.getData() ).to.equal( '<p><strong>foo</strong> bar</p>' );
 
@@ -215,7 +215,7 @@ describe( 'ClassicEditor', () => {
 		} );
 
 		it( 'allows to pass data to the constructor', () => {
-			return ClassicEditor.create( '<p>Hello world!</p>', {
+			return ClassicFloatingEditor.create( '<p>Hello world!</p>', {
 				plugins: [ Paragraph ]
 			} ).then( editor => {
 				expect( editor.getData() ).to.equal( '<p>Hello world!</p>' );
@@ -225,7 +225,7 @@ describe( 'ClassicEditor', () => {
 		} );
 
 		it( 'initializes with config.initialData', () => {
-			return ClassicEditor.create( editorElement, {
+			return ClassicFloatingEditor.create( editorElement, {
 				initialData: '<p>Hello world!</p>',
 				plugins: [ Paragraph ]
 			} ).then( editor => {
@@ -237,7 +237,7 @@ describe( 'ClassicEditor', () => {
 
 		// https://github.com/ckeditor/ckeditor5/issues/8974
 		it( 'initializes with empty content if config.initialData is set to an empty string', () => {
-			return ClassicEditor.create( editorElement, {
+			return ClassicFloatingEditor.create( editorElement, {
 				initialData: '',
 				plugins: [ Paragraph ]
 			} ).then( editor => {
@@ -248,7 +248,7 @@ describe( 'ClassicEditor', () => {
 		} );
 
 		it( 'should have undefined the #sourceElement if editor was initialized with data', () => {
-			return ClassicEditor
+			return ClassicFloatingEditor
 				.create( '<p>Foo.</p>', {
 					plugins: [ Paragraph, Bold ]
 				} )
@@ -290,13 +290,13 @@ describe( 'ClassicEditor', () => {
 				}
 			}
 
-			return ClassicEditor
+			return ClassicFloatingEditor
 				.create( editorElement, {
 					plugins: [ EventWatcher ]
 				} )
 				.then( newEditor => {
 					expect( fired ).to.deep.equal(
-						[ 'ready-classiceditorui', 'ready-datacontroller', 'ready-classiceditor' ] );
+						[ 'ready-ClassicFloatingEditorUI', 'ready-datacontroller', 'ready-ClassicFloatingEditor' ] );
 
 					editor = newEditor;
 				} );
@@ -313,7 +313,7 @@ describe( 'ClassicEditor', () => {
 				}
 			}
 
-			return ClassicEditor
+			return ClassicFloatingEditor
 				.create( editorElement, {
 					plugins: [ EventWatcher ]
 				} )
@@ -327,7 +327,7 @@ describe( 'ClassicEditor', () => {
 
 	describe( 'destroy', () => {
 		beforeEach( function() {
-			return ClassicEditor
+			return ClassicFloatingEditor
 				.create( editorElement, { plugins: [ Paragraph ] } )
 				.then( newEditor => {
 					editor = newEditor;
@@ -358,7 +358,7 @@ describe( 'ClassicEditor', () => {
 		it( 'does not update the source element if editor was initialized with data', async () => {
 			await editor.destroy();
 
-			return ClassicEditor
+			return ClassicFloatingEditor
 				.create( '<p>Foo.</p>', {
 					plugins: [ Paragraph, Bold ]
 				} )
@@ -385,23 +385,23 @@ describe( 'ClassicEditor', () => {
 	} );
 
 	describe( 'static fields', () => {
-		it( 'ClassicEditor.Context', () => {
-			expect( ClassicEditor.Context ).to.equal( Context );
+		it( 'ClassicFloatingEditor.Context', () => {
+			expect( ClassicFloatingEditor.Context ).to.equal( Context );
 		} );
 
-		it( 'ClassicEditor.EditorWatchdog', () => {
-			expect( ClassicEditor.EditorWatchdog ).to.equal( EditorWatchdog );
+		it( 'ClassicFloatingEditor.EditorWatchdog', () => {
+			expect( ClassicFloatingEditor.EditorWatchdog ).to.equal( EditorWatchdog );
 		} );
 
-		it( 'ClassicEditor.ContextWatchdog', () => {
-			expect( ClassicEditor.ContextWatchdog ).to.equal( ContextWatchdog );
+		it( 'ClassicFloatingEditor.ContextWatchdog', () => {
+			expect( ClassicFloatingEditor.ContextWatchdog ).to.equal( ContextWatchdog );
 		} );
 	} );
 
 	describeMemoryUsage( () => {
 		testMemoryUsage(
 			'should not grow on multiple create/destroy',
-			() => ClassicEditor
+			() => ClassicFloatingEditor
 				.create( document.querySelector( '#mem-editor' ), {
 					plugins: [ ArticlePluginSet ],
 					toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
