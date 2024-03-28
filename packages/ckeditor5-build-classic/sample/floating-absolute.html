@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CKEditor 5 – classic editor build – development sample</title>
+	<style>
+		body {max-width: 800px;margin: 20px auto;
+		}
+
+		.modal {pointer-events: auto;visibility: visible;opacity: 1;position: fixed;top: 0;right: 0;bottom: 0;left: 0;margin: 0;display: grid;height: 100%;max-height: none;width: 100%;max-width: none;justify-items: center;padding: 0;overscroll-behavior: contain;z-index: 999;background-color: #b4b4b4;color: inherit;transition-duration: .2s;transition-timing-function: cubic-bezier(0, 0, .2, 1);transition-property: transform, opacity, visibility;overflow-y: hidden;align-items: center;
+		}
+
+		.modal::backdrop {background-color: #0000004d;animation: modal-pop .2s ease-out;
+		}
+
+		@keyframes modal-pop {0% {	opacity: 0;}
+		}
+
+		.modal .modal-box {max-height: calc(100vh - 5em);grid-column-start: 1;grid-row-start: 1;width: 80%;max-width: 52rem;border-radius: 1rem;background-color: #fff;padding: 1.5rem;box-shadow: #00000040 0 25px 50px -12px;overflow-y: auto;overscroll-behavior: contain;transform: translate(0px, 0px) rotate(0) skew(0) skewY(0) scaleX(1) scaleY(1);
+		}
+
+		.modal .modal-backdrop {
+		}
+
+	</style>
+</head>
+<body>
+<dialog class="modal">
+	<div id="modal-1" class="modal-box">
+
+		<h1>CKEditor 5 – classic floating editor build – development sample</h1>
+
+		<div>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>
+		</div>
+
+		<div id="editor"><h2>Sample</h2>
+<p>This is an instance of the <a	href="https://ckeditor.com/docs/ckeditor5/latest/installation/getting-started/predefined-builds.html#classic-editor">classic	editor build</a>.</p>
+<figure class="image">	<img src="../tests/manual/sample.jpg" alt="Autumn fields"/></figure>
+<p>You can use this sample to validate whether your <a	href="https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/custom-builds.html">custom	build</a> works fine.</p>
+		</div>
+
+
+		<div>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>test <br/>
+		</div>
+
+	</div>
+	<div class="modal-backdrop"></div>
+</dialog>
+
+<script src="../build/ckeditor.js"></script>
+<script>
+	ClassicFloatingEditor.create(document.querySelector('#editor'), {
+		containerEl: document.getElementById('modal-1'),
+		panelAbsolute: true
+	})
+		.then(editor => {window.editor = editor;
+		})
+		.catch(error => {console.error('There was a problem initializing the editor.', error);
+		});
+</script>
+
+</body>
+</html>
