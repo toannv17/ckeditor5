@@ -49,9 +49,14 @@
 
 <script src="../build/ckeditor.js"></script>
 <script>
-	ClassicFloatingEditor.create(document.querySelector('#editor'), {
+	ClassicEditor.create(document.querySelector('#editor'), {
 		containerEl: document.getElementById('modal-1'),
-		panelAbsolute: true
+		panelAbsolute: true,
+
+		link: {
+			redirectUrl: 'https://ckeditor.com/redirect?url=',
+			defaultProtocol: 'https://',
+		}
 	})
 		.then(editor => {window.editor = editor;
 		})
