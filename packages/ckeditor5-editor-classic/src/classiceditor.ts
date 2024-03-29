@@ -86,7 +86,9 @@ export default class ClassicEditor extends ElementApiMixin( Editor ) {
 
 		const shouldToolbarGroupWhenFull = !this.config.get( 'toolbar.shouldNotGroupWhenFull' );
 		const view = new ClassicEditorUIView( this.locale, this.editing.view, {
-			shouldToolbarGroupWhenFull
+			shouldToolbarGroupWhenFull,
+			containerEl: config.containerEl,
+			panelAbsolute: config.panelAbsolute
 		} );
 
 		this.ui = new ClassicEditorUI( this, view );

@@ -539,6 +539,16 @@ export interface EditorConfig {
 	 * Translations to be used in the editor.
 	 */
 	translations?: ArrayOrItem<Translations>;
+
+	/**
+	 *
+	 */
+	containerEl?: HTMLElement;
+
+	/**
+	 *
+	 */
+	panelAbsolute?: boolean;
 }
 
 /**
