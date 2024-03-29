@@ -49,11 +49,13 @@ export default class ClassicEditorUIView extends BoxedEditorUIView {
 		editingView: EditingView,
 		options: {
 			shouldToolbarGroupWhenFull?: boolean;
+			containerEl?: HTMLElement;
+			panelAbsolute?: boolean;
 		} = {}
 	) {
 		super( locale );
 
-		this.stickyPanel = new StickyPanelView( locale );
+		this.stickyPanel = new StickyPanelView( locale, options.containerEl, options.panelAbsolute );
 
 		this.toolbar = new ToolbarView( locale, {
 			shouldGroupWhenFull: options.shouldToolbarGroupWhenFull
