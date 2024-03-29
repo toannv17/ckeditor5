@@ -60,11 +60,11 @@ commands:
     description: "Clone the CKEditor 5 repository with limited depth and branches"
     steps:
       - run: # print the name of the branch we're on
-        name: "What branch am I on?"
-        command: echo ${CIRCLE_BRANCH}
+          name: "What branch am I on?"
+          command: echo ${CIRCLE_BRANCH}
       - run:
-        name: "What repository url am I on?"
-        command: echo ${CIRCLE_REPOSITORY_URL}
+          name: "What repository url am I on?"
+          command: echo ${CIRCLE_REPOSITORY_URL}
       - run:
           name: Checkout code (single branch)
           command: git clone --single-branch --depth 10 --branch "$CIRCLE_BRANCH" "$CIRCLE_REPOSITORY_URL" .
