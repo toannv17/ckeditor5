@@ -72,7 +72,7 @@ function main() {
  * @returns {Object} options
  * @returns {String} options.commit
  * @returns {String} options.repository
- * @returns {String} [options.branch='master']
+ * @returns {String} [options.branch='dev']
  */
 function getOptions( argv ) {
 	return minimist( argv, {
@@ -87,7 +87,7 @@ function getOptions( argv ) {
 			r: 'repository'
 		},
 		default: {
-			branch: 'master'
+			branch: 'dev'
 		}
 	} );
 }

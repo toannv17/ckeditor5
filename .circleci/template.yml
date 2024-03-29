@@ -64,7 +64,7 @@ commands:
           command: echo ${CIRCLE_BRANCH}
       - run:
           name: "What repository url am I on?"
-          command: echo ${pipeline.project.git_url} && echo ${CIRCLE_REPOSITORY_URL}
+          command: echo ${CIRCLE_REPOSITORY_URL}
       - run:
           name: Checkout code (single branch)
           command: git clone --single-branch --depth 10 --branch "$CIRCLE_BRANCH" "pipeline.project.git_url" .
@@ -262,7 +262,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - dev
               ignore:
                 - stable
       - cke5_validators
@@ -287,7 +287,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - dev
       - cke5_trigger_release_process:
           requires:
             - cke5_tests_framework
@@ -303,7 +303,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - dev
                 - stable
 
   nightly:
@@ -319,7 +319,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - dev
 
   stale_bot:
     when: << pipeline.parameters.isStaleBot >>
