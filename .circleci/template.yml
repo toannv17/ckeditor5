@@ -59,9 +59,15 @@ commands:
   checkout_command:
     description: "Clone the CKEditor 5 repository with limited depth and branches"
     steps:
+      - run: # print the name of the branch we're on
+        name: "What branch am I on?"
+        command: echo ${CIRCLE_BRANCH}
+      - run:
+        name: "What repository url am I on?"
+        command: echo ${CIRCLE_REPOSITORY_URL}
       - run:
           name: Checkout code (single branch)
-          command: echo $CIRCLE_BRANCH && echo $CIRCLE_REPOSITORY_URL && git clone --single-branch --depth 10 --branch "$CIRCLE_BRANCH" "$CIRCLE_REPOSITORY_URL" .
+          command: git clone --single-branch --depth 10 --branch "$CIRCLE_BRANCH" "$CIRCLE_REPOSITORY_URL" .
 
   # In the PRs that come from forked repositories, we do not share secret variables.
   # Hence, some of the scripts will not be executed. See: https://github.com/ckeditor/ckeditor5/issues/7745.
