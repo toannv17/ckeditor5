@@ -28,12 +28,7 @@
 
 <script src="../build/ckeditor.js"></script>
 <script>
-	ClassicEditor.create( document.querySelector( '#editor' ), {
-		link: {
-			redirectUrl: 'https://ckeditor.com/redirect?url=',
-			defaultProtocol: 'https://',
-		}
-	} )
+	ClassicEditor.create( document.querySelector( '#editor' ) )
 		.then( editor => {
 			window.editor = editor;
 		} )
