@@ -11,11 +11,12 @@
 **/node_modules
 build/
 dist/
+!packages/ckeditor5-build-*/build
 docs/api/output.json
 yarn.lock
 package-lock.json
 coverage/
-!packages/*-build*/build
+
 # Files associated with external repositories.
 external/
 mrgit.json
