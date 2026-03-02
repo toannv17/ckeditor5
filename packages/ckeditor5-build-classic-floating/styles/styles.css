@@ -1,0 +1,36 @@
+@import "./theme.css";
+
+:root {
+	--ck-color-grid-tile-size: 17px;
+	--ck-spacing-large: var(--ck-spacing-unit);
+}
+
+.ck-powered-by-balloon,
+.ck.ck-powered-by {
+	display: none;
+}
+
+.border-0 .ck.ck-toolbar {
+	border: none;
+}
+
+.ck.ck-editor__editable_inline {
+	border: none;
+}
+
+.ck.ck-editor__editable.ck-focused,
+.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+.ck-content .todo-list {
+	margin-left: 1.5rem;
+}
+
+.ck.ck-list,
+.ck.ck-color-grid {
+	max-height: 265px;
+	overflow-y: auto;
+}
