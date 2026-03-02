@@ -52,7 +52,10 @@ export class ClassicEditor extends /* #__PURE__ */ ElementApiMixin( Editor ) {
 	 * {@link module:editor-classic/classiceditor~ClassicEditor.create `ClassicEditor.create()`}.
 	 * @param config The editor configuration.
 	 */
-	protected constructor( sourceElementOrData: HTMLElement | string, config: EditorConfig = {} ) {
+	protected constructor( sourceElementOrData: HTMLElement | string, config: EditorConfig & {
+		containerEl?: HTMLElement;
+		panelAbsolute?: boolean;
+	} = {} ) {
 		// If both `config.initialData` is set and initial data is passed as the constructor parameter, then throw.
 		if ( !isElement( sourceElementOrData ) && config.initialData !== undefined ) {
 			// Documented in core/editor/editorconfig.jsdoc.
@@ -81,7 +84,9 @@ export class ClassicEditor extends /* #__PURE__ */ ElementApiMixin( Editor ) {
 		const view = new ClassicEditorUIView( this.locale, this.editing.view, {
 			shouldToolbarGroupWhenFull,
 			useMenuBar: menuBarConfig.isVisible,
-			label: this.config.get( 'label' )
+			label: this.config.get( 'label' ),
+			containerEl: config.containerEl,
+			panelAbsolute: config.panelAbsolute
 		} );
 
 		this.ui = new ClassicEditorUI( this, view );
