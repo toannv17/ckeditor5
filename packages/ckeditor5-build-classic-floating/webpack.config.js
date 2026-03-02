@@ -7,7 +7,7 @@
 
 /* eslint-env node */
 
-const path = require( 'node:path' );
+const path = require( 'path' );
 const webpack = require( 'webpack' );
 const { bundler, loaders } = require( '@ckeditor/ckeditor5-dev-utils' );
 const { CKEditorTranslationsPlugin } = require( '@ckeditor/ckeditor5-dev-translations' );
@@ -21,7 +21,7 @@ module.exports = {
 
 	output: {
 		// The name under which the editor will be exported.
-		library: 'ClassicEditor',
+		library: 'ClassicFloatingEditor',
 
 		path: path.resolve( __dirname, 'build' ),
 		filename: 'ckeditor.js',
@@ -32,8 +32,8 @@ module.exports = {
 	optimization: {
 		minimizer: [
 			new TerserPlugin( {
-				sourceMap: true,
 				terserOptions: {
+					sourceMap: true,
 					output: {
 						// Preserve CKEditor 5 license comments.
 						comments: /^!/
