@@ -1,6 +1,6 @@
 /**
- * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
- * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ * @license Copyright (c) 2003-2026, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
 // The editor creator to use.
@@ -20,13 +20,13 @@ import { Indent } from '@ckeditor/ckeditor5-indent';
 import { Link } from '@ckeditor/ckeditor5-link';
 import { List } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Paragraph } from 'ckeditor5/src/paragraph.js';
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
-import { TextTransformation } from '@ckeditor/ckeditor5-typing';
+import { TextTransformation } from 'ckeditor5/src/typing.js';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 
-export default class ClassicEditor extends ClassicEditorBase {
+export class ClassicEditor extends ClassicEditorBase {
 	public static override builtinPlugins = [
 		Essentials,
 		CKFinderUploadAdapter,

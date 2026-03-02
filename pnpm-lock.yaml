@@ -830,6 +830,94 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(webpack@5.105.2)
 
+  packages/ckeditor5-build-classic-floating:
+    dependencies:
+      '@ckeditor/ckeditor5-adapter-ckfinder':
+        specifier: workspace:*
+        version: link:../ckeditor5-adapter-ckfinder
+      '@ckeditor/ckeditor5-autoformat':
+        specifier: workspace:*
+        version: link:../ckeditor5-autoformat
+      '@ckeditor/ckeditor5-basic-styles':
+        specifier: workspace:*
+        version: link:../ckeditor5-basic-styles
+      '@ckeditor/ckeditor5-block-quote':
+        specifier: workspace:*
+        version: link:../ckeditor5-block-quote
+      '@ckeditor/ckeditor5-ckbox':
+        specifier: workspace:*
+        version: link:../ckeditor5-ckbox
+      '@ckeditor/ckeditor5-ckfinder':
+        specifier: workspace:*
+        version: link:../ckeditor5-ckfinder
+      '@ckeditor/ckeditor5-cloud-services':
+        specifier: workspace:*
+        version: link:../ckeditor5-cloud-services
+      '@ckeditor/ckeditor5-easy-image':
+        specifier: workspace:*
+        version: link:../ckeditor5-easy-image
+      '@ckeditor/ckeditor5-essentials':
+        specifier: workspace:*
+        version: link:../ckeditor5-essentials
+      '@ckeditor/ckeditor5-heading':
+        specifier: workspace:*
+        version: link:../ckeditor5-heading
+      '@ckeditor/ckeditor5-image':
+        specifier: workspace:*
+        version: link:../ckeditor5-image
+      '@ckeditor/ckeditor5-indent':
+        specifier: workspace:*
+        version: link:../ckeditor5-indent
+      '@ckeditor/ckeditor5-link':
+        specifier: workspace:*
+        version: link:../ckeditor5-link
+      '@ckeditor/ckeditor5-list':
+        specifier: workspace:*
+        version: link:../ckeditor5-list
+      '@ckeditor/ckeditor5-media-embed':
+        specifier: workspace:*
+        version: link:../ckeditor5-media-embed
+      '@ckeditor/ckeditor5-paragraph':
+        specifier: workspace:*
+        version: link:../ckeditor5-paragraph
+      '@ckeditor/ckeditor5-paste-from-office':
+        specifier: workspace:*
+        version: link:../ckeditor5-paste-from-office
+      '@ckeditor/ckeditor5-table':
+        specifier: workspace:*
+        version: link:../ckeditor5-table
+      '@ckeditor/ckeditor5-typing':
+        specifier: workspace:*
+        version: link:../ckeditor5-typing
+      ckeditor5-editor-classic-floating:
+        specifier: 47.5.0
+        version: link:../ckeditor5-editor-classic-floating
+    devDependencies:
+      '@ckeditor/ckeditor5-core':
+        specifier: workspace:*
+        version: link:../ckeditor5-core
+      '@ckeditor/ckeditor5-dev-translations':
+        specifier: ^54.3.4
+        version: 54.3.4(@babel/core@7.28.4)(@swc/core@1.13.5)(esbuild@0.25.10)(typescript@5.3.3)(webpack@5.105.2)
+      '@ckeditor/ckeditor5-dev-utils':
+        specifier: ^54.3.4
+        version: 54.3.4(@babel/core@7.28.4)(@swc/core@1.13.5)(esbuild@0.25.10)(typescript@5.3.3)(webpack@5.105.2)
+      '@ckeditor/ckeditor5-theme-lark':
+        specifier: workspace:*
+        version: link:../ckeditor5-theme-lark
+      terser-webpack-plugin:
+        specifier: ^5.0.0
+        version: 5.3.16(@swc/core@1.13.5)(esbuild@0.25.10)(webpack@5.105.2)
+      typescript:
+        specifier: 5.3.3
+        version: 5.3.3
+      webpack:
+        specifier: ^5.94.0
+        version: 5.105.2(@swc/core@1.13.5)(esbuild@0.25.10)(webpack-cli@6.0.1)
+      webpack-cli:
+        specifier: ^6.0.1
+        version: 6.0.1(webpack@5.105.2)
+
   packages/ckeditor5-ckbox:
     dependencies:
       '@ckeditor/ckeditor5-cloud-services':
@@ -1379,6 +1467,70 @@ importers:
         version: 6.0.1(webpack@5.105.2)
 
   packages/ckeditor5-editor-classic:
+    dependencies:
+      '@ckeditor/ckeditor5-core':
+        specifier: workspace:*
+        version: link:../ckeditor5-core
+      '@ckeditor/ckeditor5-engine':
+        specifier: workspace:*
+        version: link:../ckeditor5-engine
+      '@ckeditor/ckeditor5-ui':
+        specifier: workspace:*
+        version: link:../ckeditor5-ui
+      '@ckeditor/ckeditor5-utils':
+        specifier: workspace:*
+        version: link:../ckeditor5-utils
+      ckeditor5:
+        specifier: workspace:*
+        version: link:../ckeditor5
+      es-toolkit:
+        specifier: 1.39.5
+        version: 1.39.5
+    devDependencies:
+      '@ckeditor/ckeditor5-basic-styles':
+        specifier: workspace:*
+        version: link:../ckeditor5-basic-styles
+      '@ckeditor/ckeditor5-dev-utils':
+        specifier: ^54.3.4
+        version: 54.3.4(@babel/core@7.28.4)(@swc/core@1.13.5)(esbuild@0.25.10)(typescript@5.3.3)(webpack@5.105.2)
+      '@ckeditor/ckeditor5-enter':
+        specifier: workspace:*
+        version: link:../ckeditor5-enter
+      '@ckeditor/ckeditor5-heading':
+        specifier: workspace:*
+        version: link:../ckeditor5-heading
+      '@ckeditor/ckeditor5-image':
+        specifier: workspace:*
+        version: link:../ckeditor5-image
+      '@ckeditor/ckeditor5-link':
+        specifier: workspace:*
+        version: link:../ckeditor5-link
+      '@ckeditor/ckeditor5-paragraph':
+        specifier: workspace:*
+        version: link:../ckeditor5-paragraph
+      '@ckeditor/ckeditor5-theme-lark':
+        specifier: workspace:*
+        version: link:../ckeditor5-theme-lark
+      '@ckeditor/ckeditor5-typing':
+        specifier: workspace:*
+        version: link:../ckeditor5-typing
+      '@ckeditor/ckeditor5-undo':
+        specifier: workspace:*
+        version: link:../ckeditor5-undo
+      '@ckeditor/ckeditor5-watchdog':
+        specifier: workspace:*
+        version: link:../ckeditor5-watchdog
+      typescript:
+        specifier: 5.3.3
+        version: 5.3.3
+      webpack:
+        specifier: ^5.94.0
+        version: 5.105.2(@swc/core@1.13.5)(esbuild@0.25.10)(webpack-cli@6.0.1)
+      webpack-cli:
+        specifier: ^6.0.1
+        version: 6.0.1(webpack@5.105.2)
+
+  packages/ckeditor5-editor-classic-floating:
     dependencies:
       '@ckeditor/ckeditor5-core':
         specifier: workspace:*

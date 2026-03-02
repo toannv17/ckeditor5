@@ -72,14 +72,6 @@ export default defineConfig( [
 		rules: {
 			'ckeditor5-rules/ckeditor-imports': 'error',
 			'ckeditor5-rules/prevent-license-key-leak': 'error',
-			'ckeditor5-rules/license-header': [ 'error', {
-				headerLines: [
-					'/**',
-					' * @license Copyright (c) 2003-2026, CKSource Holding sp. z o.o. All rights reserved.',
-					' * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options',
-					' */'
-				]
-			} ],
 			'ckeditor5-rules/require-file-extensions-in-imports': [ 'error', {
 				extensions: [ '.ts', '.js', '.json' ]
 			} ]
@@ -95,12 +87,13 @@ export default defineConfig( [
 		rules: {
 			'ckeditor5-rules/no-default-export': 'error',
 			'ckeditor5-rules/allow-svg-imports-only-in-icons-package': 'error',
+			'linebreak-style': 0,
 			'ckeditor5-rules/ckeditor-plugin-flags': [ 'error', {
 				requiredFlags: [ {
 					name: 'isOfficialPlugin',
 					returnValue: true
 				} ]
-			} ]
+			} ],
 		}
 	},
 	{

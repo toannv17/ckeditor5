@@ -7,7 +7,7 @@
 
 /* eslint-env node */
 
-const path = require( 'path' );
+const path = require( 'node:path' );
 const webpack = require( 'webpack' );
 const { bundler, loaders } = require( '@ckeditor/ckeditor5-dev-utils' );
 const { CKEditorTranslationsPlugin } = require( '@ckeditor/ckeditor5-dev-translations' );
