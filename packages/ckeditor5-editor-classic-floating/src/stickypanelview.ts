@@ -36,9 +36,10 @@ export class StickyPanelView extends View {
 	 */
 	public readonly content: ViewCollection;
 
-	declare public containerEl: HTMLElement | Window;
+	public readonly containerEl: HTMLElement | ( Window & typeof globalThis );
+	public readonly panelAbsolute: boolean;
 
-	declare public panelAbsolute: boolean;
+	declare public position: string | null;
 
 	/**
 	 * Controls whether the sticky panel should be active.
@@ -162,8 +163,10 @@ export class StickyPanelView extends View {
 
 		const bind = this.bindTemplate;
 
-		this.set( 'containerEl', options.containerEl || global.window );
-		this.set( 'panelAbsolute', !!options.panelAbsolute );
+		this.containerEl = options.containerEl || global.window;
+		this.panelAbsolute = !!options.panelAbsolute;
+
+		this.set( 'position', null );
 		this.set( 'isActive', false );
 		this.set( 'isSticky', false );
 		this.set( 'limiterElement', null );
@@ -206,6 +209,10 @@ export class StickyPanelView extends View {
 					bind.if( '_isStickyToTheBottomOfLimiter', 'ck-sticky-panel__content_sticky_bottom-limit' )
 				],
 				style: {
+					position: bind.to( 'position', position => {
+						return position;
+					} ),
+
 					width: bind.to( 'isSticky', isSticky => {
 						return isSticky ? toPx( this._contentPanelPlaceholder.getBoundingClientRect().width ) : null;
 					} ),
@@ -245,7 +252,11 @@ export class StickyPanelView extends View {
 		this.checkIfShouldBeSticky();
 
 		// Update sticky state of the panel as the window and ancestors are being scrolled.
-		this.listenTo( global.document, 'scroll', () => {
+		// this.listenTo( global.document, 'scroll', () => {
+		// 	this.checkIfShouldBeSticky();
+		// }, { useCapture: true } );
+
+		this.listenTo( this.containerEl, 'scroll', () => {
 			this.checkIfShouldBeSticky();
 		}, { useCapture: true } );
 
@@ -282,7 +293,11 @@ export class StickyPanelView extends View {
 		let visibleLimiterRect = limiterRect.getVisible();
 
 		if ( visibleLimiterRect ) {
-			const windowRect = new Rect( global.window );
+			const windowRect = new Rect( this.containerEl );
+
+			// FIX container offset
+			limiterRect.top -= windowRect.top;
+			limiterRect.bottom -= windowRect.top;
 
 			windowRect.top += this.viewportTopOffset;
 			windowRect.height -= this.viewportTopOffset;
@@ -328,7 +343,18 @@ export class StickyPanelView extends View {
 					this._unstick();
 				}
 			} else if ( this._contentPanelRect.height + this.limiterBottomOffset < limiterRect.height ) {
-				this._stickToTopOfAncestors( visibleLimiterRect.top );
+				// this._stickToTopOfAncestors( visibleLimiterRect.top );
+
+				if ( this.panelAbsolute ) {
+					if ( limiterRect.top < 0 && -limiterRect.top < limiterRect.height - this.limiterBottomOffset ) {
+						// this._stickToTopOfAncestors( visibleLimiterRect.top, 'absolute' );
+						this._stickToTopOfAncestors( -limiterRect.top, 'absolute' );
+					} else {
+						this._unstick();
+					}
+				} else {
+					this._stickToTopOfAncestors( visibleLimiterRect.top );
+				}
 			} else {
 				this._unstick();
 			}
@@ -357,13 +383,21 @@ export class StickyPanelView extends View {
 	 *
 	 * @private
 	 * @param topOffset
+	 * @param position
 	 */
-	private _stickToTopOfAncestors( topOffset: number ) {
+	private _stickToTopOfAncestors( topOffset: number, position: string | null = null ) {
 		this.isSticky = true;
 		this._isStickyToTheBottomOfLimiter = false;
 		this._stickyTopOffset = topOffset;
 		this._stickyBottomOffset = null;
-		this._marginLeft = toPx( -global.window.scrollX + getVisualViewportOffset().left );
+		let leftOffset;
+		if ( this.containerEl instanceof HTMLElement ) {
+			leftOffset = this.containerEl.scrollLeft;
+		} else {
+			leftOffset = this.containerEl.scrollX;
+		}
+		this._marginLeft = toPx( -leftOffset + getVisualViewportOffset().left );
+		this.position = position;
 	}
 
 	/**
@@ -377,7 +411,14 @@ export class StickyPanelView extends View {
 		this._isStickyToTheBottomOfLimiter = true;
 		this._stickyTopOffset = null;
 		this._stickyBottomOffset = stickyBottomOffset;
-		this._marginLeft = toPx( -global.window.scrollX + getVisualViewportOffset().left );
+		let leftOffset;
+		if ( this.containerEl instanceof HTMLElement ) {
+			leftOffset = this.containerEl.scrollLeft;
+		} else {
+			leftOffset = this.containerEl.scrollX;
+		}
+		this._marginLeft = toPx( -leftOffset + getVisualViewportOffset().left );
+		this.position = null;
 	}
 
 	/**
@@ -391,6 +432,7 @@ export class StickyPanelView extends View {
 		this._stickyTopOffset = null;
 		this._stickyBottomOffset = null;
 		this._marginLeft = null;
+		this.position = null;
 	}
 
 	/**

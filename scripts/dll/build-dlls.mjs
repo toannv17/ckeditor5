@@ -9,16 +9,23 @@ import path from 'node:path';
 import childProcess from 'node:child_process';
 import chalk from 'chalk';
 import fs from 'fs-extra';
+import fileSystem from 'node:fs';
 import minimist from 'minimist';
 import { CKEDITOR5_ROOT_PATH } from '../constants.mjs';
+import { fileURLToPath } from 'node:url';
 
 const COLLABORATION_DLL_PACKAGE_NAME = 'ckeditor5-collaboration';
 
 const argv = minimist( process.argv.slice( 2 ) );
 
+const __filename = fileURLToPath( import.meta.url );
+const __dirname = path.dirname( __filename );
+
+const PACKAGES_DIR_PATH = path.resolve( __dirname, '..', '..', 'packages' );
 const ROOT_DIRECTORY = argv.cwd ? path.resolve( argv.cwd ) : CKEDITOR5_ROOT_PATH;
 const DEVELOPMENT_MODE = argv.dev;
 const VERBOSE_MODE = argv.verbose;
+const platform = process.platform;
 
 // Lets highlight and space out the messages in the verbose mode to
 // make them stand out from the wall of text that webpack spits out.
@@ -57,6 +64,10 @@ process.exit( exitCode );
  * @returns {Array<String>}
  */
 function getPackageNames( cwd ) {
+	if ( platform === 'win32' ) {
+		return fileSystem.readdirSync( PACKAGES_DIR_PATH );
+	}
+
 	return childProcess.execSync( 'ls -1 packages', {
 		encoding: 'utf8',
 		cwd
