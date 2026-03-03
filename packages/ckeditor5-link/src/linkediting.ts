@@ -17,9 +17,7 @@ import type {
 	ViewElement,
 	ViewDocumentKeyDownEvent,
 	ViewDocumentClickEvent,
-	DocumentSelectionChangeAttributeEvent,
-	DowncastConversionApi,
-	ViewAttributeElement
+	DocumentSelectionChangeAttributeEvent
 } from 'ckeditor5/src/engine.js';
 import {
 	Input,
@@ -70,6 +68,13 @@ export default class LinkEditing extends Plugin {
 	/**
 	 * @inheritDoc
 	 */
+	public static override get isOfficialPlugin(): true {
+		return true;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
 	public static get requires() {
 		// Clipboard is required for handling cut and paste events while typing over the link.
 		return [ TwoStepCaretMovement, Input, ClipboardPipeline ] as const;
@@ -98,11 +103,11 @@ export default class LinkEditing extends Plugin {
 		editor.model.schema.extend( '$text', { allowAttributes: 'linkHref' } );
 
 		editor.conversion.for( 'dataDowncast' )
-			.attributeToElement( { model: 'linkHref', view: this._prepareCreateLinkElement.bind( this ) } );
+			.attributeToElement( { model: 'linkHref', view: createLinkElement } );
 
 		editor.conversion.for( 'editingDowncast' )
 			.attributeToElement( { model: 'linkHref', view: ( href, conversionApi ) => {
-				return this._prepareCreateLinkElement( ensureSafeUrl( href, allowedProtocols ), conversionApi );
+				return createLinkElement( ensureSafeUrl( href, allowedProtocols ), conversionApi );
 			} } );
 
 		editor.conversion.for( 'upcast' )
@@ -115,14 +120,7 @@ export default class LinkEditing extends Plugin {
 				},
 				model: {
 					key: 'linkHref',
-					value: ( viewElement: ViewElement ) => {
-						const redirectUrl = editor.config.get( 'link.redirectUrl' );
-						let href = viewElement.getAttribute( 'href' );
-						if ( href && redirectUrl && href.startsWith( redirectUrl ) ) {
-							href = href.replace( new RegExp( `^${ redirectUrl }` ), '' );
-						}
-						return href;
-					}
+					value: ( viewElement: ViewElement ) => viewElement.getAttribute( 'href' )
 				}
 			} );
 
@@ -354,14 +352,6 @@ export default class LinkEditing extends Plugin {
 				}
 			} );
 		} );
-	}
-
-	private _prepareCreateLinkElement( href: string, conversionApi: DowncastConversionApi ): ViewAttributeElement {
-		const redirectUrl = this.editor.config.get( 'link.redirectUrl' );
-		if ( href && redirectUrl && /^https?:\/\//.test( href ) && !href.startsWith( redirectUrl ) ) {
-			href = `${ redirectUrl }${ href }`;
-		}
-		return createLinkElement( href, conversionApi );
 	}
 }
 

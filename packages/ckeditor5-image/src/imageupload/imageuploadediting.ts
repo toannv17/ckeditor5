@@ -49,6 +49,13 @@ export default class ImageUploadEditing extends Plugin {
 	}
 
 	/**
+	 * @inheritDoc
+	 */
+	public static override get isOfficialPlugin(): true {
+		return true;
+	}
+
+	/**
 	 * An internal mapping of {@link module:upload/filerepository~FileLoader#id file loader UIDs} and
 	 * model elements during the upload.
 	 *
@@ -135,6 +142,18 @@ export default class ImageUploadEditing extends Plugin {
 
 				editor.execute( 'uploadImage', { file: images } );
 			} );
+
+			const uploadImageCommand = editor.commands.get( 'uploadImage' )!;
+
+			if ( !uploadImageCommand.isAccessAllowed ) {
+				const notification: Notification = editor.plugins.get( 'Notification' );
+				const t = editor.locale.t;
+
+				// eslint-disable-next-line max-len
+				notification.showWarning( t( 'You have no image upload permissions.' ), {
+					namespace: 'image'
+				} );
+			}
 		} );
 
 		// Handle HTML pasted with images with base64 or blob sources.

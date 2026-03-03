@@ -24,13 +24,13 @@ import ImageResizeEditing from './imageresizeediting.js';
 import type ResizeImageCommand from './resizeimagecommand.js';
 import type { ImageResizeOption } from '../imageconfig.js';
 
-const RESIZE_ICONS = {
+const RESIZE_ICONS = /* #__PURE__ */ ( () => ( {
 	small: icons.objectSizeSmall,
 	medium: icons.objectSizeMedium,
 	large: icons.objectSizeLarge,
 	custom: icons.objectSizeCustom,
 	original: icons.objectSizeFull
-};
+} ) )();
 
 /**
  * The image resize buttons plugin.
@@ -50,6 +50,13 @@ export default class ImageResizeButtons extends Plugin {
 	 */
 	public static get pluginName() {
 		return 'ImageResizeButtons' as const;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public static override get isOfficialPlugin(): true {
+		return true;
 	}
 
 	/**

@@ -44,6 +44,13 @@ export default class ListElementSupport extends Plugin {
 	/**
 	 * @inheritDoc
 	 */
+	public static override get isOfficialPlugin(): true {
+		return true;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
 	public init(): void {
 		const editor = this.editor;
 
@@ -216,7 +223,7 @@ function viewToModelListAttributeConverter( attributeName: string, dataFilter: D
 
 			// Set list attributes only on same level items, those nested deeper are already handled
 			// by the recursive conversion.
-			if ( item.hasAttribute( attributeName ) ) {
+			if ( item.hasAttribute( 'htmlUlAttributes' ) || item.hasAttribute( 'htmlOlAttributes' ) ) {
 				continue;
 			}
 

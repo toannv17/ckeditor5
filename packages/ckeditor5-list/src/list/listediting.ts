@@ -45,7 +45,6 @@ import {
 	listItemDowncastConverter,
 	listItemDowncastRemoveConverter,
 	listItemUpcastConverter,
-	listUpcastCleanList,
 	reconvertItemsOnDataChange
 } from './converters.js';
 import {
@@ -109,6 +108,13 @@ export default class ListEditing extends Plugin {
 	 */
 	public static get pluginName() {
 		return 'ListEditing' as const;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public static override get isOfficialPlugin(): true {
+		return true;
 	}
 
 	/**
@@ -456,8 +462,6 @@ export default class ListEditing extends Plugin {
 			} )
 			.add( dispatcher => {
 				dispatcher.on<UpcastElementEvent>( 'element:li', listItemUpcastConverter() );
-				dispatcher.on<UpcastElementEvent>( 'element:ul', listUpcastCleanList(), { priority: 'high' } );
-				dispatcher.on<UpcastElementEvent>( 'element:ol', listUpcastCleanList(), { priority: 'high' } );
 			} );
 
 		if ( !multiBlock ) {

@@ -41,6 +41,14 @@ describe( 'RestrictedEditingModeUI', () => {
 			expect( RestrictedEditingModeUI.pluginName ).to.equal( 'RestrictedEditingModeUI' );
 		} );
 
+		it( 'should have `isOfficialPlugin` static flag set to `true`', () => {
+			expect( RestrictedEditingModeUI.isOfficialPlugin ).to.be.true;
+		} );
+
+		it( 'should have `isPremiumPlugin` static flag set to `false`', () => {
+			expect( RestrictedEditingModeUI.isPremiumPlugin ).to.be.false;
+		} );
+
 		it( 'should be loaded', () => {
 			expect( editor.plugins.get( RestrictedEditingModeUI ) ).to.be.instanceOf( RestrictedEditingModeUI );
 		} );
@@ -61,6 +69,12 @@ describe( 'RestrictedEditingModeUI', () => {
 			expect( button ).to.have.property( 'icon', lockIcon );
 			expect( button ).to.have.property( 'isEnabled', true );
 			expect( button ).to.have.property( 'isOn', false );
+		} );
+
+		it( 'has role="menu" attribute set in items list', () => {
+			dropdown.isOpen = true;
+
+			expect( dropdown.panelView.children.first.role ).to.be.equal( 'menu' );
 		} );
 
 		describe( 'exceptions navigation buttons', () => {
@@ -84,6 +98,7 @@ describe( 'RestrictedEditingModeUI', () => {
 				expect( button.withKeystroke ).to.be.true;
 				expect( button.label ).to.equal( 'Previous editable region' );
 				expect( button.keystroke ).to.equal( 'Shift+Tab' );
+				expect( button.role ).to.equal( 'menuitem' );
 			} );
 
 			it( 'should have one that goes forward', () => {
@@ -95,6 +110,7 @@ describe( 'RestrictedEditingModeUI', () => {
 				expect( button.withKeystroke ).to.be.true;
 				expect( button.label ).to.equal( 'Next editable region' );
 				expect( button.keystroke ).to.equal( 'Tab' );
+				expect( button.role ).to.equal( 'menuitem' );
 			} );
 
 			it( 'should focus the view after executing the command', () => {
