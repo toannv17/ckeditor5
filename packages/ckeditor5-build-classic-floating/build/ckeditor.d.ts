@@ -14,7 +14,7 @@ import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 import { Heading } from '@ckeditor/ckeditor5-heading';
 import { Image, ImageCaption, ImageStyle, ImageToolbar, ImageUpload, PictureEditing } from '@ckeditor/ckeditor5-image';
 import { Indent } from '@ckeditor/ckeditor5-indent';
-import { Link } from '@ckeditor/ckeditor5-link';
+import { Link } from 'ckeditor5-link-2';
 import { List } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';

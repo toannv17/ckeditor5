@@ -1,6 +1,6 @@
 {
     "name": "ckeditor5-build-classic-floating",
-    "version": "41.3.1",
+    "version": "43.3.1",
     "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
     "keywords": [
         "ckeditor5-build",
@@ -47,7 +47,6 @@
         "@ckeditor/ckeditor5-paste-from-office": "43.3.1",
         "@ckeditor/ckeditor5-table": "43.3.1",
         "@ckeditor/ckeditor5-typing": "43.3.1",
-
         "ckeditor5-editor-classic-floating": "43.3.1",
         "ckeditor5-link-2": "43.3.1"
     },
@@ -67,8 +66,8 @@
     "bugs": "https://github.com/ckeditor/ckeditor5/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/toannv17/ckeditor5.git",
-        "directory": "packages/ckeditor5-build-classic-floating"
+        "url": "https://github.com/ckeditor/ckeditor5.git",
+        "directory": "packages/ckeditor5-build-classic"
     },
     "scripts": {
         "build": "webpack --mode production",
