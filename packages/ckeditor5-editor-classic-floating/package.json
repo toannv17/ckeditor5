@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-editor-classic",
+  "name": "ckeditor5-editor-classic-floating",
   "version": "43.3.1",
   "description": "Classic editor implementation for CKEditor 5.",
   "keywords": [
