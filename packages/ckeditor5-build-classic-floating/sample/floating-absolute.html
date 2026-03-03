@@ -213,7 +213,12 @@
 <script>
 	ClassicEditor.create(document.querySelector('#editor'), {
 		containerEl: document.getElementById('modal-1'),
-		panelAbsolute: true
+		panelAbsolute: true,
+		ui: {
+			viewportOffset: {
+				top: 50, // 50px offset from the top
+			}
+		}
 	})
 		.then(editor => {
 			window.editor = editor;

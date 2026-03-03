@@ -280,12 +280,12 @@ export default class StickyPanelView extends View {
 		if ( visibleLimiterRect ) {
 			const windowRect = new Rect( this.containerEl );
 
+			windowRect.top += this.viewportTopOffset;
+			windowRect.height -= this.viewportTopOffset;
+
 			// FIX container offset
 			limiterRect.top -= windowRect.top;
 			limiterRect.bottom -= windowRect.top;
-
-			windowRect.top += this.viewportTopOffset;
-			windowRect.height -= this.viewportTopOffset;
 
 			visibleLimiterRect = visibleLimiterRect.getIntersection( windowRect );
 		}
