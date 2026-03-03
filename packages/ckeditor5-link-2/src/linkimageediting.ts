@@ -156,11 +156,16 @@ function upcastLink( editor: Editor ): ( dispatcher: UpcastDispatcher ) => void 
 				return;
 			}
 
-			const linkHref = viewLink.getAttribute( 'href' );
+			let linkHref = viewLink.getAttribute( 'href' );
 
 			// Missing the 'href' attribute.
 			if ( !linkHref ) {
 				return;
+			}
+
+			const redirectUrl = editor.config.get( 'link.redirectUrl' );
+			if ( redirectUrl && linkHref.startsWith( redirectUrl ) ) {
+				linkHref = linkHref.replace( redirectUrl, '' );
 			}
 
 			// A full definition of the image feature.
@@ -216,7 +221,7 @@ function downcastImageLink( editor: Editor ): ( dispatcher: DowncastDispatcher )
 			// If so, update the attribute if it's defined or remove the entire link if the attribute is empty.
 			if ( linkInImage ) {
 				if ( data.attributeNewValue ) {
-					writer.setAttribute( 'href', data.attributeNewValue, linkInImage );
+					writer.setAttribute( 'href', createLinkElement( editor, data.attributeNewValue as string ), linkInImage );
 				} else {
 					writer.move( writer.createRangeOn( viewImgOrPicture ), writer.createPositionAt( viewFigure, 0 ) );
 					writer.remove( linkInImage );
@@ -224,7 +229,10 @@ function downcastImageLink( editor: Editor ): ( dispatcher: DowncastDispatcher )
 			} else {
 				// But if it does not exist. Let's wrap already converted image by newly created link element.
 				// 1. Create an empty link element.
-				const linkElement = writer.createContainerElement( 'a', { href: data.attributeNewValue } );
+				const linkElement = writer.createContainerElement(
+					'a',
+					{ href: createLinkElement( editor, data.attributeNewValue as string ) }
+				);
 
 				// 2. Insert link inside the associated image.
 				writer.insert( writer.createPositionAt( viewFigure, 0 ), linkElement );
@@ -234,6 +242,15 @@ function downcastImageLink( editor: Editor ): ( dispatcher: DowncastDispatcher )
 			}
 		}, { priority: 'high' } );
 	};
+}
+
+function createLinkElement( editor: Editor, href: string ): string {
+	const redirectUrl = editor.config.get( 'link.redirectUrl' );
+
+	if ( href && redirectUrl && /^https?:\/\//.test( href ) && !href.startsWith( redirectUrl ) ) {
+		href = `${ redirectUrl }${ href }`;
+	}
+	return href;
 }
 
 /**

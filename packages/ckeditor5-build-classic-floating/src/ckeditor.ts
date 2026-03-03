@@ -15,9 +15,17 @@ import { CKBox } from '@ckeditor/ckeditor5-ckbox';
 import { CKFinder } from '@ckeditor/ckeditor5-ckfinder';
 import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Image, ImageCaption, ImageStyle, ImageToolbar, ImageUpload, PictureEditing } from '@ckeditor/ckeditor5-image';
+import { AutoImage,
+	Image,
+	ImageCaption,
+	ImageInsert,
+	ImageResize,
+	ImageStyle,
+	ImageToolbar,
+	ImageUpload,
+	PictureEditing } from '@ckeditor/ckeditor5-image';
 import { Indent } from '@ckeditor/ckeditor5-indent';
-import { Link } from 'ckeditor5-link-2';
+import { AutoLink, Link, LinkImage } from 'ckeditor5-link-2';
 import { List } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
@@ -31,6 +39,8 @@ export default class ClassicEditor extends ClassicEditorBase {
 		Essentials,
 		CKFinderUploadAdapter,
 		Autoformat,
+		AutoImage,
+		AutoLink,
 		Bold,
 		Italic,
 		BlockQuote,
@@ -44,8 +54,11 @@ export default class ClassicEditor extends ClassicEditorBase {
 		ImageStyle,
 		ImageToolbar,
 		ImageUpload,
+		ImageInsert,
+		ImageResize,
 		Indent,
 		Link,
+		LinkImage,
 		List,
 		MediaEmbed,
 		Paragraph,
@@ -67,13 +80,40 @@ export default class ClassicEditor extends ClassicEditorBase {
 			]
 		},
 		image: {
+			styles: {
+				options: [
+					'inline',
+					'alignLeft',
+					'alignRight',
+					'alignCenter',
+					'alignBlockLeft',
+					'alignBlockRight',
+					'block',
+					'side'
+				]
+			},
 			toolbar: [
-				'imageStyle:inline',
-				'imageStyle:block',
-				'imageStyle:side',
-				'|',
 				'toggleImageCaption',
-				'imageTextAlternative'
+				'linkImage',
+				'imageTextAlternative',
+				'|',
+				'resizeImage',
+				'|',
+				{
+					name: 'imageStyle:icons',
+					title: 'Style',
+					items: [
+						'imageStyle:inline',
+						'imageStyle:block',
+						'imageStyle:side',
+						'imageStyle:alignLeft',
+						'imageStyle:alignRight',
+						'imageStyle:alignCenter',
+						'imageStyle:alignBlockLeft',
+						'imageStyle:alignBlockRight'
+					],
+					defaultItem: 'imageStyle:block'
+				}
 			]
 		},
 		table: {
