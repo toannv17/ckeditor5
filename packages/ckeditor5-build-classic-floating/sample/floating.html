@@ -32,13 +32,13 @@
 
 <script src="../build/ckeditor.js"></script>
 <script>
-	ClassicEditor.create(document.querySelector('#editor', {
+	ClassicEditor.create(document.querySelector('#editor'), {
 		ui: {
 			viewportOffset: {
-				top: 50, // 50px offset from the top
+				top: 30
 			}
 		}
-	}))
+	})
 		.then(editor => {
 			window.editor = editor;
 		})
