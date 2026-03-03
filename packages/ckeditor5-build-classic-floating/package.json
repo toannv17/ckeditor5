@@ -48,7 +48,7 @@
         "@ckeditor/ckeditor5-table": "43.3.1",
         "@ckeditor/ckeditor5-typing": "43.3.1",
         "ckeditor5-editor-classic-floating": "43.3.1",
-        "ckeditor5-link-2": "43.3.1"
+        "ckeditor5-link-2": "43.3.4"
     },
     "devDependencies": {
         "@ckeditor/ckeditor5-core": "43.3.1",
