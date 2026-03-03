@@ -26,6 +26,26 @@ import type { ArrayOrItem } from 'ckeditor5/src/utils.js';
 export interface LinkConfig {
 
 	/**
+	 * When set, this value will be placed before every link.
+	 * For example, when the user is creating a link and types `http://ckeditor.com` in the link form input, during link submission
+	 * the editor will automatically add this value as prefix,
+	 * so the link will look as follows: `http://abc.xyz/redirect?url=http://ckeditor.com`.
+	 *
+	 * ```ts
+	 * ClassicEditor
+	 * 	.create( editorElement, {
+	 * 		link: {
+	 * 			redirectUrl: 'http://abc.xyz/redirect?url='
+	 * 		}
+	 * 	} )
+	 * 	.then( ... )
+	 * 	.catch( ... );
+	 * ```
+	 *
+	 */
+	redirectUrl?: string;
+
+	/**
 	 * When set, the editor will add the given protocol to the link when the user creates a link without one.
 	 * For example, when the user is creating a link and types `ckeditor.com` in the link form input, during link submission
 	 * the editor will automatically add the `http://` protocol, so the link will look as follows: `http://ckeditor.com`.
