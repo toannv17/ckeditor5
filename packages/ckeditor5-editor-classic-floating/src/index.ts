@@ -7,6 +7,11 @@
  * @module editor-classic
  */
 
-export { default as ClassicEditor } from './classiceditor.js';
+declare module '@ckeditor/ckeditor5-core' {
+	interface EditorConfig {
+		containerEl?: HTMLElement;
+		panelAbsolute?: boolean;
+	}
+}
 
-import './augmentation.js';
+export { default as ClassicEditor } from './classiceditor.js';

@@ -109,7 +109,7 @@ export default class LinkEditing extends Plugin {
 
 		editor.conversion.for( 'editingDowncast' )
 			.attributeToElement( { model: 'linkHref', view: ( href, conversionApi ) => {
-					return this._prepareCreateLinkElement( ensureSafeUrl( href, allowedProtocols ), conversionApi );
+				return this._prepareCreateLinkElement( ensureSafeUrl( href, allowedProtocols ), conversionApi );
 			} } );
 
 		editor.conversion.for( 'upcast' )
@@ -126,7 +126,7 @@ export default class LinkEditing extends Plugin {
 						const redirectUrl = editor.config.get( 'link.redirectUrl' );
 						let href = viewElement.getAttribute( 'href' );
 						if ( href && redirectUrl && href.startsWith( redirectUrl ) ) {
-							href = href.replace( new RegExp( `^${ redirectUrl }` ), '' );
+							href = href.replace( redirectUrl, '' );
 						}
 						return href;
 					}
