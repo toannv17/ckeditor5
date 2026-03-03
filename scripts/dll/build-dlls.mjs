@@ -10,12 +10,20 @@
 import chalk from 'chalk';
 import childProcess from 'child_process';
 import fs from 'fs';
+import fileSystem from 'node:fs';
+
 import minimist from 'minimist';
 import path from 'path';
 import module from 'module';
+import { fileURLToPath } from 'node:url';
+
 import { CKEDITOR5_ROOT_PATH } from '../constants.mjs';
 
 const COLLABORATION_DLL_PACKAGE_NAME = 'ckeditor5-collaboration';
+const platform = process.platform;
+const __filename = fileURLToPath( import.meta.url );
+const __dirname = path.dirname( __filename );
+const PACKAGES_DIR_PATH = path.resolve( __dirname, '..', '..', 'packages' );
 
 const require = module.createRequire( import.meta.url );
 const argv = minimist( process.argv.slice( 2 ), {
@@ -96,6 +104,10 @@ if ( !argv[ 'skip-packages-dll' ] ) {
  * @returns {Array<String>}
  */
 function getPackageNames( cwd ) {
+	if ( platform === 'win32' ) {
+		return fileSystem.readdirSync( PACKAGES_DIR_PATH );
+	}
+
 	return childProcess.execSync( 'ls -1 packages', {
 		encoding: 'utf8',
 		cwd

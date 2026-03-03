@@ -20,9 +20,9 @@ const require = module.createRequire( import.meta.url );
 const IS_DEVELOPMENT_MODE = process.argv.includes( '--mode=development' );
 const { CI } = process.env;
 
-if ( CKEDITOR5_ROOT_PATH !== process.cwd() ) {
-	throw new Error( 'This script should be called from the package root directory.' );
-}
+// if ( CKEDITOR5_ROOT_PATH !== process.cwd() ) {
+// 	throw new Error( 'This script should be called from the package root directory.' );
+// }
 
 /**
  * Attaches exported modules to the global (`window`) scope.

@@ -3,10 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-/**
- * @module editor-classic
- */
-
-export { default as ClassicEditor } from './classiceditor.js';
-
-import './augmentation.js';
+declare module '@ckeditor/ckeditor5-core' {
+	interface EditorConfig {
+		containerEl?: HTMLElement;
+		panelAbsolute?: boolean;
+	}
+}

@@ -7,7 +7,8 @@
  * @module editor-classic/classiceditoruiview
  */
 
-import { BoxedEditorUIView, InlineEditableUIView, MenuBarView, StickyPanelView, ToolbarView } from 'ckeditor5/src/ui.js';
+import StickyPanelView from './stickypanelview.js';
+import { BoxedEditorUIView, InlineEditableUIView, MenuBarView, ToolbarView } from 'ckeditor5/src/ui.js';
 import type { Locale } from 'ckeditor5/src/utils.js';
 import type { EditingView } from 'ckeditor5/src/engine.js';
 
@@ -53,11 +54,13 @@ export default class ClassicEditorUIView extends BoxedEditorUIView {
 			shouldToolbarGroupWhenFull?: boolean;
 			useMenuBar?: boolean;
 			label?: string | Record<string, string>;
+			containerEl?: HTMLElement;
+			panelAbsolute?: boolean;
 		} = {}
 	) {
 		super( locale );
 
-		this.stickyPanel = new StickyPanelView( locale );
+		this.stickyPanel = new StickyPanelView( locale, options );
 
 		this.toolbar = new ToolbarView( locale, {
 			shouldGroupWhenFull: options.shouldToolbarGroupWhenFull
