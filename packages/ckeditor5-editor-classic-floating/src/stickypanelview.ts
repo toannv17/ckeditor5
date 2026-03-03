@@ -13,6 +13,7 @@ import {
 	type Locale,
 	type ObservableChangeEvent,
 	global,
+	env,
 	toUnit,
 	Rect
 } from '@ckeditor/ckeditor5-utils';
@@ -25,6 +26,19 @@ import {
 import '../theme/stickypanel.css';
 
 const toPx = /* #__PURE__ */ toUnit( 'px' );
+
+export function getVisualViewportOffset(): { left: number; top: number } {
+	const visualViewport = global.window.visualViewport;
+
+	if ( !visualViewport || !( env.isiOS || env.isSafari ) ) {
+		return { left: 0, top: 0 };
+	}
+
+	const left = Math.max( Math.round( visualViewport.offsetLeft ), 0 );
+	const top = Math.max( Math.round( visualViewport.offsetTop ), 0 );
+
+	return { left, top };
+}
 
 /**
  * The sticky panel view class.
@@ -290,6 +304,17 @@ export default class StickyPanelView extends View {
 			visibleLimiterRect = visibleLimiterRect.getIntersection( windowRect );
 		}
 
+		const {
+			left: visualViewportOffsetLeft,
+			top: visualViewportOffsetTop
+		} = getVisualViewportOffset();
+
+		limiterRect.moveBy( visualViewportOffsetLeft, visualViewportOffsetTop );
+
+		if ( visibleLimiterRect ) {
+			visibleLimiterRect.moveBy( visualViewportOffsetLeft, visualViewportOffsetTop );
+		}
+
 		// @if CK_DEBUG_STICKYPANEL // if ( visibleLimiterRect ) {
 		// @if CK_DEBUG_STICKYPANEL // 	RectDrawer.draw( visibleLimiterRect,
 		// @if CK_DEBUG_STICKYPANEL // 		{ outlineWidth: '3px', opacity: '.8', outlineColor: 'red', outlineOffset: '-3px' },
@@ -306,16 +331,8 @@ export default class StickyPanelView extends View {
 		// * the limiter's ancestors are intersecting with each other so that some of their rects are visible,
 		// * and the limiter's top edge is above the visible ancestors' top edge.
 		if ( visibleLimiterRect && limiterRect.top < visibleLimiterRect.top ) {
-			// @if CK_DEBUG_STICKYPANEL // RectDrawer.draw( visibleLimiterRect,
-			// @if CK_DEBUG_STICKYPANEL // 	{ outlineWidth: '3px', opacity: '.8', outlineColor: 'fuchsia', outlineOffset: '-3px',
-			// @if CK_DEBUG_STICKYPANEL // 		backgroundColor: 'rgba(255, 0, 255, .3)' },
-			// @if CK_DEBUG_STICKYPANEL // 	'Visible limiter'
-			// @if CK_DEBUG_STICKYPANEL // );
-
-			const visibleLimiterTop = visibleLimiterRect.top;
-
 			// Check if there's a change the panel can be sticky to the bottom of the limiter.
-			if ( visibleLimiterTop + this._contentPanelRect.height + this.limiterBottomOffset > visibleLimiterRect.bottom ) {
+			if ( this._contentPanelRect.height + this.limiterBottomOffset > visibleLimiterRect.height ) {
 				const stickyBottomOffset = Math.max( limiterRect.bottom - visibleLimiterRect.bottom, 0 ) + this.limiterBottomOffset;
 				// @if CK_DEBUG_STICKYPANEL // const stickyBottomOffsetRect = new Rect( {
 				// @if CK_DEBUG_STICKYPANEL // 	top: limiterRect.bottom - stickyBottomOffset, left: 0, right: 2000,
@@ -323,31 +340,31 @@ export default class StickyPanelView extends View {
 				// @if CK_DEBUG_STICKYPANEL // } );
 				// @if CK_DEBUG_STICKYPANEL // RectDrawer.draw( stickyBottomOffsetRect,
 				// @if CK_DEBUG_STICKYPANEL // 	{ outlineWidth: '1px', opacity: '.8', outlineColor: 'black' },
-				// @if CK_DEBUG_STICKYPANEL // 	'Sticky bottom offset'
+				// @if CK_DEBUG_STICKYPANEL // 	'Sticky bottom offset',
+				// @if CK_DEBUG_STICKYPANEL // 	{ visualViewportOrigin: true }
 				// @if CK_DEBUG_STICKYPANEL // );
 
 				// Check if sticking the panel to the bottom of the limiter does not cause it to suddenly
 				// move upwards if there's not enough space for it.
-				if ( limiterRect.bottom - stickyBottomOffset > limiterRect.top + this._contentPanelRect.height ) {
+				// To avoid toolbar flickering we are adding 1 for potential style change (sticky has all borders set,
+				// non-sticky lacks bottom border).
+				if ( this._contentPanelRect.height + stickyBottomOffset + 1 < limiterRect.height ) {
 					this._stickToBottomOfLimiter( stickyBottomOffset );
 				} else {
 					this._unstick();
 				}
-			} else {
-				if ( this._contentPanelRect.height + this.limiterBottomOffset < limiterRect.height ) {
-					// this._stickToTopOfAncestors( visibleLimiterTop );
-					if ( this.panelAbsolute ) {
-						if ( limiterRect.top < 0 && -limiterRect.top < limiterRect.height - this.limiterBottomOffset ) {
-							this._stickToTopOfAncestors( -limiterRect.top, 'absolute' );
-						} else {
-							this._unstick();
-						}
+			} else if ( this._contentPanelRect.height + this.limiterBottomOffset < limiterRect.height ) {
+				if ( this.panelAbsolute ) {
+					if ( limiterRect.top < 0 && -limiterRect.top < limiterRect.height - this.limiterBottomOffset ) {
+						this._stickToTopOfAncestors( -limiterRect.top, 'absolute' );
 					} else {
-						this._stickToTopOfAncestors( visibleLimiterTop );
+						this._unstick();
 					}
 				} else {
-					this._unstick();
+					this._stickToTopOfAncestors( visibleLimiterRect.top );
 				}
+			} else {
+				this._unstick();
 			}
 		} else {
 			this._unstick();
@@ -387,8 +404,7 @@ export default class StickyPanelView extends View {
 			leftOffset = this.containerEl.scrollX;
 		}
 
-		this._marginLeft = toPx( -leftOffset );
-		// this._marginLeft = toPx( -global.window.scrollX );
+		this._marginLeft = toPx( -leftOffset + getVisualViewportOffset().left );
 		this.position = position;
 	}
 
@@ -411,8 +427,7 @@ export default class StickyPanelView extends View {
 			leftOffset = this.containerEl.scrollX;
 		}
 
-		this._marginLeft = toPx( -leftOffset );
-		// this._marginLeft = toPx( -global.window.scrollX );
+		this._marginLeft = toPx( -leftOffset + getVisualViewportOffset().left );
 		this.position = null;
 	}
 
