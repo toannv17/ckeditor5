@@ -160,8 +160,8 @@ export default class StickyPanelView extends View {
 
 		const bind = this.bindTemplate;
 
-		this.containerEl = containerEl || global.window;
-		this.panelAbsolute = !!panelAbsolute;
+		this.containerEl = options.containerEl || global.window;
+		this.panelAbsolute = !!options.panelAbsolute;
 
 		this.set( 'position', null );
 
