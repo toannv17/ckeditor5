@@ -7,7 +7,7 @@
  * @module list-multi-level/multilevellistediting
  */
 import { Plugin, type Editor } from 'ckeditor5/src/core.js';
-import { UpcastWriter, Matcher } from 'ckeditor5/src/engine.js';
+import { UpcastWriter, Matcher, type UpcastConversionData } from 'ckeditor5/src/engine.js';
 // import MultiLevelListUI from "./multilevellistui.js";
 import { ListEditing } from 'ckeditor5/src/index.js';
 import MultiLevelListCommand from './multilevellistcommand.js';
@@ -266,11 +266,13 @@ function a( _0xe4b2da: any, _0x337c7e: any, _0x3a4e0d: any ) {
 	if ( undefined === _0x38ee54.showMarkerPath || _0x38ee54.showMarkerPath ) {
 		return _0x3a4e0d.slice( 0, _0xe4b2da + 1 )
 			.map(
+				// eslint-disable-next-line no-return-assign
 				( _0x51d252: any, _0x1e12f9: any ) =>
+					// eslint-disable-next-line no-sequences
 					( _0x38ee54 = _0x337c7e.listMarkers[ _0x1e12f9 % _0x337c7e.listMarkers.length ], m( _0x38ee54.marker, _0x51d252 ) )
 			).join( '' );
 	}
-	const _0x11f844 = _0x3a4e0d[_0x3a4e0d.length - 0x1];
+	const _0x11f844 = _0x3a4e0d[ _0x3a4e0d.length - 1 ];
 	return m( _0x38ee54.marker, _0x11f844 );
 }
 
@@ -279,25 +281,25 @@ function m( _0x20a83d: any, _0x2aed5c: any ) {
 }
 
 function y( _0x3e7f38: any, _0x1f701d: any ) {
-	return ( _0x48fa2b: any, _0x575269: any, _0x34cade: any ) => {
-		const _0x1ae241 = _0x575269.viewItem;
-		if ( _0x575269.modelRange ||
-			Object.assign( _0x575269, _0x34cade.convertChildren( _0x575269.viewItem, _0x575269.modelCursor ) ) ||
+	return ( _0x48fa2b: any, upcastData: UpcastConversionData, _0x34cade: any ) => {
+		const _0x1ae241 = upcastData.viewItem;
+		if ( upcastData.modelRange ||
+			Object.assign( upcastData, _0x34cade.convertChildren( upcastData.viewItem, upcastData.modelCursor ) ) ||
 		!_0x34cade.consumable.test( _0x1ae241, { 'classes': _0x3e7f38.className } )
 		) {
 			return;
 		}
-		const _0xc496ee = Array.from( _0x575269.modelRange.getItems( { 'shallow': true } ) )
+		const items = Array.from( upcastData.modelRange!.getItems( { 'shallow': true } ) )
 			.filter( _0x205c0b => _0x1f701d.checkAttribute( _0x205c0b, 'listItemId' ) );
-		if ( !_0xc496ee.length ) {
+		if ( !items.length ) {
 			return;
 		}
 		_0x34cade.consumable.consume( _0x1ae241, { 'classes': _0x3e7f38.className } );
 		_0x34cade.consumable.consume( _0x1ae241, { 'classes': 'multi-level-list' } );
 		_0x34cade.consumable.consume( _0x1ae241, { 'styles': 'list-style-type' } );
 
-		const _0x58b4e5 = _0xc496ee[0].getAttribute( 'listIndent' );
-		for ( const _0x402de9 of _0xc496ee ) {
+		const _0x58b4e5 = items[ 0 ].getAttribute( 'listIndent' );
+		for ( const _0x402de9 of items ) {
 			if ( _0x402de9.getAttribute( 'listIndent' ) == _0x58b4e5 ) {
 				_0x34cade.writer.setAttribute( 'listType', _0x3e7f38.listType, _0x402de9 );
 				_0x34cade.writer.setAttribute( 'listMarkerStyle', _0x3e7f38.listMarkerStyle, _0x402de9 );
