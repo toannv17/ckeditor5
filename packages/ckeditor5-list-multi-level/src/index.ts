@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-export { default as MultiLevelList, MultiLevelListConfig } from './multilevellist.js';
+export { default as MultiLevelList, type MultiLevelListConfig } from './multilevellist.js';
 export { default as MultiLevelListEditing } from './multilevellistediting.js';
 export { default as MultiLevelListUI } from './multilevellistui.js';
 import './augmentation.js';
