@@ -33,6 +33,7 @@ import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
+import { MultiLevelList } from 'ckeditor5-list-multi-level';
 
 export default class ClassicEditor extends ClassicEditorBase {
 	public static override builtinPlugins = [
@@ -60,6 +61,7 @@ export default class ClassicEditor extends ClassicEditorBase {
 		Link,
 		LinkImage,
 		List,
+		MultiLevelList,
 		MediaEmbed,
 		Paragraph,
 		PasteFromOffice,
@@ -76,7 +78,7 @@ export default class ClassicEditor extends ClassicEditorBase {
 				'|', 'heading',
 				'|', 'bold', 'italic',
 				'|', 'link', 'uploadImage', 'insertTable', 'blockQuote', 'mediaEmbed',
-				'|', 'bulletedList', 'numberedList', 'outdent', 'indent'
+				'|', 'bulletedList', 'numberedList', 'outdent', 'indent', 'multiLevelList'
 			]
 		},
 		image: {
