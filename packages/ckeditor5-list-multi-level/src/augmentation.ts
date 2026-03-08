@@ -3,9 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-import type { MultiLevelList, MultiLevelListEditing, MultiLevelListUI } from './index.js';
+import type { MultiLevelList, MultiLevelListEditing, MultiLevelListUI, MultiLevelListConfig } from './index.js';
 
 declare module '@ckeditor/ckeditor5-core' {
+	interface EditorConfig {
+		listMultiLevel?: MultiLevelListConfig;
+	}
+
 	interface PluginsMap {
 		[MultiLevelList.pluginName]: MultiLevelList;
 		[MultiLevelListEditing.pluginName]: MultiLevelListEditing;
