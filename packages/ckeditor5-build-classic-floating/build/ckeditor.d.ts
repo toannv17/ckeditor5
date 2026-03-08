@@ -18,7 +18,7 @@ import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
-import { MultiLevelList } from 'ckeditor5-list-multi-level';
+import { MultiLevelList } from 'ckeditor5-list-multi-level-3';
 export default class ClassicEditor extends ClassicEditorBase {
     static builtinPlugins: (typeof TextTransformation | typeof Essentials | typeof Paragraph | typeof Heading | typeof Autoformat | typeof Bold | typeof Italic | typeof BlockQuote | typeof CloudServices | typeof EasyImage | typeof AutoImage | typeof Image | typeof ImageCaption | typeof ImageInsert | typeof ImageResize | typeof ImageStyle | typeof ImageToolbar | typeof ImageUpload | typeof List | typeof Indent | typeof MediaEmbed | typeof PasteFromOffice | typeof Table | typeof TableToolbar | typeof MultiLevelList | typeof PictureEditing)[];
     static defaultConfig: {
