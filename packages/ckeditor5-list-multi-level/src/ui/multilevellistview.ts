@@ -31,9 +31,9 @@ export default class MultiLevelListView extends View {
 	private focusCycler: FocusCycler;
 
 	private stylesView: any;
-	private children: ViewCollection<View<HTMLElement>>;
+	private children: any;
 
-	public startIndexFieldView: LabeledFieldView;
+	public startIndexFieldView: any;
 
 	constructor( locale: Locale, options: {
 		enabledProperties: ListPropertiesConfig;
@@ -107,13 +107,13 @@ export default class MultiLevelListView extends View {
 		if ( this.startIndexFieldView ) {
 			this.focusables.add( this.startIndexFieldView );
 			this.focusTracker.add( this.startIndexFieldView.element );
-			const _0x13a57a = _0x2e4f70 => _0x2e4f70.stopPropagation();
+			const _0x13a57a = ( _0x2e4f70: any ) => _0x2e4f70.stopPropagation();
 			this.keystrokes.set( 'arrowright', _0x13a57a );
 			this.keystrokes.set( 'arrowleft', _0x13a57a );
 			this.keystrokes.set( 'arrowup', _0x13a57a );
 			this.keystrokes.set( 'arrowdown', _0x13a57a );
 		}
-		this.keystrokes.listenTo( this.element );
+		this.keystrokes.listenTo( this.element! );
 	}
 
 	public focus(): void {
@@ -130,8 +130,8 @@ export default class MultiLevelListView extends View {
 		this.keystrokes.destroy();
 	}
 
-	public _createStylesView( _0x4da6c9: any, _0x285632: any ) {
-		const view = new View( this.locale );
+	public _createStylesView( _0x4da6c9: any, _0x285632: any ): any {
+		const view: any = new View( this.locale );
 		view.children = view.createCollection();
 		view.children.addMany( _0x4da6c9 );
 		view.setTemplate( {
@@ -150,7 +150,7 @@ export default class MultiLevelListView extends View {
 		return view;
 	}
 
-	public _addListPropertyViews( _0x5944c8 ) {
+	public _addListPropertyViews( _0x5944c8: any ): any {
 		const _0x53ba58 = [];
 		if ( _0x5944c8.startIndex ) {
 			this.startIndexFieldView = this._createStartIndexField();
@@ -158,7 +158,7 @@ export default class MultiLevelListView extends View {
 		}
 
 		if ( _0x5944c8.styles ) {
-			this.additionalPropertiesCollapsibleView = new CollapsibleView( this.locale, _0x53ba58 );
+			this.additionalPropertiesCollapsibleView = new CollapsibleView( this.locale!, _0x53ba58 );
 			this.additionalPropertiesCollapsibleView.set( {
 				'label': getTranslation( this.locale!, 'List properties' ),
 				'isCollapsed': !0
@@ -167,7 +167,7 @@ export default class MultiLevelListView extends View {
 				.toMany(
 					_0x53ba58,
 					'isEnabled',
-					( ..._0x582868: any ) => _0x582868.some( _0x3d18f9 => _0x3d18f9 )
+					( ..._0x582868: any ) => _0x582868.some( ( _0x3d18f9: any ) => _0x3d18f9 )
 				);
 
 			this.additionalPropertiesCollapsibleView.buttonView.on(
@@ -184,19 +184,22 @@ export default class MultiLevelListView extends View {
 		}
 
 		// _0x5944c8.styles ? (
-		// 	this['additionalPropertiesCollapsibleView'] = new CollapsibleView( this['locale'], _0x53ba58 ), this['additionalPropertiesCollapsibleView']['set']( {
+		// 	this['additionalPropertiesCollapsibleView'] = new CollapsibleView( this['locale'], _0x53ba58 ),
+		// 	this['additionalPropertiesCollapsibleView']['set']( {
 		// 	'label': getTranslation( this['locale'], 'List properties' ),
 		// 	'isCollapsed': !0x0
-		// } ), this['additionalPropertiesCollapsibleView']['buttonView']['bind']( 'isEnabled' )['toMany']( _0x53ba58, 'isEnabled', ( ..._0x582868 ) => _0x582868['some']( _0x3d18f9 => _0x3d18f9 ) ), this['additionalPropertiesCollapsibleView']['buttonView']['on']( 'change:isEnabled', ( _0x3f3d8e, _0x5b8230, _0x11dbef ) => {
+		// } ), this['additionalPropertiesCollapsibleView']['buttonView']['bind']( 'isEnabled' )['toMany']
+		// ( _0x53ba58, 'isEnabled', ( ..._0x582868 ) => _0x582868['some']( _0x3d18f9 => _0x3d18f9 ) ),
+		// this['additionalPropertiesCollapsibleView']['buttonView']['on']( 'change:isEnabled', ( _0x3f3d8e, _0x5b8230, _0x11dbef ) => {
 		// 	_0x11dbef || ( this['additionalPropertiesCollapsibleView']['isCollapsed'] = !0x0 );
 		// } ), this['children']['add']( this['additionalPropertiesCollapsibleView'] )
 		// ) : this['children']['addMany']( _0x53ba58 );
 	}
 
-	public _createStartIndexField() {
+	public _createStartIndexField(): any {
 		const _0x54af3e = new LabeledFieldView( this.locale, createLabeledInputNumber );
 		_0x54af3e.set( {
-			'label': getTranslation( this.locale, 'Start at' ),
+			'label': getTranslation( this.locale!, 'Start at' ),
 			'class': 'ck-multi-level-list-properties__start-index'
 		} );
 		_0x54af3e.fieldView.set( {
@@ -209,12 +212,12 @@ export default class MultiLevelListView extends View {
 			const _0x972623 = _0x54af3e.fieldView.element;
 			const _0x5b9c4f = _0x972623!.valueAsNumber;
 			if ( Number.isNaN( _0x5b9c4f ) ) {
-				_0x54af3e.errorText = getTranslation( this.locale, 'Invalid start index value.' );
+				_0x54af3e.errorText = getTranslation( this.locale!, 'Invalid start index value.' );
 			} else {
-				if ( _0x972623.checkValidity() ) {
+				if ( _0x972623!.checkValidity() ) {
 					this.fire( 'listStart', { 'startIndex': _0x5b9c4f } );
 				} else {
-					_0x54af3e.errorText = getTranslation( this.locale, 'Start index must be greater than 0.' );
+					_0x54af3e.errorText = getTranslation( this.locale!, 'Start index must be greater than 0.' );
 				}
 			}
 			// Number.isNaN( _0x5b9c4f ) ?

@@ -120,9 +120,11 @@ export default class MultiLevelListUI extends Plugin {
 						} );
 						if ( _0x1ef114!.startIndex ) {
 							const _0x2532e6 = _0x45b374.commands.get( 'listStart' );
-							_0xe3454.startIndexFieldView.bind( 'isEnabled' ).to( _0x2532e6 );
-							_0xe3454.startIndexFieldView!.fieldView.bind( 'value' ).to( _0x2532e6 );
-							_0xe3454.on( 'listStart', ( _0x16c200, _0x266ea7 ) => _0x45b374.execute( 'listStart', _0x266ea7 ) );
+							if ( _0x2532e6 ) {
+								_0xe3454.startIndexFieldView!.bind( 'isEnabled' ).to( _0x2532e6 );
+								_0xe3454.startIndexFieldView!.fieldView.bind( 'value' ).to( _0x2532e6 );
+								_0xe3454.on( 'listStart', ( _0x16c200, _0x266ea7 ) => _0x45b374.execute( 'listStart', _0x266ea7 ) );
+							}
 						}
 						_0xe3454.delegate( 'execute' ).to( _0xb06d87 );
 						return _0xe3454;
