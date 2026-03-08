@@ -7,12 +7,12 @@
 import { ClassicEditor as ClassicEditorBase } from 'ckeditor5-editor-classic-floating';
 
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { CKFinderUploadAdapter } from '@ckeditor/ckeditor5-adapter-ckfinder';
+// import { CKFinderUploadAdapter } from '@ckeditor/ckeditor5-adapter-ckfinder';
 import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
 import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { CKBox } from '@ckeditor/ckeditor5-ckbox';
-import { CKFinder } from '@ckeditor/ckeditor5-ckfinder';
+// import { CKBox } from '@ckeditor/ckeditor5-ckbox';
+// import { CKFinder } from '@ckeditor/ckeditor5-ckfinder';
 import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 import { Heading } from '@ckeditor/ckeditor5-heading';
 import { AutoImage,
@@ -25,7 +25,7 @@ import { AutoImage,
 	ImageUpload,
 	PictureEditing } from '@ckeditor/ckeditor5-image';
 import { Indent } from '@ckeditor/ckeditor5-indent';
-import { AutoLink, Link, LinkImage } from 'ckeditor5-link-2';
+// import { AutoLink, Link, LinkImage } from 'ckeditor5-link-2';
 import { List } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
@@ -38,15 +38,15 @@ import { MultiLevelList } from 'ckeditor5-list-multi-level';
 export default class ClassicEditor extends ClassicEditorBase {
 	public static override builtinPlugins = [
 		Essentials,
-		CKFinderUploadAdapter,
+		// CKFinderUploadAdapter,
 		Autoformat,
 		AutoImage,
-		AutoLink,
+		// AutoLink,
 		Bold,
 		Italic,
 		BlockQuote,
-		CKBox,
-		CKFinder,
+		// CKBox,
+		// CKFinder,
 		CloudServices,
 		EasyImage,
 		Heading,
@@ -58,8 +58,8 @@ export default class ClassicEditor extends ClassicEditorBase {
 		ImageInsert,
 		ImageResize,
 		Indent,
-		Link,
-		LinkImage,
+		// Link,
+		// LinkImage,
 		List,
 		MultiLevelList,
 		MediaEmbed,
@@ -77,7 +77,8 @@ export default class ClassicEditor extends ClassicEditorBase {
 				'undo', 'redo',
 				'|', 'heading',
 				'|', 'bold', 'italic',
-				'|', 'link', 'uploadImage', 'insertTable', 'blockQuote', 'mediaEmbed',
+				'|', 'uploadImage', 'insertTable', 'blockQuote', 'mediaEmbed',
+				// '|', 'link', 'uploadImage', 'insertTable', 'blockQuote', 'mediaEmbed',
 				'|', 'bulletedList', 'numberedList', 'outdent', 'indent', 'multiLevelList'
 			]
 		},
@@ -96,7 +97,7 @@ export default class ClassicEditor extends ClassicEditorBase {
 			},
 			toolbar: [
 				'toggleImageCaption',
-				'linkImage',
+				// 'linkImage',
 				'imageTextAlternative',
 				'|',
 				'resizeImage',

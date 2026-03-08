@@ -53,7 +53,6 @@ export default class MultiLevelListEditing extends Plugin {
 		const listEditing = editor.plugins.get( ListEditing );
 
 		editor.commands.add( 'multiLevelList', new MultiLevelListCommand( editor, 'legal', this._listDefinitions ) );
-		// editor["commands"]["add"]( "multiLevelList", new MultiLevelListCommand( editor, "legal", this._listDefinitions ) ),
 
 		model.schema.extend( '$listItem', { 'allowAttributes': [ 'listMarkerStyle', 'listMarker' ] } );
 		// model["schema"]["extend"]( "$listItem", { 'allowAttributes': [ "listMarkerStyle", "listMarker" ] } ),
@@ -207,14 +206,8 @@ export default class MultiLevelListEditing extends Plugin {
 						indentMap[ listIndent ]++;
 					}
 				} else {
-					indentMap[ listIndent ] = node.getAttribute( 'listStart' );
+					indentMap[ listIndent ] = node.getAttribute( 'listStart' ) || 0x1;
 				}
-
-				// previousNodeInList || indentMap[ listIndent ] ?
-				// 	previousNodeInList && previousNodeInList.getAttribute( 'listType' ) != definition.listType ?
-				// 		indentMap[ listIndent ] = 0x1 :
-				// 		indentMap[ listIndent ]++ :
-				// 	indentMap[ listIndent ] = node.getAttribute( 'listStart' ) || 0x1;
 
 				const listMarker = a( listIndent, definition, indentMap );
 				if ( node.getAttribute( 'listMarker' ) != listMarker ) {
