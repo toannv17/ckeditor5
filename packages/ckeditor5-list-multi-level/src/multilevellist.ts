@@ -41,3 +41,21 @@ export default class MultiLevelList extends Plugin {
 		return [ MultiLevelListEditing, MultiLevelListUI ] as const;
 	}
 }
+
+export type MultiLevelListMarkerPattern = string | ( () => string );
+
+export interface MultiLevelListMarkerDefinition {
+	showMarkerPath: boolean | undefined;
+	marker: MultiLevelListMarkerPattern;
+}
+
+export interface MultiLevelListDefinition {
+	className: string;
+	listType: 'customNumbered' | 'customBulleted';
+	listMarkerStyle: string;
+	listMarkers: Array<MultiLevelListMarkerDefinition>;
+}
+
+export interface MultiLevelListConfig {
+	listDefinitions: Array<MultiLevelListDefinition> | undefined;
+}

@@ -8,9 +8,9 @@
  */
 import { Plugin, type Editor } from 'ckeditor5/src/core.js';
 import { UpcastWriter, Matcher, type UpcastConversionData } from 'ckeditor5/src/engine.js';
-// import MultiLevelListUI from "./multilevellistui.js";
 import { ListEditing } from 'ckeditor5/src/index.js';
 import MultiLevelListCommand from './multilevellistcommand.js';
+import { type MultiLevelListDefinition } from './multilevellist.js';
 
 export default class MultiLevelListEditing extends Plugin {
 	public static get pluginName() {
@@ -25,17 +25,14 @@ export default class MultiLevelListEditing extends Plugin {
 		return [ ListEditing ] as const;
 	}
 
-	private _listDefinitions: any;
+	private _listDefinitions: Array<MultiLevelListDefinition>;
 
 	constructor( editor: Editor ) {
 		super( editor );
 		console.log( this );
-		console.log( this._listDefinitions );
 
-		// Lấy cấu hình danh sách đa cấp từ config của editor
 		const customDefinitions: any = editor.config.get( 'listMultiLevel.listDefinitions' ) || [];
 
-		// Khởi tạo danh sách định nghĩa mặc định kết hợp với cấu hình người dùng
 		this._listDefinitions = [
 			{
 				listType: 'customNumbered',
@@ -266,10 +263,10 @@ function a( _0xe4b2da: any, _0x337c7e: any, _0x3a4e0d: any ) {
 	if ( undefined === _0x38ee54.showMarkerPath || _0x38ee54.showMarkerPath ) {
 		return _0x3a4e0d.slice( 0, _0xe4b2da + 1 )
 			.map(
-				// eslint-disable-next-line no-return-assign
-				( _0x51d252: any, _0x1e12f9: any ) =>
-					// eslint-disable-next-line no-sequences
-					( _0x38ee54 = _0x337c7e.listMarkers[ _0x1e12f9 % _0x337c7e.listMarkers.length ], m( _0x38ee54.marker, _0x51d252 ) )
+				( _0x51d252: any, _0x1e12f9: any ) => {
+					_0x38ee54 = _0x337c7e.listMarkers[ _0x1e12f9 % _0x337c7e.listMarkers.length ];
+					return m( _0x38ee54.marker, _0x51d252 );
+				}
 			).join( '' );
 	}
 	const _0x11f844 = _0x3a4e0d[ _0x3a4e0d.length - 1 ];
