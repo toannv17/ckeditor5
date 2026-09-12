@@ -16,7 +16,7 @@ import {
 	ViewPosition,
 	ViewText,
 	ViewUIElement
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import {
 	toWidget,

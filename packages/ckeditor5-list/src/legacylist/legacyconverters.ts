@@ -29,9 +29,9 @@ import {
 	type ViewPosition,
 	type ViewTypeCheckable,
 	type ModelWriter
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
-import type { GetCallback } from '@ckeditor/ckeditor5-utils';
+import type { GetCallback } from 'toannv-ckeditor5-utils';
 
 import {
 	generateLiInUl,

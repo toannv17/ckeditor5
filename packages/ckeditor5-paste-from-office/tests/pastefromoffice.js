@@ -5,16 +5,16 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { PasteFromOffice } from '../src/pastefromoffice.js';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 import {
 	ViewDocumentFragment,
 	_getModelData,
 	_setModelData
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 import { createDataTransfer } from './_utils/utils.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { CodeBlockUI, CodeBlockEditing } from '@ckeditor/ckeditor5-code-block';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { CodeBlockUI, CodeBlockEditing } from 'toannv-ckeditor5-code-block';
 
 describe( 'PasteFromOffice', () => {
 	let editor, pasteFromOffice, element, viewDocument;

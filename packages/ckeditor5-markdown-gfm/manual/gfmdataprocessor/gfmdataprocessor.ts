@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ViewDocument, StylesProcessor, _stringifyView, _parseView, type ViewDocumentFragment } from '@ckeditor/ckeditor5-engine';
+import { ViewDocument, StylesProcessor, _stringifyView, _parseView, type ViewDocumentFragment } from 'toannv-ckeditor5-engine';
 
 import { MarkdownGfmDataProcessor } from '../../src/gfmdataprocessor.js';
 

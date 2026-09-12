@@ -7,8 +7,8 @@
  * @module image/imagesizeattributes
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import type { DowncastDispatcher, DowncastAttributeEvent, ViewElement, ModelElement } from '@ckeditor/ckeditor5-engine';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import type { DowncastDispatcher, DowncastAttributeEvent, ViewElement, ModelElement } from 'toannv-ckeditor5-engine';
 import { ImageUtils } from './imageutils.js';
 import { widthAndHeightStylesAreBothSet, getSizeValueIfInPx } from './image/utils.js';
 

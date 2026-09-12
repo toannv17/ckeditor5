@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
-import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
-import { formatHtml } from '@ckeditor/ckeditor5-utils';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { SourceEditing } from 'toannv-ckeditor5-source-editing';
+import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { formatHtml } from 'toannv-ckeditor5-utils';
 import { Table } from '../src/table.js';
 import { TableToolbar } from '../src/tabletoolbar.js';
 import { TableSelection } from '../src/tableselection.js';

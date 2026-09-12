@@ -7,13 +7,13 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { BubblingEventInfo } from '../../../src/view/observer/bubblingeventinfo.js';
 import { _setModelData } from '../../../src/dev-utils/model.js';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { BoldEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { EventInfo, CKEditorError } from '@ckeditor/ckeditor5-utils';
-import { expectToThrowCKEditorError } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { EventInfo, CKEditorError } from 'toannv-ckeditor5-utils';
+import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'BubblingEmitterMixin', () => {
 	let editor, model, view, viewDocument;

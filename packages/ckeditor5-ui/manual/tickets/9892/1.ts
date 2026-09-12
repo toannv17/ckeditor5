@@ -3,9 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { TableProperties, TableCellProperties } from '@ckeditor/ckeditor5-table';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { TableProperties, TableCellProperties } from 'toannv-ckeditor5-table';
 
 ClassicEditor
 	.create( {

@@ -18,7 +18,7 @@
  * @module autoformat/blockautoformatediting
  */
 
-import type { Command, Editor } from '@ckeditor/ckeditor5-core';
+import type { Command, Editor } from 'toannv-ckeditor5-core';
 
 import {
 	ModelLiveRange,
@@ -28,13 +28,13 @@ import {
 	type ModelText,
 	type ModelWriter,
 	type ModelDocumentSelection
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
-import { first } from '@ckeditor/ckeditor5-utils';
+import { first } from 'toannv-ckeditor5-utils';
 
 import { type Autoformat } from './autoformat.js';
 
-import type { Delete } from '@ckeditor/ckeditor5-typing';
+import type { Delete } from 'toannv-ckeditor5-typing';
 
 /**
  * Creates a listener triggered on {@link module:engine/model/document~ModelDocument#event:change:data `change:data`} event in the document.

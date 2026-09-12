@@ -7,7 +7,7 @@
  * @module clipboard/clipboardobserver
  */
 
-import { EventInfo, getRangeFromMouseEvent } from '@ckeditor/ckeditor5-utils';
+import { EventInfo, getRangeFromMouseEvent } from 'toannv-ckeditor5-utils';
 
 import {
 	ViewDataTransfer,
@@ -17,7 +17,7 @@ import {
 	type ViewDocumentFragment,
 	type ViewElement,
 	type ViewRange
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 import { plainTextToHtml } from './utils/plaintexttohtml.js';
 

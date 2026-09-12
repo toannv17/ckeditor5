@@ -7,9 +7,9 @@
  * @module basic-styles/code/codeui
  */
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { IconCode } from '@ckeditor/ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor/ckeditor5-ui';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { IconCode } from 'toannv-ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
 import { getButtonCreator } from '../utils.js';
 
 const CODE = 'code';

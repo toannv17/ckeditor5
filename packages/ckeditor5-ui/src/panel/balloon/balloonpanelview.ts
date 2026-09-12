@@ -24,7 +24,7 @@ import {
 	type DomOptimalPositionOptions,
 	Rect,
 	type PositioningFunction
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import { isElement } from 'es-toolkit/compat';
 

@@ -9,7 +9,7 @@
 
 import { get, isObject, merge, set } from 'es-toolkit/compat';
 import type { ViewElementAttributeValue } from './element.js';
-import { type ArrayOrItem, toArray } from '@ckeditor/ckeditor5-utils';
+import { type ArrayOrItem, toArray } from 'toannv-ckeditor5-utils';
 import { isPatternMatched } from './matcher.js';
 
 /**

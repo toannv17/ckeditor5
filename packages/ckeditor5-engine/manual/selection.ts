@@ -4,17 +4,17 @@
  */
 
 import { _getModelData } from '../src/dev-utils/model.js';
-import { global } from '@ckeditor/ckeditor5-utils';
+import { global } from 'toannv-ckeditor5-utils';
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Undo } from '@ckeditor/ckeditor5-undo';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Undo } from 'toannv-ckeditor5-undo';
 
 import './selection.css';
-import { toWidget, toWidgetEditable, Widget } from '@ckeditor/ckeditor5-widget';
+import { toWidget, toWidgetEditable, Widget } from 'toannv-ckeditor5-widget';
 
 class SelectionTest extends Plugin {
 	public init(): void {

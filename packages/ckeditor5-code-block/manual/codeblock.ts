@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 import { CodeBlock } from '../src/codeblock.js';
-import { Code } from '@ckeditor/ckeditor5-basic-styles';
-import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
-import { Indent } from '@ckeditor/ckeditor5-indent';
+import { Code } from 'toannv-ckeditor5-basic-styles';
+import { Autoformat } from 'toannv-ckeditor5-autoformat';
+import { Indent } from 'toannv-ckeditor5-indent';
 
 ClassicEditor
 	.create( {

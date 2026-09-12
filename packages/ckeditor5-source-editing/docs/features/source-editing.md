@@ -29,7 +29,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, SourceEditing } from 'ckeditor5';
+import { ClassicEditor, SourceEditing } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -46,7 +46,7 @@ To utilize the Markdown source editing mode just add the {@link features/markdow
 
 <code-switcher>
 ```js
-import { ClassicEditor, SourceEditing, Markdown } from 'ckeditor5';
+import { ClassicEditor, SourceEditing, Markdown } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

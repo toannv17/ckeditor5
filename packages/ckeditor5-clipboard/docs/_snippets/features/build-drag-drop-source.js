@@ -40,7 +40,7 @@ import {
 	DragDrop,
 	DragDropBlockToolbar,
 	BlockToolbar
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 
 import {
 	TOKEN_URL,

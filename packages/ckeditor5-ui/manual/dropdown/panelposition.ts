@@ -4,7 +4,7 @@
  */
 
 import { UIModel } from '../../src/model.js';
-import { Collection, type Locale } from '@ckeditor/ckeditor5-utils';
+import { Collection, type Locale } from 'toannv-ckeditor5-utils';
 import { testUtils } from '../../tests/_utils/utils.js';
 import { createDropdown, addListToDropdown } from '../../src/dropdown/utils.js';
 

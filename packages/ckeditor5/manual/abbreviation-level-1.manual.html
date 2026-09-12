@@ -65,12 +65,12 @@
 			</p>
 			<pre><code class="language-js">// app.js
 
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { List } from '@ckeditor/ckeditor5-list';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { List } from 'toannv-ckeditor5-list';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 ClassicEditor
 	.create( {
@@ -149,7 +149,7 @@ ClassicEditor
 
 import AbbreviationEditing from './abbreviationediting';
 import AbbreviationUI from './abbreviationui';
-import { Plugin } from 'ckeditor5';
+import { Plugin } from 'toannv-ckeditor5';
 
 export default class Abbreviation extends Plugin {
 	static get requires() {
@@ -159,7 +159,7 @@ export default class Abbreviation extends Plugin {
 </code></pre>
 			<pre><code class="language-js">// abbreviation/abbreviationui.js
 
-import { Plugin } from 'ckeditor5';
+import { Plugin } from 'toannv-ckeditor5';
 
 export default class AbbreviationUI extends Plugin {
 	init() {
@@ -169,7 +169,7 @@ export default class AbbreviationUI extends Plugin {
 </code></pre>
 			<pre><code class="language-js">// abbreviation/abbreviationediting.js
 
-import { Plugin } from 'ckeditor5';
+import { Plugin } from 'toannv-ckeditor5';
 
 export default class AbbreviationEditing extends Plugin {
 	init() {
@@ -185,12 +185,12 @@ export default class AbbreviationEditing extends Plugin {
 			</p>
 			<pre><code class="language-js">// app.js
 
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { List } from '@ckeditor/ckeditor5-list';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { List } from 'toannv-ckeditor5-list';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 import Abbreviation from './abbreviation/abbreviation'; // ADDED
 
@@ -257,7 +257,7 @@ ClassicEditor
 			<p>Update the <code>AbbreviationEditing</code> plugin with this definition:</p>
 			<pre><code class="language-js">// abbreviation/abbreviationediting.js)
 
-import { Plugin } from 'ckeditor5';
+import { Plugin } from 'toannv-ckeditor5';
 
 export default class AbbreviationEditing extends Plugin {
 	init() {
@@ -315,7 +315,7 @@ export default class AbbreviationEditing extends Plugin {
 			</p>
 			<pre><code class="language-js">// abbreviation/abbreviationediting.js
 
-import { Plugin } from 'ckeditor5';
+import { Plugin } from 'toannv-ckeditor5';
 
 export default class AbbreviationEditing extends Plugin {
 	init() {
@@ -363,7 +363,7 @@ export default class AbbreviationEditing extends Plugin {
 			</p>
 			<pre><code class="language-js">// abbreviation/abbreviationediting.js
 
-import { Plugin } from 'ckeditor5';
+import { Plugin } from 'toannv-ckeditor5';
 
 export default class AbbreviationEditing extends Plugin {
 	init() {
@@ -446,12 +446,12 @@ class AbbreviationUI extends Plugin {
 			</p>
 			<pre><code class="language-js">// app.js
 
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { List } from '@ckeditor/ckeditor5-list';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { List } from 'toannv-ckeditor5-list';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 import Abbreviation from './simplebox/abbreviation';
 
@@ -483,8 +483,8 @@ ClassicEditor
 			</p>
 			<pre><code class="language-js">// abbreviation/abbreviationui.js
 
-import { Plugin } from 'ckeditor5';
-import { ButtonView } from '@ckeditor/ckeditor5-ui';
+import { Plugin } from 'toannv-ckeditor5';
+import { ButtonView } from 'toannv-ckeditor5-ui';
 
 class AbbreviationUI extends Plugin {
 	init() {
@@ -524,15 +524,15 @@ class AbbreviationUI extends Plugin {
 				can paste it into the <code>app.js</code> and it will run out-of-the-box:
 			</p>
 			<pre><code class="language-js">
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { List } from '@ckeditor/ckeditor5-list';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { List } from 'toannv-ckeditor5-list';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
-import { Plugin } from 'ckeditor5';
-import { ButtonView } from '@ckeditor/ckeditor5-ui';
+import { Plugin } from 'toannv-ckeditor5';
+import { ButtonView } from 'toannv-ckeditor5-ui';
 
 class AbbreviationUI extends Plugin {
 	init() {

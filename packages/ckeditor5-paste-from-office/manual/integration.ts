@@ -3,26 +3,26 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 
-import { ListProperties } from '@ckeditor/ckeditor5-list';
-import { Strikethrough, Underline } from '@ckeditor/ckeditor5-basic-styles';
-import { Table, TableToolbar, TableProperties, TableCellProperties, TableColumnResize } from '@ckeditor/ckeditor5-table';
-import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
-import { FontColor, FontBackgroundColor } from '@ckeditor/ckeditor5-font';
-import { PageBreak } from '@ckeditor/ckeditor5-page-break';
-import { ImageUpload } from '@ckeditor/ckeditor5-image';
-import { Bookmark } from '@ckeditor/ckeditor5-bookmark';
-import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
-import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
-import { Indent, IndentBlock } from '@ckeditor/ckeditor5-indent';
+import { ListProperties } from 'toannv-ckeditor5-list';
+import { Strikethrough, Underline } from 'toannv-ckeditor5-basic-styles';
+import { Table, TableToolbar, TableProperties, TableCellProperties, TableColumnResize } from 'toannv-ckeditor5-table';
+import { EasyImage } from 'toannv-ckeditor5-easy-image';
+import { FontColor, FontBackgroundColor } from 'toannv-ckeditor5-font';
+import { PageBreak } from 'toannv-ckeditor5-page-break';
+import { ImageUpload } from 'toannv-ckeditor5-image';
+import { Bookmark } from 'toannv-ckeditor5-bookmark';
+import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { Indent, IndentBlock } from 'toannv-ckeditor5-indent';
 
 import { PasteFromOffice } from '../src/pastefromoffice.js';
 
-import { _stringifyView } from '@ckeditor/ckeditor5-engine';
+import { _stringifyView } from 'toannv-ckeditor5-engine';
 
-import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 declare global {
 	interface Window { editor: any }

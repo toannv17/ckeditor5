@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-autoformat",
+  "name": "toannv-ckeditor5-autoformat",
   "version": "48.5.0",
   "description": "Autoformatting feature for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -35,22 +35,22 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "workspace:*",
-    "@ckeditor/ckeditor5-engine": "workspace:*",
-    "@ckeditor/ckeditor5-heading": "workspace:*",
-    "@ckeditor/ckeditor5-typing": "workspace:*",
-    "@ckeditor/ckeditor5-utils": "workspace:*"
+    "toannv-ckeditor5-core": "workspace:*",
+    "toannv-ckeditor5-engine": "workspace:*",
+    "toannv-ckeditor5-heading": "workspace:*",
+    "toannv-ckeditor5-typing": "workspace:*",
+    "toannv-ckeditor5-utils": "workspace:*"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-basic-styles": "workspace:*",
-    "@ckeditor/ckeditor5-block-quote": "workspace:*",
-    "@ckeditor/ckeditor5-code-block": "workspace:*",
-    "@ckeditor/ckeditor5-editor-classic": "workspace:*",
-    "@ckeditor/ckeditor5-enter": "workspace:*",
-    "@ckeditor/ckeditor5-horizontal-line": "workspace:*",
-    "@ckeditor/ckeditor5-list": "workspace:*",
-    "@ckeditor/ckeditor5-paragraph": "workspace:*",
-    "@ckeditor/ckeditor5-undo": "workspace:*",
+    "toannv-ckeditor5-basic-styles": "workspace:*",
+    "toannv-ckeditor5-block-quote": "workspace:*",
+    "toannv-ckeditor5-code-block": "workspace:*",
+    "toannv-ckeditor5-editor-classic": "workspace:*",
+    "toannv-ckeditor5-enter": "workspace:*",
+    "toannv-ckeditor5-horizontal-line": "workspace:*",
+    "toannv-ckeditor5-list": "workspace:*",
+    "toannv-ckeditor5-paragraph": "workspace:*",
+    "toannv-ckeditor5-undo": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

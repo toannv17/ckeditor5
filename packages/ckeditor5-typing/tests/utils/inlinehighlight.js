@@ -6,8 +6,8 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { inlineHighlight } from '../../src/utils/inlinehighlight.js';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _getModelData, _setModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
 
 describe( 'inlineHighlight', () => {
 	let element, editor, model, view;

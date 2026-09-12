@@ -40,7 +40,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, List } from 'ckeditor5';
+import { ClassicEditor, List } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -64,7 +64,7 @@ To enable selected sub-features of the {@link features/lists-properties list pro
 
 <code-switcher>
 ```js
-import { ClassicEditor, List, ListProperties } from 'ckeditor5';
+import { ClassicEditor, List, ListProperties } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
 
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { getCode } from '@ckeditor/ckeditor5-utils';
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { getCode } from 'toannv-ckeditor5-utils';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
 
 import { PastePlainText } from '../src/pasteplaintext.js';
 

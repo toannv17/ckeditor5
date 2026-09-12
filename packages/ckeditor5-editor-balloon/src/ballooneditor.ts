@@ -20,9 +20,9 @@ import {
 	type EditorReadyEvent,
 	type ViewRootElementDefinition,
 	type ElementApiMixinConstructor
-} from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-core';
 
-import { BalloonToolbar } from '@ckeditor/ckeditor5-ui';
+import { BalloonToolbar } from 'toannv-ckeditor5-ui';
 
 import { BalloonEditorUI } from './ballooneditorui.js';
 import { BalloonEditorUIView } from './ballooneditoruiview.js';

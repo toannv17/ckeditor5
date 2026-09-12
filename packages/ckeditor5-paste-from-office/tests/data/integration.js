@@ -5,19 +5,19 @@
 
 import { describe, beforeEach } from 'vitest';
 
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ShiftEnter } from '@ckeditor/ckeditor5-enter';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Bold, Underline, Italic, Strikethrough } from '@ckeditor/ckeditor5-basic-styles';
-import { Link } from '@ckeditor/ckeditor5-link';
-import { List, ListProperties } from '@ckeditor/ckeditor5-list';
-import { stubUid } from '@ckeditor/ckeditor5-list/tests/list/_utils/uid.js';
-import { Image } from '@ckeditor/ckeditor5-image';
-import { Table, TableProperties, TableCellProperties } from '@ckeditor/ckeditor5-table';
-import { FontBackgroundColor, FontColor } from '@ckeditor/ckeditor5-font';
-import { PageBreak } from '@ckeditor/ckeditor5-page-break';
-import { Bookmark } from '@ckeditor/ckeditor5-bookmark';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ShiftEnter } from 'toannv-ckeditor5-enter';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Bold, Underline, Italic, Strikethrough } from 'toannv-ckeditor5-basic-styles';
+import { Link } from 'toannv-ckeditor5-link';
+import { List, ListProperties } from 'toannv-ckeditor5-list';
+import { stubUid } from 'toannv-ckeditor5-list/tests/list/_utils/uid.js';
+import { Image } from 'toannv-ckeditor5-image';
+import { Table, TableProperties, TableCellProperties } from 'toannv-ckeditor5-table';
+import { FontBackgroundColor, FontColor } from 'toannv-ckeditor5-font';
+import { PageBreak } from 'toannv-ckeditor5-page-break';
+import { Bookmark } from 'toannv-ckeditor5-bookmark';
 
 import { PasteFromOffice } from '../../src/pastefromoffice.js';
 import { generateTests } from '../_utils/utils.js';

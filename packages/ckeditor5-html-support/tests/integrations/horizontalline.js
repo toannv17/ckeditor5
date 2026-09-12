@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 import { getModelDataWithAttributes } from '../_utils/utils.js';
 import { GeneralHtmlSupport } from '../../src/generalhtmlsupport.js';

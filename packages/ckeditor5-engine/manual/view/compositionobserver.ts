@@ -3,9 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 declare global {
 	interface Window { editor: any }

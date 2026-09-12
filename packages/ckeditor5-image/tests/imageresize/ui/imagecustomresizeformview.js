@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { keyCodes, KeystrokeHandler, FocusTracker } from '@ckeditor/ckeditor5-utils';
+import { keyCodes, KeystrokeHandler, FocusTracker } from 'toannv-ckeditor5-utils';
 import { ImageCustomResizeFormView } from '../../../src/imageresize/ui/imagecustomresizeformview.js';
-import { View, FocusCycler, ViewCollection } from '@ckeditor/ckeditor5-ui';
+import { View, FocusCycler, ViewCollection } from 'toannv-ckeditor5-ui';
 
 describe( 'ImageCustomResizeFormView', () => {
 	let view;

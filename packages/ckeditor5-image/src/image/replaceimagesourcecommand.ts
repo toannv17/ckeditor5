@@ -7,9 +7,9 @@
  * @module image/image/replaceimagesourcecommand
  */
 
-import { Command, type Editor } from '@ckeditor/ckeditor5-core';
+import { Command, type Editor } from 'toannv-ckeditor5-core';
 import { type ImageUtils } from '../imageutils.js';
-import type { ModelWriter, ModelElement } from '@ckeditor/ckeditor5-engine';
+import type { ModelWriter, ModelElement } from 'toannv-ckeditor5-engine';
 
 /**
  * Replace image source command.

@@ -13,7 +13,7 @@ import { type ViewEditableElement } from './editableelement.js';
 import { type ViewElement } from './element.js';
 import { type EditingView } from './view.js';
 
-import { logWarning, type ObservableChangeEvent } from '@ckeditor/ckeditor5-utils';
+import { logWarning, type ObservableChangeEvent } from 'toannv-ckeditor5-utils';
 
 // Each document stores information about its placeholder elements and check functions.
 const documentPlaceholders = new WeakMap<ViewDocument, Map<ViewElement, PlaceholderConfig>>();

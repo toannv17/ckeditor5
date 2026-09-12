@@ -34,7 +34,7 @@ import {
 	toMap,
 	uid,
 	type EmitterMixinConstructor
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 const storePrefix = 'selection:';
 

@@ -5,12 +5,12 @@
 
 import { beforeAll, afterAll, beforeEach, afterEach, describe, it, expect, vi } from 'vitest';
 import { TestColorPlugin } from '../_utils/testcolorplugin.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ColorGridView } from '@ckeditor/ckeditor5-ui';
-import { global, add as addTranslations, _clearTranslations } from '@ckeditor/ckeditor5-utils';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ColorGridView } from 'toannv-ckeditor5-ui';
+import { global, add as addTranslations, _clearTranslations } from 'toannv-ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Undo } from 'toannv-ckeditor5-undo';
+import { _setModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'FontColorUIBase', () => {
 	const testColorConfig = {

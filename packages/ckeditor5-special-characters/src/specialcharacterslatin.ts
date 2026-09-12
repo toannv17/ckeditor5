@@ -7,7 +7,7 @@
  * @module special-characters/specialcharacterslatin
  */
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { Plugin } from 'toannv-ckeditor5-core';
 import { type SpecialCharacters } from './specialcharacters.js';
 
 /**

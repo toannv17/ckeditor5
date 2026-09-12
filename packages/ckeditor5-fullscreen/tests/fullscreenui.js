@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { global, env } from '@ckeditor/ckeditor5-utils';
-import { IconFullscreenEnter, IconFullscreenLeave } from '@ckeditor/ckeditor5-icons';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { global, env } from 'toannv-ckeditor5-utils';
+import { IconFullscreenEnter, IconFullscreenLeave } from 'toannv-ckeditor5-icons';
 
 import { FullscreenEditing } from '../src/fullscreenediting.js';
 import { FullscreenUI } from '../src/fullscreenui.js';

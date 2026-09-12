@@ -4,12 +4,12 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconHeading2 } from '@ckeditor/ckeditor5-icons';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { IconHeading2 } from 'toannv-ckeditor5-icons';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 import { HeadingEditing } from '../src/headingediting.js';
 import { HeadingButtonsUI } from '../src/headingbuttonsui.js';
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
-import { ButtonView } from '@ckeditor/ckeditor5-ui';
+import { _setModelData } from 'toannv-ckeditor5-engine';
+import { ButtonView } from 'toannv-ckeditor5-ui';
 import { getLocalizedOptions } from '../src/utils.js';
 
 describe( 'HeadingButtonUI', () => {

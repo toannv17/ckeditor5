@@ -4,16 +4,16 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Image, ImageCaption } from '@ckeditor/ckeditor5-image';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Typing } from '@ckeditor/ckeditor5-typing';
+import { Image, ImageCaption } from 'toannv-ckeditor5-image';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Typing } from 'toannv-ckeditor5-typing';
 import { Link } from '../src/link.js';
 import { LinkImage } from '../src/linkimage.js';
 
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
-import { global } from '@ckeditor/ckeditor5-utils';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { global } from 'toannv-ckeditor5-utils';
 
 describe( 'LinkImage integration', () => {
 	let editorElement, editor, model;

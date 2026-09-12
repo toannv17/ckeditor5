@@ -22,7 +22,7 @@ import {
 	wait,
 	add as addTranslations,
 	_clearTranslations
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 import { ListSeparatorView } from '../../src/list/listseparatorview.js';
 import {
 	barDump,

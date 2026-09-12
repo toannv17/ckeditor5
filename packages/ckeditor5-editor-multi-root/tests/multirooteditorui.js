@@ -5,9 +5,9 @@
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { MultiRootEditor } from '../src/multirooteditor.js';
-import { EditorUI, View } from '@ckeditor/ckeditor5-ui';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { EditorUI, View } from 'toannv-ckeditor5-ui';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Plugin } from 'toannv-ckeditor5-core';
 
 describe( 'MultiRootEditorUI', () => {
 	let editor, view, ui;

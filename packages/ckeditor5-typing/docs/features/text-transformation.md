@@ -65,7 +65,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, TextTransformation } from 'ckeditor5';
+import { ClassicEditor, TextTransformation } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

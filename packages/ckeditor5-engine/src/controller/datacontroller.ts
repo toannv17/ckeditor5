@@ -13,7 +13,7 @@ import {
 	ObservableMixin,
 	logWarning,
 	type EmitterMixinConstructor
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import { Mapper } from '../conversion/mapper.js';
 

@@ -19,9 +19,9 @@ import {
 	type EventInfo,
 	type PositioningFunction,
 	type DomEmitterMixinConstructor
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
-import type { Editor } from '@ckeditor/ckeditor5-core';
+import type { Editor } from 'toannv-ckeditor5-core';
 
 import { isElement, debounce } from 'es-toolkit/compat';
 

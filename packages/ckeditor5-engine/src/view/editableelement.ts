@@ -8,7 +8,7 @@
  */
 
 import { ViewContainerElement } from './containerelement.js';
-import { ObservableMixin, type ObservableMixinConstructor } from '@ckeditor/ckeditor5-utils';
+import { ObservableMixin, type ObservableMixinConstructor } from 'toannv-ckeditor5-utils';
 import type { ViewSelectionChangeEvent } from './selection.js';
 import type { ViewElementAttributes } from './element.js';
 import { type ViewDocument } from './document.js';

@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 import { TableScroll } from '../src/tablescroll.js';
 import { TableScrollEditing } from '../src/tablescroll/tablescrollediting.js';

@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Alignment } from '@ckeditor/ckeditor5-alignment';
-import { IndentBlock, Indent } from '@ckeditor/ckeditor5-indent';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Alignment } from 'toannv-ckeditor5-alignment';
+import { IndentBlock, Indent } from 'toannv-ckeditor5-indent';
 
 import {
 	TableCellPropertiesEditing, TableCellPropertiesUI, TableLayout,

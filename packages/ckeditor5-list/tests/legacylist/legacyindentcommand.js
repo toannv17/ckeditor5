@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Editor } from '@ckeditor/ckeditor5-core';
-import { Model, _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { Editor } from 'toannv-ckeditor5-core';
+import { Model, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 import { LegacyIndentCommand } from '../../src/legacylist/legacyindentcommand.js';
 
 describe( 'LegacyIndentCommand', () => {

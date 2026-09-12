@@ -6,11 +6,11 @@
 /**
  * @module autoformat/autoformat
  */
-import type { HeadingCommand } from '@ckeditor/ckeditor5-heading';
+import type { HeadingCommand } from 'toannv-ckeditor5-heading';
 
-import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import type { ModelRange, ModelWriter } from '@ckeditor/ckeditor5-engine';
-import { Delete } from '@ckeditor/ckeditor5-typing';
+import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import type { ModelRange, ModelWriter } from 'toannv-ckeditor5-engine';
+import { Delete } from 'toannv-ckeditor5-typing';
 
 import { blockAutoformatEditing } from './blockautoformatediting.js';
 import { inlineAutoformatEditing } from './inlineautoformatediting.js';

@@ -5,19 +5,19 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { EasyImage } from '../src/easyimage.js';
 import { CloudServicesUploadAdapter } from '../src/cloudservicesuploadadapter.js';
-import { Image, ImageUpload } from '@ckeditor/ckeditor5-image';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
+import { Image, ImageUpload } from 'toannv-ckeditor5-image';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
 
 import { UploadGatewayMock } from './_utils/uploadgatewaymock.js';
-import { createNativeFileMock } from '@ckeditor/ckeditor5-upload/tests/_utils/mocks.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { createNativeFileMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
-import { CloudServices, CloudServicesCore } from '@ckeditor/ckeditor5-cloud-services';
-import { mockCreateToken } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
+import { CloudServices, CloudServicesCore } from 'toannv-ckeditor5-cloud-services';
+import { mockCreateToken } from 'toannv-ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
 
 describe( 'EasyImage', () => {
 	beforeEach( () => {

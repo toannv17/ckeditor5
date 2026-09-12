@@ -11,7 +11,7 @@
 
 import { ViewElement, type ViewElementAttributes } from './element.js';
 import { ViewNode } from './node.js';
-import { CKEditorError } from '@ckeditor/ckeditor5-utils';
+import { CKEditorError } from 'toannv-ckeditor5-utils';
 
 import { type ViewDocument } from './document.js';
 import { type ViewDomConverter } from './domconverter.js';

@@ -5,15 +5,15 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { Highlight } from '../src/highlight.js';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Image, ImageCaption } from '@ckeditor/ckeditor5-image';
-import { List } from '@ckeditor/ckeditor5-list';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Delete } from '@ckeditor/ckeditor5-typing';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Image, ImageCaption } from 'toannv-ckeditor5-image';
+import { List } from 'toannv-ckeditor5-list';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Delete } from 'toannv-ckeditor5-typing';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'Highlight', () => {
 	let editor, model, element;

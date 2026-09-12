@@ -20,9 +20,9 @@ import {
 	type ColorSelectorExecuteEvent,
 	type ColorSelectorColorPickerCancelEvent,
 	type FocusableView
-} from '@ckeditor/ckeditor5-ui';
+} from 'toannv-ckeditor5-ui';
 
-import { FocusTracker, KeystrokeHandler, type Locale } from '@ckeditor/ckeditor5-utils';
+import { FocusTracker, KeystrokeHandler, type Locale } from 'toannv-ckeditor5-utils';
 
 /**
  * The options for the color input view.

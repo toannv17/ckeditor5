@@ -6,7 +6,7 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { EditorUIView } from '../../src/editorui/editoruiview.js';
 import { ViewCollection } from '../../src/viewcollection.js';
-import { Locale } from '@ckeditor/ckeditor5-utils';
+import { Locale } from 'toannv-ckeditor5-utils';
 
 describe( 'EditorUIView', () => {
 	let view, locale;

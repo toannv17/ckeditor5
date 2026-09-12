@@ -3,16 +3,16 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Bold } from '@ckeditor/ckeditor5-basic-styles';
-import { Highlight } from '@ckeditor/ckeditor5-highlight';
-import { Table } from '@ckeditor/ckeditor5-table';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { Highlight } from 'toannv-ckeditor5-highlight';
+import { Table } from 'toannv-ckeditor5-table';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Undo } from 'toannv-ckeditor5-undo';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
 import { LegacyList } from '../src/legacylist.js';
 import { LegacyTodoList } from '../src/legacytodolist.js';
 

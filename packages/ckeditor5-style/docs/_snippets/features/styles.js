@@ -23,7 +23,7 @@ import {
 	ImageToolbar,
 	ImageUpload,
 	Style
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 
 import {
 	TOKEN_URL,

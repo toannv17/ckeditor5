@@ -5,9 +5,9 @@
 
 import { describe, it, expect, afterEach } from 'vitest';
 import { HeadingEditing } from '../../src/headingediting.js';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'Bug ckeditor5-heading#40', () => {
 	let editor;

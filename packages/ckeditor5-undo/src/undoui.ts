@@ -6,9 +6,9 @@
 /**
  * @module undo/undoui
  */
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor/ckeditor5-ui';
-import { IconUndo, IconRedo } from '@ckeditor/ckeditor5-icons';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { IconUndo, IconRedo } from 'toannv-ckeditor5-icons';
 
 /**
  * The undo UI feature. It introduces the `'undo'` and `'redo'` buttons to the editor.

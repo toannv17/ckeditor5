@@ -5,19 +5,19 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach, beforeAll, afterAll } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { keyCodes, global, EventInfo, env } from '@ckeditor/ckeditor5-utils';
-import { _setModelData, ViewDocumentDomEventData } from '@ckeditor/ckeditor5-engine';
-import { ContextualBalloon } from '@ckeditor/ckeditor5-ui';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { keyCodes, global, EventInfo, env } from 'toannv-ckeditor5-utils';
+import { _setModelData, ViewDocumentDomEventData } from 'toannv-ckeditor5-engine';
+import { ContextualBalloon } from 'toannv-ckeditor5-ui';
 
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
 
 import { MentionUI, createRegExp } from '../src/mentionui.js';
 import { MentionEditing } from '../src/mentionediting.js';
 import { MentionsView } from '../src/ui/mentionsview.js';
-import { assertCKEditorError } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
+import { assertCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'MentionUI', () => {
 	let editor, model, doc, editingView, mentionUI, editorElement, mentionsView, panelView;

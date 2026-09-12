@@ -13,11 +13,11 @@ import { ViewDataTransfer, ViewDocumentFragment, ModelDocumentFragment, ViewText
 	_stringifyModel,
 	_setModelData,
 	_getModelData
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
 
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 describe( 'ClipboardPipeline feature', () => {
 	let editor, view, viewDocument, clipboardPlugin, scrollSpy;

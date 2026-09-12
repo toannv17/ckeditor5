@@ -44,7 +44,7 @@ You can configure resizing images by handles in two different ways in the CKEdit
 
 <code-switcher>
 ```js
-import { ClassicEditor, Image, ImageResizeEditing, ImageResizeHandles } from 'ckeditor5';
+import { ClassicEditor, Image, ImageResizeEditing, ImageResizeHandles } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -162,7 +162,7 @@ This will enable the image resize feature only through the chosen UI: either a [
 
 <code-switcher>
 ```js
-import { ClassicEditor, Image, ImageResizeButtons, ImageResizeEditing, ImageToolbar } from 'ckeditor5';
+import { ClassicEditor, Image, ImageResizeButtons, ImageResizeEditing, ImageToolbar } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -327,7 +327,7 @@ To enable it you need to install the {@link module:image/imageresize~ImageResize
 
 <code-switcher>
 ```js
-import { ClassicEditor, Image, ImageResize } from 'ckeditor5';
+import { ClassicEditor, Image, ImageResize } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

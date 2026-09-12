@@ -5,20 +5,20 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { _getModelData, _setModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { BoldEditing, StrikethroughEditing, ItalicEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { LinkEditing } from '@ckeditor/ckeditor5-link';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { ImageInlineEditing } from '@ckeditor/ckeditor5-image';
+import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { BoldEditing, StrikethroughEditing, ItalicEditing } from 'toannv-ckeditor5-basic-styles';
+import { LinkEditing } from 'toannv-ckeditor5-link';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { ImageInlineEditing } from 'toannv-ckeditor5-image';
 
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { TableEditing } from '@ckeditor/ckeditor5-table';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { TableEditing } from 'toannv-ckeditor5-table';
 
 import { RestrictedEditingModeEditing } from '../src/restrictededitingmodeediting.js';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { Command } from '@ckeditor/ckeditor5-core';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { Command } from 'toannv-ckeditor5-core';
 
 describe( 'RestrictedEditingModeEditing - block exceptions', () => {
 	let editor, model;

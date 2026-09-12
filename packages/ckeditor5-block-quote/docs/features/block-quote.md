@@ -36,7 +36,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, BlockQuote } from 'ckeditor5';
+import { ClassicEditor, BlockQuote } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

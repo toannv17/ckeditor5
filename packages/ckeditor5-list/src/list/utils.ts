@@ -7,8 +7,8 @@
  * @module list/list/utils
  */
 
-import type { Editor } from '@ckeditor/ckeditor5-core';
-import { ButtonView, MenuBarMenuListItemButtonView, type ButtonExecuteEvent } from '@ckeditor/ckeditor5-ui';
+import type { Editor } from 'toannv-ckeditor5-core';
+import { ButtonView, MenuBarMenuListItemButtonView, type ButtonExecuteEvent } from 'toannv-ckeditor5-ui';
 
 /**
  * Helper method for creating toolbar and menu buttons and linking them with an appropriate command.

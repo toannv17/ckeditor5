@@ -7,7 +7,7 @@
  * @module clipboard/utils/viewtoplaintext
  */
 
-import type { ViewDomConverter, ViewDocumentFragment, ViewElement, ViewItem } from '@ckeditor/ckeditor5-engine';
+import type { ViewDomConverter, ViewDocumentFragment, ViewElement, ViewItem } from 'toannv-ckeditor5-engine';
 
 // Elements which should not have empty-line padding.
 // Most `view.ContainerElement` want to be separate by new-line, but some are creating one structure

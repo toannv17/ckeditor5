@@ -5,19 +5,19 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { Title } from '../src/title.js';
 import { Heading } from '../src/heading.js';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { Image, ImageUpload } from '@ckeditor/ckeditor5-image';
-import { Undo } from '@ckeditor/ckeditor5-undo';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { Image, ImageUpload } from 'toannv-ckeditor5-image';
+import { Undo } from 'toannv-ckeditor5-undo';
 
-import { _setModelData, _getModelData, _stringifyModel } from '@ckeditor/ckeditor5-engine';
-import { keyCodes } from '@ckeditor/ckeditor5-utils';
+import { _setModelData, _getModelData, _stringifyModel } from 'toannv-ckeditor5-engine';
+import { keyCodes } from 'toannv-ckeditor5-utils';
 
 describe( 'Title', () => {
 	let element, editor, model;

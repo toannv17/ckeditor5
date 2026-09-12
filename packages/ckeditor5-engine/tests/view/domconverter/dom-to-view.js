@@ -15,7 +15,7 @@ import { BR_FILLER, INLINE_FILLER, INLINE_FILLER_LENGTH, NBSP_FILLER, MARKED_NBS
 import { StylesProcessor } from '../../../src/view/stylesmap.js';
 import { _parseView, _stringifyView } from '../../../src/dev-utils/view.js';
 
-import { count, createElement, env } from '@ckeditor/ckeditor5-utils';
+import { count, createElement, env } from 'toannv-ckeditor5-utils';
 
 describe( 'DomConverter', () => {
 	let converter, viewDocument;

@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
 import { ArticlePluginSet } from '../tests/_utils/articlepluginset.js';
-import { BalloonToolbar } from '@ckeditor/ckeditor5-ui';
+import { BalloonToolbar } from 'toannv-ckeditor5-ui';
 
 declare global {
 	interface Window { editor: any }

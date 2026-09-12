@@ -14,8 +14,8 @@ import type {
 	UpcastDispatcher,
 	UpcastElementEvent,
 	ViewElement
-} from '@ckeditor/ckeditor5-engine';
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-engine';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 
 import {
 	updateViewAttributes,

@@ -9,7 +9,7 @@
 
 import { ButtonView } from '../../button/buttonview.js';
 
-import { toUnit, type Locale } from '@ckeditor/ckeditor5-utils';
+import { toUnit, type Locale } from 'toannv-ckeditor5-utils';
 
 const toPx = /* #__PURE__ */ toUnit( 'px' );
 

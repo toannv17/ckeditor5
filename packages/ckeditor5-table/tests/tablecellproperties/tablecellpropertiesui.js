@@ -5,15 +5,15 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { keyCodes } from '@ckeditor/ckeditor5-utils';
-import { _getModelData, _setModelData, Batch } from '@ckeditor/ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { keyCodes } from 'toannv-ckeditor5-utils';
+import { _getModelData, _setModelData, Batch } from 'toannv-ckeditor5-engine';
 
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ButtonView, ContextualBalloon } from '@ckeditor/ckeditor5-ui';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { WidgetResize } from '@ckeditor/ckeditor5-widget';
+import { Undo } from 'toannv-ckeditor5-undo';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ButtonView, ContextualBalloon } from 'toannv-ckeditor5-ui';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { WidgetResize } from 'toannv-ckeditor5-widget';
 
 import { Table } from '../../src/table.js';
 import { TableColumnResize } from '../../src/tablecolumnresize.js';

@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, beforeAll } from 'vitest';
-import { HtmlDataProcessor, ViewUpcastWriter, ViewDocument, StylesProcessor } from '@ckeditor/ckeditor5-engine';
+import { HtmlDataProcessor, ViewUpcastWriter, ViewDocument, StylesProcessor } from 'toannv-ckeditor5-engine';
 import { removeGoogleSheetsTag } from '../../src/filters/removegooglesheetstag.js';
 
 describe( 'PasteFromOffice - filters', () => {

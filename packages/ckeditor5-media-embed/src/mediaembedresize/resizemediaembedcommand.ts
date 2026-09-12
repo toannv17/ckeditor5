@@ -7,7 +7,7 @@
  * @module media-embed/mediaembedresize/resizemediaembedcommand
  */
 
-import { Command } from '@ckeditor/ckeditor5-core';
+import { Command } from 'toannv-ckeditor5-core';
 import { getSelectedMediaModelWidget } from '../utils.js';
 
 /**

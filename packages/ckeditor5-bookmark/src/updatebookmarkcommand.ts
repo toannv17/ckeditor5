@@ -7,9 +7,9 @@
  * @module bookmark/updatebookmarkcommand
  */
 
-import { Command } from '@ckeditor/ckeditor5-core';
-import type { ModelSelection, ModelDocumentSelection } from '@ckeditor/ckeditor5-engine';
-import { logWarning } from '@ckeditor/ckeditor5-utils';
+import { Command } from 'toannv-ckeditor5-core';
+import type { ModelSelection, ModelDocumentSelection } from 'toannv-ckeditor5-engine';
+import { logWarning } from 'toannv-ckeditor5-utils';
 
 import { isBookmarkIdValid } from './utils.js';
 

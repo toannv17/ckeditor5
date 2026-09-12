@@ -7,8 +7,8 @@
  * @module fullscreen/handlers/classiceditorhandler
  */
 
-import { MenuBarView } from '@ckeditor/ckeditor5-ui';
-import type { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { MenuBarView } from 'toannv-ckeditor5-ui';
+import type { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
 import { FullscreenAbstractEditorHandler } from './abstracteditorhandler.js';
 

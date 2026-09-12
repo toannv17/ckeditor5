@@ -4,12 +4,12 @@
  */
 
 import { MultiRootEditor } from '../src/multirooteditor.js';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { Image, AutoImage, ImageInsert } from '@ckeditor/ckeditor5-image';
-import { LinkImage } from '@ckeditor/ckeditor5-link';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { Image, AutoImage, ImageInsert } from 'toannv-ckeditor5-image';
+import { LinkImage } from 'toannv-ckeditor5-link';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 declare global {
 	interface Window {
 		editor: any;

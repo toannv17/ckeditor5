@@ -7,7 +7,7 @@
  * @module basic-styles/bold/boldediting
  */
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { Plugin } from 'toannv-ckeditor5-core';
 import { AttributeCommand } from '../attributecommand.js';
 
 const BOLD = 'bold';

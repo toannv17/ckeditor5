@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-html-embed",
+  "name": "toannv-ckeditor5-html-embed",
   "version": "48.5.0",
   "description": "HTML embed feature for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -35,20 +35,20 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "workspace:*",
-    "@ckeditor/ckeditor5-engine": "workspace:*",
-    "@ckeditor/ckeditor5-icons": "workspace:*",
-    "@ckeditor/ckeditor5-ui": "workspace:*",
-    "@ckeditor/ckeditor5-utils": "workspace:*",
-    "@ckeditor/ckeditor5-widget": "workspace:*"
+    "toannv-ckeditor5-core": "workspace:*",
+    "toannv-ckeditor5-engine": "workspace:*",
+    "toannv-ckeditor5-icons": "workspace:*",
+    "toannv-ckeditor5-ui": "workspace:*",
+    "toannv-ckeditor5-utils": "workspace:*",
+    "toannv-ckeditor5-widget": "workspace:*"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-basic-styles": "workspace:*",
-    "@ckeditor/ckeditor5-clipboard": "workspace:*",
-    "@ckeditor/ckeditor5-editor-classic": "workspace:*",
-    "@ckeditor/ckeditor5-media-embed": "workspace:*",
-    "@ckeditor/ckeditor5-paragraph": "workspace:*",
-    "@ckeditor/ckeditor5-table": "workspace:*",
+    "toannv-ckeditor5-basic-styles": "workspace:*",
+    "toannv-ckeditor5-clipboard": "workspace:*",
+    "toannv-ckeditor5-editor-classic": "workspace:*",
+    "toannv-ckeditor5-media-embed": "workspace:*",
+    "toannv-ckeditor5-paragraph": "workspace:*",
+    "toannv-ckeditor5-table": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "es-toolkit": "1.45.1",

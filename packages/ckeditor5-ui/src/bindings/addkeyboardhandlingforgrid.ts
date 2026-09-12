@@ -7,7 +7,7 @@
  * @module ui/bindings/addkeyboardhandlingforgrid
  */
 
-import type { FocusTracker, KeystrokeHandler } from '@ckeditor/ckeditor5-utils';
+import type { FocusTracker, KeystrokeHandler } from 'toannv-ckeditor5-utils';
 import type { FocusableView } from '../focuscycler.js';
 import { type ViewCollection } from '../viewcollection.js';
 

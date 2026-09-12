@@ -5,7 +5,7 @@
 
 import { describe, beforeEach, afterEach } from 'vitest';
 
-import { FocusTracker, KeystrokeHandler } from '@ckeditor/ckeditor5-utils';
+import { FocusTracker, KeystrokeHandler } from 'toannv-ckeditor5-utils';
 
 import { View } from '../../src/view.js';
 import { FocusCycler } from '../../src/focuscycler.js';

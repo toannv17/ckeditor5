@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-utils",
+  "name": "toannv-ckeditor5-utils",
   "version": "48.5.0",
   "description": "Miscellaneous utilities used by CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -34,13 +34,13 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-ui": "workspace:*",
+    "toannv-ckeditor5-ui": "workspace:*",
     "es-toolkit": "1.45.1"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-core": "workspace:*",
-    "@ckeditor/ckeditor5-editor-classic": "workspace:*",
-    "@ckeditor/ckeditor5-engine": "workspace:*",
+    "toannv-ckeditor5-core": "workspace:*",
+    "toannv-ckeditor5-editor-classic": "workspace:*",
+    "toannv-ckeditor5-engine": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

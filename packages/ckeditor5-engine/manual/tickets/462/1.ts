@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
 
 declare global {
 	interface Window { editor: any }

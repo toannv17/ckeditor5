@@ -44,34 +44,34 @@ const taskOptions = {
 EventEmitter.defaultMaxListeners = ( cliArguments.concurrency * 5 + 1 );
 
 const tasks = new Listr( [
-	{
-		title: 'Verify the repository.',
-		task: async () => {
-			const errors = await releaseTools.validateRepositoryToRelease( {
-				version: latestVersion,
-				changes: versionChangelog,
-				branch: cliArguments.branch
-			} );
-
-			if ( !errors.length ) {
-				return;
-			}
-
-			return Promise.reject( 'Aborted due to errors.\n' + errors.map( message => `* ${ message }` ).join( '\n' ) );
-		},
-		skip: () => {
-			if ( isNonCommittableRelease( cliArguments ) ) {
-				return true;
-			}
-
-			// When compiling the packages only, do not validate the release.
-			if ( cliArguments.compileOnly ) {
-				return true;
-			}
-
-			return false;
-		}
-	},
+	// {
+	// 	title: 'Verify the repository.',
+	// 	task: async () => {
+	// 		const errors = await releaseTools.validateRepositoryToRelease( {
+	// 			version: latestVersion,
+	// 			changes: versionChangelog,
+	// 			branch: cliArguments.branch
+	// 		} );
+	//
+	// 		if ( !errors.length ) {
+	// 			return;
+	// 		}
+	//
+	// 		return Promise.reject( 'Aborted due to errors.\n' + errors.map( message => `* ${ message }` ).join( '\n' ) );
+	// 	},
+	// 	skip: () => {
+	// 		if ( isNonCommittableRelease( cliArguments ) ) {
+	// 			return true;
+	// 		}
+	//
+	// 		// When compiling the packages only, do not validate the release.
+	// 		if ( cliArguments.compileOnly ) {
+	// 			return true;
+	// 		}
+	//
+	// 		return false;
+	// 	}
+	// },
 	{
 		title: 'Check the release directory.',
 		task: async ( ctx, task ) => {

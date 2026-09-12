@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { _getModelData } from '@ckeditor/ckeditor5-engine';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { _getModelData } from 'toannv-ckeditor5-engine';
 
 declare global {
 	interface Window { editor: any }

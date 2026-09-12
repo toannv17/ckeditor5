@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { ImageUpload } from '@ckeditor/ckeditor5-image';
-import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
-import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
-import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ImageUpload } from 'toannv-ckeditor5-image';
+import { EasyImage } from 'toannv-ckeditor5-easy-image';
+import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 import { HorizontalLine } from '../src/horizontalline.js';
 
 ClassicEditor

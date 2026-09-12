@@ -7,9 +7,9 @@
  * @module show-blocks/showblocksui
  */
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { IconShowBlocks } from '@ckeditor/ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor/ckeditor5-ui';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { IconShowBlocks } from 'toannv-ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
 
 /**
  * The UI plugin of the show blocks feature.

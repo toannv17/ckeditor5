@@ -7,7 +7,7 @@
  * @module list/listproperties/listpropertiesediting
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 
 import type {
 	Consumables,
@@ -16,7 +16,7 @@ import type {
 	ModelItem,
 	UpcastElementEvent,
 	ViewElement
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 import {
 	ListEditing,

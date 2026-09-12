@@ -3,13 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Strikethrough, Code } from '@ckeditor/ckeditor5-basic-styles';
-import { TodoList } from '@ckeditor/ckeditor5-list';
-import { TableProperties, TableCellProperties } from '@ckeditor/ckeditor5-table';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Strikethrough, Code } from 'toannv-ckeditor5-basic-styles';
+import { TodoList } from 'toannv-ckeditor5-list';
+import { TableProperties, TableCellProperties } from 'toannv-ckeditor5-table';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
 import { Markdown } from '../src/markdown.js';
 
 declare global {

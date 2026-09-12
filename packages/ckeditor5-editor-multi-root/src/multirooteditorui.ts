@@ -10,15 +10,15 @@
 import {
 	rootAcceptsBlocks,
 	type Editor
-} from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-core';
 
 import {
 	EditorUI,
 	type EditorUIReadyEvent,
 	type InlineEditableUIView
-} from '@ckeditor/ckeditor5-ui';
+} from 'toannv-ckeditor5-ui';
 
-import { enableViewPlaceholder } from '@ckeditor/ckeditor5-engine';
+import { enableViewPlaceholder } from 'toannv-ckeditor5-engine';
 
 import { type MultiRootEditorUIView } from './multirooteditoruiview.js';
 

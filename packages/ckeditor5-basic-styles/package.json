@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-basic-styles",
+  "name": "toannv-ckeditor5-basic-styles",
   "version": "48.5.0",
   "description": "Basic styles feature for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -35,17 +35,17 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "workspace:*",
-    "@ckeditor/ckeditor5-engine": "workspace:*",
-    "@ckeditor/ckeditor5-icons": "workspace:*",
-    "@ckeditor/ckeditor5-typing": "workspace:*",
-    "@ckeditor/ckeditor5-ui": "workspace:*",
-    "@ckeditor/ckeditor5-utils": "workspace:*"
+    "toannv-ckeditor5-core": "workspace:*",
+    "toannv-ckeditor5-engine": "workspace:*",
+    "toannv-ckeditor5-icons": "workspace:*",
+    "toannv-ckeditor5-typing": "workspace:*",
+    "toannv-ckeditor5-ui": "workspace:*",
+    "toannv-ckeditor5-utils": "workspace:*"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-editor-classic": "workspace:*",
-    "@ckeditor/ckeditor5-essentials": "workspace:*",
-    "@ckeditor/ckeditor5-paragraph": "workspace:*",
+    "toannv-ckeditor5-editor-classic": "workspace:*",
+    "toannv-ckeditor5-essentials": "workspace:*",
+    "toannv-ckeditor5-paragraph": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

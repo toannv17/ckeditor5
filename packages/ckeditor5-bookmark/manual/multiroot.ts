@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { MultiRootEditor } from '@ckeditor/ckeditor5-editor-multi-root';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { Link } from '@ckeditor/ckeditor5-link';
+import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { Link } from 'toannv-ckeditor5-link';
 import { Bookmark } from '../src/bookmark.js';
 
 declare global {

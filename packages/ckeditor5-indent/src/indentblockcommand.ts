@@ -7,10 +7,10 @@
  * @module indent/indentblockcommand
  */
 
-import { Command, type Editor } from '@ckeditor/ckeditor5-core';
-import type { ModelElement } from '@ckeditor/ckeditor5-engine';
-import type { ListUtils } from '@ckeditor/ckeditor5-list';
-import { first } from '@ckeditor/ckeditor5-utils';
+import { Command, type Editor } from 'toannv-ckeditor5-core';
+import type { ModelElement } from 'toannv-ckeditor5-engine';
+import type { ListUtils } from 'toannv-ckeditor5-list';
+import { first } from 'toannv-ckeditor5-utils';
 
 import type { IndentBehavior } from './indentcommandbehavior/indentbehavior.js';
 

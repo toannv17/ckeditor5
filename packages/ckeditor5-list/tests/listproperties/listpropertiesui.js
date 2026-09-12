@@ -18,17 +18,17 @@ import {
 	IconListStyleSquare,
 	IconListStyleUpperLatin,
 	IconListStyleUpperRoman
-} from '@ckeditor/ckeditor5-icons';
+} from 'toannv-ckeditor5-icons';
 import { LegacyListProperties } from '../../src/legacylistproperties.js';
 import { ListPropertiesUI } from '../../src/listproperties/listpropertiesui.js';
 
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { UndoEditing } from '@ckeditor/ckeditor5-undo';
-import { DropdownView, View, ButtonView, LabeledFieldView, SwitchButtonView, MenuBarMenuView } from '@ckeditor/ckeditor5-ui';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { DropdownView, View, ButtonView, LabeledFieldView, SwitchButtonView, MenuBarMenuView } from 'toannv-ckeditor5-ui';
 
-import { _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 
 describe( 'ListPropertiesUI', () => {
 	let editorElement, editor, model, listStyleCommand, listPropertiesView;

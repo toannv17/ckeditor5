@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Bold } from '@ckeditor/ckeditor5-basic-styles';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Bold } from 'toannv-ckeditor5-basic-styles';
 
 declare global {
 	interface Window { editor: any }

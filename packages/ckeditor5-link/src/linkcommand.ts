@@ -7,10 +7,10 @@
  * @module link/linkcommand
  */
 
-import { Command } from '@ckeditor/ckeditor5-core';
-import { findAttributeRange } from '@ckeditor/ckeditor5-typing';
-import { Collection, diff, first, toMap } from '@ckeditor/ckeditor5-utils';
-import { ModelLivePosition, type ModelRange, type ModelItem, type ModelTextProxy } from '@ckeditor/ckeditor5-engine';
+import { Command } from 'toannv-ckeditor5-core';
+import { findAttributeRange } from 'toannv-ckeditor5-typing';
+import { Collection, diff, first, toMap } from 'toannv-ckeditor5-utils';
+import { ModelLivePosition, type ModelRange, type ModelItem, type ModelTextProxy } from 'toannv-ckeditor5-engine';
 
 import { AutomaticLinkDecorators } from './utils/automaticdecorators.js';
 import { extractTextFromLinkRange, isLinkableElement } from './utils.js';

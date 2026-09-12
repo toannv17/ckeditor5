@@ -14,7 +14,7 @@ import {
 	IconPreviousArrow,
 	MediaEmbedStyle,
 	MediaEmbedToolbar
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 import { MediaEditor } from './build-media-source.js';
 
 MediaEditor

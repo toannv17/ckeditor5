@@ -23,7 +23,7 @@ import { type Operation } from './operation/operation.js';
 import { type SplitOperation } from './operation/splitoperation.js';
 import { type ModelText } from './text.js';
 
-import { CKEditorError, compareArrays } from '@ckeditor/ckeditor5-utils';
+import { CKEditorError, compareArrays } from 'toannv-ckeditor5-utils';
 
 /**
  * Represents a position in the model tree.

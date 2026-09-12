@@ -26,7 +26,7 @@ import { DetachOperation } from '../../src/model/operation/detachoperation.js';
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { ModelLivePosition } from '../../src/model/liveposition.js';
-import { expectToThrowCKEditorError } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'Position', () => {
 	let doc, model, root, otherRoot, p, ul, li1, li2, f, o, z, b, a, r, foz, bar;

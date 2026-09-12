@@ -7,8 +7,8 @@
  * @module image/imagecaption/imagecaptionutils
  */
 
-import type { ModelDocumentSelection, ModelElement, ModelSelection, ViewElement, Match } from '@ckeditor/ckeditor5-engine';
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import type { ModelDocumentSelection, ModelElement, ModelSelection, ViewElement, Match } from 'toannv-ckeditor5-engine';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 
 import { ImageUtils } from '../imageutils.js';
 

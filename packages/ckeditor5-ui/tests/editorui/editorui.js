@@ -15,9 +15,9 @@ import { EvaluationBadge } from '../../src/editorui/evaluationbadge.js';
 import { AriaLiveAnnouncer } from '../../src/arialiveannouncer.js';
 import { EditorUIView, InlineEditableUIView, MenuBarView, View } from '../../src/index.js';
 
-import { FocusTracker, keyCodes, env } from '@ckeditor/ckeditor5-utils';
-import { Editor } from '@ckeditor/ckeditor5-core';
-import { ClassicTestEditor, ClassicTestEditorUI } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { FocusTracker, keyCodes, env } from 'toannv-ckeditor5-utils';
+import { Editor } from 'toannv-ckeditor5-core';
+import { ClassicTestEditor, ClassicTestEditorUI } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 
 class MyEditorUI extends EditorUI {
 	constructor( editor ) {

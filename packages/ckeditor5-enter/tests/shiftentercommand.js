@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { ModelTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { InsertOperation, _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { InsertOperation, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 import { ShiftEnter } from '../src/shiftenter.js';
 
 describe( 'ShiftEnterCommand', () => {

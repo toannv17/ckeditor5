@@ -8,17 +8,17 @@ import { LinkEditing } from '../src/linkediting.js';
 import { LinkCommand } from '../src/linkcommand.js';
 import { UnlinkCommand } from '../src/unlinkcommand.js';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { BoldEditing, ItalicEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { Clipboard, ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { ViewDocumentDomEventData, _getModelData, _setModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
-import { ImageBlockEditing, ImageInline } from '@ckeditor/ckeditor5-image';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Input, Delete } from '@ckeditor/ckeditor5-typing';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { keyCodes, env } from '@ckeditor/ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { BoldEditing, ItalicEditing } from 'toannv-ckeditor5-basic-styles';
+import { Clipboard, ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { ViewDocumentDomEventData, _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { ImageBlockEditing, ImageInline } from 'toannv-ckeditor5-image';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Input, Delete } from 'toannv-ckeditor5-typing';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { keyCodes, env } from 'toannv-ckeditor5-utils';
 import { isLinkElement } from '../src/utils.js';
 
 describe( 'LinkEditing', () => {

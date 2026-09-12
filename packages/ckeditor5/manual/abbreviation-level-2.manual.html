@@ -59,7 +59,7 @@
 			</p>
 			<pre><code class="language-js">// abbreviation/abbreviationview.js
 
-import { View } from '@ckeditor/ckeditor5-ui';
+import { View } from 'toannv-ckeditor5-ui';
 
 export default class FormView extends View {
 	constructor( locale ) {
@@ -100,7 +100,7 @@ import {
 	View,
 	LabeledFieldView,               // ADDED
 	createLabeledInputText          // ADDED
-} from '@ckeditor/ckeditor5-ui';
+} from 'toannv-ckeditor5-ui';
 
 export default class FormView extends View {
 	constructor( locale ) {
@@ -146,7 +146,7 @@ import {
 	LabeledFieldView,
 	createLabeledInputText,
 	ButtonView // ADDED
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 
 export default class FormView extends View {
 	constructor( locale ) {
@@ -229,8 +229,8 @@ export default class FormView extends View {
 			<p>Import it into <code>AbbreviationUI</code>:</p>
 			<pre><code class="language-js">// abbreviation/abbreviationui.js
 
-import { Plugin } from 'ckeditor5';
-import { ButtonView } from '@ckeditor/ckeditor5-ui';
+import { Plugin } from 'toannv-ckeditor5';
+import { ButtonView } from 'toannv-ckeditor5-ui';
 import './styles.css';													// ADDED
 
 class AbbreviationUI extends Plugin {
@@ -271,7 +271,7 @@ import {
 	createLabeledInputText,
 	ButtonView,
 	submitHandler                                   // ADDED
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 
 export default class FormView extends View {
 	constructor( locale ) {
@@ -329,7 +329,7 @@ export default class FormView extends View {
 			<p>This is where we ended up with our UI in the first part of the tutorial.</p>
 			<pre><code class="language-js">// abbreviation/abbreviationui.js
 
-import { Plugin, ButtonView } from 'ckeditor5';
+import { Plugin, ButtonView } from 'toannv-ckeditor5';
 
 class AbbreviationUI extends Plugin {
 	init() {
@@ -384,7 +384,7 @@ import {
 	Plugin,
 	ButtonView,			// ADDED
 	ContextualBalloon	// ADDED
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 
 import FormView from './abbreviationview';	// ADDED
 
@@ -549,7 +549,7 @@ class AbbreviationUI extends Plugin {
 			<pre><code class="language-js">// abbreviation/abbreviationui.js
 
 // ...
-import { ContextualBalloon, clickOutsideHandler } from 'ckeditor5'; // ADDED
+import { ContextualBalloon, clickOutsideHandler } from 'toannv-ckeditor5'; // ADDED
 
 class AbbreviationUI extends Plugin {
 	static get requires() {

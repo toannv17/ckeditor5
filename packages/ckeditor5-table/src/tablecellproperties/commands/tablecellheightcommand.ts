@@ -7,7 +7,7 @@
  * @module table/tablecellproperties/commands/tablecellheightcommand
  */
 
-import type { Editor } from '@ckeditor/ckeditor5-core';
+import type { Editor } from 'toannv-ckeditor5-core';
 
 import { TableCellPropertyCommand } from './tablecellpropertycommand.js';
 import { addDefaultUnitToNumericValue } from '../../utils/table-properties.js';

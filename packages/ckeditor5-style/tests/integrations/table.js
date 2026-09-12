@@ -4,17 +4,17 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { ImageBlock, ImageCaption } from '@ckeditor/ckeditor5-image';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { Table, TableCaption } from '@ckeditor/ckeditor5-table';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ImageBlock, ImageCaption } from 'toannv-ckeditor5-image';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { Table, TableCaption } from 'toannv-ckeditor5-table';
 import { Style } from '../../src/style.js';
 import { TableStyleSupport } from '../../src/integrations/table.js';
-import { _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'TableStyleSupport', () => {
 	let editor, editorElement, command, model;

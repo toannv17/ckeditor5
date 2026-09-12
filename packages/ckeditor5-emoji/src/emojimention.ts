@@ -7,10 +7,10 @@
  * @module emoji/emojimention
  */
 
-import { logWarning, type LocaleTranslate } from '@ckeditor/ckeditor5-utils';
-import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Mention, type MentionFeed, type MentionFeedObjectItem, type MentionItemRenderer } from '@ckeditor/ckeditor5-mention';
+import { logWarning, type LocaleTranslate } from 'toannv-ckeditor5-utils';
+import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Mention, type MentionFeed, type MentionFeedObjectItem, type MentionItemRenderer } from 'toannv-ckeditor5-mention';
 
 import { EmojiRepository } from './emojirepository.js';
 import { type EmojiPicker } from './emojipicker.js';

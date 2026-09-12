@@ -6,8 +6,8 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { LinkFormView } from '../../src/ui/linkformview.js';
 import { LinkButtonView } from '../../src/ui/linkbuttonview.js';
-import { ListView, View, FocusCycler, ViewCollection } from '@ckeditor/ckeditor5-ui';
-import { keyCodes, KeystrokeHandler, FocusTracker } from '@ckeditor/ckeditor5-utils';
+import { ListView, View, FocusCycler, ViewCollection } from 'toannv-ckeditor5-ui';
+import { keyCodes, KeystrokeHandler, FocusTracker } from 'toannv-ckeditor5-utils';
 
 describe( 'LinkFormView', () => {
 	let view;

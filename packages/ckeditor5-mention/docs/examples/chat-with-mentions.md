@@ -33,7 +33,7 @@ import {
 	Link,
 	Mention,
 	Paragraph
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

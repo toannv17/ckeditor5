@@ -7,8 +7,8 @@
  * @module show-blocks/showblockscommand
  */
 
-import { Command, type Editor } from '@ckeditor/ckeditor5-core';
-import type { ViewDowncastWriter, ViewRootEditableElement } from '@ckeditor/ckeditor5-engine';
+import { Command, type Editor } from 'toannv-ckeditor5-core';
+import type { ViewDowncastWriter, ViewRootEditableElement } from 'toannv-ckeditor5-engine';
 
 type ShowBlocksLabelDirection = 'ltr' | 'rtl';
 

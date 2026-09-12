@@ -6,11 +6,11 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { ArrowKeysObserver } from '../../../src/view/observer/arrowkeysobserver.js';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
 
-import { keyCodes } from '@ckeditor/ckeditor5-utils';
+import { keyCodes } from 'toannv-ckeditor5-utils';
 
 describe( 'ArrowKeysObserver', () => {
 	let editor, view, viewDocument, observer;

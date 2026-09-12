@@ -7,8 +7,8 @@
  * @module table/tablescroll/watchers
  */
 
-import { Collection, type EventInfo } from '@ckeditor/ckeditor5-utils';
-import type { EditingView, Model, ModelElement, ModelDocumentChangeEvent } from '@ckeditor/ckeditor5-engine';
+import { Collection, type EventInfo } from 'toannv-ckeditor5-utils';
+import type { EditingView, Model, ModelElement, ModelDocumentChangeEvent } from 'toannv-ckeditor5-engine';
 
 /**
  * Creates a live collection of all `table` model elements present in the document and keeps it

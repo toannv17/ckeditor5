@@ -7,8 +7,8 @@
  * @module special-characters/ui/characterinfoview
  */
 
-import type { Locale } from '@ckeditor/ckeditor5-utils';
-import { View } from '@ckeditor/ckeditor5-ui';
+import type { Locale } from 'toannv-ckeditor5-utils';
+import { View } from 'toannv-ckeditor5-ui';
 
 /**
  * The view displaying detailed information about a special character glyph, e.g. upon

@@ -7,10 +7,10 @@
  * @module image/imageupload/uploadimagecommand
  */
 
-import { FileRepository } from '@ckeditor/ckeditor5-upload';
-import { Command, type Editor } from '@ckeditor/ckeditor5-core';
-import { toArray, type ArrayOrItem } from '@ckeditor/ckeditor5-utils';
-import type { ModelPosition } from '@ckeditor/ckeditor5-engine';
+import { FileRepository } from 'toannv-ckeditor5-upload';
+import { Command, type Editor } from 'toannv-ckeditor5-core';
+import { toArray, type ArrayOrItem } from 'toannv-ckeditor5-utils';
+import type { ModelPosition } from 'toannv-ckeditor5-engine';
 
 import { type ImageUtils } from '../imageutils.js';
 

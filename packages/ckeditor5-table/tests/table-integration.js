@@ -5,23 +5,23 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { Widget } from '@ckeditor/ckeditor5-widget';
+import { Widget } from 'toannv-ckeditor5-widget';
 
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { UndoEditing } from '@ckeditor/ckeditor5-undo';
-import { ListEditing } from '@ckeditor/ckeditor5-list';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { ListEditing } from 'toannv-ckeditor5-list';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 import {
 	_getModelData,
 	_setModelData,
-	_parseView } from '@ckeditor/ckeditor5-engine';
+	_parseView } from 'toannv-ckeditor5-engine';
 
 import { TableEditing } from '../src/tableediting.js';
 import { modelTable, viewTable } from './_utils/utils.js';
-import { stubUid } from '@ckeditor/ckeditor5-list/tests/list/_utils/uid.js';
+import { stubUid } from 'toannv-ckeditor5-list/tests/list/_utils/uid.js';
 
 describe( 'Table feature – integration', () => {
 	describe( 'with clipboard', () => {

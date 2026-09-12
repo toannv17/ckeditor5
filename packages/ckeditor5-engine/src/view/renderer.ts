@@ -26,7 +26,7 @@ import {
 	type DiffResult,
 	type ObservableChangeEvent,
 	type ObservableMixinConstructor
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import type { ViewDocumentChangeType } from './document.js';
 import { type ViewDocumentSelection } from './documentselection.js';

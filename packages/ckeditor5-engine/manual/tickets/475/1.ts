@@ -3,16 +3,16 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { Plugin } from 'toannv-ckeditor5-core';
 import { ModelRange } from '../../../src/model/range.js';
 import { ModelLivePosition } from '../../../src/model/liveposition.js';
 
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Undo } from '@ckeditor/ckeditor5-undo';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Undo } from 'toannv-ckeditor5-undo';
 
 class Link extends Plugin {
 	public init(): void {

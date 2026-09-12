@@ -30,7 +30,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 ```js
 // Core plugin provides the API for the management of special characters and their categories.
 // The other provide a basic set of special characters.
-import { ClassicEditor, SpecialCharacters, SpecialCharactersEssentials } from 'ckeditor5';
+import { ClassicEditor, SpecialCharacters, SpecialCharactersEssentials } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -145,7 +145,7 @@ For example, you can limit the categories to "Mathematical" and "Currency" only 
 
 <code-switcher>
 ```js
-import { ClassicEditor, SpecialCharacters, SpecialCharactersCurrency, SpecialCharactersMathematical } from 'ckeditor5';
+import { ClassicEditor, SpecialCharacters, SpecialCharactersCurrency, SpecialCharactersMathematical } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

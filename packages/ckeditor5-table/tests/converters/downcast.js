@@ -5,14 +5,14 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { UndoEditing } from '@ckeditor/ckeditor5-undo';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { toWidgetEditable } from '@ckeditor/ckeditor5-widget';
-import { _getViewData, _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { toWidgetEditable } from 'toannv-ckeditor5-widget';
+import { _getViewData, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 import { modelTable, viewTable } from '../_utils/utils.js';
 import { Table } from '../../src/table.js';
 import { TableCaption } from '../../src/tablecaption.js';

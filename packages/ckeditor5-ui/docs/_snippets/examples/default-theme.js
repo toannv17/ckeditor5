@@ -14,7 +14,7 @@ import {
 	ImageUpload,
 	FindAndReplace,
 	CodeBlock
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 
 import { CS_CONFIG, TOKEN_URL, ArticlePluginSet, getViewportTopOffsetConfig } from '@snippets/index.js';
 

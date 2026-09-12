@@ -5,19 +5,19 @@
 
 import { ListEditing } from '../../src/list/listediting.js';
 
-import { BoldEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { UndoEditing } from '@ckeditor/ckeditor5-undo';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { HeadingEditing } from '@ckeditor/ckeditor5-heading';
-import { IndentEditing } from '@ckeditor/ckeditor5-indent';
-import { TableEditing } from '@ckeditor/ckeditor5-table';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { AlignmentEditing } from '@ckeditor/ckeditor5-alignment';
+import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { HeadingEditing } from 'toannv-ckeditor5-heading';
+import { IndentEditing } from 'toannv-ckeditor5-indent';
+import { TableEditing } from 'toannv-ckeditor5-table';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { AlignmentEditing } from 'toannv-ckeditor5-alignment';
 import { beforeEach, afterEach, describe, it, expect, vi } from 'vitest';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _getModelData, _setModelData, _parseModel, _getViewData } from '@ckeditor/ckeditor5-engine';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _getModelData, _setModelData, _parseModel, _getViewData } from 'toannv-ckeditor5-engine';
 
 import { ListIndentCommand } from '../../src/list/listindentcommand.js';
 import { ListSplitCommand } from '../../src/list/listsplitcommand.js';

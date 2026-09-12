@@ -17,7 +17,7 @@ import type {
 	EditorUIUpdateEvent
 } from '../../editorui/editorui.js';
 
-import { Plugin, type Editor, type EditorReadyEvent, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type Editor, type EditorReadyEvent, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 
 import {
 	FocusTracker,
@@ -27,14 +27,14 @@ import {
 	global,
 	toUnit,
 	type ObservableChangeEvent
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import {
 	Observer,
 	type ModelDocumentSelection,
 	type ModelDocumentSelectionChangeRangeEvent,
 	type ModelSchema
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 import { debounce } from 'es-toolkit/compat';
 

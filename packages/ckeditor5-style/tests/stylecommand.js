@@ -4,16 +4,16 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { ImageBlock, ImageCaption } from '@ckeditor/ckeditor5-image';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { Table } from '@ckeditor/ckeditor5-table';
-import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
-import { _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ImageBlock, ImageCaption } from 'toannv-ckeditor5-image';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { Table } from 'toannv-ckeditor5-table';
+import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
+import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 
 import { Style } from '../src/style.js';
 

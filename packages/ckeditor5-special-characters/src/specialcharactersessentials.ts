@@ -7,7 +7,7 @@
  * @module special-characters/specialcharactersessentials
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 
 import { SpecialCharactersCurrency } from './specialcharacterscurrency.js';
 import { SpecialCharactersMathematical } from './specialcharactersmathematical.js';

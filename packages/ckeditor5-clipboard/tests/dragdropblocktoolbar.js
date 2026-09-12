@@ -10,19 +10,19 @@ import { DragDrop } from '../src/dragdrop.js';
 import { PastePlainText } from '../src/pasteplaintext.js';
 import { DragDropBlockToolbar } from '../src/dragdropblocktoolbar.js';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Table } from '@ckeditor/ckeditor5-table';
-import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
-import { ShiftEnter } from '@ckeditor/ckeditor5-enter';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { BlockToolbar } from '@ckeditor/ckeditor5-ui';
-import { Bold } from '@ckeditor/ckeditor5-basic-styles';
-import { Image, ImageCaption } from '@ckeditor/ckeditor5-image';
-import { env } from '@ckeditor/ckeditor5-utils';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Table } from 'toannv-ckeditor5-table';
+import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
+import { ShiftEnter } from 'toannv-ckeditor5-enter';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { BlockToolbar } from 'toannv-ckeditor5-ui';
+import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { Image, ImageCaption } from 'toannv-ckeditor5-image';
+import { env } from 'toannv-ckeditor5-utils';
 
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
+import { _setModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'Drag and Drop Block Toolbar', () => {
 	let editorElement, editor, model, view, viewDocument, root, mapper, domConverter, dragDropBlockToolbar,

@@ -23,7 +23,7 @@ import {
 	delay,
 	type Locale,
 	type DelayedFunc
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 /**
  * The button view class.

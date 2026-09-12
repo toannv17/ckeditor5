@@ -14,7 +14,7 @@ import type {
 
 import type {
 	ToolbarConfig
-} from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-core';
 
 declare module '@ckeditor/ckeditor5-core' {
 	interface EditorConfig {

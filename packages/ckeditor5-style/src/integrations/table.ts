@@ -7,11 +7,11 @@
  * @module style/integrations/table
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import type { ModelElement } from '@ckeditor/ckeditor5-engine';
-import type { TableUtils } from '@ckeditor/ckeditor5-table';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import type { ModelElement } from 'toannv-ckeditor5-engine';
+import type { TableUtils } from 'toannv-ckeditor5-table';
 
-import type { DataFilter } from '@ckeditor/ckeditor5-html-support';
+import type { DataFilter } from 'toannv-ckeditor5-html-support';
 
 import {
 	StyleUtils,

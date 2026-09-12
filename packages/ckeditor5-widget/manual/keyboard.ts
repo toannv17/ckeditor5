@@ -5,9 +5,9 @@
 
 import { Widget } from '../src/widget.js';
 import { toWidget, toWidgetEditable, viewToModelPositionOutsideModelElement } from '../src/utils.js';
-import { Plugin, type Editor } from '@ckeditor/ckeditor5-core';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Plugin, type Editor } from 'toannv-ckeditor5-core';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 
 declare global {
 	interface Window {

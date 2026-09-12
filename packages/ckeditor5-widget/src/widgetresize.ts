@@ -19,7 +19,7 @@ import { type WidgetToolbarRepository } from './widgettoolbarrepository.js';
 import {
 	Plugin,
 	type Editor
-} from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-core';
 
 import {
 	MouseObserver,
@@ -29,16 +29,16 @@ import {
 	type ViewContainerElement,
 	type ViewDocumentMouseDownEvent,
 	type ViewSelectionChangeEvent
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
-import type { EditorUIUpdateEvent } from '@ckeditor/ckeditor5-ui';
+import type { EditorUIUpdateEvent } from 'toannv-ckeditor5-ui';
 
 import {
 	DomEmitterMixin,
 	global,
 	type DomEmitter,
 	type EventInfo
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import { throttle } from 'es-toolkit/compat';
 

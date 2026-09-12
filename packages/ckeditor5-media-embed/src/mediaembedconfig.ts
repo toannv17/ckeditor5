@@ -7,8 +7,8 @@
  * @module media-embed/mediaembedconfig
  */
 
-import type { ToolbarConfigItem } from '@ckeditor/ckeditor5-core';
-import type { ArrayOrItem } from '@ckeditor/ckeditor5-utils';
+import type { ToolbarConfigItem } from 'toannv-ckeditor5-core';
+import type { ArrayOrItem } from 'toannv-ckeditor5-utils';
 
 /**
  * The configuration of the media embed features.

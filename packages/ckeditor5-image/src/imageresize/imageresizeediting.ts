@@ -7,8 +7,8 @@
  * @module image/imageresize/imageresizeediting
  */
 
-import type { ViewElement } from '@ckeditor/ckeditor5-engine';
-import { type Editor, Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import type { ViewElement } from 'toannv-ckeditor5-engine';
+import { type Editor, Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 import { ImageUtils } from '../imageutils.js';
 import { ResizeImageCommand } from './resizeimagecommand.js';
 import { widthAndHeightStylesAreBothSet } from '../image/utils.js';

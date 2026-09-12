@@ -11,7 +11,7 @@ import {
 	ImageResize,
 	AutoImage,
 	LinkImage
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 import {
 	CS_CONFIG,
 	TOKEN_URL,

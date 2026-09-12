@@ -6,15 +6,15 @@
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { modelElementToPlainText } from '../src/utils.js';
 
-import { ModelElement, ModelText, _setModelData } from '@ckeditor/ckeditor5-engine';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { BoldEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { LinkEditing } from '@ckeditor/ckeditor5-link';
-import { ListEditing } from '@ckeditor/ckeditor5-list';
-import { TableEditing } from '@ckeditor/ckeditor5-table';
-import { Enter, ShiftEnter } from '@ckeditor/ckeditor5-enter';
+import { ModelElement, ModelText, _setModelData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { LinkEditing } from 'toannv-ckeditor5-link';
+import { ListEditing } from 'toannv-ckeditor5-list';
+import { TableEditing } from 'toannv-ckeditor5-table';
+import { Enter, ShiftEnter } from 'toannv-ckeditor5-enter';
 
 describe( 'utils', () => {
 	describe( 'modelElementToPlainText()', () => {

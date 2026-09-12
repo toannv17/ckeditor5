@@ -3,13 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { IconLink } from '@ckeditor/ckeditor5-icons';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Undo } from 'toannv-ckeditor5-undo';
+import { IconLink } from 'toannv-ckeditor5-icons';
 import { LinkUI, type LinksProvider } from '../src/linkui.js';
 import { Link } from '../src/link.js';
 

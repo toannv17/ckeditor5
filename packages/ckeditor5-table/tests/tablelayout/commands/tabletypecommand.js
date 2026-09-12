@@ -5,9 +5,9 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { ModelTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
 
 import { TableEditing } from '../../../src/tableediting.js';
 import { TableCaptionEditing } from '../../../src/tablecaption/tablecaptionediting.js';

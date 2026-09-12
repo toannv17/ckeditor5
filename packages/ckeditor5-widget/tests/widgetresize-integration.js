@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
-import { Image, ImageResize } from '@ckeditor/ckeditor5-image';
-import { waitForAllImagesLoaded } from '@ckeditor/ckeditor5-image/tests/imageresize/_utils/utils.js';
+import { _setModelData } from 'toannv-ckeditor5-engine';
+import { Image, ImageResize } from 'toannv-ckeditor5-image';
+import { waitForAllImagesLoaded } from 'toannv-ckeditor5-image/tests/imageresize/_utils/utils.js';
 
 describe( 'WidgetResize - integration', () => {
 	let editor, model, view, viewDocument, editorElement;

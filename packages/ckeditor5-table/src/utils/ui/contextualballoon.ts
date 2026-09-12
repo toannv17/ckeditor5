@@ -7,10 +7,10 @@
  * @module table/utils/ui/contextualballoon
  */
 
-import { Rect, type DomOptimalPositionOptions } from '@ckeditor/ckeditor5-utils';
-import { BalloonPanelView, type ContextualBalloon } from '@ckeditor/ckeditor5-ui';
-import type { Editor } from '@ckeditor/ckeditor5-core';
-import type { ModelElement, ModelPosition, ModelRange } from '@ckeditor/ckeditor5-engine';
+import { Rect, type DomOptimalPositionOptions } from 'toannv-ckeditor5-utils';
+import { BalloonPanelView, type ContextualBalloon } from 'toannv-ckeditor5-ui';
+import type { Editor } from 'toannv-ckeditor5-core';
+import type { ModelElement, ModelPosition, ModelRange } from 'toannv-ckeditor5-engine';
 
 import { getSelectionAffectedTableWidget, getTableWidgetAncestor } from './widget.js';
 import { getSelectionAffectedTable } from '../common.js';

@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 import { FontColor } from '../../../src/fontcolor.js';
 import { FontBackgroundColor } from '../../../src/fontbackgroundcolor.js';
-import { BalloonToolbar } from '@ckeditor/ckeditor5-ui';
+import { BalloonToolbar } from 'toannv-ckeditor5-ui';
 
 declare global {
 	interface Window { editor: any }

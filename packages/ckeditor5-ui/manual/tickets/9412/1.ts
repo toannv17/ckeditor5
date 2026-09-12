@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { IconBold } from '@ckeditor/ckeditor5-icons';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
+import { IconBold } from 'toannv-ckeditor5-icons';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
 import { ButtonView } from '../../../src/button/buttonview.js';
 
 function customButtonView( editor: any ) {

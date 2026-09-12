@@ -7,9 +7,9 @@
  * @module table/ui/inserttableview
  */
 
-import { View, ButtonView, addKeyboardHandlingForGrid, type ViewCollection } from '@ckeditor/ckeditor5-ui';
+import { View, ButtonView, addKeyboardHandlingForGrid, type ViewCollection } from 'toannv-ckeditor5-ui';
 
-import { KeystrokeHandler, FocusTracker, type Locale } from '@ckeditor/ckeditor5-utils';
+import { KeystrokeHandler, FocusTracker, type Locale } from 'toannv-ckeditor5-utils';
 
 /**
  * The table size view.

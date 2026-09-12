@@ -3,13 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 import { Table } from '../../../src/table.js';
 import { TableCellProperties } from '../../../src/tablecellproperties.js';
-import { global, Collection } from '@ckeditor/ckeditor5-utils';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { View, ButtonView, LabeledFieldView, ToolbarView } from '@ckeditor/ckeditor5-ui';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
+import { global, Collection } from 'toannv-ckeditor5-utils';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { View, ButtonView, LabeledFieldView, ToolbarView } from 'toannv-ckeditor5-ui';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
 
 import { ColorInputView } from '../../../src/ui/colorinputview.js';
 

@@ -5,11 +5,11 @@
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
-import { DropdownView } from '@ckeditor/ckeditor5-ui';
-import { EventInfo } from '@ckeditor/ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { DropdownView } from 'toannv-ckeditor5-ui';
+import { EventInfo } from 'toannv-ckeditor5-utils';
 
 import { Style } from '../src/style.js';
 import { StyleUI } from '../src/styleui.js';

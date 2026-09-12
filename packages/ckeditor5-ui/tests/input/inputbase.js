@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { FocusTracker } from '@ckeditor/ckeditor5-utils';
+import { FocusTracker } from 'toannv-ckeditor5-utils';
 import { InputBase } from '../../src/input/inputbase.js';
 import { InputView } from '../../src/input/inputview.js';
 

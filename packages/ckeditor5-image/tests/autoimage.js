@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { Link, LinkImage } from '@ckeditor/ckeditor5-link';
-import { Table } from '@ckeditor/ckeditor5-table';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { global } from '@ckeditor/ckeditor5-utils';
-import { ViewDocumentDomEventData, _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { Link, LinkImage } from 'toannv-ckeditor5-link';
+import { Table } from 'toannv-ckeditor5-table';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Undo } from 'toannv-ckeditor5-undo';
+import { global } from 'toannv-ckeditor5-utils';
+import { ViewDocumentDomEventData, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 
 import { Image } from '../src/image.js';
 import { ImageUtils } from '../src/imageutils.js';

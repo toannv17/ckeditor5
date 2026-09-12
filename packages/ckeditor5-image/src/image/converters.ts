@@ -16,8 +16,8 @@ import {
 	type ViewElementAttributes,
 	type DowncastAttributeEvent,
 	type Consumables
-} from '@ckeditor/ckeditor5-engine';
-import { first, type GetCallback } from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-engine';
+import { first, type GetCallback } from 'toannv-ckeditor5-utils';
 import { type ImageUtils } from '../imageutils.js';
 import { getViewImageType, isImageTypePlaceable } from './utils.js';
 

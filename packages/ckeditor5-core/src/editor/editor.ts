@@ -25,7 +25,7 @@ import {
 	type ObservableChangeEvent,
 	type CRCData,
 	type ObservableMixinConstructor
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import {
 	Conversion,
@@ -33,10 +33,10 @@ import {
 	EditingController,
 	Model,
 	StylesProcessor
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
-import type { EditorUI } from '@ckeditor/ckeditor5-ui';
-import { ContextWatchdog, EditorWatchdog } from '@ckeditor/ckeditor5-watchdog';
+import type { EditorUI } from 'toannv-ckeditor5-ui';
+import { ContextWatchdog, EditorWatchdog } from 'toannv-ckeditor5-watchdog';
 
 import { Context } from '../context.js';
 import { PluginCollection } from '../plugincollection.js';

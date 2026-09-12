@@ -4,17 +4,17 @@
  */
 
 import { RemoveFormat } from '../src/removeformat.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Image, ImageResize, ImageCaption } from '@ckeditor/ckeditor5-image';
-import { Link } from '@ckeditor/ckeditor5-link';
-import { Bold, Underline } from '@ckeditor/ckeditor5-basic-styles';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Image, ImageResize, ImageCaption } from 'toannv-ckeditor5-image';
+import { Link } from 'toannv-ckeditor5-link';
+import { Bold, Underline } from 'toannv-ckeditor5-basic-styles';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 import {
 	_getModelData,
 	_setModelData
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 

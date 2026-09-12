@@ -14,7 +14,7 @@ import {
 	AutoImage,
 	LinkImage,
 	TodoList
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 import {
 	TOKEN_URL,
 	CS_CONFIG,

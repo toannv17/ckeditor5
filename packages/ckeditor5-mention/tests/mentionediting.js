@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _getModelData, _stringifyView, _getViewData } from '@ckeditor/ckeditor5-engine';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _getModelData, _stringifyView, _getViewData } from 'toannv-ckeditor5-engine';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 import { MentionEditing, _toMentionAttribute } from '../src/mentionediting.js';
 import { MentionCommand } from '../src/mentioncommand.js';

@@ -29,7 +29,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, Table, TableScroll } from 'ckeditor5';
+import { ClassicEditor, Table, TableScroll } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

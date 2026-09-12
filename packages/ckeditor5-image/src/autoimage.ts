@@ -7,16 +7,16 @@
  * @module image/autoimage
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 import {
 	Clipboard,
 	type ClipboardInputTransformationEvent,
 	type ClipboardPipeline
-} from '@ckeditor/ckeditor5-clipboard';
-import { ModelLivePosition, ModelLiveRange } from '@ckeditor/ckeditor5-engine';
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { Delete } from '@ckeditor/ckeditor5-typing';
-import { global } from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-clipboard';
+import { ModelLivePosition, ModelLiveRange } from 'toannv-ckeditor5-engine';
+import { Undo } from 'toannv-ckeditor5-undo';
+import { Delete } from 'toannv-ckeditor5-typing';
+import { global } from 'toannv-ckeditor5-utils';
 
 import { ImageUtils } from './imageutils.js';
 

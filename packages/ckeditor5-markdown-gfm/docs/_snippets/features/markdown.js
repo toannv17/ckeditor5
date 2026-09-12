@@ -18,7 +18,7 @@ import {
 	AutoImage,
 	TodoList,
 	Markdown
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 import { SourceEditingEnhanced } from 'ckeditor5-premium-features';
 import {
 	CS_CONFIG,

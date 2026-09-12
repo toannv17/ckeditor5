@@ -5,21 +5,21 @@
 
 import { ShowBlocks } from '../src/showblocks.js';
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Alignment } from '@ckeditor/ckeditor5-alignment';
-import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
-import { Bold, Code, Italic, Strikethrough, Subscript, Superscript, Underline } from '@ckeditor/ckeditor5-basic-styles';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
-import { Font } from '@ckeditor/ckeditor5-font';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Highlight } from '@ckeditor/ckeditor5-highlight';
-import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
-import { HtmlEmbed } from '@ckeditor/ckeditor5-html-embed';
-import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Alignment } from 'toannv-ckeditor5-alignment';
+import { Autoformat } from 'toannv-ckeditor5-autoformat';
+import { Bold, Code, Italic, Strikethrough, Subscript, Superscript, Underline } from 'toannv-ckeditor5-basic-styles';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { FindAndReplace } from 'toannv-ckeditor5-find-and-replace';
+import { Font } from 'toannv-ckeditor5-font';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Highlight } from 'toannv-ckeditor5-highlight';
+import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
+import { HtmlEmbed } from 'toannv-ckeditor5-html-embed';
+import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
 import {
 	AutoImage,
 	Image,
@@ -30,24 +30,24 @@ import {
 	ImageToolbar,
 	ImageUpload,
 	PictureEditing
-} from '@ckeditor/ckeditor5-image';
-import { Indent, IndentBlock } from '@ckeditor/ckeditor5-indent';
-import { AutoLink, Link, LinkImage } from '@ckeditor/ckeditor5-link';
-import { List, ListProperties } from '@ckeditor/ckeditor5-list';
-import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
-import { Mention } from '@ckeditor/ckeditor5-mention';
-import { PageBreak } from '@ckeditor/ckeditor5-page-break';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
-import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
-import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
-import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor/ckeditor5-special-characters';
-import { Table, TableCaption, TableCellProperties, TableColumnResize, TableProperties, TableToolbar } from '@ckeditor/ckeditor5-table';
-import { TextTransformation } from '@ckeditor/ckeditor5-typing';
+} from 'toannv-ckeditor5-image';
+import { Indent, IndentBlock } from 'toannv-ckeditor5-indent';
+import { AutoLink, Link, LinkImage } from 'toannv-ckeditor5-link';
+import { List, ListProperties } from 'toannv-ckeditor5-list';
+import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
+import { Mention } from 'toannv-ckeditor5-mention';
+import { PageBreak } from 'toannv-ckeditor5-page-break';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { PasteFromOffice } from 'toannv-ckeditor5-paste-from-office';
+import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
+import { SourceEditing } from 'toannv-ckeditor5-source-editing';
+import { SpecialCharacters, SpecialCharactersEssentials } from 'toannv-ckeditor5-special-characters';
+import { Table, TableCaption, TableCellProperties, TableColumnResize, TableProperties, TableToolbar } from 'toannv-ckeditor5-table';
+import { TextTransformation } from 'toannv-ckeditor5-typing';
 
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
-import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { EasyImage } from 'toannv-ckeditor5-easy-image';
+import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 declare global {
 	interface Window { editor: any }

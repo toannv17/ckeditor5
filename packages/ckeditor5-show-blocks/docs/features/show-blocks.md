@@ -25,7 +25,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, ShowBlocks } from 'ckeditor5';
+import { ClassicEditor, ShowBlocks } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

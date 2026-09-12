@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { SearchInfoView, ViewCollection } from '@ckeditor/ckeditor5-ui';
+import { SearchInfoView, ViewCollection } from 'toannv-ckeditor5-ui';
 import { EmojiCategoriesView } from '../../src/ui/emojicategoriesview.js';
 import { EmojiGridView } from '../../src/ui/emojigridview.js';
 import { EmojiPickerView } from '../../src/ui/emojipickerview.js';

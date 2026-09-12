@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { IconBold, IconItalic, IconCheck, IconCancel } from '@ckeditor/ckeditor5-icons';
-import { testUtils } from '@ckeditor/ckeditor5-ui/tests/_utils/utils.js';
+import { IconBold, IconItalic, IconCheck, IconCancel } from 'toannv-ckeditor5-icons';
+import { testUtils } from 'toannv-ckeditor5-ui/tests/_utils/utils.js';
 
-import { Collection, EmitterMixin, Locale } from '@ckeditor/ckeditor5-utils';
+import { Collection, EmitterMixin, Locale } from 'toannv-ckeditor5-utils';
 import {
 	UIModel,
 	View,
@@ -24,7 +24,7 @@ import {
 	SplitButtonView,
 	SpinnerView,
 	TooltipManager
-} from '@ckeditor/ckeditor5-ui';
+} from 'toannv-ckeditor5-ui';
 
 const locale = new Locale();
 

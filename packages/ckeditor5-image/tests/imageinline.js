@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { global } from '@ckeditor/ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { global } from 'toannv-ckeditor5-utils';
 
 import { ImageInline } from '../src/imageinline.js';
 import { ImageInlineEditing } from '../src/image/imageinlineediting.js';
-import { Widget } from '@ckeditor/ckeditor5-widget';
+import { Widget } from 'toannv-ckeditor5-widget';
 import { ImageTextAlternative } from '../src/imagetextalternative.js';
 import { ImageInsertUI } from '../src/imageinsert/imageinsertui.js';
 

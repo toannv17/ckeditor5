@@ -5,16 +5,16 @@
 
 import { expect } from 'vitest';
 
-import { ModelTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
 
-import { BoldEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { UndoEditing } from '@ckeditor/ckeditor5-undo';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { HeadingEditing } from '@ckeditor/ckeditor5-heading';
-import { TableEditing } from '@ckeditor/ckeditor5-table';
-import { ImageBlockEditing } from '@ckeditor/ckeditor5-image';
+import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { HeadingEditing } from 'toannv-ckeditor5-heading';
+import { TableEditing } from 'toannv-ckeditor5-table';
+import { ImageBlockEditing } from 'toannv-ckeditor5-image';
 
 import { _getModelData, _parseModel } from '../../../../src/dev-utils/model.js';
 import { transformOperationSets } from '../../../../src/model/operation/transform.js';

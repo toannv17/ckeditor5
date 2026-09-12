@@ -13,7 +13,7 @@ import { ModelPosition } from '../../../src/model/position.js';
 
 import { _setModelData, _getModelData, _parseModel, _stringifyModel } from '../../../src/dev-utils/model.js';
 import { ModelRange } from '../../../src/model/range.js';
-import { Config } from '@ckeditor/ckeditor5-utils';
+import { Config } from 'toannv-ckeditor5-utils';
 
 describe( 'DataController utils', () => {
 	let model, doc, root, config;

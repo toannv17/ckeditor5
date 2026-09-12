@@ -7,12 +7,12 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
 import { FindAndReplaceEditing } from '../src/findandreplaceediting.js';
 
-import { DecoupledEditor } from '@ckeditor/ckeditor5-editor-decoupled';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { BoldEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { _getViewData, _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
-import { toWidget, viewToModelPositionOutsideModelElement } from '@ckeditor/ckeditor5-widget';
+import { DecoupledEditor } from 'toannv-ckeditor5-editor-decoupled';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { _getViewData, _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { toWidget, viewToModelPositionOutsideModelElement } from 'toannv-ckeditor5-widget';
 
 import { FindAndReplace } from '../src/findandreplace.js';
 

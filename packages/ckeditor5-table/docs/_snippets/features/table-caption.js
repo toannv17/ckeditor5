@@ -6,7 +6,7 @@
 import {
 	TableCaption,
 	Superscript
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 import {
 	TOKEN_URL,
 	getViewportTopOffsetConfig

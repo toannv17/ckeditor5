@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { RemoveFormatEditing } from '@ckeditor/ckeditor5-remove-format';
-import { CodeBlockEditing } from '@ckeditor/ckeditor5-code-block';
-import { _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { RemoveFormatEditing } from 'toannv-ckeditor5-remove-format';
+import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
+import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 
 import { stubUid } from './list/_utils/uid.js';
 import { ListFormatting } from '../src/listformatting.js';

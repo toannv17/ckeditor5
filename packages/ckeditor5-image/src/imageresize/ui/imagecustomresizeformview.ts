@@ -19,10 +19,10 @@ import {
 	submitHandler,
 	type FocusableView,
 	type InputNumberView
-} from '@ckeditor/ckeditor5-ui';
+} from 'toannv-ckeditor5-ui';
 
-import { FocusTracker, KeystrokeHandler, type Locale } from '@ckeditor/ckeditor5-utils';
-import { IconPreviousArrow } from '@ckeditor/ckeditor5-icons';
+import { FocusTracker, KeystrokeHandler, type Locale } from 'toannv-ckeditor5-utils';
+import { IconPreviousArrow } from 'toannv-ckeditor5-icons';
 
 /**
  * The ImageCustomResizeFormView class.

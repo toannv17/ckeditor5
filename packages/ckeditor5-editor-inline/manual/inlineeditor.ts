@@ -4,8 +4,8 @@
  */
 
 import { InlineEditor } from '../src/inlineeditor.js';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { createObserver } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { createObserver } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
 declare global {
 	interface Window {
 		_observers: any;

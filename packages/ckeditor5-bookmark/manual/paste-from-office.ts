@@ -3,24 +3,24 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
-import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Image, ImageUpload, ImageInsert, ImageStyle, ImageToolbar } from '@ckeditor/ckeditor5-image';
-import { Link, LinkImage } from '@ckeditor/ckeditor5-link';
-import { List } from '@ckeditor/ckeditor5-list';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Table } from '@ckeditor/ckeditor5-table';
-import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { EasyImage } from 'toannv-ckeditor5-easy-image';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Image, ImageUpload, ImageInsert, ImageStyle, ImageToolbar } from 'toannv-ckeditor5-image';
+import { Link, LinkImage } from 'toannv-ckeditor5-link';
+import { List } from 'toannv-ckeditor5-list';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Table } from 'toannv-ckeditor5-table';
+import { PasteFromOffice } from 'toannv-ckeditor5-paste-from-office';
 
 import { Bookmark } from '../src/bookmark.js';
 
-import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 declare global {
 	interface Window { editor: any }

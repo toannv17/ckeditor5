@@ -7,10 +7,10 @@
  * @module heading/headingediting
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { priorities } from '@ckeditor/ckeditor5-utils';
-import type { EnterCommandAfterExecuteEvent } from '@ckeditor/ckeditor5-enter';
+import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { priorities } from 'toannv-ckeditor5-utils';
+import type { EnterCommandAfterExecuteEvent } from 'toannv-ckeditor5-enter';
 import type { HeadingOption } from './headingconfig.js';
 
 import { HeadingCommand } from './headingcommand.js';

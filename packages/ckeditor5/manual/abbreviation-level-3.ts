@@ -3,20 +3,20 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { List } from '@ckeditor/ckeditor5-list';
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { findAttributeRange } from '@ckeditor/ckeditor5-typing';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { List } from 'toannv-ckeditor5-list';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { findAttributeRange } from 'toannv-ckeditor5-typing';
 
-import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
-import { Plugin, Command } from '@ckeditor/ckeditor5-core';
-import { toMap } from '@ckeditor/ckeditor5-utils';
+import { Plugin, Command } from 'toannv-ckeditor5-core';
+import { toMap } from 'toannv-ckeditor5-utils';
 
-import { ButtonView, ContextualBalloon, clickOutsideHandler } from '@ckeditor/ckeditor5-ui';
+import { ButtonView, ContextualBalloon, clickOutsideHandler } from 'toannv-ckeditor5-ui';
 import { FormView } from '../tests/_utils/abbreviationView-level-3.js';
 
 declare global {

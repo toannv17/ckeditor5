@@ -7,8 +7,8 @@
  * @module bookmark/bookmark
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { Widget } from '@ckeditor/ckeditor5-widget';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Widget } from 'toannv-ckeditor5-widget';
 import { BookmarkUI } from './bookmarkui.js';
 import { BookmarkEditing } from './bookmarkediting.js';
 

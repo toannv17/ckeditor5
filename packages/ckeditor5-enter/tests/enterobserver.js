@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { EditingView } from '@ckeditor/ckeditor5-engine';
+import { EditingView } from 'toannv-ckeditor5-engine';
 import { EnterObserver } from '../src/enterobserver.js';
-import { createViewRoot } from '@ckeditor/ckeditor5-engine/tests/view/_utils/createroot.js';
-import { fireBeforeInputDomEvent } from '@ckeditor/ckeditor5-typing/tests/_utils/utils.js';
-import { getCode, env } from '@ckeditor/ckeditor5-utils';
+import { createViewRoot } from 'toannv-ckeditor5-engine/tests/view/_utils/createroot.js';
+import { fireBeforeInputDomEvent } from 'toannv-ckeditor5-typing/tests/_utils/utils.js';
+import { getCode, env } from 'toannv-ckeditor5-utils';
 
 describe( 'EnterObserver', () => {
 	let view, viewDocument, enterSpy;

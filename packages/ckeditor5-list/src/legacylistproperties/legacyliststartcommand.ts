@@ -7,7 +7,7 @@
  * @module list/legacylistproperties/legacyliststartcommand
  */
 
-import { Command } from '@ckeditor/ckeditor5-core';
+import { Command } from 'toannv-ckeditor5-core';
 import { getSelectedListItems } from '../legacylist/legacyutils.js';
 
 /**

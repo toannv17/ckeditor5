@@ -7,8 +7,8 @@
  * @module link/utils/manualdecorator
  */
 
-import { ObservableMixin, type ArrayOrItem, type ObservableMixinConstructor } from '@ckeditor/ckeditor5-utils';
-import type { MatcherObjectPattern } from '@ckeditor/ckeditor5-engine';
+import { ObservableMixin, type ArrayOrItem, type ObservableMixinConstructor } from 'toannv-ckeditor5-utils';
+import type { MatcherObjectPattern } from 'toannv-ckeditor5-engine';
 import type { NormalizedLinkDecoratorManualDefinition } from '../utils.js';
 
 const LinkManualDecoratorBase: ObservableMixinConstructor = /* #__PURE__ */ ObservableMixin();

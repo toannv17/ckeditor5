@@ -7,8 +7,8 @@
  * @module html-embed/htmlembed
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { Widget } from '@ckeditor/ckeditor5-widget';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Widget } from 'toannv-ckeditor5-widget';
 
 import { HtmlEmbedEditing } from './htmlembedediting.js';
 import { HtmlEmbedUI } from './htmlembedui.js';

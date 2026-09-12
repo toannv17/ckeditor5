@@ -5,7 +5,7 @@
 
 import { config } from '../../tests/_utils/performance-config.js';
 import { makeData } from '../../tests/_data/data-sets/mixed.js';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
 declare global {
 	interface Window { _editor: any }

@@ -7,8 +7,8 @@
  * @module minimap/minimapiframeview
  */
 
-import { IframeView } from '@ckeditor/ckeditor5-ui';
-import { toUnit, type Locale } from '@ckeditor/ckeditor5-utils';
+import { IframeView } from 'toannv-ckeditor5-ui';
+import { toUnit, type Locale } from 'toannv-ckeditor5-utils';
 import type { MinimapViewOptions } from './minimapview.js';
 
 const toPx = /* #__PURE__ */ toUnit( 'px' );

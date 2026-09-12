@@ -13,7 +13,7 @@ import { _remove } from './utils.js';
 
 import { type ModelPosition } from '../position.js';
 
-import { CKEditorError } from '@ckeditor/ckeditor5-utils';
+import { CKEditorError } from 'toannv-ckeditor5-utils';
 import type { ModelSelectable } from '../selection.js';
 
 /**

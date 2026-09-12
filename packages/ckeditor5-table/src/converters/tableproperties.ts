@@ -7,7 +7,7 @@
  * @module table/converters/tableproperties
  */
 
-import type { Editor } from '@ckeditor/ckeditor5-core';
+import type { Editor } from 'toannv-ckeditor5-core';
 import type {
 	Conversion,
 	UpcastConversionApi,
@@ -19,8 +19,8 @@ import type {
 	StyleValue,
 	BoxStyleSides,
 	DowncastAttributeEvent
-} from '@ckeditor/ckeditor5-engine';
-import { first } from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-engine';
+import { first } from 'toannv-ckeditor5-utils';
 
 const ALIGN_VALUES_REG_EXP = /^(left|center|right)$/;
 const FLOAT_VALUES_REG_EXP = /^(left|none|right)$/;

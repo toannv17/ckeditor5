@@ -5,11 +5,11 @@
 
 import sanitizeHtml from 'sanitize-html';
 import { clone } from 'es-toolkit/compat';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
-import { Table } from '@ckeditor/ckeditor5-table';
-import { Code } from '@ckeditor/ckeditor5-basic-styles';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
+import { Table } from 'toannv-ckeditor5-table';
+import { Code } from 'toannv-ckeditor5-basic-styles';
 import { HtmlEmbed } from '../src/htmlembed.js';
 
 declare global {

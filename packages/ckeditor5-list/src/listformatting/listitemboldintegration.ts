@@ -7,8 +7,8 @@
  * @module list/listformatting/listitemboldintegration
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { env } from '@ckeditor/ckeditor5-utils';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { env } from 'toannv-ckeditor5-utils';
 
 import { ListEditing } from '../list/listediting.js';
 import type { ListFormatting } from '../listformatting.js';

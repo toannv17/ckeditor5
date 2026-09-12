@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ImageInlineEditing } from '@ckeditor/ckeditor5-image';
-import { ShiftEnter } from '@ckeditor/ckeditor5-enter';
-import { createElement } from '@ckeditor/ckeditor5-utils';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ImageInlineEditing } from 'toannv-ckeditor5-image';
+import { ShiftEnter } from 'toannv-ckeditor5-enter';
+import { createElement } from 'toannv-ckeditor5-utils';
 
 import { _getModelData } from '../../../src/dev-utils/model.js';
 import { getViewFillerOffset } from '../../../src/index.js';

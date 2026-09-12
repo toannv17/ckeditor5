@@ -7,7 +7,7 @@ import { vi } from 'vitest';
 
 import { WidgetResize } from '../../../src/widgetresize.js';
 
-import { Rect } from '@ckeditor/ckeditor5-utils';
+import { Rect } from 'toannv-ckeditor5-utils';
 
 export const resizerMouseSimulator = {
 	down( editor, domTarget, options = {} ) {

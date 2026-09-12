@@ -11,11 +11,11 @@ import { ViewUIElement } from '../../../src/view/uielement.js';
 import { ViewContainerElement } from '../../../src/view/containerelement.js';
 import { ViewDowncastWriter } from '../../../src/view/downcastwriter.js';
 import { BR_FILLER, INLINE_FILLER, INLINE_FILLER_LENGTH, NBSP_FILLER, MARKED_NBSP_FILLER } from '../../../src/view/filler.js';
-import { global } from '@ckeditor/ckeditor5-utils';
+import { global } from 'toannv-ckeditor5-utils';
 import { StylesProcessor } from '../../../src/view/stylesmap.js';
 import { ViewPosition } from '../../../src/view/position.js';
 import { ViewRange } from '../../../src/view/range.js';
-import { ViewText } from '@ckeditor/ckeditor5-engine';
+import { ViewText } from 'toannv-ckeditor5-engine';
 
 describe( 'ViewDomConverter', () => {
 	let converter, viewDocument;

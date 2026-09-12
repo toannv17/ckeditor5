@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
-import { BalloonToolbar, View } from '@ckeditor/ckeditor5-ui';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { global } from '@ckeditor/ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _setModelData } from 'toannv-ckeditor5-engine';
+import { BalloonToolbar, View } from 'toannv-ckeditor5-ui';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { global } from 'toannv-ckeditor5-utils';
 import { Image } from '../src/image.js';
 import { ImageToolbar } from '../src/imagetoolbar.js';
 import { ImageTextAlternative } from '../src/imagetextalternative.js';

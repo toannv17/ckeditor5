@@ -5,12 +5,12 @@
 
 import { createTableAsciiArt, modelTable, prepareModelTableInput, prettyFormatModelTableInput } from '../tests/_utils/utils.js';
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { _setModelData, type ModelNode } from '@ckeditor/ckeditor5-engine';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { _setModelData, type ModelNode } from 'toannv-ckeditor5-engine';
 
 import { debounce } from 'es-toolkit/compat';
 import { atomizeChangeset, diff, Operation } from 'json-diff-ts';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 import { TableWalker } from '../src/tablewalker.js';
 
 declare global {

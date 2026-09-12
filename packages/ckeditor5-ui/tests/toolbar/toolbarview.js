@@ -15,7 +15,7 @@ import {
 	Rect,
 	Locale,
 	ResizeObserver
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 import { ComponentFactory } from '../../src/componentfactory.js';
 import { FocusCycler } from '../../src/focuscycler.js';
 import { ViewCollection } from '../../src/viewcollection.js';
@@ -30,7 +30,7 @@ import {
 	IconPlus,
 	IconText,
 	IconThreeVerticalDots
-} from '@ckeditor/ckeditor5-icons';
+} from 'toannv-ckeditor5-icons';
 
 describe( 'ToolbarView', () => {
 	let locale, view;

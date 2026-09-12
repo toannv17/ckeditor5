@@ -9,7 +9,7 @@
 
 import { View } from '../view.js';
 
-import { uid, type Locale } from '@ckeditor/ckeditor5-utils';
+import { uid, type Locale } from 'toannv-ckeditor5-utils';
 
 /**
  * The label view class.

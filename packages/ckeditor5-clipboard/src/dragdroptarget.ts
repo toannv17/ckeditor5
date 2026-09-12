@@ -10,7 +10,7 @@
 import {
 	Plugin,
 	type Editor
-} from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-core';
 
 import {
 	type ModelNode,
@@ -21,7 +21,7 @@ import {
 	type ViewRange,
 	type ViewDowncastWriter,
 	type ViewRootEditableElement
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 import {
 	global,
@@ -30,7 +30,7 @@ import {
 	delay,
 	ResizeObserver,
 	type DomEmitter
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import { LineView } from './lineview.js';
 

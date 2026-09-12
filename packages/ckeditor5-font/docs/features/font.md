@@ -38,7 +38,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, Font } from 'ckeditor5';
+import { ClassicEditor, Font } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -62,7 +62,7 @@ You can also add just one or a selected few of the font features to your plugin 
 
 <code-switcher>
 ```js
-import { ClassicEditor, FontFamily } from 'ckeditor5';
+import { ClassicEditor, FontFamily } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { Base64UploadAdapter } from 'ckeditor5';
+import { Base64UploadAdapter } from 'toannv-ckeditor5';
 import {
 	ClassicEditor,
 	getViewportTopOffsetConfig,

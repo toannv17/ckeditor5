@@ -22,7 +22,7 @@ import {
 	type Locale,
 	type GetCallback,
 	type CollectionChangeEvent
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 /**
  * The list view class.

@@ -9,8 +9,8 @@
 
 import { convertColor, convertToHex, registerCustomElement, type ColorPickerViewConfig } from './utils.js';
 
-import type { HexColor } from '@ckeditor/ckeditor5-core';
-import { type Locale, global, env } from '@ckeditor/ckeditor5-utils';
+import type { HexColor } from 'toannv-ckeditor5-core';
+import { type Locale, global, env } from 'toannv-ckeditor5-utils';
 import { debounce } from 'es-toolkit/compat';
 import { View } from '../view.js';
 import { type InputTextView } from '../inputtext/inputtextview.js';

@@ -8,7 +8,7 @@
  */
 
 import { isElement as _isElement } from 'es-toolkit/compat';
-import type { EditorConfig } from '@ckeditor/ckeditor5-core';
+import type { EditorConfig } from 'toannv-ckeditor5-core';
 
 // Note: This file is a copy of core/editor/utils/normalizerootsconfig with some adjustments.
 // The main difference is that it does not use the `Config` class from `@ckeditor/ckeditor5-utils` and instead works

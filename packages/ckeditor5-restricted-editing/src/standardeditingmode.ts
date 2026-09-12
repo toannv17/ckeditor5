@@ -7,7 +7,7 @@
  * @module restricted-editing/standardeditingmode
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 
 import { StandardEditingModeEditing } from './standardeditingmodeediting.js';
 import { StandardEditingModeUI } from './standardeditingmodeui.js';

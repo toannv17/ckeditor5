@@ -5,8 +5,8 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { CharacterGridView } from '../../src/ui/charactergridview.js';
-import { ViewCollection, ButtonView } from '@ckeditor/ckeditor5-ui';
-import { keyCodes } from '@ckeditor/ckeditor5-utils';
+import { ViewCollection, ButtonView } from 'toannv-ckeditor5-ui';
+import { keyCodes } from 'toannv-ckeditor5-utils';
 
 describe( 'CharacterGridView', () => {
 	let view;

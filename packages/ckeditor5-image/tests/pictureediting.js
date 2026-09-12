@@ -3,18 +3,18 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ItalicEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { LinkImageEditing } from '@ckeditor/ckeditor5-link';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ItalicEditing } from 'toannv-ckeditor5-basic-styles';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { LinkImageEditing } from 'toannv-ckeditor5-link';
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { global } from '@ckeditor/ckeditor5-utils';
-import { _getModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
-import { NativeFileReaderMock, UploadAdapterMock } from '@ckeditor/ckeditor5-upload/tests/_utils/mocks.js';
+import { global } from 'toannv-ckeditor5-utils';
+import { _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { NativeFileReaderMock, UploadAdapterMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
 
 import { ImageInlineEditing } from '../src/image/imageinlineediting.js';
 import { ImageBlockEditing } from '../src/image/imageblockediting.js';

@@ -9,17 +9,17 @@ import { CodeBlockCommand } from '../src/codeblockcommand.js';
 import { IndentCodeBlockCommand } from '../src/indentcodeblockcommand.js';
 import { OutdentCodeBlockCommand } from '../src/outdentcodeblockcommand.js';
 
-import { AlignmentEditing } from '@ckeditor/ckeditor5-alignment';
-import { BoldEditing, CodeEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { Enter, ShiftEnter } from '@ckeditor/ckeditor5-enter';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { ViewDocumentDomEventData, _getModelData, _setModelData, _stringifyModel, _getViewData } from '@ckeditor/ckeditor5-engine';
-import { IndentEditing } from '@ckeditor/ckeditor5-indent';
-import { ClipboardPipeline, DragDrop } from '@ckeditor/ckeditor5-clipboard';
+import { AlignmentEditing } from 'toannv-ckeditor5-alignment';
+import { BoldEditing, CodeEditing } from 'toannv-ckeditor5-basic-styles';
+import { Enter, ShiftEnter } from 'toannv-ckeditor5-enter';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Undo } from 'toannv-ckeditor5-undo';
+import { ViewDocumentDomEventData, _getModelData, _setModelData, _stringifyModel, _getViewData } from 'toannv-ckeditor5-engine';
+import { IndentEditing } from 'toannv-ckeditor5-indent';
+import { ClipboardPipeline, DragDrop } from 'toannv-ckeditor5-clipboard';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { getCode, _clearTranslations, add as addTranslations } from '@ckeditor/ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { getCode, _clearTranslations, add as addTranslations } from 'toannv-ckeditor5-utils';
 
 describe( 'CodeBlockEditing', () => {
 	let editor, element, model, view, viewDoc, root;

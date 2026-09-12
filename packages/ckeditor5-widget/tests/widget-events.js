@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { KeyObserver, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { KeyObserver, _setModelData } from 'toannv-ckeditor5-engine';
 
 import { toWidget } from '../src/utils.js';
 

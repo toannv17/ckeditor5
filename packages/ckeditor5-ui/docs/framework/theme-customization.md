@@ -138,7 +138,7 @@ Depending on your setup method, you can either import a style sheet into your `j
 
 
 ```js
-import { ClassicEditor } from 'ckeditor5';
+import { ClassicEditor } from 'toannv-ckeditor5';
 
 import 'ckeditor5/ckeditor5.css';
 

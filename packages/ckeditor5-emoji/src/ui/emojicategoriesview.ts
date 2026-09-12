@@ -7,8 +7,8 @@
  * @module emoji/ui/emojicategoriesview
  */
 
-import { ButtonView, View, FocusCycler, type ViewCollection } from '@ckeditor/ckeditor5-ui';
-import { FocusTracker, KeystrokeHandler, type Locale, type ObservableChangeEvent } from '@ckeditor/ckeditor5-utils';
+import { ButtonView, View, FocusCycler, type ViewCollection } from 'toannv-ckeditor5-ui';
+import { FocusTracker, KeystrokeHandler, type Locale, type ObservableChangeEvent } from 'toannv-ckeditor5-utils';
 import type { EmojiCategory } from '../emojirepository.js';
 
 /**

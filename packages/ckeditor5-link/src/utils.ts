@@ -15,9 +15,9 @@ import type {
 	ViewNode,
 	ViewDocumentFragment,
 	ModelRange
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
-import type { LocaleTranslate } from '@ckeditor/ckeditor5-utils';
+import type { LocaleTranslate } from 'toannv-ckeditor5-utils';
 
 import type {
 	LinkDecoratorAutomaticDefinition,

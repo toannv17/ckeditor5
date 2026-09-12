@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
 import { MediaEmbedEditing } from '../src/mediaembedediting.js';
-import { _setModelData, _getModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
-import { normalizeHtml } from '@ckeditor/ckeditor5-utils/tests/_utils/normalizehtml.js';
+import { _setModelData, _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { normalizeHtml } from 'toannv-ckeditor5-utils/tests/_utils/normalizehtml.js';
 import { escapeRegExp } from 'es-toolkit/compat';
 
 describe( 'MediaEmbedEditing', () => {

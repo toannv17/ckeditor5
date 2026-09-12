@@ -9,11 +9,11 @@ import { ListUI } from '../../src/list/listui.js';
 import { List } from '../../src/list.js';
 import { ListProperties } from '../../src/listproperties.js';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor/ckeditor5-ui';
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { _setModelData } from 'toannv-ckeditor5-engine';
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 

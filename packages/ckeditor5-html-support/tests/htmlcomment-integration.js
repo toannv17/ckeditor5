@@ -4,36 +4,36 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
 
-import { CodeBlockEditing } from '@ckeditor/ckeditor5-code-block';
+import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
 
-import { HeadingEditing } from '@ckeditor/ckeditor5-heading';
+import { HeadingEditing } from 'toannv-ckeditor5-heading';
 
-import { HighlightEditing } from '@ckeditor/ckeditor5-highlight';
+import { HighlightEditing } from 'toannv-ckeditor5-highlight';
 
-import { HtmlEmbedEditing } from '@ckeditor/ckeditor5-html-embed';
+import { HtmlEmbedEditing } from 'toannv-ckeditor5-html-embed';
 
-import { ImageBlockEditing, ImageInlineEditing, ImageCaptionEditing } from '@ckeditor/ckeditor5-image';
+import { ImageBlockEditing, ImageInlineEditing, ImageCaptionEditing } from 'toannv-ckeditor5-image';
 
-import { IndentBlock, IndentEditing } from '@ckeditor/ckeditor5-indent';
+import { IndentBlock, IndentEditing } from 'toannv-ckeditor5-indent';
 
-import { LinkEditing, LinkImageEditing } from '@ckeditor/ckeditor5-link';
+import { LinkEditing, LinkImageEditing } from 'toannv-ckeditor5-link';
 
-import { ListEditing, ListPropertiesEditing, TodoListEditing } from '@ckeditor/ckeditor5-list';
+import { ListEditing, ListPropertiesEditing, TodoListEditing } from 'toannv-ckeditor5-list';
 
-import { MediaEmbedEditing } from '@ckeditor/ckeditor5-media-embed';
+import { MediaEmbedEditing } from 'toannv-ckeditor5-media-embed';
 
-import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
+import { SourceEditing } from 'toannv-ckeditor5-source-editing';
 
-import { TableEditing, TableCaption } from '@ckeditor/ckeditor5-table';
+import { TableEditing, TableCaption } from 'toannv-ckeditor5-table';
 
 import { HtmlComment } from '../src/htmlcomment.js';
-import { MultiRootEditor } from '@ckeditor/ckeditor5-editor-multi-root';
+import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
 
 describe( 'HtmlComment integration', () => {
 	describe( 'integration with BlockQuote', () => {

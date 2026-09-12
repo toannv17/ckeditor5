@@ -42,7 +42,7 @@ By default, each nested list item can only be one level deeper than its parent. 
 
 <code-switcher>
 ```js
-import { ClassicEditor, List } from 'ckeditor5';
+import { ClassicEditor, List } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -68,7 +68,7 @@ If your editor does not need this level of richness &ndash; for example in short
 
 <code-switcher>
 ```js
-import { ClassicEditor, List } from 'ckeditor5';
+import { ClassicEditor, List } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -100,7 +100,7 @@ To prevent this behavior, enable the {@link module:list/list/adjacentlistssuppor
 
 <code-switcher>
 ```js
-import { ClassicEditor, List, AdjacentListsSupport } from 'ckeditor5';
+import { ClassicEditor, List, AdjacentListsSupport } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

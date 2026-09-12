@@ -4,12 +4,12 @@
  */
 
 import { describe, it, beforeEach, afterEach, expect } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 import { Image } from '../src/image.js';
 import { ImageStyle } from '../src/imagestyle.js';
 import { ImageStyleEditing } from '../src/imagestyle/imagestyleediting.js';
 import { ImageStyleUI } from '../src/imagestyle/imagestyleui.js';
-import { global } from '@ckeditor/ckeditor5-utils';
+import { global } from 'toannv-ckeditor5-utils';
 
 describe( 'ImageStyle', () => {
 	let editor, editorElement;

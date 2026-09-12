@@ -5,14 +5,14 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { createFakeXHRServer } from '@ckeditor/ckeditor5-core/tests/_utils/fakexhrserver.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { createFakeXHRServer } from 'toannv-ckeditor5-core/tests/_utils/fakexhrserver.js';
 
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { Image, ImageUpload } from '@ckeditor/ckeditor5-image';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { Image, ImageUpload } from 'toannv-ckeditor5-image';
 import { CKFinderUploadAdapter } from '../src/uploadadapter.js';
-import { FileRepository } from '@ckeditor/ckeditor5-upload';
-import { createNativeFileMock } from '@ckeditor/ckeditor5-upload/tests/_utils/mocks.js';
+import { FileRepository } from 'toannv-ckeditor5-upload';
+import { createNativeFileMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
 
 describe( 'CKFinderUploadAdapter', () => {
 	let editor, fakeXHR, fileRepository, editorElement;

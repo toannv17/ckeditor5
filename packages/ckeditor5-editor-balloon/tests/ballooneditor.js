@@ -8,16 +8,16 @@ import { BalloonEditor } from '../src/ballooneditor.js';
 import { BalloonEditorUI } from '../src/ballooneditorui.js';
 import { BalloonEditorUIView } from '../src/ballooneditoruiview.js';
 
-import { HtmlDataProcessor, ModelRootElement } from '@ckeditor/ckeditor5-engine';
+import { HtmlDataProcessor, ModelRootElement } from 'toannv-ckeditor5-engine';
 
-import { Plugin, Context } from '@ckeditor/ckeditor5-core';
-import { EditorWatchdog, ContextWatchdog } from '@ckeditor/ckeditor5-watchdog';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Bold } from '@ckeditor/ckeditor5-basic-styles';
-import { BalloonToolbar } from '@ckeditor/ckeditor5-ui';
+import { Plugin, Context } from 'toannv-ckeditor5-core';
+import { EditorWatchdog, ContextWatchdog } from 'toannv-ckeditor5-watchdog';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { BalloonToolbar } from 'toannv-ckeditor5-ui';
 
-import { assertCKEditorError } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
-import { CKEditorError } from '@ckeditor/ckeditor5-utils';
+import { assertCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { CKEditorError } from 'toannv-ckeditor5-utils';
 
 describe( 'BalloonEditor', () => {
 	let editor, editorElement;

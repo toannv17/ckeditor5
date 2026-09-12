@@ -7,7 +7,7 @@
  * @module basic-styles/superscript/superscriptediting
  */
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { Plugin } from 'toannv-ckeditor5-core';
 import { AttributeCommand } from '../attributecommand.js';
 
 const SUPERSCRIPT = 'superscript';

@@ -6,11 +6,11 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { range } from 'es-toolkit/compat';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _getViewData } from '@ckeditor/ckeditor5-engine';
-import { Image, ImageCaption, ImageBlockEditing, ImageInlineEditing } from '@ckeditor/ckeditor5-image';
-import { LinkImage } from '@ckeditor/ckeditor5-link';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _getViewData } from 'toannv-ckeditor5-engine';
+import { Image, ImageCaption, ImageBlockEditing, ImageInlineEditing } from 'toannv-ckeditor5-image';
+import { LinkImage } from 'toannv-ckeditor5-link';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
 import { getModelDataWithAttributes } from '../_utils/utils.js';
 import { GeneralHtmlSupport } from '../../src/generalhtmlsupport.js';

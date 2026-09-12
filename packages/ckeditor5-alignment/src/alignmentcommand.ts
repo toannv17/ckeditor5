@@ -7,9 +7,9 @@
  * @module alignment/alignmentcommand
  */
 
-import { Command } from '@ckeditor/ckeditor5-core';
-import { first } from '@ckeditor/ckeditor5-utils';
-import type { ModelElement, ModelWriter } from '@ckeditor/ckeditor5-engine';
+import { Command } from 'toannv-ckeditor5-core';
+import { first } from 'toannv-ckeditor5-utils';
+import type { ModelElement, ModelWriter } from 'toannv-ckeditor5-engine';
 
 import { isDefault } from './utils.js';
 import type { AlignmentSupportedOption } from './alignmentconfig.js';

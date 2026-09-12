@@ -3,21 +3,21 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { Indent } from '@ckeditor/ckeditor5-indent';
-import { Widget, toWidget } from '@ckeditor/ckeditor5-widget';
-import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Undo } from 'toannv-ckeditor5-undo';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { Indent } from 'toannv-ckeditor5-indent';
+import { Widget, toWidget } from 'toannv-ckeditor5-widget';
+import { Table, TableToolbar } from 'toannv-ckeditor5-table';
 import {
 	_parseModel,
 	_setModelData,
 	_getModelData
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 import { modelList, stringifyList } from '../tests/list/_utils/utils.js';
 import { List } from '../src/list.js';

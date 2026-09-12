@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { UIModel, SplitButtonView, ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor/ckeditor5-ui';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { UIModel, SplitButtonView, ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
 
-import { IconImageUrl } from '@ckeditor/ckeditor5-icons';
+import { IconImageUrl } from 'toannv-ckeditor5-icons';
 
 import { Image } from '../../src/image.js';
 import { ImageInsertViaUrlUI } from '../../src/imageinsert/imageinsertviaurlui.js';

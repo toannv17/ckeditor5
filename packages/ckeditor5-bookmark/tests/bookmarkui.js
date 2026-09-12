@@ -5,17 +5,17 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Link } from '@ckeditor/ckeditor5-link';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Link } from 'toannv-ckeditor5-link';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
 
-import { View, ButtonView, ContextualBalloon, MenuBarMenuListItemButtonView, BalloonPanelView, LabelView } from '@ckeditor/ckeditor5-ui';
-import { IconBookmark, IconPencil, IconRemove, IconBookmarkSmall, IconBookmarkMedium } from '@ckeditor/ckeditor5-icons';
-import { WidgetToolbarRepository } from '@ckeditor/ckeditor5-widget';
-import { indexOf, isRange, keyCodes } from '@ckeditor/ckeditor5-utils';
-import { _setModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
+import { View, ButtonView, ContextualBalloon, MenuBarMenuListItemButtonView, BalloonPanelView, LabelView } from 'toannv-ckeditor5-ui';
+import { IconBookmark, IconPencil, IconRemove, IconBookmarkSmall, IconBookmarkMedium } from 'toannv-ckeditor5-icons';
+import { WidgetToolbarRepository } from 'toannv-ckeditor5-widget';
+import { indexOf, isRange, keyCodes } from 'toannv-ckeditor5-utils';
+import { _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
 
 import { BookmarkFormView } from '../src/ui/bookmarkformview.js';
 import { BookmarkEditing } from '../src/bookmarkediting.js';

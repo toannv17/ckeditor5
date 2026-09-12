@@ -7,14 +7,14 @@
  * @module paste-from-office/pastefromoffice
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { insertToPriorityArray, priorities, type PriorityString } from '@ckeditor/ckeditor5-utils';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { insertToPriorityArray, priorities, type PriorityString } from 'toannv-ckeditor5-utils';
 
 import {
 	ClipboardPipeline,
 	type ClipboardInputTransformationEvent,
 	type ViewDocumentClipboardInputEvent
-} from '@ckeditor/ckeditor5-clipboard';
+} from 'toannv-ckeditor5-clipboard';
 
 import { PasteFromOfficeMSWordNormalizer } from './normalizers/mswordnormalizer.js';
 import { GoogleDocsNormalizer } from './normalizers/googledocsnormalizer.js';

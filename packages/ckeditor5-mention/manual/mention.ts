@@ -3,17 +3,17 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { global } from '@ckeditor/ckeditor5-utils';
+import { global } from 'toannv-ckeditor5-utils';
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 import { Mention } from '../src/mention.js';
-import { Underline } from '@ckeditor/ckeditor5-basic-styles';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Font } from '@ckeditor/ckeditor5-font';
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { Underline } from 'toannv-ckeditor5-basic-styles';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Font } from 'toannv-ckeditor5-font';
+import { Plugin } from 'toannv-ckeditor5-core';
 
-import { toWidget, viewToModelPositionOutsideModelElement } from '@ckeditor/ckeditor5-widget';
-import { ButtonView } from '@ckeditor/ckeditor5-ui';
+import { toWidget, viewToModelPositionOutsideModelElement } from 'toannv-ckeditor5-widget';
+import { ButtonView } from 'toannv-ckeditor5-ui';
 
 declare global {
 	interface Window { editor: any }

@@ -7,7 +7,7 @@
  * @module alignment/alignmentui
  */
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { Plugin } from 'toannv-ckeditor5-core';
 import {
 	type Button,
 	ButtonView,
@@ -17,9 +17,9 @@ import {
 	MenuBarMenuListItemButtonView,
 	MenuBarMenuView,
 	MenuBarMenuListView
-} from '@ckeditor/ckeditor5-ui';
-import { IconAlignCenter, IconAlignJustify, IconAlignLeft, IconAlignRight } from '@ckeditor/ckeditor5-icons';
-import type { Locale } from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-ui';
+import { IconAlignCenter, IconAlignJustify, IconAlignLeft, IconAlignRight } from 'toannv-ckeditor5-icons';
+import type { Locale } from 'toannv-ckeditor5-utils';
 
 import { isSupported, normalizeAlignmentOptions } from './utils.js';
 import type { AlignmentFormat, AlignmentSupportedOption } from './alignmentconfig.js';

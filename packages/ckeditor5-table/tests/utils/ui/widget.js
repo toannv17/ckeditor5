@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { ViewSelection } from '@ckeditor/ckeditor5-engine';
+import { ViewSelection } from 'toannv-ckeditor5-engine';
 import { getTableWidgetAncestor } from '../../../src/utils/ui/widget.js';
 
 describe( 'table utils', () => {

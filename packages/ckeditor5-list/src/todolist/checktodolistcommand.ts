@@ -7,8 +7,8 @@
  * @module list/todolist/checktodolistcommand
  */
 
-import { Command, type Editor } from '@ckeditor/ckeditor5-core';
-import type { ModelElement } from '@ckeditor/ckeditor5-engine';
+import { Command, type Editor } from 'toannv-ckeditor5-core';
+import type { ModelElement } from 'toannv-ckeditor5-engine';
 import { getAllListItemBlocks } from '../list/utils/model.js';
 
 /**

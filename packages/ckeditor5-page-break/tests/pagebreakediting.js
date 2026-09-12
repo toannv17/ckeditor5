@@ -4,11 +4,11 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
 import { PageBreakEditing } from '../src/pagebreakediting.js';
 import { PageBreakCommand } from '../src/pagebreakcommand.js';
-import { _getModelData, _setModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
-import { isWidget } from '@ckeditor/ckeditor5-widget';
+import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { isWidget } from 'toannv-ckeditor5-widget';
 
 describe( 'PageBreakEditing', () => {
 	let editor, model, view, viewDocument;

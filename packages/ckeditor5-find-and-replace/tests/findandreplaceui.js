@@ -5,11 +5,11 @@
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { IconFindReplace } from '@ckeditor/ckeditor5-icons';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { DropdownView, ButtonView, MenuBarMenuListItemButtonView, DialogView } from '@ckeditor/ckeditor5-ui';
-import { global, keyCodes, env } from '@ckeditor/ckeditor5-utils';
+import { IconFindReplace } from 'toannv-ckeditor5-icons';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { DropdownView, ButtonView, MenuBarMenuListItemButtonView, DialogView } from 'toannv-ckeditor5-ui';
+import { global, keyCodes, env } from 'toannv-ckeditor5-utils';
 import { FindAndReplaceUI } from '../src/findandreplaceui.js';
 import { FindAndReplace } from '../src/findandreplace.js';
 import { FindAndReplaceFormView } from '../src/ui/findandreplaceformview.js';

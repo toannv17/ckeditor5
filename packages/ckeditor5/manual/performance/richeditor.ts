@@ -3,29 +3,29 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 
-import { Alignment } from '@ckeditor/ckeditor5-alignment';
-import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
-import { Autosave } from '@ckeditor/ckeditor5-autosave';
-import { Strikethrough, Subscript, Superscript, Underline, Code } from '@ckeditor/ckeditor5-basic-styles';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
-import { FontBackgroundColor, FontColor, FontFamily, FontSize } from '@ckeditor/ckeditor5-font';
-import { Highlight } from '@ckeditor/ckeditor5-highlight';
-import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
-import { TodoList } from '@ckeditor/ckeditor5-list';
-import { Mention } from '@ckeditor/ckeditor5-mention';
-import { PageBreak } from '@ckeditor/ckeditor5-page-break';
-import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
-import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
-import { StandardEditingMode } from '@ckeditor/ckeditor5-restricted-editing';
-import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor/ckeditor5-special-characters';
-import { TableProperties, TableCellProperties, TableColumnResize } from '@ckeditor/ckeditor5-table';
-import { ImageUpload, ImageResize } from '@ckeditor/ckeditor5-image';
-import { IndentBlock } from '@ckeditor/ckeditor5-indent';
-import { UploadAdapterMock } from '@ckeditor/ckeditor5-upload/tests/_utils/mocks.js';
-import { WordCount } from '@ckeditor/ckeditor5-word-count';
+import { Alignment } from 'toannv-ckeditor5-alignment';
+import { Autoformat } from 'toannv-ckeditor5-autoformat';
+import { Autosave } from 'toannv-ckeditor5-autosave';
+import { Strikethrough, Subscript, Superscript, Underline, Code } from 'toannv-ckeditor5-basic-styles';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { FontBackgroundColor, FontColor, FontFamily, FontSize } from 'toannv-ckeditor5-font';
+import { Highlight } from 'toannv-ckeditor5-highlight';
+import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
+import { TodoList } from 'toannv-ckeditor5-list';
+import { Mention } from 'toannv-ckeditor5-mention';
+import { PageBreak } from 'toannv-ckeditor5-page-break';
+import { PasteFromOffice } from 'toannv-ckeditor5-paste-from-office';
+import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
+import { StandardEditingMode } from 'toannv-ckeditor5-restricted-editing';
+import { SpecialCharacters, SpecialCharactersEssentials } from 'toannv-ckeditor5-special-characters';
+import { TableProperties, TableCellProperties, TableColumnResize } from 'toannv-ckeditor5-table';
+import { ImageUpload, ImageResize } from 'toannv-ckeditor5-image';
+import { IndentBlock } from 'toannv-ckeditor5-indent';
+import { UploadAdapterMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
+import { WordCount } from 'toannv-ckeditor5-word-count';
 
 import { getPerformanceData, renderPerformanceDataButtons } from '../../tests/_utils/utils.js';
 

@@ -4,20 +4,20 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { View, EditorUI } from '@ckeditor/ckeditor5-ui';
+import { View, EditorUI } from 'toannv-ckeditor5-ui';
 
 import { DecoupledEditor } from '../src/decouplededitor.js';
 import { DecoupledEditorUI } from '../src/decouplededitorui.js';
 import { DecoupledEditorUIView } from '../src/decouplededitoruiview.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Image, ImageCaption, ImageToolbar } from '@ckeditor/ckeditor5-image';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Image, ImageCaption, ImageToolbar } from 'toannv-ckeditor5-image';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { keyCodes } from '@ckeditor/ckeditor5-utils';
-import { assertBinding } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { keyCodes } from 'toannv-ckeditor5-utils';
+import { assertBinding } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
 import { isElement } from 'es-toolkit/compat';
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
-import { normalizeRootsConfig, Plugin } from '@ckeditor/ckeditor5-core';
+import { _setModelData } from 'toannv-ckeditor5-engine';
+import { normalizeRootsConfig, Plugin } from 'toannv-ckeditor5-core';
 
 describe( 'DecoupledEditorUI', () => {
 	let editor, view, ui, viewElement;

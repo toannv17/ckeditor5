@@ -7,9 +7,9 @@
  * @module ckfinder/ckfinder
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { CKFinderUploadAdapter } from '@ckeditor/ckeditor5-adapter-ckfinder';
-import { Link } from '@ckeditor/ckeditor5-link';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { CKFinderUploadAdapter } from 'toannv-ckeditor5-adapter-ckfinder';
+import { Link } from 'toannv-ckeditor5-link';
 
 import { CKFinderUI } from './ckfinderui.js';
 import { CKFinderEditing } from './ckfinderediting.js';

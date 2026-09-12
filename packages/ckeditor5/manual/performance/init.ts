@@ -5,7 +5,7 @@
 
 import { config } from '../../tests/_utils/performance-config.js';
 import { allDataSets } from '../../tests/_data/data-sets/index.js';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 declare global {
 	interface Window { reloadTimeout: any }
 }

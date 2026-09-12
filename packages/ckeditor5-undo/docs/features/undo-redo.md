@@ -35,7 +35,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, Undo } from 'ckeditor5';
+import { ClassicEditor, Undo } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

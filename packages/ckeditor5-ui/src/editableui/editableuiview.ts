@@ -9,9 +9,9 @@
 
 import { View } from '../view.js';
 
-import type { EditingView } from '@ckeditor/ckeditor5-engine';
-import { toArray, type Locale, type ObservableChangeEvent } from '@ckeditor/ckeditor5-utils';
-import type { ViewRootElementDefinition } from '@ckeditor/ckeditor5-core';
+import type { EditingView } from 'toannv-ckeditor5-engine';
+import { toArray, type Locale, type ObservableChangeEvent } from 'toannv-ckeditor5-utils';
+import type { ViewRootElementDefinition } from 'toannv-ckeditor5-core';
 
 import { isElement as _isElement } from 'es-toolkit/compat';
 

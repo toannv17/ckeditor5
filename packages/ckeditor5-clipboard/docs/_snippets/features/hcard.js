@@ -9,7 +9,7 @@ import {
 	Widget,
 	toWidget,
 	viewToModelPositionOutsideModelElement
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 
 export class HCardEditing extends Plugin {
 	static get requires() {

@@ -10,7 +10,7 @@
 import {
 	Plugin,
 	type Editor
-} from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-core';
 
 import {
 	type EventInfo,
@@ -20,9 +20,9 @@ import {
 	ResizeObserver,
 	toUnit,
 	type ObservableChangeEvent
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
-import type { ModelDocumentSelectionChangeRangeEvent } from '@ckeditor/ckeditor5-engine';
+import type { ModelDocumentSelectionChangeRangeEvent } from 'toannv-ckeditor5-engine';
 
 import { BlockButtonView } from './blockbuttonview.js';
 import { BalloonPanelView } from '../../panel/balloon/balloonpanelview.js';

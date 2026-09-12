@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 import { Image } from '../../src/image.js';
 import { ImageTextAlternativeEditing } from '../../src/imagetextalternative/imagetextalternativeediting.js';
 import { ImageTextAlternativeUI } from '../../src/imagetextalternative/imagetextalternativeui.js';
 import { ImageCaption } from '../../src/imagecaption.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ButtonView, View } from '@ckeditor/ckeditor5-ui';
-import { global, keyCodes } from '@ckeditor/ckeditor5-utils';
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ButtonView, View } from 'toannv-ckeditor5-ui';
+import { global, keyCodes } from 'toannv-ckeditor5-utils';
+import { _setModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'ImageTextAlternativeUI', () => {
 	let editor, model, doc, plugin, command, form, balloon, editorElement, button;

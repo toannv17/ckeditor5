@@ -7,8 +7,8 @@
  * @module bookmark/bookmarkui
  */
 
-import type { LinksProviderDetailedItem, LinksProviderListItem } from '@ckeditor/ckeditor5-link';
-import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import type { LinksProviderDetailedItem, LinksProviderListItem } from 'toannv-ckeditor5-link';
+import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 import {
 	ButtonView,
 	ContextualBalloon,
@@ -18,17 +18,17 @@ import {
 	LabelView,
 	BalloonPanelView,
 	type ViewWithCssTransitionDisabler
-} from '@ckeditor/ckeditor5-ui';
-import { IconBookmark, IconRemove, IconBookmarkMedium, IconBookmarkSmall, IconPencil } from '@ckeditor/ckeditor5-icons';
+} from 'toannv-ckeditor5-ui';
+import { IconBookmark, IconRemove, IconBookmarkMedium, IconBookmarkSmall, IconPencil } from 'toannv-ckeditor5-icons';
 import {
 	type ModelElement,
 	type ViewDocumentSelection,
 	type ViewElement
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
-import type { DomOptimalPositionOptions } from '@ckeditor/ckeditor5-utils';
-import type { DeleteCommand } from '@ckeditor/ckeditor5-typing';
-import { isWidget, WidgetToolbarRepository } from '@ckeditor/ckeditor5-widget';
+import type { DomOptimalPositionOptions } from 'toannv-ckeditor5-utils';
+import type { DeleteCommand } from 'toannv-ckeditor5-typing';
+import { isWidget, WidgetToolbarRepository } from 'toannv-ckeditor5-widget';
 
 import { BookmarkFormView, type BookmarkFormViewCancelEvent, type BookmarkFormValidatorCallback } from './ui/bookmarkformview.js';
 import { type UpdateBookmarkCommand } from './updatebookmarkcommand.js';

@@ -4,20 +4,20 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { LinkEditing } from '@ckeditor/ckeditor5-link';
-import { Image } from '@ckeditor/ckeditor5-image';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { LinkEditing } from 'toannv-ckeditor5-link';
+import { Image } from 'toannv-ckeditor5-image';
 import { Widget } from '../src/widget.js';
 import { ViewDocumentDomEventData,
 	_setModelData,
 	_getModelData,
-	_getViewData } from '@ckeditor/ckeditor5-engine';
+	_getViewData } from 'toannv-ckeditor5-engine';
 
 import { toWidget } from '../src/utils.js';
 
-import { env } from '@ckeditor/ckeditor5-utils';
+import { env } from 'toannv-ckeditor5-utils';
 
 describe( 'Widget - integration', () => {
 	let editor, model, view, viewDocument, editorElement;

@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-font",
+  "name": "toannv-ckeditor5-font",
   "version": "48.5.0",
   "description": "Font feature for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -35,18 +35,18 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "workspace:*",
-    "@ckeditor/ckeditor5-engine": "workspace:*",
-    "@ckeditor/ckeditor5-icons": "workspace:*",
-    "@ckeditor/ckeditor5-ui": "workspace:*",
-    "@ckeditor/ckeditor5-utils": "workspace:*"
+    "toannv-ckeditor5-core": "workspace:*",
+    "toannv-ckeditor5-engine": "workspace:*",
+    "toannv-ckeditor5-icons": "workspace:*",
+    "toannv-ckeditor5-ui": "workspace:*",
+    "toannv-ckeditor5-utils": "workspace:*"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-editor-classic": "workspace:*",
-    "@ckeditor/ckeditor5-highlight": "workspace:*",
-    "@ckeditor/ckeditor5-paragraph": "workspace:*",
-    "@ckeditor/ckeditor5-table": "workspace:*",
-    "@ckeditor/ckeditor5-undo": "workspace:*",
+    "toannv-ckeditor5-editor-classic": "workspace:*",
+    "toannv-ckeditor5-highlight": "workspace:*",
+    "toannv-ckeditor5-paragraph": "workspace:*",
+    "toannv-ckeditor5-table": "workspace:*",
+    "toannv-ckeditor5-undo": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

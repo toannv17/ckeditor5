@@ -7,7 +7,7 @@
  * @module table/tablescroll
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 import { TableScrollEditing } from './tablescroll/tablescrollediting.js';
 
 export class TableScroll extends Plugin {

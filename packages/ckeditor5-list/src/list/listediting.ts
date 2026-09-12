@@ -7,7 +7,7 @@
  * @module list/list/listediting
  */
 
-import { Plugin, type Editor, type MultiCommand, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type Editor, type MultiCommand, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 
 import type {
 	DowncastAttributeEvent,
@@ -23,11 +23,11 @@ import type {
 	ModelWriter,
 	DowncastRemoveEvent,
 	MapperModelToViewPositionEvent
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
-import { Delete, type ViewDocumentDeleteEvent } from '@ckeditor/ckeditor5-typing';
-import { Enter, type EnterCommand, type ViewDocumentEnterEvent } from '@ckeditor/ckeditor5-enter';
-import { CKEditorError, type GetCallback } from '@ckeditor/ckeditor5-utils';
+import { Delete, type ViewDocumentDeleteEvent } from 'toannv-ckeditor5-typing';
+import { Enter, type EnterCommand, type ViewDocumentEnterEvent } from 'toannv-ckeditor5-enter';
+import { CKEditorError, type GetCallback } from 'toannv-ckeditor5-utils';
 
 import { ListIndentCommand } from './listindentcommand.js';
 import { ListCommand } from './listcommand.js';
@@ -71,7 +71,7 @@ import { ListWalker, ListBlocksIterable } from './utils/listwalker.js';
 import {
 	ClipboardPipeline,
 	type ClipboardOutputTransformationEvent
-} from '@ckeditor/ckeditor5-clipboard';
+} from 'toannv-ckeditor5-clipboard';
 
 /**
  * A list of base list model attributes.

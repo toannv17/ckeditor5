@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { Plugin } from 'toannv-ckeditor5-core';
 import { Image } from '../../src/image.js';
 import {
 	FileDialogButtonView,
@@ -15,17 +15,17 @@ import {
 	UIModel,
 	MenuBarMenuListItemButtonView,
 	MenuBarMenuListItemFileDialogButtonView
-} from '@ckeditor/ckeditor5-ui';
-import { FileRepository } from '@ckeditor/ckeditor5-upload';
+} from 'toannv-ckeditor5-ui';
+import { FileRepository } from 'toannv-ckeditor5-upload';
 import { ImageInlineEditing } from '../../src/image/imageinlineediting.js';
 import { ImageUploadUI } from '../../src/imageupload/imageuploadui.js';
 import { ImageUploadEditing } from '../../src/imageupload/imageuploadediting.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { IconImageUpload } from '@ckeditor/ckeditor5-icons';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { IconImageUpload } from 'toannv-ckeditor5-icons';
 
-import { createNativeFileMock, UploadAdapterMock } from '@ckeditor/ckeditor5-upload/tests/_utils/mocks.js';
-import { _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { createNativeFileMock, UploadAdapterMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
+import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'ImageUploadUI', () => {
 	let editor, model, editorElement, fileRepository, button;

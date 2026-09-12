@@ -17,7 +17,7 @@ import { type MergeOperation } from './operation/mergeoperation.js';
 import { type MoveOperation } from './operation/moveoperation.js';
 import { type Operation } from './operation/operation.js';
 import { type ModelPosition } from './position.js';
-import { CKEditorError, EmitterMixin, type EmitterMixinConstructor } from '@ckeditor/ckeditor5-utils';
+import { CKEditorError, EmitterMixin, type EmitterMixinConstructor } from 'toannv-ckeditor5-utils';
 import type { DetachOperation } from './operation/detachoperation.js';
 
 const ModelLiveRangeBase: EmitterMixinConstructor<typeof ModelRange> = /* #__PURE__ */ EmitterMixin( ModelRange );

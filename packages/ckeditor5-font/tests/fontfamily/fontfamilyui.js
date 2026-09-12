@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach, beforeAll, afterAll } from 'vitest';
-import { IconFontFamily } from '@ckeditor/ckeditor5-icons';
+import { IconFontFamily } from 'toannv-ckeditor5-icons';
 import { FontFamilyEditing } from '../../src/fontfamily/fontfamilyediting.js';
 import { FontFamilyUI } from '../../src/fontfamily/fontfamilyui.js';
 
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { add as addTranslations, _clearTranslations } from '@ckeditor/ckeditor5-utils';
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { add as addTranslations, _clearTranslations } from 'toannv-ckeditor5-utils';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'FontFamilyUI', () => {
 	let editor, command, element;

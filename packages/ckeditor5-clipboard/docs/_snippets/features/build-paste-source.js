@@ -14,7 +14,7 @@ import {
 	AutoImage,
 	LinkImage,
 	Font
-} from 'ckeditor5';
+} from 'toannv-ckeditor5';
 import { ClassicEditor } from '@snippets/index.js';
 
 export class PasteEditor extends ClassicEditor {

@@ -4,13 +4,13 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { ImageBlock, ImageCaption } from '@ckeditor/ckeditor5-image';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { List } from '@ckeditor/ckeditor5-list';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ImageBlock, ImageCaption } from 'toannv-ckeditor5-image';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { List } from 'toannv-ckeditor5-list';
 import { ListStyleSupport } from '../../src/integrations/list.js';
 
 import { Style } from '../../src/style.js';

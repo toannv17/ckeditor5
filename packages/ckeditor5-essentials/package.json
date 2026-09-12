@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-essentials",
+  "name": "toannv-ckeditor5-essentials",
   "version": "48.5.0",
   "description": "Essential editing features for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -35,17 +35,17 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-clipboard": "workspace:*",
-    "@ckeditor/ckeditor5-core": "workspace:*",
-    "@ckeditor/ckeditor5-enter": "workspace:*",
-    "@ckeditor/ckeditor5-select-all": "workspace:*",
-    "@ckeditor/ckeditor5-typing": "workspace:*",
-    "@ckeditor/ckeditor5-ui": "workspace:*",
-    "@ckeditor/ckeditor5-undo": "workspace:*"
+    "toannv-ckeditor5-clipboard": "workspace:*",
+    "toannv-ckeditor5-core": "workspace:*",
+    "toannv-ckeditor5-enter": "workspace:*",
+    "toannv-ckeditor5-select-all": "workspace:*",
+    "toannv-ckeditor5-typing": "workspace:*",
+    "toannv-ckeditor5-ui": "workspace:*",
+    "toannv-ckeditor5-undo": "workspace:*"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-editor-classic": "workspace:*",
-    "@ckeditor/ckeditor5-paragraph": "workspace:*",
+    "toannv-ckeditor5-editor-classic": "workspace:*",
+    "toannv-ckeditor5-paragraph": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

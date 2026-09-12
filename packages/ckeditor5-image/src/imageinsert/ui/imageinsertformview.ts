@@ -14,8 +14,8 @@ import {
 	FocusCycler,
 	CollapsibleView,
 	type FocusableView
-} from '@ckeditor/ckeditor5-ui';
-import { FocusTracker, KeystrokeHandler, type Locale } from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-ui';
+import { FocusTracker, KeystrokeHandler, type Locale } from 'toannv-ckeditor5-utils';
 
 /**
  * The view displayed in the insert image dropdown.

@@ -5,8 +5,8 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 
-import { Editor } from '@ckeditor/ckeditor5-core';
-import { Model, _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { Editor } from 'toannv-ckeditor5-core';
+import { Model, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 
 import { ListCommand } from '../../src/list/listcommand.js';
 import { ListStyleCommand } from '../../src/listproperties/liststylecommand.js';

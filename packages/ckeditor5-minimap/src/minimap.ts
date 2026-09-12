@@ -7,8 +7,8 @@
  * @module minimap/minimap
  */
 
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { findClosestScrollableAncestor, global } from '@ckeditor/ckeditor5-utils';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { findClosestScrollableAncestor, global } from 'toannv-ckeditor5-utils';
 import { MinimapView, type MinimapDragEvent, type MinimapClickEvent } from './minimapview.js';
 import {
 	cloneEditingViewDomRoot,
@@ -18,7 +18,7 @@ import {
 	getScrollable
 } from './utils.js';
 
-// @if CK_DEBUG_MINIMAP // import { RectDrawer } from '@ckeditor/ckeditor5-utils/tests/_utils/rectdrawer.js';
+// @if CK_DEBUG_MINIMAP // import { RectDrawer } from 'toannv-ckeditor5-utils/tests/_utils/rectdrawer.js';
 
 /**
  * The content minimap feature.

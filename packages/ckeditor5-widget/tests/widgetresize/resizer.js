@@ -7,10 +7,10 @@ import { describe, it, expect, vi, beforeEach, beforeAll, afterAll } from 'vites
 
 import { WidgetResizer } from '../../src/widgetresize/resizer.js';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { _setModelData } from 'toannv-ckeditor5-engine';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 
 describe( 'Resizer', () => {
 	let editor, editorElement;

@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
-import { BalloonToolbar, View } from '@ckeditor/ckeditor5-ui';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { EmptyBlock } from '@ckeditor/ckeditor5-html-support';
-import { global } from '@ckeditor/ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { BalloonToolbar, View } from 'toannv-ckeditor5-ui';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { EmptyBlock } from 'toannv-ckeditor5-html-support';
+import { global } from 'toannv-ckeditor5-utils';
 import { Table } from '../src/table.js';
 import { TableToolbar } from '../src/tabletoolbar.js';
 

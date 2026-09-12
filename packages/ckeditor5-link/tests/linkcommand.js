@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ModelTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
 import { LinkCommand } from '../src/linkcommand.js';
 import { LinkManualDecorator } from '../src/utils/manualdecorator.js';
-import { _setModelData, _getModelData } from '@ckeditor/ckeditor5-engine';
+import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
 import { AutomaticLinkDecorators } from '../src/utils/automaticdecorators.js';
 import { LinkEditing } from '../src/linkediting.js';
 

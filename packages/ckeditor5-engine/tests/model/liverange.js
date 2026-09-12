@@ -15,7 +15,7 @@ import { MoveOperation } from '../../src/model/operation/moveoperation.js';
 import { MergeOperation } from '../../src/model/operation/mergeoperation.js';
 import { DetachOperation } from '../../src/model/operation/detachoperation.js';
 import { _stringifyModel, _setModelData } from '../../src/dev-utils/model.js';
-import { expectToThrowCKEditorError } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'LiveRange', () => {
 	let model, doc, root, ul, p;

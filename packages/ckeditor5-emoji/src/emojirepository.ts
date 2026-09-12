@@ -10,8 +10,8 @@
 import fuzzysort from 'fuzzysort';
 import { groupBy } from 'es-toolkit/compat';
 
-import { type Editor, Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { logWarning, version as editorVersion, type ObservableChangeEvent } from '@ckeditor/ckeditor5-utils';
+import { type Editor, Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { logWarning, version as editorVersion, type ObservableChangeEvent } from 'toannv-ckeditor5-utils';
 import { EmojiUtils } from './emojiutils.js';
 import { EmojiRepositoryCache } from './utils/emojirepositorycache.js';
 import type { EmojiSkinToneId } from './emojiconfig.js';

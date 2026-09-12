@@ -7,8 +7,8 @@
  * @module image/imagetoolbar
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { WidgetToolbarRepository } from '@ckeditor/ckeditor5-widget';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { WidgetToolbarRepository } from 'toannv-ckeditor5-widget';
 
 import { ImageUtils } from './imageutils.js';
 import type { ImageStyleDropdownDefinition } from './imageconfig.js';

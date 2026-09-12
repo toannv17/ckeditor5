@@ -5,15 +5,15 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { ImageInline, ImageBlock } from '@ckeditor/ckeditor5-image';
-import { Link } from '@ckeditor/ckeditor5-link';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { ImageInline, ImageBlock } from 'toannv-ckeditor5-image';
+import { Link } from 'toannv-ckeditor5-link';
 
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
 
 import { BookmarkEditing } from '../src/bookmarkediting.js';
 import { UpdateBookmarkCommand } from '../src/updatebookmarkcommand.js';

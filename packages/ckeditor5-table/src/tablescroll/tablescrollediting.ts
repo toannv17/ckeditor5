@@ -9,14 +9,14 @@
 
 import { throttle } from 'es-toolkit/compat';
 
-import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { DomEmitterMixin, global, type Collection, type CollectionChangeEvent, type EventInfo } from '@ckeditor/ckeditor5-utils';
+import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { DomEmitterMixin, global, type Collection, type CollectionChangeEvent, type EventInfo } from 'toannv-ckeditor5-utils';
 import type {
 	ModelElement,
 	ViewElement,
 	DowncastAttributeEvent,
 	DowncastInsertEvent
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 import { TableEditing } from '../tableediting.js';
 import type { TableType } from '../tableconfig.js';

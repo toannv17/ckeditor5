@@ -11,21 +11,21 @@ import { LegacyListEditing } from '../../src/legacylist/legacylistediting.js';
 import { LegacyListCommand } from '../../src/legacylist/legacylistcommand.js';
 import { LegacyIndentCommand } from '../../src/legacylist/legacyindentcommand.js';
 
-import { ModelRange, _getModelData, _parseModel, _setModelData, _getViewData, _parseView } from '@ckeditor/ckeditor5-engine';
+import { ModelRange, _getModelData, _parseModel, _setModelData, _getViewData, _parseView } from 'toannv-ckeditor5-engine';
 
-import { BoldEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { UndoEditing } from '@ckeditor/ckeditor5-undo';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { HeadingEditing } from '@ckeditor/ckeditor5-heading';
+import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { HeadingEditing } from 'toannv-ckeditor5-heading';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { IndentEditing } from '@ckeditor/ckeditor5-indent';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { IndentEditing } from 'toannv-ckeditor5-indent';
 
-import { getCode } from '@ckeditor/ckeditor5-utils';
-import { TableEditing, TableKeyboard } from '@ckeditor/ckeditor5-table';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { modelTable } from '@ckeditor/ckeditor5-table/tests/_utils/utils.js';
+import { getCode } from 'toannv-ckeditor5-utils';
+import { TableEditing, TableKeyboard } from 'toannv-ckeditor5-table';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { modelTable } from 'toannv-ckeditor5-table/tests/_utils/utils.js';
 
 describe( 'LegacyListEditing', () => {
 	let editor, model, modelDoc, modelRoot, view, viewDoc, viewRoot;

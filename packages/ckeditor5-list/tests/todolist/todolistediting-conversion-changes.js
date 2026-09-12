@@ -3,15 +3,15 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { HeadingEditing } from '@ckeditor/ckeditor5-heading';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { TableEditing } from '@ckeditor/ckeditor5-table';
-import { UndoEditing } from '@ckeditor/ckeditor5-undo';
-import { CodeBlockEditing } from '@ckeditor/ckeditor5-code-block';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { HeadingEditing } from 'toannv-ckeditor5-heading';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { TableEditing } from 'toannv-ckeditor5-table';
+import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _setModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
 import { TodoListEditing } from '../../src/todolist/todolistediting.js';

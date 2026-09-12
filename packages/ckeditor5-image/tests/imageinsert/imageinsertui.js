@@ -5,12 +5,12 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { UIModel, DropdownView, ButtonView, SplitButtonView, MenuBarMenuListItemButtonView, MenuBarMenuView } from '@ckeditor/ckeditor5-ui';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { UIModel, DropdownView, ButtonView, SplitButtonView, MenuBarMenuListItemButtonView, MenuBarMenuView } from 'toannv-ckeditor5-ui';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
+import { _setModelData } from 'toannv-ckeditor5-engine';
 
 import { Image } from '../../src/image.js';
 import { ImageInsertUI } from '../../src/imageinsert/imageinsertui.js';

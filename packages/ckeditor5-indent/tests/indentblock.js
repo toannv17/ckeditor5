@@ -5,11 +5,11 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _getViewData } from '@ckeditor/ckeditor5-engine';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { HeadingEditing } from '@ckeditor/ckeditor5-heading';
-import { ListEditing } from '@ckeditor/ckeditor5-list';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _getViewData } from 'toannv-ckeditor5-engine';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { HeadingEditing } from 'toannv-ckeditor5-heading';
+import { ListEditing } from 'toannv-ckeditor5-list';
 
 import { IndentEditing } from '../src/indentediting.js';
 import { IndentBlock } from '../src/indentblock.js';

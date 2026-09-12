@@ -33,7 +33,7 @@ import {
 	type CollectionRemoveEvent,
 	type Locale,
 	type ObservableChangeEvent
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 import {
 	IconAlignLeft,
 	IconBold,
@@ -44,8 +44,8 @@ import {
 	IconThreeVerticalDots,
 	IconPilcrow,
 	IconDragIndicator
-} from '@ckeditor/ckeditor5-icons';
-import type { ToolbarConfig, ToolbarConfigItem } from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-icons';
+import type { ToolbarConfig, ToolbarConfigItem } from 'toannv-ckeditor5-core';
 
 import { isObject } from 'es-toolkit/compat';
 

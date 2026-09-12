@@ -6,9 +6,9 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { HighlightEditing } from './../src/highlightediting.js';
 import { HighlightCommand } from './../src/highlightcommand.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'HighlightEditing', () => {
 	let editor, model;

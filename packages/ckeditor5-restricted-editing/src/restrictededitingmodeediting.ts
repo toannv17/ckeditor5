@@ -11,7 +11,7 @@ import {
 	Plugin,
 	type Command,
 	type Editor
-} from '@ckeditor/ckeditor5-core';
+} from 'toannv-ckeditor5-core';
 
 import type {
 	ModelDocumentSelection,
@@ -23,7 +23,7 @@ import type {
 	ViewDocumentTabEvent,
 	ViewDocumentKeyDownEvent,
 	ViewDocumentKeyEventData
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 import {
 	getCode,
@@ -31,18 +31,18 @@ import {
 	type BaseEvent,
 	type EventInfo,
 	type GetCallback
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import type {
 	InsertTextCommand,
 	InsertTextCommandExecuteEvent
-} from '@ckeditor/ckeditor5-typing';
+} from 'toannv-ckeditor5-typing';
 
 import type {
 	ClipboardContentInsertionEvent,
 	ViewDocumentClipboardOutputEvent,
 	ClipboardPipeline
-} from '@ckeditor/ckeditor5-clipboard';
+} from 'toannv-ckeditor5-clipboard';
 
 import { RestrictedEditingModeNavigationCommand } from './restrictededitingmodenavigationcommand.js';
 import type { RestrictedEditingConfig } from './restrictededitingconfig.js';

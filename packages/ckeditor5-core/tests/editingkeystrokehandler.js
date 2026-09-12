@@ -6,7 +6,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { VirtualTestEditor } from '../tests/_utils/virtualtesteditor.js';
 import { EditingKeystrokeHandler } from '../src/editingkeystrokehandler.js';
-import { keyCodes, env } from '@ckeditor/ckeditor5-utils';
+import { keyCodes, env } from 'toannv-ckeditor5-utils';
 
 describe( 'EditingKeystrokeHandler', () => {
 	let editor, keystrokes, executeSpy;

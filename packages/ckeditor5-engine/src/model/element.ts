@@ -14,7 +14,7 @@ import { ModelTextProxy } from './textproxy.js';
 
 import { type ModelItem } from './item.js';
 
-import { isIterable } from '@ckeditor/ckeditor5-utils';
+import { isIterable } from 'toannv-ckeditor5-utils';
 
 // @if CK_DEBUG_ENGINE // import { convertMapToStringifiedObject, convertMapToTags } from '../dev-utils/utils.js';
 

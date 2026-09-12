@@ -7,10 +7,10 @@
  * @module ui/menubar/menubarmenubuttonview
  */
 
-import { IconDropdownArrow } from '@ckeditor/ckeditor5-icons';
+import { IconDropdownArrow } from 'toannv-ckeditor5-icons';
 import { IconView } from '../icon/iconview.js';
 import { ListItemButtonView } from '../button/listitembuttonview.js';
-import type { Locale } from '@ckeditor/ckeditor5-utils';
+import type { Locale } from 'toannv-ckeditor5-utils';
 
 /**
  * A menu {@link module:ui/menubar/menubarmenuview~MenuBarMenuView#buttonView} class. Buttons like this one

@@ -7,10 +7,10 @@
  * @module list/listformatting/listitemfontsizeintegration
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import type { ViewElement } from '@ckeditor/ckeditor5-engine';
-import { env } from '@ckeditor/ckeditor5-utils';
-import { _normalizeFontSizeOptions } from '@ckeditor/ckeditor5-font';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import type { ViewElement } from 'toannv-ckeditor5-engine';
+import { env } from 'toannv-ckeditor5-utils';
+import { _normalizeFontSizeOptions } from 'toannv-ckeditor5-font';
 
 import { ListEditing } from '../list/listediting.js';
 import type { ListFormatting } from '../listformatting.js';

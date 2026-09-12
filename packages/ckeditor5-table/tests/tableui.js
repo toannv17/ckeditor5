@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeAll, afterAll, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _clearTranslations, add as addTranslations } from '@ckeditor/ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _clearTranslations, add as addTranslations } from 'toannv-ckeditor5-utils';
 
 import { TableEditing } from '../src/tableediting.js';
 import { TableUI } from '../src/tableui.js';
 import { InsertTableView } from '../src/ui/inserttableview.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { SwitchButtonView, DropdownView, ListSeparatorView, SplitButtonView } from '@ckeditor/ckeditor5-ui';
-import { IconTable } from '@ckeditor/ckeditor5-icons';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { SwitchButtonView, DropdownView, ListSeparatorView, SplitButtonView } from 'toannv-ckeditor5-ui';
+import { IconTable } from 'toannv-ckeditor5-icons';
 
 describe( 'TableUI', () => {
 	let editor, element;

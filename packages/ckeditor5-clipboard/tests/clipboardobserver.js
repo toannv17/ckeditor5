@@ -7,8 +7,8 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 
 import { ClipboardObserver } from '../src/clipboardobserver.js';
 
-import { EditingView, ViewDataTransfer, ViewDowncastWriter } from '@ckeditor/ckeditor5-engine';
-import { createViewRoot } from '@ckeditor/ckeditor5-engine/tests/view/_utils/createroot.js';
+import { EditingView, ViewDataTransfer, ViewDowncastWriter } from 'toannv-ckeditor5-engine';
+import { createViewRoot } from 'toannv-ckeditor5-engine/tests/view/_utils/createroot.js';
 
 describe( 'ClipboardObserver', () => {
 	let view, doc, writer, observer, root, el, range, eventSpy, preventDefaultSpy, stopPropagationSpy, mockedDomDataTransferFilesSpy;

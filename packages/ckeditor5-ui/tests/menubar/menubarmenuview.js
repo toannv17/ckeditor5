@@ -9,7 +9,7 @@ import {
 	KeystrokeHandler,
 	Locale,
 	keyCodes
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 import {
 	MenuBarMenuView,
 	MenuBarView

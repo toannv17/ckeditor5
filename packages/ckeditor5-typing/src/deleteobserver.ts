@@ -13,7 +13,7 @@ import {
 	isInsideCombinedSymbol,
 	isInsideEmojiSequence,
 	isInsideSurrogatePair
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 import {
 	BubblingEventInfo,
 	ViewDocumentDomEventData,
@@ -26,7 +26,7 @@ import {
 	type ViewSelection,
 	type ViewRange,
 	type EditingView
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 
 const DELETE_CHARACTER = 'character';
 const DELETE_WORD = 'word';

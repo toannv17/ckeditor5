@@ -3,16 +3,16 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Plugin } from '@ckeditor/ckeditor5-core';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { LinkEditing } from '@ckeditor/ckeditor5-link';
-import { Bold } from '@ckeditor/ckeditor5-basic-styles';
-import { FontColorEditing } from '@ckeditor/ckeditor5-font';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Plugin } from 'toannv-ckeditor5-core';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { LinkEditing } from 'toannv-ckeditor5-link';
+import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { FontColorEditing } from 'toannv-ckeditor5-font';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { DataFilter } from '../src/datafilter.js';
-import { expectToThrowCKEditorError } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
 import {
 	_getModelData,
 	_setModelData,
@@ -21,9 +21,9 @@ import {
 	addBorderStylesRules,
 	addMarginStylesRules,
 	addPaddingStylesRules
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 import { getModelDataWithAttributes } from './_utils/utils.js';
-import { getLabel } from '@ckeditor/ckeditor5-widget';
+import { getLabel } from 'toannv-ckeditor5-widget';
 
 import { GeneralHtmlSupport } from '../src/generalhtmlsupport.js';
 

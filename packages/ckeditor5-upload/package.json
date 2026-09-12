@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-upload",
+  "name": "toannv-ckeditor5-upload",
   "version": "48.5.0",
   "description": "Upload feature for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -34,8 +34,8 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "workspace:*",
-    "@ckeditor/ckeditor5-utils": "workspace:*"
+    "toannv-ckeditor5-core": "workspace:*",
+    "toannv-ckeditor5-utils": "workspace:*"
   },
   "devDependencies": {
     "@vitest/browser-playwright": "catalog:",

@@ -7,13 +7,13 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { EditorUI } from '../../src/editorui/editorui.js';
 import { View } from '../../src/view.js';
 import { BalloonPanelView } from '../../src/panel/balloon/balloonpanelview.js';
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { global } from '@ckeditor/ckeditor5-utils';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { global } from 'toannv-ckeditor5-utils';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 import { TooltipManager } from '../../src/tooltipmanager.js';
-import { Editor } from '@ckeditor/ckeditor5-core';
+import { Editor } from 'toannv-ckeditor5-core';
 
 describe( 'TooltipManager', () => {
 	let editor, element, tooltipManager;

@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
-import { Link } from '@ckeditor/ckeditor5-link';
-import { _getModelData, _getViewData, _VIEW_INLINE_FILLER } from '@ckeditor/ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { Link } from 'toannv-ckeditor5-link';
+import { _getModelData, _getViewData, _VIEW_INLINE_FILLER } from 'toannv-ckeditor5-engine';
 
 import { GeneralHtmlSupport } from '../../src/generalhtmlsupport.js';
 import { getModelDataWithAttributes } from '../_utils/utils.js';

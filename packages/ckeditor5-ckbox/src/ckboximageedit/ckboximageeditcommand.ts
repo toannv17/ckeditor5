@@ -7,7 +7,7 @@
  * @module ckbox/ckboximageedit/ckboximageeditcommand
  */
 
-import { Command, PendingActions, type Editor } from '@ckeditor/ckeditor5-core';
+import { Command, PendingActions, type Editor } from 'toannv-ckeditor5-core';
 import {
 	CKEditorError,
 	abortableDebounce,
@@ -15,16 +15,16 @@ import {
 	retry,
 	delay,
 	type AbortableFunc
-} from '@ckeditor/ckeditor5-utils';
-import type { ModelElement } from '@ckeditor/ckeditor5-engine';
-import { Notification } from '@ckeditor/ckeditor5-ui';
+} from 'toannv-ckeditor5-utils';
+import type { ModelElement } from 'toannv-ckeditor5-engine';
+import { Notification } from 'toannv-ckeditor5-ui';
 import { isEqual } from 'es-toolkit/compat';
 
 import { sendHttpRequest } from '../utils.js';
 import { prepareImageAssetAttributes } from '../ckboxcommand.js';
 import type { CKBoxRawAssetDefinition, CKBoxRawAssetDataDefinition } from '../ckboxconfig.js';
 
-import type { ImageUtils } from '@ckeditor/ckeditor5-image';
+import type { ImageUtils } from 'toannv-ckeditor5-image';
 import { createEditabilityChecker } from './utils.js';
 import { CKBoxUtils } from '../ckboxutils.js';
 

@@ -3,15 +3,15 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { BalloonEditor } from '@ckeditor/ckeditor5-editor-balloon';
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { DecoupledEditor } from '@ckeditor/ckeditor5-editor-decoupled';
-import { InlineEditor } from '@ckeditor/ckeditor5-editor-inline';
+import { BalloonEditor } from 'toannv-ckeditor5-editor-balloon';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { DecoupledEditor } from 'toannv-ckeditor5-editor-decoupled';
+import { InlineEditor } from 'toannv-ckeditor5-editor-inline';
 
-import { BlockToolbar } from '@ckeditor/ckeditor5-ui';
-import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
+import { BlockToolbar } from 'toannv-ckeditor5-ui';
+import { SourceEditing } from 'toannv-ckeditor5-source-editing';
 
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
 declare const CKEditorInspector: any;
 
 declare global {

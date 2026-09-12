@@ -5,14 +5,14 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { Heading } from '../src/heading.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
-import { Enter } from '@ckeditor/ckeditor5-enter';
-import { Image, ImageCaption } from '@ckeditor/ckeditor5-image';
-import { Undo } from '@ckeditor/ckeditor5-undo';
+import { Enter } from 'toannv-ckeditor5-enter';
+import { Image, ImageCaption } from 'toannv-ckeditor5-image';
+import { Undo } from 'toannv-ckeditor5-undo';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
 
 describe( 'Heading integration', () => {
 	let editor, model, doc, element;

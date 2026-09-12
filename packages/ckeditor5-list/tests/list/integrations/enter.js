@@ -7,21 +7,21 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 import { ListEditing } from '../../../src/list/listediting.js';
 
-import { BoldEditing } from '@ckeditor/ckeditor5-basic-styles';
-import { UndoEditing } from '@ckeditor/ckeditor5-undo';
-import { ClipboardPipeline } from '@ckeditor/ckeditor5-clipboard';
-import { BlockQuoteEditing } from '@ckeditor/ckeditor5-block-quote';
-import { HeadingEditing } from '@ckeditor/ckeditor5-heading';
-import { TableEditing } from '@ckeditor/ckeditor5-table';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { EventInfo } from '@ckeditor/ckeditor5-utils';
-import { ShiftEnter } from '@ckeditor/ckeditor5-enter';
+import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { HeadingEditing } from 'toannv-ckeditor5-heading';
+import { TableEditing } from 'toannv-ckeditor5-table';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { EventInfo } from 'toannv-ckeditor5-utils';
+import { ShiftEnter } from 'toannv-ckeditor5-enter';
 
-import { VirtualTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
 import {
 	_getModelData,
 	_setModelData,
-	ViewDocumentDomEventData } from '@ckeditor/ckeditor5-engine';
+	ViewDocumentDomEventData } from 'toannv-ckeditor5-engine';
 
 import { stubUid } from '../_utils/uid.js';
 import { modelList } from '../_utils/utils.js';

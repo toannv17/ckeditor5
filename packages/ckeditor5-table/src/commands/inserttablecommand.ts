@@ -7,15 +7,15 @@
  * @module table/commands/inserttablecommand
  */
 
-import { Command } from '@ckeditor/ckeditor5-core';
+import { Command } from 'toannv-ckeditor5-core';
 
 import {
 	ModelDocumentSelection,
 	type ModelSchema,
 	type ModelSelection,
 	type ModelElement
-} from '@ckeditor/ckeditor5-engine';
-import { _getCopyOnEnterAttributes } from '@ckeditor/ckeditor5-enter';
+} from 'toannv-ckeditor5-engine';
+import { _getCopyOnEnterAttributes } from 'toannv-ckeditor5-enter';
 import { type TableUtils } from '../tableutils.js';
 import { getEmptyTableCellBlocks } from '../utils/common.js';
 

@@ -5,23 +5,23 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
-import { Image, ImageUploadEditing, ImageUploadProgress, PictureEditing } from '@ckeditor/ckeditor5-image';
-import { LinkEditing } from '@ckeditor/ckeditor5-link';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { FileRepository } from '@ckeditor/ckeditor5-upload';
-import { Plugin } from '@ckeditor/ckeditor5-core';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { Image, ImageUploadEditing, ImageUploadProgress, PictureEditing } from 'toannv-ckeditor5-image';
+import { LinkEditing } from 'toannv-ckeditor5-link';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { FileRepository } from 'toannv-ckeditor5-upload';
+import { Plugin } from 'toannv-ckeditor5-core';
 import { CKBoxEditing } from '../src/ckboxediting.js';
 import { CKBoxUploadAdapter } from '../src/ckboxuploadadapter.js';
 
-import { createNativeFileMock, NativeFileReaderMock, UploadAdapterMock } from '@ckeditor/ckeditor5-upload/tests/_utils/mocks.js';
-import { createFakeXHRServer } from '@ckeditor/ckeditor5-core/tests/_utils/fakexhrserver.js';
-import { TokenMock } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/tokenmock.js';
-import { mockCreateToken } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
+import { createNativeFileMock, NativeFileReaderMock, UploadAdapterMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
+import { createFakeXHRServer } from 'toannv-ckeditor5-core/tests/_utils/fakexhrserver.js';
+import { TokenMock } from 'toannv-ckeditor5-cloud-services/tests/_utils/tokenmock.js';
+import { mockCreateToken } from 'toannv-ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
 
-import { _getModelData } from '@ckeditor/ckeditor5-engine';
+import { _getModelData } from 'toannv-ckeditor5-engine';
 import { CKBoxUtils } from '../src/ckboxutils.js';
 
 const BASE64_SAMPLE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=';

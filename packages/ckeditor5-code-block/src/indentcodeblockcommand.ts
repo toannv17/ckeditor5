@@ -6,7 +6,7 @@
 /**
  * @module code-block/indentcodeblockcommand
  */
-import { Command, type Editor } from '@ckeditor/ckeditor5-core';
+import { Command, type Editor } from 'toannv-ckeditor5-core';
 
 import {
 	getIndentOutdentPositions,

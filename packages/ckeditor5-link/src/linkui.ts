@@ -7,15 +7,15 @@
  * @module link/linkui
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { IconLink, IconPencil, IconUnlink, IconSettings } from '@ckeditor/ckeditor5-icons';
+import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { IconLink, IconPencil, IconUnlink, IconSettings } from 'toannv-ckeditor5-icons';
 import {
 	ClickObserver,
 	type ViewAttributeElement,
 	type ViewDocumentClickEvent,
 	type ViewElement,
 	type ViewPosition
-} from '@ckeditor/ckeditor5-engine';
+} from 'toannv-ckeditor5-engine';
 import {
 	ButtonView,
 	SwitchButtonView,
@@ -26,10 +26,10 @@ import {
 	ToolbarView,
 	type ViewWithCssTransitionDisabler,
 	type ButtonExecuteEvent
-} from '@ckeditor/ckeditor5-ui';
+} from 'toannv-ckeditor5-ui';
 
-import { Collection, type ObservableChangeEvent, type DomOptimalPositionOptions } from '@ckeditor/ckeditor5-utils';
-import { isWidget } from '@ckeditor/ckeditor5-widget';
+import { Collection, type ObservableChangeEvent, type DomOptimalPositionOptions } from 'toannv-ckeditor5-utils';
+import { isWidget } from 'toannv-ckeditor5-widget';
 
 import { LinkEditing } from './linkediting.js';
 import { resolveConflictingDecorators } from './utils/conflictingdecorators.js';

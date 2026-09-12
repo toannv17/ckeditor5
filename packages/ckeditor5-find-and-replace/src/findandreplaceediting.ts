@@ -7,14 +7,14 @@
  * @module find-and-replace/findandreplaceediting
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import type { DifferItem, DifferItemAttribute, ModelElement, ModelNode } from '@ckeditor/ckeditor5-engine';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import type { DifferItem, DifferItemAttribute, ModelElement, ModelNode } from 'toannv-ckeditor5-engine';
 import {
 	scrollViewportToShowTarget,
 	type Collection,
 	type GetCallback,
 	type ObservableChangeEvent
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 import { FindCommand, type FindAttributes } from './findcommand.js';
 import { ReplaceCommand } from './replacecommand.js';

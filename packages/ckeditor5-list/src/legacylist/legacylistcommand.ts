@@ -7,10 +7,10 @@
  * @module list/legacylist/legacylistcommand
  */
 
-import type { ModelElement, ModelNode, ModelSchema } from '@ckeditor/ckeditor5-engine';
-import { Command, type Editor } from '@ckeditor/ckeditor5-core';
+import type { ModelElement, ModelNode, ModelSchema } from 'toannv-ckeditor5-engine';
+import { Command, type Editor } from 'toannv-ckeditor5-core';
 
-import { first } from '@ckeditor/ckeditor5-utils';
+import { first } from 'toannv-ckeditor5-utils';
 import { type ListType } from '../list/listediting.js';
 
 /**

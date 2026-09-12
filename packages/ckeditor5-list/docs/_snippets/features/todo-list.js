@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { TodoList, CKBox, CKBoxImageEdit, PictureEditing, ImageResize, AutoImage } from 'ckeditor5';
+import { TodoList, CKBox, CKBoxImageEdit, PictureEditing, ImageResize, AutoImage } from 'toannv-ckeditor5';
 import {
 	TOKEN_URL,
 	CS_CONFIG,

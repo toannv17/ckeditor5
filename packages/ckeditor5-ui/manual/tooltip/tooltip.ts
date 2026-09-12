@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { ListProperties } from '@ckeditor/ckeditor5-list';
-import { FontColor } from '@ckeditor/ckeditor5-font';
-import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ListProperties } from 'toannv-ckeditor5-list';
+import { FontColor } from 'toannv-ckeditor5-font';
+import { FindAndReplace } from 'toannv-ckeditor5-find-and-replace';
 declare const CKEditorInspector: any;
 
 declare global {

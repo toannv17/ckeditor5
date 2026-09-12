@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Clipboard } from '@ckeditor/ckeditor5-clipboard';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { _getModelData, _setModelData } from '@ckeditor/ckeditor5-engine';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
 import { modelTable, viewTable } from './_utils/utils.js';
 
 import { TableEditing } from '../src/tableediting.js';

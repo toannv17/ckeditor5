@@ -12,7 +12,7 @@ import { ModelPosition } from '../../src/model/position.js';
 import { ModelLivePosition } from '../../src/model/liveposition.js';
 import { ModelRange } from '../../src/model/range.js';
 import { DetachOperation } from '../../src/model/operation/detachoperation.js';
-import { expectToThrowCKEditorError } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'LivePosition', () =>
 {

@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
 
-import { ListItemView, DropdownView, SplitButtonView } from '@ckeditor/ckeditor5-ui';
+import { ListItemView, DropdownView, SplitButtonView } from 'toannv-ckeditor5-ui';
 import { TableEditing } from '../../src/tableediting.js';
 import { TableLayoutUI } from '../../src/tablelayout/tablelayoutui.js';
 import { TableLayoutEditing } from '../../src/tablelayout/tablelayoutediting.js';
 import { InsertTableView } from '../../src/ui/inserttableview.js';
-import { IconTableLayout, IconTableProperties } from '@ckeditor/ckeditor5-icons';
+import { IconTableLayout, IconTableProperties } from 'toannv-ckeditor5-icons';
 import { TableProperties } from '../../src/tableproperties.js';
 import { TableTypeCommand } from '../../src/tablelayout/commands/tabletypecommand.js';
 import { TableUI } from '../../src/tableui.js';

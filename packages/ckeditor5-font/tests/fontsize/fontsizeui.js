@@ -4,12 +4,12 @@
  */
 
 import { beforeAll, afterAll, beforeEach, afterEach, describe, expect, it, vi } from 'vitest';
-import { IconFontSize } from '@ckeditor/ckeditor5-icons';
+import { IconFontSize } from 'toannv-ckeditor5-icons';
 import { FontSizeEditing } from '../../src/fontsize/fontsizeediting.js';
 import { FontSizeUI } from '../../src/fontsize/fontsizeui.js';
 
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _clearTranslations, add as addTranslations } from '@ckeditor/ckeditor5-utils';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _clearTranslations, add as addTranslations } from 'toannv-ckeditor5-utils';
 import { normalizeOptions } from '../../src/fontsize/utils.js';
 
 describe( 'FontSizeUI', () => {

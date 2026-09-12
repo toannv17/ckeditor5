@@ -10,7 +10,7 @@
 import { ViewNode } from './node.js';
 import { ViewText } from './text.js';
 import { ViewTextProxy } from './textproxy.js';
-import { type ArrayOrItem, isIterable, toMap } from '@ckeditor/ckeditor5-utils';
+import { type ArrayOrItem, isIterable, toMap } from 'toannv-ckeditor5-utils';
 import { Matcher, isPatternMatched, type MatcherPattern, type NormalizedPropertyPattern } from './matcher.js';
 import { StylesMap, type Styles, type StyleValue } from './stylesmap.js';
 

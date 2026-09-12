@@ -3,28 +3,28 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { TableProperties, TableCellProperties, TableColumnResize } from '@ckeditor/ckeditor5-table';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Underline, Code, Strikethrough, Superscript, Subscript } from '@ckeditor/ckeditor5-basic-styles';
-import { FontColor, FontBackgroundColor, FontFamily, FontSize } from '@ckeditor/ckeditor5-font';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
-import { WordCount } from '@ckeditor/ckeditor5-word-count';
-import { TodoList } from '@ckeditor/ckeditor5-list';
-import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor/ckeditor5-special-characters';
-import { PageBreak } from '@ckeditor/ckeditor5-page-break';
-import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
-import { Highlight } from '@ckeditor/ckeditor5-highlight';
-import { IndentBlock } from '@ckeditor/ckeditor5-indent';
-import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
-import { Mention } from '@ckeditor/ckeditor5-mention';
-import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
-import { Alignment } from '@ckeditor/ckeditor5-alignment';
-import { TextTransformation } from '@ckeditor/ckeditor5-typing';
-import { ImageUpload } from '@ckeditor/ckeditor5-image';
-import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { TableProperties, TableCellProperties, TableColumnResize } from 'toannv-ckeditor5-table';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Underline, Code, Strikethrough, Superscript, Subscript } from 'toannv-ckeditor5-basic-styles';
+import { FontColor, FontBackgroundColor, FontFamily, FontSize } from 'toannv-ckeditor5-font';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { WordCount } from 'toannv-ckeditor5-word-count';
+import { TodoList } from 'toannv-ckeditor5-list';
+import { SpecialCharacters, SpecialCharactersEssentials } from 'toannv-ckeditor5-special-characters';
+import { PageBreak } from 'toannv-ckeditor5-page-break';
+import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
+import { Highlight } from 'toannv-ckeditor5-highlight';
+import { IndentBlock } from 'toannv-ckeditor5-indent';
+import { EasyImage } from 'toannv-ckeditor5-easy-image';
+import { Mention } from 'toannv-ckeditor5-mention';
+import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
+import { Alignment } from 'toannv-ckeditor5-alignment';
+import { TextTransformation } from 'toannv-ckeditor5-typing';
+import { ImageUpload } from 'toannv-ckeditor5-image';
+import { CloudServices } from 'toannv-ckeditor5-cloud-services';
 
-import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 /*
  * Memory-leak safe version of balloon editor manual test does not:

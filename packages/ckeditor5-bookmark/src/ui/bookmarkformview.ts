@@ -19,13 +19,13 @@ import {
 	type InputTextView,
 	type FocusableView,
 	FormHeaderView
-} from '@ckeditor/ckeditor5-ui';
+} from 'toannv-ckeditor5-ui';
 import {
 	FocusTracker,
 	KeystrokeHandler,
 	type Locale
-} from '@ckeditor/ckeditor5-utils';
-import { IconPreviousArrow } from '@ckeditor/ckeditor5-icons';
+} from 'toannv-ckeditor5-utils';
+import { IconPreviousArrow } from 'toannv-ckeditor5-icons';
 
 /**
  * The bookmark form view controller class.

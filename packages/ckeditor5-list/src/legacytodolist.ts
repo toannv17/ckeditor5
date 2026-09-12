@@ -9,7 +9,7 @@
 
 import { LegacyTodoListEditing } from './legacytodolist/legacytodolistediting.js';
 import { TodoListUI } from './todolist/todolistui.js';
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 
 /**
  * The legacy to-do list feature.

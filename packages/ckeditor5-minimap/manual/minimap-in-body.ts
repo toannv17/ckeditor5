@@ -3,24 +3,24 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
-import { DecoupledEditor } from '@ckeditor/ckeditor5-editor-decoupled';
-import { Alignment } from '@ckeditor/ckeditor5-alignment';
-import { FontSize, FontFamily, FontColor, FontBackgroundColor } from '@ckeditor/ckeditor5-font';
-import { ImageUpload, ImageResize } from '@ckeditor/ckeditor5-image';
-import { IndentBlock } from '@ckeditor/ckeditor5-indent';
-import { PageBreak } from '@ckeditor/ckeditor5-page-break';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { TableProperties, TableCellProperties } from '@ckeditor/ckeditor5-table';
-import { Subscript, Superscript } from '@ckeditor/ckeditor5-basic-styles';
-import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
-import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
+import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { DecoupledEditor } from 'toannv-ckeditor5-editor-decoupled';
+import { Alignment } from 'toannv-ckeditor5-alignment';
+import { FontSize, FontFamily, FontColor, FontBackgroundColor } from 'toannv-ckeditor5-font';
+import { ImageUpload, ImageResize } from 'toannv-ckeditor5-image';
+import { IndentBlock } from 'toannv-ckeditor5-indent';
+import { PageBreak } from 'toannv-ckeditor5-page-break';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { TableProperties, TableCellProperties } from 'toannv-ckeditor5-table';
+import { Subscript, Superscript } from 'toannv-ckeditor5-basic-styles';
+import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { EasyImage } from 'toannv-ckeditor5-easy-image';
 
 import { Minimap } from '../src/minimap.js';
-import type { EditorConfig } from '@ckeditor/ckeditor5-core';
+import type { EditorConfig } from 'toannv-ckeditor5-core';
 import { shortData, mediumData, longData } from '../tests/fixtures.js';
 
-import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 declare global {
 	interface Window { editorInstance: any }
 }

@@ -7,15 +7,15 @@
  * @module image/imagetextalternative/imagetextalternativeui
  */
 
-import { Plugin, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
 import {
 	ButtonView,
 	ContextualBalloon,
 	clickOutsideHandler,
 	CssTransitionDisablerMixin,
 	type ViewWithCssTransitionDisabler
-} from '@ckeditor/ckeditor5-ui';
-import { IconTextAlternative } from '@ckeditor/ckeditor5-icons';
+} from 'toannv-ckeditor5-ui';
+import { IconTextAlternative } from 'toannv-ckeditor5-icons';
 
 import {
 	TextAlternativeFormView,

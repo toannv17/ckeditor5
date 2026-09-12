@@ -46,7 +46,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, Table, TableColumnResize } from 'ckeditor5';
+import { ClassicEditor, Table, TableColumnResize } from 'toannv-ckeditor5';
 
 ClassicEditor
 	.create( {

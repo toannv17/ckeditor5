@@ -5,13 +5,13 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { ActionsRecorder } from '../src/actionsrecorder.js';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { global } from '@ckeditor/ckeditor5-utils';
-import { _setModelData } from '@ckeditor/ckeditor5-engine';
-import { Bold } from '@ckeditor/ckeditor5-basic-styles';
-import { Command } from '@ckeditor/ckeditor5-core';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { global } from 'toannv-ckeditor5-utils';
+import { _setModelData } from 'toannv-ckeditor5-engine';
+import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { Command } from 'toannv-ckeditor5-core';
 
 describe( 'ActionsRecorder', () => {
 	let editor, plugin, element;

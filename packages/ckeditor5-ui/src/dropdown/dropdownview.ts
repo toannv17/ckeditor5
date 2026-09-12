@@ -23,7 +23,7 @@ import {
 	type Locale,
 	type ObservableChangeEvent,
 	type PositioningFunction
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 
 /**
  * The dropdown view class. It manages the dropdown button and dropdown panel.

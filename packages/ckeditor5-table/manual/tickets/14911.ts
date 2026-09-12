@@ -3,17 +3,17 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
-import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
-import { Autosave } from '@ckeditor/ckeditor5-autosave';
-import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { SourceEditing } from 'toannv-ckeditor5-source-editing';
+import { Autosave } from 'toannv-ckeditor5-autosave';
+import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
 import {
 	TableProperties,
 	TableColumnResize,
 	TableCaption,
 	TableCellProperties
-} from '@ckeditor/ckeditor5-table';
+} from 'toannv-ckeditor5-table';
 declare global {
 	interface Window {
 		prettier: any;

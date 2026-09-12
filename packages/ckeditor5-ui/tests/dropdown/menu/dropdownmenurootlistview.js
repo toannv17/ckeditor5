@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { DropdownMenuRootListView } from '../../../src/dropdown/menu/dropdownmenurootlistview.js';
 import { DropdownRootMenuBehaviors } from '../../../src/dropdown/menu/dropdownmenubehaviors.js';

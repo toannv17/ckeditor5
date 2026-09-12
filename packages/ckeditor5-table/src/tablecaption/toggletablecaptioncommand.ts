@@ -7,8 +7,8 @@
 * @module table/tablecaption/toggletablecaptioncommand
 */
 
-import { Command } from '@ckeditor/ckeditor5-core';
-import type { ModelWriter } from '@ckeditor/ckeditor5-engine';
+import { Command } from 'toannv-ckeditor5-core';
+import type { ModelWriter } from 'toannv-ckeditor5-engine';
 import { type TableCaptionEditing } from './tablecaptionediting.js';
 
 import { getCaptionFromTableModelElement } from './utils.js';

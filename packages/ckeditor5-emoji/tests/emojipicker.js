@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ContextualBalloon, Dialog, ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor/ckeditor5-ui';
-import { _getModelData, _setModelData, _getViewData } from '@ckeditor/ckeditor5-engine';
-import { Typing } from '@ckeditor/ckeditor5-typing';
-import { keyCodes } from '@ckeditor/ckeditor5-utils';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ContextualBalloon, Dialog, ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { Typing } from 'toannv-ckeditor5-typing';
+import { keyCodes } from 'toannv-ckeditor5-utils';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { EmojiPicker } from '../src/emojipicker.js';
 import { EmojiRepository } from '../src/emojirepository.js';

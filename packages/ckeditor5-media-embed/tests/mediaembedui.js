@@ -4,12 +4,12 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconMedia } from '@ckeditor/ckeditor5-icons';
-import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { IconMedia } from 'toannv-ckeditor5-icons';
+import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
 import { MediaEmbed } from '../src/mediaembed.js';
 import { MediaEmbedUI } from '../src/mediaembedui.js';
-import { global } from '@ckeditor/ckeditor5-utils';
-import { ButtonView, DialogViewPosition, MenuBarMenuListItemButtonView } from '@ckeditor/ckeditor5-ui';
+import { global } from 'toannv-ckeditor5-utils';
+import { ButtonView, DialogViewPosition, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
 
 describe( 'MediaEmbedUI', () => {
 	let editorElement, editor, button;

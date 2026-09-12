@@ -3,21 +3,21 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
 
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Link } from '@ckeditor/ckeditor5-link';
-import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
-import { FontSize } from '@ckeditor/ckeditor5-font';
-import { Indent } from '@ckeditor/ckeditor5-indent';
-import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
-import { Alignment } from '@ckeditor/ckeditor5-alignment';
+import { Essentials } from 'toannv-ckeditor5-essentials';
+import { Autoformat } from 'toannv-ckeditor5-autoformat';
+import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { Heading } from 'toannv-ckeditor5-heading';
+import { Link } from 'toannv-ckeditor5-link';
+import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
+import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Table, TableToolbar } from 'toannv-ckeditor5-table';
+import { FontSize } from 'toannv-ckeditor5-font';
+import { Indent } from 'toannv-ckeditor5-indent';
+import { SourceEditing } from 'toannv-ckeditor5-source-editing';
+import { Alignment } from 'toannv-ckeditor5-alignment';
 
 import { List } from '../src/list.js';
 import { TodoList } from '../src/todolist.js';

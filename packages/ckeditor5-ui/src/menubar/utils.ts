@@ -33,7 +33,7 @@ import {
 	type Locale,
 	type ObservableChangeEvent,
 	type PositioningFunction
-} from '@ckeditor/ckeditor5-utils';
+} from 'toannv-ckeditor5-utils';
 import { cloneDeep } from 'es-toolkit/compat';
 
 const NESTED_PANEL_HORIZONTAL_OFFSET = 5;
