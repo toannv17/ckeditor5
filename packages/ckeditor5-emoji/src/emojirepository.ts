@@ -297,13 +297,13 @@ export class EmojiRepository extends Plugin {
 	private _warnAboutCdnUse(): void {
 		const editor = this.editor;
 		const config = editor.config.get( 'emoji' );
-		const licenseKey = editor.config.get( 'licenseKey' );
+		// const licenseKey = editor.config.get( 'licenseKey' );
 		const distributionChannel = ( window as any )[ Symbol.for( 'cke distribution' ) ];
 
-		if ( licenseKey === 'GPL' ) {
-			// Don't warn GPL users.
-			return;
-		}
+		// if ( licenseKey === 'GPL' ) {
+		// 	// Don't warn GPL users.
+		// 	return;
+		// }
 
 		if ( distributionChannel === 'cloud' ) {
 			// Don't warn cloud users, because they already use our CDN.

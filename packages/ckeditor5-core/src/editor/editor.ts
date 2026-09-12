@@ -371,7 +371,7 @@ export abstract class Editor extends EditorBase {
 		this.config.define( 'plugins', availablePlugins );
 		this.config.define( this._context._getEditorConfig() );
 
-		checkLicenseKeyIsDefined( this.config );
+		// checkLicenseKeyIsDefined( this.config );
 
 		this.plugins = new PluginCollection<Editor>( this, availablePlugins, this._context.plugins );
 
@@ -408,218 +408,218 @@ export abstract class Editor extends EditorBase {
 
 		this.accessibility = new Accessibility( this );
 
-		verifyLicenseKey( this );
+		// verifyLicenseKey( this );
 
 		// Checks if the license key is defined and throws an error if it is not.
-		function checkLicenseKeyIsDefined( config: Config<EditorConfig> ) {
-			let licenseKey = config.get( 'licenseKey' );
+		// function checkLicenseKeyIsDefined( config: Config<EditorConfig> ) {
+		// 	let licenseKey = config.get( 'licenseKey' );
+		//
+		// 	if ( !licenseKey && window.CKEDITOR_GLOBAL_LICENSE_KEY ) {
+		// 		licenseKey = window.CKEDITOR_GLOBAL_LICENSE_KEY;
+		// 		config.set( 'licenseKey', licenseKey );
+		// 	}
+		//
+		// 	if ( !licenseKey ) {
+		// 		/**
+		// 		 * The `licenseKey` property is missing in the editor configuration.
+		// 		 *
+		// 		 * * If you are using the editor in a commercial setup, please provide your license key.
+		// 		 * * If you still need to acquire a key, please [contact us](https://ckeditor.com/contact/) or
+		// 		 *   [create a free account with a 14 day premium features trial](https://portal.ckeditor.com/checkout?plan=free).
+		// 		 * * If you are using the editor under a GPL license or another license from our Open Source Initiative,
+		// 		 *   use the 'GPL' license key instead.
+		// 		 *
+		// 		 * ```js
+		// 		 * ClassicEditor.create( {
+		// 		 * 	attachTo: document.querySelector( '#editor' ),
+		// 		 * 	licenseKey: '<YOUR_LICENSE_KEY>', // Or 'GPL'.
+		// 		 * 	// ... Other configuration options ...
+		// 		 * } ) ;
+		// 		 *
+		// 		 * @error license-key-missing
+		// 		 */
+		// 		throw new CKEditorError( 'license-key-missing' );
+		// 	}
+		// }
 
-			if ( !licenseKey && window.CKEDITOR_GLOBAL_LICENSE_KEY ) {
-				licenseKey = window.CKEDITOR_GLOBAL_LICENSE_KEY;
-				config.set( 'licenseKey', licenseKey );
-			}
-
-			if ( !licenseKey ) {
-				/**
-				 * The `licenseKey` property is missing in the editor configuration.
-				 *
-				 * * If you are using the editor in a commercial setup, please provide your license key.
-				 * * If you still need to acquire a key, please [contact us](https://ckeditor.com/contact/) or
-				 *   [create a free account with a 14 day premium features trial](https://portal.ckeditor.com/checkout?plan=free).
-				 * * If you are using the editor under a GPL license or another license from our Open Source Initiative,
-				 *   use the 'GPL' license key instead.
-				 *
-				 * ```js
-				 * ClassicEditor.create( {
-				 * 	attachTo: document.querySelector( '#editor' ),
-				 * 	licenseKey: '<YOUR_LICENSE_KEY>', // Or 'GPL'.
-				 * 	// ... Other configuration options ...
-				 * } ) ;
-				 *
-				 * @error license-key-missing
-				 */
-				throw new CKEditorError( 'license-key-missing' );
-			}
-		}
-
-		function verifyLicenseKey( editor: Editor ) {
-			const licenseKey = editor.config.get( 'licenseKey' )!;
-			const distributionChannel = ( window as any )[ Symbol.for( 'cke distribution' ) ] || 'sh';
-
-			function blockEditor( reason: LicenseErrorReason, name?: string ) {
-				editor.enableReadOnlyMode( Symbol( 'invalidLicense' ) );
-				editor._showLicenseError( reason, name );
-			}
-
-			function hasAllRequiredFields( licensePayload: Record<string, unknown> ) {
-				const requiredFields = [ 'exp', 'jti', 'vc' ];
-
-				return requiredFields.every( field => field in licensePayload );
-			}
-
-			function getCrcInputData( licensePayload: Record<string, unknown> ): CRCData {
-				const keysToCheck = Object.getOwnPropertyNames( licensePayload ).sort();
-
-				const filteredValues = keysToCheck
-					.filter( key => key != 'vc' && licensePayload[ key ] != null )
-					.map( key => licensePayload[ key ] );
-
-				return filteredValues as CRCData;
-			}
-
-			function checkLicensedHosts( licensedHosts: Array<string> ): boolean {
-				const { hostname } = new URL( window.location.href );
-
-				if ( licensedHosts.includes( hostname ) ) {
-					return true;
-				}
-
-				const segments = hostname.split( '.' );
-
-				return licensedHosts
-					// Filter out hosts without wildcards.
-					.filter( host => host.includes( '*' ) )
-					// Split the hosts into segments.
-					.map( host => host.split( '.' ) )
-					// Filter out hosts that have more segments than the current hostname.
-					.filter( host => host.length <= segments.length )
-					// Pad the beginning of the licensed host if it's shorter than the current hostname.
-					.map( host => Array( segments.length - host.length ).fill( host[ 0 ] === '*' ? '*' : '' ).concat( host ) )
-					// Check if some license host matches the hostname.
-					.some( octets => segments.every( ( segment, index ) => octets[ index ] === segment || octets[ index ] === '*' ) );
-			}
-
-			function warnAboutNonProductionLicenseKey( licenseType: string ) {
-				const capitalizedLicenseType = licenseType[ 0 ].toUpperCase() + licenseType.slice( 1 );
-				const article = licenseType === 'evaluation' ? 'an' : 'a';
-
-				console.info(
-					`%cCKEditor 5 ${ capitalizedLicenseType } License`,
-					'color: #ffffff; background: #743CCD; font-size: 14px; padding: 4px 8px; border-radius: 4px;'
-				);
-
-				console.warn(
-					`⚠️ You are using ${ article } ${ licenseType } license of CKEditor 5` +
-					`${ licenseType === 'trial' ? ' which is for evaluation purposes only' : '' }. ` +
-					'For production usage, please obtain a production license at https://portal.ckeditor.com/'
-				);
-			}
-
-			if ( licenseKey == 'GPL' ) {
-				if ( distributionChannel == 'cloud' ) {
-					blockEditor( 'distributionChannel' );
-				}
-
-				return;
-			}
-
-			const licensePayload = decodeLicenseKey( licenseKey );
-
-			if ( !licensePayload ) {
-				blockEditor( 'invalid' );
-
-				return;
-			}
-
-			if ( !hasAllRequiredFields( licensePayload ) ) {
-				blockEditor( 'invalid' );
-
-				return;
-			}
-
-			if ( licensePayload.distributionChannel && !toArray( licensePayload.distributionChannel ).includes( distributionChannel ) ) {
-				blockEditor( 'distributionChannel' );
-
-				return;
-			}
-
-			if ( crc32( getCrcInputData( licensePayload ) ) != licensePayload.vc.toLowerCase() ) {
-				blockEditor( 'invalid' );
-
-				return;
-			}
-
-			const expirationDate = new Date( licensePayload.exp * 1000 );
-
-			if ( expirationDate < releaseDate ) {
-				blockEditor( 'expired' );
-
-				return;
-			}
-
-			const licensedHosts: Array<string> | undefined = licensePayload.licensedHosts;
-
-			if ( licensedHosts && licensedHosts.length > 0 && !checkLicensedHosts( licensedHosts ) ) {
-				blockEditor( 'domainLimit' );
-
-				return;
-			}
-
-			if ( [ 'evaluation', 'trial' ].includes( licensePayload.licenseType ) && licensePayload.exp * 1000 < Date.now() ) {
-				blockEditor( 'expired' );
-
-				return;
-			}
-
-			if ( [ 'development', 'evaluation', 'trial' ].includes( licensePayload.licenseType ) ) {
-				const { licenseType } = licensePayload;
-
-				window.CKEDITOR_WARNING_SUPPRESSIONS = window.CKEDITOR_WARNING_SUPPRESSIONS || {};
-
-				if ( !window.CKEDITOR_WARNING_SUPPRESSIONS[ licenseType ] ) {
-					warnAboutNonProductionLicenseKey( licenseType );
-
-					window.CKEDITOR_WARNING_SUPPRESSIONS[ licenseType ] = true;
-				}
-			}
-
-			if ( licensePayload.licenseType === 'evaluation' ) {
-				const timerId = setTimeout( () => {
-					blockEditor( 'evaluationLimit' );
-				}, 600000 );
-
-				editor.on( 'destroy', () => {
-					clearTimeout( timerId );
-				} );
-			}
-
-			if ( licensePayload.usageEndpoint ) {
-				editor.once<EditorReadyEvent>( 'ready', () => {
-					const request = {
-						requestId: uid(),
-						requestTime: Math.round( Date.now() / 1000 ),
-						license: licenseKey,
-						editor: collectUsageData( editor )
-					};
-
-					/**
-					 * This part of the code is not executed in open-source implementations using a GPL key.
-					 * It only runs when a specific license key is provided. If you are uncertain whether
-					 * this applies to your installation, please contact our support team.
-					 */
-					editor._sendUsageRequest( licensePayload.usageEndpoint, request ).then( response => {
-						const { status, message } = response;
-
-						if ( message ) {
-							console.warn( message );
-						}
-
-						if ( status != 'ok' ) {
-							blockEditor( 'usageLimit' );
-						}
-					}, () => {
-						/**
-						 * Your license key cannot be validated due to a network issue.
-						 * Please ensure that your setup does not block requests to the validation endpoint.
-						 *
-						 * @error license-key-validation-endpoint-not-reachable
-						 * @param {string} url The URL that was attempted to be reached for validation.
-						 */
-						logError( 'license-key-validation-endpoint-not-reachable', { url: licensePayload.usageEndpoint } );
-					} );
-				}, { priority: 'high' } );
-			}
-		}
+		// function verifyLicenseKey( editor: Editor ) {
+		// 	const licenseKey = editor.config.get( 'licenseKey' )!;
+		// 	const distributionChannel = ( window as any )[ Symbol.for( 'cke distribution' ) ] || 'sh';
+		//
+		// 	function blockEditor( reason: LicenseErrorReason, name?: string ) {
+		// 		editor.enableReadOnlyMode( Symbol( 'invalidLicense' ) );
+		// 		editor._showLicenseError( reason, name );
+		// 	}
+		//
+		// 	function hasAllRequiredFields( licensePayload: Record<string, unknown> ) {
+		// 		const requiredFields = [ 'exp', 'jti', 'vc' ];
+		//
+		// 		return requiredFields.every( field => field in licensePayload );
+		// 	}
+		//
+		// 	function getCrcInputData( licensePayload: Record<string, unknown> ): CRCData {
+		// 		const keysToCheck = Object.getOwnPropertyNames( licensePayload ).sort();
+		//
+		// 		const filteredValues = keysToCheck
+		// 			.filter( key => key != 'vc' && licensePayload[ key ] != null )
+		// 			.map( key => licensePayload[ key ] );
+		//
+		// 		return filteredValues as CRCData;
+		// 	}
+		//
+		// 	function checkLicensedHosts( licensedHosts: Array<string> ): boolean {
+		// 		const { hostname } = new URL( window.location.href );
+		//
+		// 		if ( licensedHosts.includes( hostname ) ) {
+		// 			return true;
+		// 		}
+		//
+		// 		const segments = hostname.split( '.' );
+		//
+		// 		return licensedHosts
+		// 			// Filter out hosts without wildcards.
+		// 			.filter( host => host.includes( '*' ) )
+		// 			// Split the hosts into segments.
+		// 			.map( host => host.split( '.' ) )
+		// 			// Filter out hosts that have more segments than the current hostname.
+		// 			.filter( host => host.length <= segments.length )
+		// 			// Pad the beginning of the licensed host if it's shorter than the current hostname.
+		// 			.map( host => Array( segments.length - host.length ).fill( host[ 0 ] === '*' ? '*' : '' ).concat( host ) )
+		// 			// Check if some license host matches the hostname.
+		// 			.some( octets => segments.every( ( segment, index ) => octets[ index ] === segment || octets[ index ] === '*' ) );
+		// 	}
+		//
+		// 	function warnAboutNonProductionLicenseKey( licenseType: string ) {
+		// 		const capitalizedLicenseType = licenseType[ 0 ].toUpperCase() + licenseType.slice( 1 );
+		// 		const article = licenseType === 'evaluation' ? 'an' : 'a';
+		//
+		// 		console.info(
+		// 			`%cCKEditor 5 ${ capitalizedLicenseType } License`,
+		// 			'color: #ffffff; background: #743CCD; font-size: 14px; padding: 4px 8px; border-radius: 4px;'
+		// 		);
+		//
+		// 		console.warn(
+		// 			`⚠️ You are using ${ article } ${ licenseType } license of CKEditor 5` +
+		// 			`${ licenseType === 'trial' ? ' which is for evaluation purposes only' : '' }. ` +
+		// 			'For production usage, please obtain a production license at https://portal.ckeditor.com/'
+		// 		);
+		// 	}
+		//
+		// 	if ( licenseKey == 'GPL' ) {
+		// 		if ( distributionChannel == 'cloud' ) {
+		// 			blockEditor( 'distributionChannel' );
+		// 		}
+		//
+		// 		return;
+		// 	}
+		//
+		// 	const licensePayload = decodeLicenseKey( licenseKey );
+		//
+		// 	if ( !licensePayload ) {
+		// 		blockEditor( 'invalid' );
+		//
+		// 		return;
+		// 	}
+		//
+		// 	if ( !hasAllRequiredFields( licensePayload ) ) {
+		// 		blockEditor( 'invalid' );
+		//
+		// 		return;
+		// 	}
+		//
+		// 	if ( licensePayload.distributionChannel && !toArray( licensePayload.distributionChannel ).includes( distributionChannel ) ) {
+		// 		blockEditor( 'distributionChannel' );
+		//
+		// 		return;
+		// 	}
+		//
+		// 	if ( crc32( getCrcInputData( licensePayload ) ) != licensePayload.vc.toLowerCase() ) {
+		// 		blockEditor( 'invalid' );
+		//
+		// 		return;
+		// 	}
+		//
+		// 	const expirationDate = new Date( licensePayload.exp * 1000 );
+		//
+		// 	if ( expirationDate < releaseDate ) {
+		// 		blockEditor( 'expired' );
+		//
+		// 		return;
+		// 	}
+		//
+		// 	const licensedHosts: Array<string> | undefined = licensePayload.licensedHosts;
+		//
+		// 	if ( licensedHosts && licensedHosts.length > 0 && !checkLicensedHosts( licensedHosts ) ) {
+		// 		blockEditor( 'domainLimit' );
+		//
+		// 		return;
+		// 	}
+		//
+		// 	if ( [ 'evaluation', 'trial' ].includes( licensePayload.licenseType ) && licensePayload.exp * 1000 < Date.now() ) {
+		// 		blockEditor( 'expired' );
+		//
+		// 		return;
+		// 	}
+		//
+		// 	if ( [ 'development', 'evaluation', 'trial' ].includes( licensePayload.licenseType ) ) {
+		// 		const { licenseType } = licensePayload;
+		//
+		// 		window.CKEDITOR_WARNING_SUPPRESSIONS = window.CKEDITOR_WARNING_SUPPRESSIONS || {};
+		//
+		// 		if ( !window.CKEDITOR_WARNING_SUPPRESSIONS[ licenseType ] ) {
+		// 			warnAboutNonProductionLicenseKey( licenseType );
+		//
+		// 			window.CKEDITOR_WARNING_SUPPRESSIONS[ licenseType ] = true;
+		// 		}
+		// 	}
+		//
+		// 	if ( licensePayload.licenseType === 'evaluation' ) {
+		// 		const timerId = setTimeout( () => {
+		// 			blockEditor( 'evaluationLimit' );
+		// 		}, 600000 );
+		//
+		// 		editor.on( 'destroy', () => {
+		// 			clearTimeout( timerId );
+		// 		} );
+		// 	}
+		//
+		// 	if ( licensePayload.usageEndpoint ) {
+		// 		editor.once<EditorReadyEvent>( 'ready', () => {
+		// 			const request = {
+		// 				requestId: uid(),
+		// 				requestTime: Math.round( Date.now() / 1000 ),
+		// 				license: licenseKey,
+		// 				editor: collectUsageData( editor )
+		// 			};
+		//
+		// 			/**
+		// 			 * This part of the code is not executed in open-source implementations using a GPL key.
+		// 			 * It only runs when a specific license key is provided. If you are uncertain whether
+		// 			 * this applies to your installation, please contact our support team.
+		// 			 */
+		// 			editor._sendUsageRequest( licensePayload.usageEndpoint, request ).then( response => {
+		// 				const { status, message } = response;
+		//
+		// 				if ( message ) {
+		// 					console.warn( message );
+		// 				}
+		//
+		// 				if ( status != 'ok' ) {
+		// 					blockEditor( 'usageLimit' );
+		// 				}
+		// 			}, () => {
+		// 				/**
+		// 				 * Your license key cannot be validated due to a network issue.
+		// 				 * Please ensure that your setup does not block requests to the validation endpoint.
+		// 				 *
+		// 				 * @error license-key-validation-endpoint-not-reachable
+		// 				 * @param {string} url The URL that was attempted to be reached for validation.
+		// 				 */
+		// 				logError( 'license-key-validation-endpoint-not-reachable', { url: licensePayload.usageEndpoint } );
+		// 			} );
+		// 		}, { priority: 'high' } );
+		// 	}
+		// }
 	}
 
 	/**
@@ -839,42 +839,42 @@ export abstract class Editor extends EditorBase {
 
 		const loadedPlugins = await this.plugins.init( plugins.concat( extraPlugins ), removePlugins, substitutePlugins );
 
-		checkPluginsAllowedByLicenseKey( this );
+		// checkPluginsAllowedByLicenseKey( this );
 
 		return loadedPlugins;
 
-		function checkPluginsAllowedByLicenseKey( editor: Editor ): void {
-			const licenseKey = editor.config.get( 'licenseKey' )!;
-
-			if ( licenseKey === 'GPL' ) {
-				return;
-			}
-
-			const decodedPayload = decodeLicenseKey( licenseKey );
-
-			if ( !decodedPayload ) {
-				return;
-			}
-
-			const disallowedPlugin = [ ...editor.plugins ]
-				.map( ( [ pluginConstructor ] ) => pluginConstructor )
-				.find( pluginConstructor => {
-					if ( !pluginConstructor.pluginName ) {
-						return false;
-					}
-
-					if ( !pluginConstructor.licenseFeatureCode ) {
-						return false;
-					}
-
-					return isFeatureBlockedByLicenseKey( decodedPayload, pluginConstructor.licenseFeatureCode );
-				} );
-
-			if ( disallowedPlugin ) {
-				editor.enableReadOnlyMode( Symbol( 'invalidLicense' ) );
-				editor._showLicenseError( 'pluginNotAllowed', disallowedPlugin.pluginName );
-			}
-		}
+		// function checkPluginsAllowedByLicenseKey( editor: Editor ): void {
+		// 	const licenseKey = editor.config.get( 'licenseKey' )!;
+		//
+		// 	if ( licenseKey === 'GPL' ) {
+		// 		return;
+		// 	}
+		//
+		// 	const decodedPayload = decodeLicenseKey( licenseKey );
+		//
+		// 	if ( !decodedPayload ) {
+		// 		return;
+		// 	}
+		//
+		// 	const disallowedPlugin = [ ...editor.plugins ]
+		// 		.map( ( [ pluginConstructor ] ) => pluginConstructor )
+		// 		.find( pluginConstructor => {
+		// 			if ( !pluginConstructor.pluginName ) {
+		// 				return false;
+		// 			}
+		//
+		// 			if ( !pluginConstructor.licenseFeatureCode ) {
+		// 				return false;
+		// 			}
+		//
+		// 			return isFeatureBlockedByLicenseKey( decodedPayload, pluginConstructor.licenseFeatureCode );
+		// 		} );
+		//
+		// 	if ( disallowedPlugin ) {
+		// 		editor.enableReadOnlyMode( Symbol( 'invalidLicense' ) );
+		// 		editor._showLicenseError( 'pluginNotAllowed', disallowedPlugin.pluginName );
+		// 	}
+		// }
 	}
 
 	/**

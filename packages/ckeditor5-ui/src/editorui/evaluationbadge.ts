@@ -8,7 +8,8 @@
  */
 
 import type { Editor } from '@ckeditor/ckeditor5-core';
-import { parseBase64EncodedObject, type Locale } from '@ckeditor/ckeditor5-utils';
+import { type Locale } from '@ckeditor/ckeditor5-utils';
+// import { parseBase64EncodedObject, type Locale } from '@ckeditor/ckeditor5-utils';
 
 import { View } from '../view.js';
 import { Badge, type BadgeConfig } from '../badge/badge.js';
@@ -34,21 +35,22 @@ export class EvaluationBadge extends Badge {
 	 * Enables "evaluation badge" label.
 	 */
 	protected override _isEnabled(): boolean {
-		const editor = this.editor;
-		const licenseKey = editor.config.get( 'licenseKey' )!;
-		const licenseType = getLicenseTypeFromLicenseKey( licenseKey );
-
-		return Boolean( licenseType && this.licenseTypeMessage[ licenseType ] );
+		// const editor = this.editor;
+		// const licenseKey = editor.config.get( 'licenseKey' )!;
+		// const licenseType = getLicenseTypeFromLicenseKey( licenseKey );
+		//
+		// return Boolean( licenseType && this.licenseTypeMessage[ licenseType ] );
+		return false;
 	}
 
 	/**
 	 * Creates the content of the "evaluation badge".
 	 */
 	protected override _createBadgeContent(): View<HTMLElement> {
-		const licenseKey = this.editor.config.get( 'licenseKey' )!;
-		const licenseType = getLicenseTypeFromLicenseKey( licenseKey )!;
+		// const licenseKey = this.editor.config.get( 'licenseKey' )!;
+		// const licenseType = getLicenseTypeFromLicenseKey( licenseKey )!;
 
-		return new EvaluationBadgeView( this.editor.locale, this.licenseTypeMessage[ licenseType ] );
+		return new EvaluationBadgeView( this.editor.locale, 'evaluation' );
 	}
 
 	/**
@@ -105,16 +107,16 @@ class EvaluationBadgeView extends View<HTMLDivElement> {
 /**
  * Returns the license type based on the license key.
  */
-function getLicenseTypeFromLicenseKey( licenseKey: string ): string | null {
-	if ( licenseKey == 'GPL' ) {
-		return 'GPL';
-	}
-
-	const licenseContent = parseBase64EncodedObject( licenseKey.split( '.' )[ 1 ] );
-
-	if ( !licenseContent ) {
-		return null;
-	}
-
-	return licenseContent.licenseType || 'production';
-}
+// function getLicenseTypeFromLicenseKey( licenseKey: string ): string | null {
+// 	if ( licenseKey == 'GPL' ) {
+// 		return 'GPL';
+// 	}
+//
+// 	const licenseContent = parseBase64EncodedObject( licenseKey.split( '.' )[ 1 ] );
+//
+// 	if ( !licenseContent ) {
+// 		return null;
+// 	}
+//
+// 	return licenseContent.licenseType || 'production';
+// }

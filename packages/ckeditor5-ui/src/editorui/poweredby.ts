@@ -35,23 +35,21 @@ export class PoweredBy extends Badge {
 		const editor = this.editor;
 		const forceVisible = editor.config.get( 'ui.poweredBy.forceVisible' );
 
-		if ( forceVisible ) {
-			return true;
-		}
+		return !!forceVisible;
 
-		const licenseKey = editor.config.get( 'licenseKey' )!;
+		// const licenseKey = editor.config.get( 'licenseKey' )!;
+		//
+		// if ( licenseKey == 'GPL' ) {
+		// 	return true;
+		// }
 
-		if ( licenseKey == 'GPL' ) {
-			return true;
-		}
+		// const licenseContent = parseBase64EncodedObject( licenseKey.split( '.' )[ 1 ] );
+		//
+		// if ( !licenseContent ) {
+		// 	return true;
+		// }
 
-		const licenseContent = parseBase64EncodedObject( licenseKey.split( '.' )[ 1 ] );
-
-		if ( !licenseContent ) {
-			return true;
-		}
-
-		return !licenseContent.whiteLabel;
+		// return !licenseContent.whiteLabel;
 	}
 
 	/**

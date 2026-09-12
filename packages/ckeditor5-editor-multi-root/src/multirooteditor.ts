@@ -276,21 +276,21 @@ export class MultiRootEditor extends Editor {
 			}
 		}, { priority: 'highest' } );
 
-		verifyLicenseKey( this );
+		// verifyLicenseKey( this );
 
-		function verifyLicenseKey( editor: MultiRootEditor ) {
-			const licenseKey = editor.config.get( 'licenseKey' );
-			const decodedPayload = decodeLicenseKey( licenseKey );
-
-			if ( !decodedPayload ) {
-				return;
-			}
-
-			if ( isFeatureBlockedByLicenseKey( decodedPayload, 'MRE' ) ) {
-				editor.enableReadOnlyMode( Symbol( 'invalidLicense' ) );
-				editor._showLicenseError( 'featureNotAllowed', 'Multi-root editor' );
-			}
-		}
+		// function verifyLicenseKey( editor: MultiRootEditor ) {
+		// 	const licenseKey = editor.config.get( 'licenseKey' );
+		// 	const decodedPayload = decodeLicenseKey( licenseKey );
+		//
+		// 	if ( !decodedPayload ) {
+		// 		return;
+		// 	}
+		//
+		// 	if ( isFeatureBlockedByLicenseKey( decodedPayload, 'MRE' ) ) {
+		// 		editor.enableReadOnlyMode( Symbol( 'invalidLicense' ) );
+		// 		editor._showLicenseError( 'featureNotAllowed', 'Multi-root editor' );
+		// 	}
+		// }
 	}
 
 	/**
