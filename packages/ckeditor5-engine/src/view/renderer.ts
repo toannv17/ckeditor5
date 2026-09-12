@@ -23,11 +23,6 @@ import {
 	isText,
 	remove,
 	indexOf,
-	getSelection,
-	getActiveElement,
-	getParentNode,
-	getParentElement,
-	type ShadowSelection,
 	type DiffResult,
 	type ObservableChangeEvent,
 	type ObservableMixinConstructor
@@ -45,7 +40,7 @@ type DomText = globalThis.Text;
 type DomNode = globalThis.Node;
 type DomDocument = globalThis.Document;
 type DomElement = globalThis.HTMLElement;
-type DomSelection = globalThis.Selection | ShadowSelection;
+type DomSelection = globalThis.Selection;
 
 const ViewRendererBase: ObservableMixinConstructor = /* #__PURE__ */ ObservableMixin();
 
@@ -63,6 +58,11 @@ const ViewRendererBase: ObservableMixinConstructor = /* #__PURE__ */ ObservableM
  * to and from the DOM.
  */
 export class ViewRenderer extends ViewRendererBase {
+	/**
+	 * Set of DOM Documents instances.
+	 */
+	public readonly domDocuments: Set<DomDocument> = new Set();
+
 	/**
 	 * Converter instance.
 	 */
@@ -116,11 +116,6 @@ export class ViewRenderer extends ViewRendererBase {
 	 * @observable
 	 */
 	declare public readonly isComposing: boolean;
-
-	/**
-	 * A set of the DOM editing root elements whose selection this renderer manages.
-	 */
-	private readonly _domRoots = new Set<DomElement>();
 
 	/**
 	 * The text node in which the inline filler was rendered.
@@ -204,24 +199,6 @@ export class ViewRenderer extends ViewRendererBase {
 	}
 
 	/**
-	 * Starts tracking an editing root so its DOM selection can later be cleared.
-	 *
-	 * @param domRoot The DOM editing root element.
-	 */
-	public addDomRoot( domRoot: DomElement ): void {
-		this._domRoots.add( domRoot );
-	}
-
-	/**
-	 * Stops tracking an editing root (see {@link #addDomRoot}).
-	 *
-	 * @param domRoot The DOM editing root element.
-	 */
-	public removeDomRoot( domRoot: DomElement ): void {
-		this._domRoots.delete( domRoot );
-	}
-
-	/**
 	 * Renders all buffered changes ({@link #markedAttributes}, {@link #markedChildren} and {@link #markedTexts}) and
 	 * the current view selection (if needed) to the DOM by applying a minimal set of changes to it.
 	 *
@@ -287,7 +264,7 @@ export class ViewRenderer extends ViewRendererBase {
 			}
 		}
 		// Make sure the inline filler has any parent, so it can be mapped to view position by ViewDomConverter.
-		else if ( this._inlineFiller && getParentNode( this._inlineFiller ) ) {
+		else if ( this._inlineFiller && this._inlineFiller.parentNode ) {
 			// While the user is making selection, preserve the inline filler at its original position.
 			inlineFillerPosition = this.domConverter.domPositionToView( this._inlineFiller )!;
 
@@ -798,7 +775,7 @@ export class ViewRenderer extends ViewRendererBase {
 		// comparison with the expected DOM. We don't need to check child nodes, because if child node was reinserted,
 		// it was moved to DOM tree out of the removed node.
 		for ( const node of nodesToUnbind ) {
-			if ( !getParentNode( node ) ) {
+			if ( !node.parentNode ) {
 				this.domConverter.unbindDomElement( node as DomElement );
 			}
 		}
@@ -1078,9 +1055,7 @@ export class ViewRenderer extends ViewRendererBase {
 			return;
 		}
 
-		const containerParent = getParentElement( container );
-
-		if ( !containerParent || containerParent != domEditable ) {
+		if ( !container.parentElement || container.parentElement != domEditable ) {
 			domEditable.appendChild( container );
 		}
 
@@ -1092,21 +1067,12 @@ export class ViewRenderer extends ViewRendererBase {
 		// @if CK_DEBUG_TYPING // 	) );
 		// @if CK_DEBUG_TYPING // }
 
-		const domSelection = getSelection( domEditable );
-
-		// A detached editable (e.g. a root being removed via `detachDomRoot()` or during editor
-		// teardown) has no resolvable selection, so there is nothing to render.
-		if ( !domSelection ) {
-			return;
-		}
-
+		const domSelection = domDocument.getSelection()!;
 		const domRange = domDocument.createRange();
 
+		domSelection.removeAllRanges();
 		domRange.selectNodeContents( container );
-		domSelection.setBaseAndExtent(
-			domRange.startContainer, domRange.startOffset,
-			domRange.endContainer, domRange.endOffset
-		);
+		domSelection.addRange( domRange );
 	}
 
 	/**
@@ -1115,13 +1081,7 @@ export class ViewRenderer extends ViewRendererBase {
 	 * @param domEditable A valid DOM editable where the DOM selection should be rendered.
 	 */
 	private _updateDomSelection( domEditable: DomElement ) {
-		const domSelection = getSelection( domEditable );
-
-		// A detached editable (for example a root being removed via `detachDomRoot()` or during editor
-		// teardown) has no resolvable selection, so there is nothing to update.
-		if ( !domSelection ) {
-			return;
-		}
+		const domSelection = domEditable.ownerDocument.defaultView!.getSelection()!;
 
 		// Let's check whether DOM selection needs updating at all.
 		if ( !this._domSelectionNeedsUpdate( domSelection ) ) {
@@ -1164,7 +1124,7 @@ export class ViewRenderer extends ViewRendererBase {
 	 *
 	 * @param domSelection The DOM selection to check.
 	 */
-	private _domSelectionNeedsUpdate( domSelection: DomSelection ): boolean {
+	private _domSelectionNeedsUpdate( domSelection: Selection ): boolean {
 		if ( !this.domConverter.isDomSelectionCorrect( domSelection ) ) {
 			// Current DOM selection is in incorrect position. We need to update it.
 			return true;
@@ -1193,17 +1153,16 @@ export class ViewRenderer extends ViewRendererBase {
 	 */
 	private _fakeSelectionNeedsUpdate( domEditable: DomElement ): boolean {
 		const container = this._fakeSelectionContainer;
-		const domSelection = getSelection( domEditable );
+		const domSelection = domEditable.ownerDocument.getSelection()!;
 
 		// Fake selection needs to be updated if there's no fake selection container, or the container currently sits
 		// in a different root.
-		if ( !container || getParentElement( container ) !== domEditable ) {
+		if ( !container || container.parentElement !== domEditable ) {
 			return true;
 		}
 
-		// Make sure that the selection actually is within the fake selection (a detached editable has no
-		// resolvable selection, so this check is skipped).
-		if ( domSelection && domSelection.anchorNode !== container && !container.contains( domSelection.anchorNode ) ) {
+		// Make sure that the selection actually is within the fake selection.
+		if ( domSelection.anchorNode !== container && !container.contains( domSelection.anchorNode ) ) {
 			return true;
 		}
 
@@ -1214,17 +1173,12 @@ export class ViewRenderer extends ViewRendererBase {
 	 * Removes the DOM selection.
 	 */
 	private _removeDomSelection(): void {
-		for ( const domRoot of this._domRoots ) {
-			// The tree the editing root lives in is resolved lazily (`getSelection()`/`getActiveElement()`
-			// resolve `domRoot.getRootNode()` internally), so the selection is cleared in the root's current
-			// tree even if the root was attached before it was inserted into that tree.
-			const domSelection = getSelection( domRoot );
+		for ( const doc of this.domDocuments ) {
+			const domSelection = doc.getSelection()!;
 
-			// A detached root (e.g. after `detachDomRoot()` or during editor teardown) has no resolvable
-			// selection, in which case there is nothing to remove.
-			if ( domSelection && domSelection.rangeCount ) {
-				const activeDomElement = getActiveElement( domRoot );
-				const viewElement = activeDomElement && this.domConverter.mapDomToView( activeDomElement as DomElement );
+			if ( domSelection.rangeCount ) {
+				const activeDomElement = doc.activeElement!;
+				const viewElement = this.domConverter.mapDomToView( activeDomElement as DomElement );
 
 				if ( activeDomElement && viewElement ) {
 					domSelection.removeAllRanges();
@@ -1382,7 +1336,7 @@ function fixGeckoSelectionAfterBr( focus: ReturnType<ViewDomConverter[ 'viewPosi
 
 	if ( isText( parent ) && isInlineFiller( parent ) ) {
 		offset = indexOf( parent ) + 1;
-		parent = getParentNode( parent )!;
+		parent = parent.parentNode!;
 	}
 
 	// This fix works only when the focus point is at the very end of an element.

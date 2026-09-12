@@ -8,7 +8,7 @@
  */
 
 import { Plugin, type Editor } from '@ckeditor/ckeditor5-core';
-import { logWarning, createElement, isShadowRoot, whenElementConnected } from '@ckeditor/ckeditor5-utils';
+import { logWarning, global } from '@ckeditor/ckeditor5-utils';
 import {
 	ViewUpcastWriter,
 	type DataControllerToModelEvent,
@@ -16,23 +16,12 @@ import {
 	type ModelRootElement
 } from '@ckeditor/ckeditor5-engine';
 
-import { HtmlPageDataProcessor, type FullPageHeadStyle } from './htmlpagedataprocessor.js';
+import { HtmlPageDataProcessor } from './htmlpagedataprocessor.js';
 
 /**
  * The full page editing feature. It preserves the whole HTML page in the editor data.
  */
 export class FullPage extends Plugin {
-	/**
-	 * Style elements injected into the DOM by this plugin instance.
-	 */
-	private _injectedStyleElements = new Set<HTMLStyleElement>();
-
-	/**
-	 * Cancels an injection that is waiting for the editing root to be connected to a document. `null` when there
-	 * is none pending.
-	 */
-	private _cancelPendingInjection: ( () => void ) | null = null;
-
 	/**
 	 * @inheritDoc
 	 */
@@ -117,7 +106,9 @@ export class FullPage extends Plugin {
 				}
 			} );
 
-			this._syncStylesFromHead( root );
+			if ( isAllowedRenderStylesFromHead( editor ) ) {
+				this._renderStylesFromHead( root );
+			}
 		}, { priority: 'low' } );
 
 		// Apply root attributes to the view document fragment.
@@ -173,97 +164,64 @@ export class FullPage extends Plugin {
 	public override destroy(): void {
 		super.destroy();
 
-		this._cancelPendingInjection?.();
-		this._removeStyleElementsFromDom();
-	}
-
-	/**
-	 * Renders the `<style>` elements from the full page data in the tree the editor lives in – the `<head>` of its
-	 * document, or the shadow root hosting it – replacing the ones rendered before.
-	 *
-	 * That tree is only known once the editing root is connected to a document, which does not have to be the case
-	 * when this is called: a `DecoupledEditor` editable, and the editable of any editor created from a data string,
-	 * is mounted by the integrator at an arbitrary point in time. The injection waits for it.
-	 */
-	private _syncStylesFromHead( root: ModelRootElement ): void {
-		if ( !isAllowedRenderStylesFromHead( this.editor ) ) {
-			return;
-		}
-
-		const domRootElement = getDomRootElement( this.editor, root );
-
-		// No editing root is bound to the model root, which is the case for an editor without a UI. There is
-		// nothing to style then.
-		if ( !domRootElement ) {
-			return;
-		}
-
-		this._cancelPendingInjection?.();
-
-		this._cancelPendingInjection = whenElementConnected( domRootElement, () => {
-			this._cancelPendingInjection = null;
-
+		if ( isAllowedRenderStylesFromHead( this.editor ) ) {
 			this._removeStyleElementsFromDom();
-			this._renderStyleElementsInDom( root, getStylesInjectionTarget( domRootElement ) );
-		} );
+		}
 	}
 
 	/**
-	 * Removes the `<style>` elements injected by the plugin. Elements are tracked by reference, as they may live
-	 * in a `ShadowRoot` rather than in the main document.
+	 * Checks if in the document exists any `<style>` elements injected by the plugin and removes them,
+	 * so these could be re-rendered later.
+	 * There is used `data-full-page-style-id` attribute to recognize styles injected by the feature.
 	 */
 	private _removeStyleElementsFromDom(): void {
-		for ( const style of this._injectedStyleElements ) {
+		const existingStyleElements = Array.from(
+			global.document.querySelectorAll( `[data-full-page-style-id="${ this.editor.id }"]` )
+		);
+
+		for ( const style of existingStyleElements ) {
 			style.remove();
 		}
-
-		this._injectedStyleElements.clear();
 	}
 
 	/**
-	 * Renders the `<style>` elements from the full page data in the given target. CSS content is sanitized before
-	 * rendering.
+	 * Extracts `<style>` elements from the full page data and renders them in the main document `<head>`.
+	 * CSS content is sanitized before rendering.
 	 */
-	private _renderStyleElementsInDom( root: ModelRootElement, target: HTMLHeadElement | ShadowRoot ): void {
-		const styleElements = root.getAttribute( '$fullPageHeadStyles' ) as Array<FullPageHeadStyle> | undefined;
+	private _renderStyleElementsInDom( root: ModelRootElement ): void {
+		const editor = this.editor;
+
+		// Get `<style>` elements list from the `<head>` from the full page data.
+		const styleElements = root.getAttribute( '$fullPageHeadStyles' ) as Array<HTMLStyleElement> | undefined;
 
 		if ( !styleElements ) {
 			return;
 		}
 
-		const sanitizeCss = this.editor.config.get( 'htmlSupport.fullPage.sanitizeCss' )!;
+		const sanitizeCss = editor.config.get( 'htmlSupport.fullPage.sanitizeCss' )!;
 
-		for ( const { css, attributes } of styleElements ) {
-			const styleElement = createElement( target.ownerDocument!, 'style', attributes );
+		// Add `data-full-page-style-id` attribute to the `<style>` element and render it in `<head>` in the main document.
+		for ( const style of styleElements ) {
+			style.setAttribute( 'data-full-page-style-id', editor.id );
 
-			// `textContent` is used instead of `innerText`, as the element is not rendered yet.
-			styleElement.textContent = sanitizeCss( css ).css;
+			// Sanitize the CSS content before rendering it in the editor.
+			const sanitizedCss = sanitizeCss( style.innerText );
 
-			target.append( styleElement );
+			if ( sanitizedCss.hasChanged ) {
+				style.innerText = sanitizedCss.css;
+			}
 
-			this._injectedStyleElements.add( styleElement );
+			global.document.head.append( style );
 		}
 	}
-}
 
-/**
- * Returns where the `<style>` elements from the full page data should be rendered for the given editing root: the
- * shadow root hosting it, or the `<head>` of its document.
- */
-function getStylesInjectionTarget( domRootElement: HTMLElement ): HTMLHeadElement | ShadowRoot {
-	const root = domRootElement.getRootNode();
-
-	return isShadowRoot( root ) ? root : domRootElement.ownerDocument.head;
-}
-
-/**
- * Returns the DOM element the given model root is rendered in, or `null` when no editing root is bound to it yet.
- */
-function getDomRootElement( editor: Editor, root: ModelRootElement ): HTMLElement | null {
-	const viewRootElement = editor.editing.mapper.toViewElement( root );
-	const domRootElement = viewRootElement && editor.editing.view.domConverter.mapViewToDom( viewRootElement );
-
-	return ( domRootElement as HTMLElement | undefined ) || null;
+	/**
+	 * Removes existing `<style>` elements injected by the plugin and renders new ones from the full page data.
+	 */
+	private _renderStylesFromHead( root: ModelRootElement ): void {
+		this._removeStyleElementsFromDom();
+		this._renderStyleElementsInDom( root );
+	}
 }
 
 /**

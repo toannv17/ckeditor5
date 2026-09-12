@@ -7,8 +7,6 @@
  * @module utils/dom/setdatainelement
  */
 
-import { trustedHtml } from './trustedtypes.js';
-
 /**
  * Sets data in a given element.
  *
@@ -20,5 +18,5 @@ export function setDataInElement( el: HTMLElement, data: string ): void {
 		el.value = data;
 	}
 
-	el.innerHTML = trustedHtml( data );
+	el.innerHTML = data;
 }

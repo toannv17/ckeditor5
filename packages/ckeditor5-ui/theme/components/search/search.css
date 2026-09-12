@@ -4,8 +4,7 @@
  */
 
 
-:root,
-:host {
+:root {
 	--ck-search-field-view-horizontal-spacing: calc(var(--ck-icon-size) + var(--ck-spacing-medium));
 }
 

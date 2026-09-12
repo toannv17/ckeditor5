@@ -6,9 +6,6 @@
 import { BalloonEditor } from '../src/ballooneditor.js';
 import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
 import { createObserver } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
-
-import { getOverlayConfig, wrapInShadowRoot } from '@ckeditor/ckeditor5-ui/manual/_utils/shadow.js';
-
 declare global {
 	interface Window {
 		_observers: any;
@@ -16,8 +13,6 @@ declare global {
 		editors: any;
 	}
 }
-
-const uiRoot: Document | ShadowRoot = wrapInShadowRoot( document.getElementById( 'editor-ui' )! ) ?? document;
 
 window.editors = {};
 window.editables = [];
@@ -30,9 +25,8 @@ function initEditors() {
 	function init( selector: string ) {
 		BalloonEditor
 			.create( {
-				...getOverlayConfig(),
 				root: {
-					element: uiRoot.querySelector( selector ) as HTMLElement,
+					element: document.querySelector( selector ) as HTMLElement,
 					modelAttributes: {
 						section: 'intro'
 					}
@@ -51,7 +45,7 @@ function initEditors() {
 				window.editables.push( editor.editing.view.document.getRoot() );
 
 				const editorNumber = selector.split( '-' )[ 1 ];
-				uiRoot.querySelector( `#menubar-container-${ editorNumber }` )!.appendChild( editor.ui.view.menuBarView!.element! );
+				document.querySelector( `#menubar-container-${ editorNumber }` )!.appendChild( editor.ui.view.menuBarView!.element! );
 
 				const observer = createObserver();
 

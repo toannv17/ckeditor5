@@ -7,15 +7,13 @@
  * @module utils/dom/remove
  */
 
-import { getParentNode } from './getparentnode.js';
-
 /**
  * Removes given node from parent.
  *
  * @param node Node to remove.
  */
 export function remove( node: Node ): void {
-	const parent = getParentNode( node );
+	const parent = node.parentNode;
 
 	if ( parent ) {
 		parent.removeChild( node );

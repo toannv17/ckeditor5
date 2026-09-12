@@ -4,8 +4,7 @@
  */
 
 
-:root,
-:host {
+:root {
 	--ck-color-grid-tile-size: 24px;
 
 	/* Not using global colors here because these may change but some colors in a pallette

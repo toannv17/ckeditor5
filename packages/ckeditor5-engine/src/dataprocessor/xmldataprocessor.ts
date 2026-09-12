@@ -7,8 +7,6 @@
  * @module engine/dataprocessor/xmldataprocessor
  */
 
-import { trustedHtml } from '@ckeditor/ckeditor5-utils';
-
 import { BasicHtmlWriter } from './basichtmlwriter.js';
 import { ViewDomConverter } from '../view/domconverter.js';
 
@@ -139,7 +137,7 @@ export class XmlDataProcessor implements DataProcessor {
 		// Wrap data into root element with optional namespace definitions.
 		data = `<xml ${ namespaces }>${ data }</xml>`;
 
-		const parsedDocument = this.domParser.parseFromString( trustedHtml( data ), 'text/xml' );
+		const parsedDocument = this.domParser.parseFromString( data, 'text/xml' );
 
 		// Parse validation.
 		const parserError = parsedDocument.querySelector( 'parsererror' );

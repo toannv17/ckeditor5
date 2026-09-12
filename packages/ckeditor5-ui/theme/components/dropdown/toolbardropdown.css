@@ -7,8 +7,7 @@
 	border: 0;
 }
 
-:root,
-:host {
+:root {
 	--ck-toolbar-dropdown-max-width: 60vw;
 }
 

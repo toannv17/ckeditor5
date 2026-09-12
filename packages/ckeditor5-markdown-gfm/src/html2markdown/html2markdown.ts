@@ -7,8 +7,8 @@
  * @module markdown-gfm/html2markdown/html2markdown
  */
 
-import { trustedHtml } from '@ckeditor/ckeditor5-utils';
-import { unified, type Plugin, type Processor } from 'unified';
+import { unified, type Plugin } from 'unified';
+import rehypeParse from 'rehype-dom-parse';
 import rehypeRemark from 'rehype-remark';
 import remarkBreaks from 'remark-breaks';
 import remarkGfm from 'remark-gfm';
@@ -16,7 +16,6 @@ import remarkStringify from 'remark-stringify';
 import { visit } from 'unist-util-visit';
 import { h } from 'hastscript';
 import { toHtml } from 'hast-util-to-html';
-import { fromDom } from 'hast-util-from-dom';
 import type { Handle, State } from 'hast-util-to-mdast';
 import type { Element, Node, Root } from 'hast';
 
@@ -68,7 +67,7 @@ export class MarkdownGfmHtmlToMd {
 	private _buildProcessor() {
 		this._processor = unified()
 			// Parse HTML to an abstract syntax tree (AST).
-			.use( rehypeDomParse )
+			.use( rehypeParse )
 			// Removes `<label>` element from TODO lists.
 			.use( removeLabelFromCheckboxes )
 			// Turns HTML syntax tree into Markdown syntax tree.
@@ -95,20 +94,6 @@ export class MarkdownGfmHtmlToMd {
 				]
 			} );
 	}
-}
-
-/**
- * Rehype plugin that parses the HTML here rather than with a third-party plugin, so that the string passes through
- * the Trusted Types policy of the editor.
- */
-function rehypeDomParse( this: Processor ): void {
-	this.parser = ( html: string ): Root => {
-		const template = document.createElement( 'template' );
-
-		template.innerHTML = trustedHtml( html );
-
-		return fromDom( template.content ) as Root;
-	};
 }
 
 /**

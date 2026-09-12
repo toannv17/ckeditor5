@@ -10,7 +10,7 @@
 import { throttle } from 'es-toolkit/compat';
 
 import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor/ckeditor5-core';
-import { global, type Collection, type CollectionChangeEvent, type EventInfo } from '@ckeditor/ckeditor5-utils';
+import { DomEmitterMixin, global, type Collection, type CollectionChangeEvent, type EventInfo } from '@ckeditor/ckeditor5-utils';
 import type {
 	ModelElement,
 	ViewElement,
@@ -21,7 +21,7 @@ import type {
 import { TableEditing } from '../tableediting.js';
 import type { TableType } from '../tableconfig.js';
 
-import { watchTableModelElements, watchRootsWidthResize, watchRootsScroll } from './watchers.js';
+import { watchTableModelElements, watchRootsWidthResize } from './watchers.js';
 import { getEditableContentWidth } from '../tablecolumnresize/utils.js';
 
 /**
@@ -29,20 +29,9 @@ import { getEditableContentWidth } from '../tablecolumnresize/utils.js';
  */
 export class TableScrollEditing extends Plugin {
 	/**
-	 * Stops the `scroll` listeners set up by {@link #_watchFiguresScroll}.
+	 * Used to listen to native DOM events.
 	 */
-	private _stopWatchingRootsScroll?: () => void;
-
-	/**
-	 * Stops the `resize` observers set up by {@link #_watchRootEditables}.
-	 */
-	private _stopWatchingRootsResize?: () => void;
-
-	/**
-	 * The throttled recalculation callback set up by {@link #_watchRootEditables}, kept so {@link #destroy}
-	 * can cancel any call still pending. `undefined` until {@link #init} has run.
-	 */
-	private _throttledRecalculateAll?: ReturnType<typeof throttle<() => void>>;
+	private _domEmitter = new ( DomEmitterMixin() )();
 
 	/**
 	 * @inheritDoc
@@ -92,9 +81,7 @@ export class TableScrollEditing extends Plugin {
 	 * @inheritDoc
 	 */
 	public override destroy(): void {
-		this._stopWatchingRootsScroll?.();
-		this._stopWatchingRootsResize?.();
-		this._throttledRecalculateAll?.cancel();
+		this._domEmitter.stopListening();
 
 		super.destroy();
 	}
@@ -275,7 +262,7 @@ export class TableScrollEditing extends Plugin {
 			} );
 		};
 
-		this._stopWatchingRootsScroll = watchRootsScroll( view, onScroll );
+		this._domEmitter.listenTo( global.document, 'scroll', onScroll, { useCapture: true } );
 	}
 
 	/**
@@ -324,11 +311,16 @@ export class TableScrollEditing extends Plugin {
 			}
 		};
 
-		this._throttledRecalculateAll = throttle( recalculateAll, 100 );
-		this._stopWatchingRootsResize = watchRootsWidthResize( editor.editing.view, this._throttledRecalculateAll );
+		const throttledRecalculateAll = throttle( recalculateAll, 100 );
+		const stopWatchingRootsResize = watchRootsWidthResize( editor.editing.view, throttledRecalculateAll );
 
-		editor.ui.view.listenTo( global.window, 'resize', this._throttledRecalculateAll );
+		editor.ui.view.listenTo( global.window, 'resize', throttledRecalculateAll );
 		editor.once( 'ready', recalculateAll );
+
+		this.listenTo( editor, 'destroy', () => {
+			throttledRecalculateAll.cancel();
+			stopWatchingRootsResize();
+		} );
 	}
 
 	/**

@@ -3,8 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-:root,
-:host {
+:root {
 	--ck-color-table-column-resizer-hover: var(--ck-color-base-active);
 	--ck-table-column-resizer-width: 7px;
 

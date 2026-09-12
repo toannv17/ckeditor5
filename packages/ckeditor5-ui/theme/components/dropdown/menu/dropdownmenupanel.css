@@ -4,8 +4,7 @@
  */
 
 
-:root,
-:host {
+:root {
 	--ck-dropdown-menu-menu-panel-max-width: 75vw;
 }
 

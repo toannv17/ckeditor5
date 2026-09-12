@@ -8,7 +8,6 @@
  */
 
 import { isText } from './istext.js';
-import { getParentElement } from './getparentelement.js';
 
 /**
  * Checks whether the element is visible to the user in DOM:
@@ -19,10 +18,6 @@ import { getParentElement } from './getparentelement.js';
  *
  * **Note**: This helper does not check whether the element is hidden by cropping, overflow, etc..
  * To check that, use {@link module:utils/dom/rect~Rect} instead.
- *
- * **Note**: The ancestor lookup crosses shadow DOM boundaries, so a text node sitting directly in a shadow root
- * is resolved against that root's host rather than reported as invisible. Works for open and closed shadow roots
- * alike.
  */
 export function isVisible( element: Text | HTMLElement | null | undefined ): boolean {
 	if ( !element ) {
@@ -30,7 +25,7 @@ export function isVisible( element: Text | HTMLElement | null | undefined ): boo
 	}
 
 	if ( isText( element ) ) {
-		return isVisible( getParentElement( element ) as HTMLElement | null );
+		return isVisible( element.parentElement );
 	}
 
 	if ( element.getClientRects ) {

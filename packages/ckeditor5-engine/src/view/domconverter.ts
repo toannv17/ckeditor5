@@ -26,18 +26,11 @@ import {
 	logWarning,
 	indexOf,
 	getAncestors,
-	getActiveElement,
-	getSelection,
-	isDomSelectionBackward,
-	type ShadowSelection,
 	isText,
 	isComment,
 	isValidAttributeName,
 	first,
-	getParentElement,
-	getParentNode,
-	env,
-	trustedHtml
+	env
 } from '@ckeditor/ckeditor5-utils';
 
 import { type ViewNode } from './node.js';
@@ -56,7 +49,7 @@ type DomDocumentFragment = globalThis.DocumentFragment;
 type DomComment = globalThis.Comment;
 type DomRange = globalThis.Range;
 type DomText = globalThis.Text;
-type DomSelection = globalThis.Selection | ShadowSelection;
+type DomSelection = globalThis.Selection;
 
 const BR_FILLER_REF = BR_FILLER( global.document ); // eslint-disable-line new-cap
 const NBSP_FILLER_REF = NBSP_FILLER( global.document ); // eslint-disable-line new-cap
@@ -314,12 +307,12 @@ export class ViewDomConverter {
 	public setContentOf( domElement: DomElement, html: string ): void {
 		// For data pipeline we pass the HTML as-is.
 		if ( this.renderingMode === 'data' ) {
-			domElement.innerHTML = trustedHtml( html );
+			domElement.innerHTML = html;
 
 			return;
 		}
 
-		const document = new DOMParser().parseFromString( trustedHtml( html ), 'text/html' );
+		const document = new DOMParser().parseFromString( html, 'text/html' );
 		const fragment = document.createDocumentFragment();
 		const bodyChildNodes = document.body.childNodes;
 
@@ -689,7 +682,7 @@ export class ViewDomConverter {
 					return null;
 				}
 
-				domParent = getParentNode( domBefore );
+				domParent = domBefore.parentNode;
 				domAfter = domBefore.nextSibling;
 			}
 
@@ -830,7 +823,7 @@ export class ViewDomConverter {
 
 			// The DOM selection might be moved to the text node inside the fake selection container.
 			if ( isText( container ) ) {
-				container = getParentNode( container );
+				container = container.parentNode;
 			}
 
 			const viewSelection = this.fakeSelectionToView( container as DomElement );
@@ -892,7 +885,7 @@ export class ViewDomConverter {
 	 */
 	public domPositionToView( domParent: DomNode, domOffset: number = 0 ): ViewPosition | null {
 		if ( this.isBlockFiller( domParent ) ) {
-			return this.domPositionToView( getParentNode( domParent )!, indexOf( domParent ) );
+			return this.domPositionToView( domParent.parentNode!, indexOf( domParent ) );
 		}
 
 		// If position is somewhere inside UIElement or a RawElement - return position before that element.
@@ -904,7 +897,7 @@ export class ViewDomConverter {
 
 		if ( isText( domParent ) ) {
 			if ( isInlineFiller( domParent ) ) {
-				return this.domPositionToView( getParentNode( domParent )!, indexOf( domParent ) );
+				return this.domPositionToView( domParent.parentNode!, indexOf( domParent ) );
 			}
 
 			const viewParent = this.findCorrespondingViewText( domParent );
@@ -934,7 +927,7 @@ export class ViewDomConverter {
 
 				// Jump over an inline filler (and also on Firefox jump over a block filler while pressing backspace in an empty paragraph).
 				if ( isText( domBefore ) && isInlineFiller( domBefore ) || domBefore && this.isBlockFiller( domBefore ) ) {
-					return this.domPositionToView( getParentNode( domBefore )!, indexOf( domBefore ) );
+					return this.domPositionToView( domBefore.parentNode!, indexOf( domBefore ) );
 				}
 
 				const viewBefore = isText( domBefore ) ?
@@ -1026,7 +1019,7 @@ export class ViewDomConverter {
 		}
 		// Try to use parent to find the corresponding text node.
 		else {
-			const viewElement = this.mapDomToView( getParentNode( domText ) as ( DomElement | DomDocumentFragment ) );
+			const viewElement = this.mapDomToView( domText.parentNode as ( DomElement | DomDocumentFragment ) );
 
 			if ( viewElement ) {
 				const firstChild = ( viewElement as ViewElement ).getChild( 0 );
@@ -1121,7 +1114,7 @@ export class ViewDomConverter {
 	public focus( viewEditable: ViewEditableElement ): void {
 		const domEditable = this.mapViewToDom( viewEditable );
 
-		if ( !domEditable || getActiveElement( domEditable ) === domEditable ) {
+		if ( !domEditable || domEditable.ownerDocument.activeElement === domEditable ) {
 			// @if CK_DEBUG_TYPING // if ( ( window as any ).logCKETyping ) {
 			// @if CK_DEBUG_TYPING // 	console.info( ..._buildLogMessage( this, 'ViewDomConverter',
 			// @if CK_DEBUG_TYPING // 		'%cDOM editable is already active or does not exist',
@@ -1182,14 +1175,7 @@ export class ViewDomConverter {
 		}
 
 		// Check if DOM selection is inside editor editable element.
-		const domSelection = getSelection( domEditable );
-
-		// There is no resolvable selection context (e.g. a detached editable or a document without a
-		// browsing context), so there is nothing to clear.
-		if ( !domSelection ) {
-			return;
-		}
-
+		const domSelection = domEditable.ownerDocument.defaultView!.getSelection()!;
 		const newViewSelection = this.domSelectionToView( domSelection );
 		const selectionInEditable = newViewSelection && newViewSelection.rangeCount > 0;
 
@@ -1254,7 +1240,28 @@ export class ViewDomConverter {
 	 * @param selection Selection instance to check.
 	 */
 	public isDomSelectionBackward( selection: DomSelection ): boolean {
-		return isDomSelectionBackward( selection );
+		if ( selection.isCollapsed ) {
+			return false;
+		}
+
+		// Since it takes multiple lines of code to check whether a "DOM Position" is before/after another "DOM Position",
+		// we will use the fact that range will collapse if it's end is before it's start.
+		const range = this._domDocument.createRange();
+
+		try {
+			range.setStart( selection.anchorNode!, selection.anchorOffset );
+			range.setEnd( selection.focusNode!, selection.focusOffset );
+		} catch {
+			// Safari sometimes gives us a selection that makes Range.set{Start,End} throw.
+			// See https://github.com/ckeditor/ckeditor5/issues/12375.
+			return false;
+		}
+
+		const backward = range.collapsed;
+
+		range.detach();
+
+		return backward;
 	}
 
 	/**
@@ -1897,9 +1904,6 @@ function _hasViewParentOfType( node: ViewNode | ViewTextProxy, types: ReadonlyAr
  * A helper that executes given callback for each DOM node's ancestor, starting from the given node
  * and ending in document#documentElement.
  *
- * The walk crosses shadow DOM boundaries, so for a node inside a shadow root it continues through the
- * host into the surrounding (light) DOM instead of stopping at the boundary.
- *
  * @param callback A callback to be executed for each ancestor.
  */
 function forEachDomElementAncestor( element: DomElement, callback: ( node: DomElement ) => void ) {
@@ -1907,7 +1911,7 @@ function forEachDomElementAncestor( element: DomElement, callback: ( node: DomEl
 
 	while ( node ) {
 		callback( node );
-		node = getParentElement( node ) as DomElement | null;
+		node = node.parentElement;
 	}
 }
 
@@ -1921,7 +1925,7 @@ function forEachDomElementAncestor( element: DomElement, callback: ( node: DomEl
 function isNbspBlockFiller( domNode: DomNode, blockElements: ReadonlyArray<string> ): boolean {
 	const isNBSP = domNode.isEqualNode( NBSP_FILLER_REF );
 
-	return isNBSP && hasBlockParent( domNode, blockElements ) && getParentNode( domNode )!.childNodes.length === 1;
+	return isNBSP && hasBlockParent( domNode, blockElements ) && ( domNode as DomElement ).parentNode!.childNodes.length === 1;
 }
 
 /**
@@ -1930,7 +1934,7 @@ function isNbspBlockFiller( domNode: DomNode, blockElements: ReadonlyArray<strin
  * @param domNode DOM node.
  */
 function hasBlockParent( domNode: DomNode, blockElements: ReadonlyArray<string> ): boolean {
-	const parent = getParentNode( domNode );
+	const parent = domNode.parentNode;
 
 	return !!parent && !!( parent as DomElement ).tagName && blockElements.includes( ( parent as DomElement ).tagName.toLowerCase() );
 }
@@ -1985,7 +1989,7 @@ function isOnlyBrInBlock( domNode: DomElement, blockElements: Array<string> ): b
 	return (
 		domNode.tagName === 'BR' &&
 		hasBlockParent( domNode, blockElements ) &&
-		getParentNode( domNode )!.childNodes.length === 1
+		domNode.parentNode!.childNodes.length === 1
 	);
 }
 

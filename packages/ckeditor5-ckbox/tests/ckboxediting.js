@@ -1786,11 +1786,11 @@ describe( 'CKBoxEditing', () => {
 				keyCode: keyCodes.arrowright,
 				preventDefault: () => {},
 				domTarget: {
-					getRootNode: () => ( {
+					ownerDocument: {
 						defaultView: {
 							getSelection: () => ( { rangeCount: 0 } )
 						}
-					} )
+					}
 				}
 			};
 

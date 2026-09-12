@@ -3,8 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-:root,
-:host {
+:root {
 	--ck-resizer-size: 10px;
 
 	/* Set the resizer with a 50% offset. */

@@ -4,8 +4,7 @@
  */
 
 
-:root,
-:host {
+:root {
 	--ck-clipboard-drop-target-dot-width: 12px;
 	--ck-clipboard-drop-target-dot-height: 8px;
 	--ck-clipboard-drop-target-color: var(--ck-color-focus-border);

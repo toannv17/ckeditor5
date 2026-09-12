@@ -4,8 +4,7 @@
  */
 
 
-:root,
-:host {
+:root {
 	--ck-accessibility-help-dialog-max-width: 600px;
 	--ck-accessibility-help-dialog-max-height: 400px;
 	--ck-accessibility-help-dialog-border-color: hsl(220, 6%, 81%);

@@ -11,6 +11,7 @@ import { DecoupledEditorUIView } from '../src/decouplededitoruiview.js';
 import { HtmlDataProcessor, ModelRootElement } from '@ckeditor/ckeditor5-engine';
 
 import { Context, Plugin } from '@ckeditor/ckeditor5-core';
+import { EditorWatchdog, ContextWatchdog } from '@ckeditor/ckeditor5-watchdog';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { Bold } from '@ckeditor/ckeditor5-basic-styles';
 import { CKEditorError } from '@ckeditor/ckeditor5-utils';
@@ -1232,6 +1233,14 @@ describe( 'DecoupledEditor', () => {
 	describe( 'static fields', () => {
 		it( 'DecoupledEditor.Context', () => {
 			expect( DecoupledEditor.Context ).toBe( Context );
+		} );
+
+		it( 'DecoupledEditor.EditorWatchdog', () => {
+			expect( DecoupledEditor.EditorWatchdog ).toBe( EditorWatchdog );
+		} );
+
+		it( 'DecoupledEditor.ContextWatchdog', () => {
+			expect( DecoupledEditor.ContextWatchdog ).toBe( ContextWatchdog );
 		} );
 	} );
 } );

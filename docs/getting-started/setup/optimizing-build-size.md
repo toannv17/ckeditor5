@@ -75,6 +75,7 @@ import '@ckeditor/ckeditor5-typing/dist/index.css';
 import '@ckeditor/ckeditor5-undo/dist/index.css';
 import '@ckeditor/ckeditor5-upload/dist/index.css';
 import '@ckeditor/ckeditor5-utils/dist/index.css';
+import '@ckeditor/ckeditor5-watchdog/dist/index.css';
 import '@ckeditor/ckeditor5-widget/dist/index.css';
 ```
 
@@ -321,6 +322,7 @@ import '@ckeditor/ckeditor5-ui/dist/index.css';
 import '@ckeditor/ckeditor5-undo/dist/index.css';
 import '@ckeditor/ckeditor5-upload/dist/index.css';
 import '@ckeditor/ckeditor5-utils/dist/index.css';
+import '@ckeditor/ckeditor5-watchdog/dist/index.css';
 import '@ckeditor/ckeditor5-widget/dist/index.css';
 import '@ckeditor/ckeditor5-editor-classic/dist/index.css';
 import '@ckeditor/ckeditor5-essentials/dist/index.css';

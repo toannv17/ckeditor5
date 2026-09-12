@@ -31,8 +31,7 @@
 	}
 }
 
-:root,
-:host {
+:root {
 	/* The variable is used by both editor and content styles. Keep it in sync with the identical declaration in `index-content.css`. */
 	--ck-content-table-style-spacing: 1.5em;
 }

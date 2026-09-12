@@ -225,13 +225,8 @@ export class EditingView extends EditingViewBase {
 
 		// Remove ranges from DOM selection if editor is blurred.
 		// See https://github.com/ckeditor/ckeditor5/issues/5753.
-		//
-		// Known gap: `relatedTarget` is retargeted to a host when the roots of a multi-root editor sit in separate
-		// shadow roots, so focus moving between them clears the selection. Nothing here can tell that apart – the
-		// active element is still the `<body>` element this tick, and `#isFocused` is transiently `false`.
 		if ( env.isiOS ) {
 			this.listenTo<ViewDocumentBlurEvent>( this.document, 'blur', ( evt, data ) => {
-				// eslint-disable-next-line ckeditor5-rules/no-shadow-unsafe-dom-apis
 				const relatedViewElement = this.domConverter.mapDomToView( data.domEvent.relatedTarget as HTMLElement );
 
 				// Do not modify DOM selection if focus is moved to other editable of the same editor.
@@ -319,9 +314,7 @@ export class EditingView extends EditingViewBase {
 		this.domConverter.bindElements( domRoot, viewRoot );
 		this._renderer.markToSync( 'children', viewRoot );
 		this._renderer.markToSync( 'attributes', viewRoot );
-
-		// Track the tree the editing root lives in so DOM selection can later be cleared per tree.
-		this._renderer.addDomRoot( domRoot );
+		this._renderer.domDocuments.add( domRoot.ownerDocument );
 
 		viewRoot.on<ViewNodeChangeEvent>( 'change:children', ( evt, node ) => this._renderer.markToSync( 'children', node ) );
 		viewRoot.on<ViewNodeChangeEvent>( 'change:attributes', ( evt, node ) => this._renderer.markToSync( 'attributes', node ) );
@@ -358,7 +351,6 @@ export class EditingView extends EditingViewBase {
 
 		this.domRoots.delete( name );
 		this.domConverter.unbindDomElement( domRoot );
-		this._renderer.removeDomRoot( domRoot );
 
 		for ( const observer of this._observers.values() ) {
 			observer.stopObserving( domRoot );

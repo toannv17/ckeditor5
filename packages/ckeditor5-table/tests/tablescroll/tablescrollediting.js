@@ -600,10 +600,9 @@ describe( 'TableScrollEditing', () => {
 		} );
 
 		it( 'should not throw when a scroll event is fired on an element unrelated to the editor', () => {
-			const domRoot = editor.editing.view.getDomRoot( 'main' );
 			const outsideElement = document.createElement( 'div' );
 
-			domRoot.appendChild( outsideElement );
+			document.body.appendChild( outsideElement );
 
 			expect( () => dispatchScroll( outsideElement, 10 ) ).not.toThrow();
 
@@ -611,11 +610,10 @@ describe( 'TableScrollEditing', () => {
 		} );
 
 		it( 'should not throw when the scrolled element has the overflowing class but isn\'t mapped to any view element', () => {
-			const domRoot = editor.editing.view.getDomRoot( 'main' );
 			const outsideElement = document.createElement( 'div' );
 
 			outsideElement.classList.add( 'ck-table-overflowing' );
-			domRoot.appendChild( outsideElement );
+			document.body.appendChild( outsideElement );
 
 			expect( () => dispatchScroll( outsideElement, 10 ) ).not.toThrow();
 

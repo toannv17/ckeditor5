@@ -11,9 +11,6 @@ import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { Undo } from '@ckeditor/ckeditor5-undo';
 import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
 import { createObserver } from '@ckeditor/ckeditor5-utils/tests/_utils/utils.js';
-
-import { getOverlayConfig, wrapInShadowRoot } from '@ckeditor/ckeditor5-ui/manual/_utils/shadow.js';
-
 declare global {
 	interface Window {
 		editor: any;
@@ -21,17 +18,12 @@ declare global {
 	}
 }
 
-const editorElement = document.querySelector( '#editor' ) as HTMLElement;
-
-wrapInShadowRoot( editorElement );
-
 let editor: any, editable, observer: any;
 
 function initEditor() {
 	ClassicEditor
 		.create( {
-			...getOverlayConfig(),
-			attachTo: editorElement,
+			attachTo: document.querySelector( '#editor' ) as HTMLElement,
 			root: {
 				modelAttributes: {
 					section: 'test'

@@ -4,14 +4,12 @@
  */
 
 
-:root,
-:host {
+:root {
 	--ck-image-custom-resize-form-width: 340px;
 }
 
 @media screen and (max-width: 600px) {
-	:root,
-	:host {
+	:root {
 		--ck-image-custom-resize-form-width: 300px;
 	}
 }

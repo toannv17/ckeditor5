@@ -10,9 +10,6 @@ import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
 import { Image, AutoImage, ImageInsert } from '@ckeditor/ckeditor5-image';
 import { LinkImage } from '@ckeditor/ckeditor5-link';
 import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
-
-import { getOverlayConfig, wrapInShadowRoot } from '@ckeditor/ckeditor5-ui/manual/_utils/shadow.js';
-
 declare global {
 	interface Window {
 		editor: any;
@@ -20,11 +17,9 @@ declare global {
 	}
 }
 
-const uiRoot: Document | ShadowRoot = wrapInShadowRoot( document.getElementById( 'editor-ui' )! ) ?? document;
-
 const roots = {
 	intro: {
-		element: uiRoot.querySelector( '#editor-intro' ) as HTMLElement,
+		element: document.querySelector( '#editor-intro' ) as HTMLElement,
 		modelElement: '$inlineRoot',
 		placeholder: 'Type intro',
 		modelAttributes: {
@@ -32,14 +27,14 @@ const roots = {
 		}
 	},
 	content: {
-		element: uiRoot.querySelector( '#editor-content' ) as HTMLElement,
+		element: document.querySelector( '#editor-content' ) as HTMLElement,
 		modelAttributes: {
 			section: 'content'
 		},
 		placeholder: 'Type content'
 	},
 	outro: {
-		element: uiRoot.querySelector( '#editor-outro' ) as HTMLElement,
+		element: document.querySelector( '#editor-outro' ) as HTMLElement,
 		modelElement: '$inlineRoot',
 		placeholder: 'Type outro',
 		modelAttributes: {
@@ -53,7 +48,6 @@ let editor: any;
 function initEditor() {
 	MultiRootEditor
 		.create( {
-			...getOverlayConfig(),
 			roots,
 			plugins: [
 				Paragraph, Heading, Bold, Italic,
@@ -75,8 +69,8 @@ function initEditor() {
 		.then( newEditor => {
 			console.log( 'Editor was initialized', newEditor );
 
-			uiRoot.querySelector( '.toolbar-container' )!.appendChild( newEditor.ui.view.toolbar.element! );
-			uiRoot.querySelector( '.menubar-container' )!.appendChild( newEditor.ui.view.menuBarView.element! );
+			document.querySelector( '.toolbar-container' )!.appendChild( newEditor.ui.view.toolbar.element! );
+			document.querySelector( '.menubar-container' )!.appendChild( newEditor.ui.view.menuBarView.element! );
 
 			window.editor = editor = newEditor;
 			window.editables = newEditor.ui.view.editables;

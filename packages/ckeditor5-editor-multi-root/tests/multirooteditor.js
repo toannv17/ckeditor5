@@ -11,6 +11,7 @@ import { MultiRootEditorUIView } from '../src/multirooteditoruiview.js';
 import { HtmlDataProcessor, ModelRootElement } from '@ckeditor/ckeditor5-engine';
 
 import { Context, Plugin } from '@ckeditor/ckeditor5-core';
+import { EditorWatchdog, ContextWatchdog } from '@ckeditor/ckeditor5-watchdog';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { Bold } from '@ckeditor/ckeditor5-basic-styles';
 import { Undo } from '@ckeditor/ckeditor5-undo';
@@ -977,7 +978,7 @@ describe( 'MultiRootEditor', () => {
 				)
 				.finally( () => {
 					// Cleanup. This is difficult as we don't have editor instance to destroy.
-					document.querySelector( '.ck-body-wrapper' )?.remove();
+					document.querySelector( '.ck-body-wrapper' ).remove();
 				} );
 		} );
 
@@ -1015,7 +1016,7 @@ describe( 'MultiRootEditor', () => {
 				)
 				.finally( () => {
 					// Cleanup. This is difficult as we don't have editor instance to destroy.
-					document.querySelector( '.ck-body-wrapper' )?.remove();
+					document.querySelector( '.ck-body-wrapper' ).remove();
 				} );
 		} );
 
@@ -1053,7 +1054,7 @@ describe( 'MultiRootEditor', () => {
 				)
 				.finally( () => {
 					// Cleanup. This is difficult as we don't have editor instance to destroy.
-					document.querySelector( '.ck-body-wrapper' )?.remove();
+					document.querySelector( '.ck-body-wrapper' ).remove();
 				} );
 		} );
 
@@ -1077,7 +1078,7 @@ describe( 'MultiRootEditor', () => {
 				)
 				.finally( () => {
 					// Cleanup. This is difficult as we don't have editor instance to destroy.
-					document.querySelector( '.ck-body-wrapper' )?.remove();
+					document.querySelector( '.ck-body-wrapper' ).remove();
 				} );
 		} );
 
@@ -1120,7 +1121,7 @@ describe( 'MultiRootEditor', () => {
 				)
 				.finally( () => {
 					// Cleanup. This is difficult as we don't have editor instance to destroy.
-					document.querySelector( '.ck-body-wrapper' )?.remove();
+					document.querySelector( '.ck-body-wrapper' ).remove();
 				} );
 		} );
 
@@ -2977,6 +2978,14 @@ describe( 'MultiRootEditor', () => {
 	describe( 'static fields', () => {
 		it( 'MultiRootEditor.Context', () => {
 			expect( MultiRootEditor.Context ).toBe( Context );
+		} );
+
+		it( 'MultiRootEditor.EditorWatchdog', () => {
+			expect( MultiRootEditor.EditorWatchdog ).toBe( EditorWatchdog );
+		} );
+
+		it( 'MultiRootEditor.ContextWatchdog', () => {
+			expect( MultiRootEditor.ContextWatchdog ).toBe( ContextWatchdog );
 		} );
 	} );
 } );

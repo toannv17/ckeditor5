@@ -7,7 +7,6 @@
  * @module markdown-gfm/markdown2html/markdown2html
  */
 
-import { trustedHtml } from '@ckeditor/ckeditor5-utils';
 import { unified, type Plugin, type Pluggable } from 'unified';
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
@@ -114,10 +113,10 @@ function rehypeDomRaw(): ReturnType<Plugin> {
 			const template = document.createElement( 'template' );
 
 			// Serialize all children to an HTML fragment.
-			template.innerHTML = trustedHtml( toHtml(
+			template.innerHTML = toHtml(
 				{ type: 'root', children: node.children },
 				{ allowDangerousHtml: true }
-			) );
+			);
 
 			// Convert each parsed DOM node back into HAST and replace the original children.
 			node.children = Array

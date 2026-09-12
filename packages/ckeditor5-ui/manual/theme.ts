@@ -6,7 +6,7 @@
 import { IconBold, IconItalic, IconCheck, IconCancel } from '@ckeditor/ckeditor5-icons';
 import { testUtils } from '@ckeditor/ckeditor5-ui/tests/_utils/utils.js';
 
-import { Collection, Locale } from '@ckeditor/ckeditor5-utils';
+import { Collection, EmitterMixin, Locale } from '@ckeditor/ckeditor5-utils';
 import {
 	UIModel,
 	View,
@@ -84,14 +84,18 @@ const ui: any = testUtils.createTestUIView( {
 	'inputReadOnly': '#input-read-only'
 } );
 
-// Tooltips are displayed by the TooltipManager, which is normally set up by the EditorUI.
-// This test renders standalone components without an editor, so obtain the shared manager
-// directly and register a body collection for it to render the tooltip balloon in.
+// Tooltips are displayed by the TooltipManager, which is normally created by the EditorUI.
+// This test renders standalone components without an editor, so give the manager a minimal
+// editor stand-in: a locale, an emitter as `ui`, and a body collection to render the balloon in.
 const tooltipManagerBody = new BodyCollection( locale );
 
 tooltipManagerBody.attachToDom();
 
-TooltipManager.for( locale ).registerBodyCollection( tooltipManagerBody );
+// eslint-disable-next-line no-new
+new TooltipManager( {
+	locale,
+	ui: Object.assign( new ( EmitterMixin() )(), { view: { body: tooltipManagerBody } } )
+} as any );
 
 renderIcon();
 renderButton();

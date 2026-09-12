@@ -4,8 +4,7 @@
  */
 
 
-:root,
-:host {
+:root {
 	--ck-widget-outline-thickness: 3px;
 	--ck-widget-handler-icon-size: 16px;
 	--ck-widget-handler-animation-duration: 200ms;

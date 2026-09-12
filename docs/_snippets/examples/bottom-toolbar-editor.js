@@ -76,7 +76,7 @@ class FormattingOptions extends Plugin {
 			// * any floating UI in the "body" collection
 			const focusableElements = [
 				...[ ...editor.ui.getEditableElementsNames() ].map( name => editor.ui.getEditableElement( name ) ),
-				editor.ui.view.body.bodyCollectionContainer
+				document.querySelector( '.ck-body-wrapper' )
 			];
 
 			focusableElements.forEach( el => dropdownView.focusTracker.add( el ) );

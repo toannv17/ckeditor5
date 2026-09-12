@@ -258,12 +258,10 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target: view.domConverter.mapViewToDom( paragraphView ),
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
 
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument, domEventDataMock.domTarget );
+		vi.spyOn( domEventDataMock.domTarget.ownerDocument, 'caretRangeFromPoint' ).mockReturnValue( {} );
 
 		vi.spyOn( view.domConverter, 'domRangeToView' ).mockReturnValue( {
 			start: {
@@ -285,12 +283,10 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target: view.domConverter.mapViewToDom( editableView ),
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
 
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument );
+		vi.spyOn( domEventDataMock.domTarget.ownerDocument, 'caretRangeFromPoint' ).mockReturnValue( null );
 
 		// Expect to execute `createRangeIn` in hope to find the range.
 		// Let's assume it won't find it and return null.
@@ -340,12 +336,10 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target,
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
 
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument );
+		vi.spyOn( domEventDataMock.domTarget.ownerDocument, 'caretRangeFromPoint' ).mockReturnValue( null );
 
 		// Expect to execute `createRangeIn` in hope to find the range.
 		// Let's assume it won't find it and return null.
@@ -375,12 +369,10 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target: view.domConverter.mapViewToDom( paragraphView ),
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
 
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument, domEventDataMock.domTarget );
+		vi.spyOn( domEventDataMock.domTarget.ownerDocument, 'caretRangeFromPoint' ).mockReturnValue( {} );
 
 		vi.spyOn( view.domConverter, 'domRangeToView' ).mockReturnValue( {
 			start: {
@@ -404,12 +396,10 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target: view.domConverter.mapViewToDom( paragraphView ),
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
 
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument, domEventDataMock.domTarget );
+		vi.spyOn( domEventDataMock.domTarget.ownerDocument, 'caretRangeFromPoint' ).mockReturnValue( {} );
 
 		vi.spyOn( view.domConverter, 'domRangeToView' ).mockReturnValue( {
 			start: {
@@ -431,12 +421,10 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target: view.domConverter.mapViewToDom( paragraphView ),
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
 
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument, domEventDataMock.domTarget );
+		vi.spyOn( domEventDataMock.domTarget.ownerDocument, 'caretRangeFromPoint' ).mockReturnValue( {} );
 
 		vi.spyOn( view.domConverter, 'domRangeToView' ).mockReturnValue( {
 			start: {
@@ -460,12 +448,10 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target: view.domConverter.mapViewToDom( parentView ),
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
 
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument, domEventDataMock.domTarget );
+		vi.spyOn( domEventDataMock.domTarget.ownerDocument, 'caretRangeFromPoint' ).mockReturnValue( {} );
 
 		vi.spyOn( view.domConverter, 'domRangeToView' ).mockReturnValue( {
 			start: {
@@ -491,12 +477,10 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target: view.domConverter.mapViewToDom( parentView ),
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
 
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument, domEventDataMock.domTarget );
+		vi.spyOn( domEventDataMock.domTarget.ownerDocument, 'caretRangeFromPoint' ).mockReturnValue( {} );
 
 		vi.spyOn( view.domConverter, 'domRangeToView' ).mockReturnValue( {
 			start: {
@@ -625,12 +609,8 @@ describe( 'Widget', () => {
 		const domEventDataMock = new ViewDocumentDomEventData( view, {
 			target: view.domConverter.mapViewToDom( viewP ),
 			isPrimary: true,
-			preventDefault: vi.fn(),
-			clientX: 0,
-			clientY: 0
+			preventDefault: vi.fn()
 		} );
-
-		stubCaretFromPoint( domEventDataMock.domTarget.ownerDocument );
 
 		view.focus();
 		viewDocument.fire( 'pointerdown', domEventDataMock );
@@ -3079,7 +3059,7 @@ describe( 'Widget', () => {
 					viewDocument.fire( 'keydown', new ViewDocumentDomEventData(
 						viewDocument,
 						{
-							target: view.getDomRoot(),
+							target: document.createElement( 'div' ),
 							preventDefault: preventDefaultSpy,
 							stopPropagation: stopPropagationSpy
 						},
@@ -3826,15 +3806,3 @@ describe( 'Widget', () => {
 		} );
 	} );
 } );
-
-function stubCaretFromPoint( domDocument, offsetNode = null ) {
-	if ( domDocument.caretPositionFromPoint ) {
-		vi
-			.spyOn( domDocument, 'caretPositionFromPoint' )
-			.mockReturnValue( offsetNode ? { offsetNode, offset: 0 } : null );
-	}
-
-	vi
-		.spyOn( domDocument, 'caretRangeFromPoint' )
-		.mockReturnValue( offsetNode ? {} : null );
-}

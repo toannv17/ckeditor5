@@ -10,7 +10,6 @@
 import type { DecoupledEditor } from '@ckeditor/ckeditor5-editor-decoupled';
 
 import { FullscreenAbstractEditorHandler } from './abstracteditorhandler.js';
-import { getParentNode } from '@ckeditor/ckeditor5-utils';
 
 /**
  * The decoupled editor fullscreen mode handler.
@@ -34,19 +33,15 @@ export class FullscreenDecoupledEditorHandler extends FullscreenAbstractEditorHa
 	 * A function that moves the editor UI elements to the fullscreen mode.
 	 */
 	public override defaultOnEnter(): HTMLElement {
-		const editable = this._editor.ui.getEditableElement()!;
-
 		// Code coverage is provided in the commercial package repository as integration unit tests.
 		/* v8 ignore next -- @preserve */
 		if ( this._editor.plugins.has( 'Pagination' ) && ( this._editor.plugins.get( 'Pagination' ) as any ).isEnabled ) {
-			const paginationViewElement = getParentNode( editable )?.querySelector<HTMLElement>( '.ck-pagination-view' );
-
-			if ( paginationViewElement ) {
-				this.moveToFullscreen( paginationViewElement, 'pagination-view' );
-			}
+			this.moveToFullscreen(
+				this._editor.ui.getEditableElement()!.parentElement!.querySelector( '.ck-pagination-view' )!, 'pagination-view'
+			);
 		}
 
-		this.moveToFullscreen( editable, 'editable' );
+		this.moveToFullscreen( this._editor.ui.getEditableElement()!, 'editable' );
 		this.moveToFullscreen( this._editor.ui.view.toolbar.element!, 'toolbar' );
 
 		this._editor.ui.view.toolbar.switchBehavior(

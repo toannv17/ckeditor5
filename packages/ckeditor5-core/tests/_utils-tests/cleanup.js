@@ -16,7 +16,6 @@ describe( 'cleanup util', () => {
 
 			for ( const view of uiViews ) {
 				view.render();
-				view.body.attachToDom();
 			}
 
 			// Body collection reuses its wrapper, hence 1.

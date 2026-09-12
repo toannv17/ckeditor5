@@ -7,20 +7,13 @@ import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
 
 import { ArticlePluginSet } from '@ckeditor/ckeditor5-core/tests/_utils/articlepluginset.js';
 
-import { getOverlayConfig, wrapInShadowRoot } from '@ckeditor/ckeditor5-ui/manual/_utils/shadow.js';
-
 declare global {
 	interface Window { editor: any }
 }
 
-const editorElement = document.querySelector( '#editor' ) as HTMLElement;
-
-wrapInShadowRoot( editorElement );
-
 ClassicEditor
 	.create( {
-		...getOverlayConfig(),
-		attachTo: editorElement,
+		attachTo: document.querySelector( '#editor' ) as HTMLElement,
 		plugins: [ ArticlePluginSet ],
 		toolbar: [
 			'heading',

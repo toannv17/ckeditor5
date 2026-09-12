@@ -31,7 +31,8 @@ export class Config<Cfg> {
 
 		// Set default configuration.
 		if ( defaultConfigurations ) {
-			// Clone the configuration to make sure that the properties will not be shared between editors.
+			// Clone the configuration to make sure that the properties will not be shared
+			// between editors and make the watchdog feature work correctly.
 			this.define( cloneConfig( defaultConfigurations ) );
 		}
 

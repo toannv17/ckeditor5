@@ -3,37 +3,26 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { Image } from '../../src/image.js';
 import { ImageStyle } from '../../src/imagestyle.js';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { Context, onEditorError } from '@ckeditor/ckeditor5-core';
+import { ContextWatchdog } from '@ckeditor/ckeditor5-watchdog';
+import { stubWindowOnError } from '@ckeditor/ckeditor5-watchdog/tests/_utils/stubwindowonerror.js';
+import { Context } from '@ckeditor/ckeditor5-core';
 import { CKEditorError } from '@ckeditor/ckeditor5-utils';
 import { ClassicTestEditor } from '@ckeditor/ckeditor5-core/tests/_utils/classictesteditor.js';
-import { stubWindowOnError } from '@ckeditor/ckeditor5-core/tests/_utils/stubwindowonerror.js';
 
 describe( 'ImageStyle integration', () => {
-	// Covers the reporting path end to end: an error thrown with an editor as its context reaches a
-	// registered callback, naming that editor. It does not cover attribution — an error whose context is the
-	// editor itself short-circuits in `resolveErrorSource()` and never reaches the graph walk. Telling two
-	// editors apart when they share objects is a known stage-1 limitation; ImageStyle does connect them
-	// today, so strengthening this test has to wait for #11300.
-	describe( 'error reporting', () => {
-		let context, editor1, editor2, editorElement1, editorElement2, off;
+	describe( 'with Watchdog plugin', () => {
+		let editorElement1, editorElement2, editorConfig;
+		let watchdog;
 
 		beforeEach( async () => {
-			stubWindowOnError();
+			watchdog = new ContextWatchdog( Context );
+			await watchdog.create();
 
-			context = await Context.create();
-
-			editorElement1 = document.createElement( 'div' );
-			editorElement2 = document.createElement( 'div' );
-
-			document.body.appendChild( editorElement1 );
-			document.body.appendChild( editorElement2 );
-
-			const editorConfig = {
-				context,
+			editorConfig = {
 				plugins: [
 					Paragraph, Image, ImageStyle
 				],
@@ -49,32 +38,67 @@ describe( 'ImageStyle integration', () => {
 				}
 			};
 
-			editor1 = await ClassicTestEditor.create( editorElement1, editorConfig );
-			editor2 = await ClassicTestEditor.create( editorElement2, editorConfig );
+			editorElement1 = document.createElement( 'div' );
+			editorElement2 = document.createElement( 'div' );
+
+			document.body.appendChild( editorElement1 );
+			document.body.appendChild( editorElement2 );
+
+			stubWindowOnError();
 		} );
 
 		afterEach( async () => {
-			// The reporter is page-level state, so the registration has to go or it leaks into the next test.
-			off?.();
-
-			await editor1.destroy();
-			await editor2.destroy();
-			await context.destroy();
+			await watchdog.destroy();
 
 			editorElement1.remove();
 			editorElement2.remove();
 		} );
 
-		it( 'should report an error to the callback, naming the editor it was thrown with', async () => {
-			const sources = [];
+		it( 'should only restart the editor in which the error occurred', async () => {
+			await watchdog.add( [ {
+				id: 'editor1',
+				type: 'editor',
+				creator: ( element, config ) => ClassicTestEditor.create( element, config ),
+				sourceElementOrData: editorElement1,
+				config: editorConfig
+			}, {
+				id: 'editor2',
+				type: 'editor',
+				creator: ( element, config ) => ClassicTestEditor.create( element, config ),
+				sourceElementOrData: editorElement2,
+				config: editorConfig
+			} ] );
 
-			off = onEditorError( ( { source } ) => sources.push( source ) );
+			const oldContext = watchdog.context;
 
-			setTimeout( () => throwCKEditorError( 'foo', editor1 ) );
+			const editorWatchdog1 = watchdog._getWatchdog( 'editor1' );
+			const editorWatchdog2 = watchdog._getWatchdog( 'editor2' );
+
+			const oldEditor1 = watchdog.getItem( 'editor1' );
+			const oldEditor2 = watchdog.getItem( 'editor2' );
+
+			const mainWatchdogRestartSpy = vi.fn();
+			const editorWatchdog1RestartSpy = vi.fn();
+			const editorWatchdog2RestartSpy = vi.fn();
+
+			watchdog.on( 'restart', mainWatchdogRestartSpy );
+			editorWatchdog1.on( 'restart', editorWatchdog1RestartSpy );
+			editorWatchdog2.on( 'restart', editorWatchdog2RestartSpy );
+
+			// Throw an error from editor1.
+			setTimeout( () => throwCKEditorError( 'foo', editorWatchdog1.editor ) );
 
 			await waitCycle();
 
-			expect( sources ).toEqual( [ editor1 ] );
+			// Only editor1 should be restarted.
+			expect( editorWatchdog1RestartSpy ).toHaveBeenCalledTimes( 1 );
+			expect( editorWatchdog2RestartSpy ).toHaveBeenCalledTimes( 0 );
+			expect( mainWatchdogRestartSpy ).toHaveBeenCalledTimes( 0 );
+
+			expect( oldEditor1 ).not.toBe( editorWatchdog1.editor );
+			expect( oldEditor2 ).toBe( editorWatchdog2.editor );
+
+			expect( watchdog.context ).toBe( oldContext );
 		} );
 	} );
 } );

@@ -14,12 +14,11 @@ import {
 
 import {
 	type EventInfo,
-	containsNode,
+	getAncestors,
 	global,
 	Rect,
 	ResizeObserver,
 	toUnit,
-	listenToShadowRoots,
 	type ObservableChangeEvent
 } from '@ckeditor/ckeditor5-utils';
 
@@ -466,7 +465,10 @@ export class BlockToolbar extends Plugin {
 			// See more: https://github.com/ckeditor/ckeditor5/issues/17067
 			const editableElement = this._getSelectedEditableElement();
 
-			if ( !containsNode( domEvt.target as Node, editableElement ) ) {
+			if (
+				domEvt.target !== global.document &&
+				!getAncestors( editableElement ).includes( domEvt.target as HTMLElement )
+			) {
 				return;
 			}
 
@@ -477,13 +479,6 @@ export class BlockToolbar extends Plugin {
 			} );
 		};
 
-		// `scroll` is not `composed`, so it never crosses a shadow boundary: a listener on `document` (even with
-		// `useCapture: true`) never sees a scrollable ancestor of the editable that lives inside a shadow root.
-		// The editable checked above is re-read on every event rather than fixed once, since a multi-root editor
-		// can switch which root is active between scrolls — so instead of a one-time snapshot, the registry keeps
-		// the listener on every shadow root the editor UI currently lives in.
-		let stopListeningToShadowRoots: VoidFunction | null = null;
-
 		// Watch scroll event only when the button is visible, it prevents attaching the scroll event listener
 		// to the document when the button is not visible.
 		buttonView.on<ObservableChangeEvent<boolean>>( 'change:isVisible', ( evt, name, isVisible ) => {
@@ -492,18 +487,8 @@ export class BlockToolbar extends Plugin {
 					useCapture: true,
 					usePassive: true
 				} );
-
-				stopListeningToShadowRoots = listenToShadowRoots( this.editor.ui.shadowRootRegistry, {
-					emitter: buttonView,
-					event: 'scroll',
-					callback: repositionOnScroll,
-					listenerOptions: { useCapture: true, usePassive: true }
-				} );
 			} else {
 				buttonView.stopListening( global.document, 'scroll', repositionOnScroll );
-
-				stopListeningToShadowRoots?.();
-				stopListeningToShadowRoots = null;
 			}
 		} );
 	}

@@ -27,7 +27,6 @@ import {
 	global,
 	Rect,
 	DomEmitterMixin,
-	findClosestScrollableAncestor,
 	delay,
 	ResizeObserver,
 	type DomEmitter
@@ -364,7 +363,7 @@ export class DragDropTarget extends Plugin {
 		} else {
 			const domElement = this.editor.editing.view.domConverter.mapViewToDom( viewElement )!;
 
-			domScrollable = findClosestScrollableAncestor( domElement )!;
+			domScrollable = findScrollableElement( domElement );
 
 			this._domEmitter.listenTo( domScrollable, 'scroll', this._reconvertMarkerThrottled, { usePassive: true } );
 			const resizeObserver = new ResizeObserver( domScrollable, this._reconvertMarkerThrottled );
@@ -533,4 +532,25 @@ function getClosestMappedModelElement( editor: Editor, element: ViewElement ): M
 	const viewElement = mapper.findMappedViewAncestor( viewPosition );
 
 	return mapper.toModelElement( viewElement )!;
+}
+
+/**
+ * Returns the closest scrollable ancestor DOM element.
+ *
+ * It is assumed that `domNode` is attached to the document.
+ */
+function findScrollableElement( domNode: HTMLElement ): HTMLElement {
+	let domElement: HTMLElement = domNode;
+
+	do {
+		domElement = domElement.parentElement!;
+
+		const overflow = global.window.getComputedStyle( domElement ).overflowY;
+
+		if ( overflow == 'auto' || overflow == 'scroll' ) {
+			break;
+		}
+	} while ( domElement.tagName != 'BODY' );
+
+	return domElement;
 }
