@@ -5,10 +5,10 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { ClassicEditorUIView } from '../src/classiceditoruiview.js';
-import { EditingView } from 'toannv-ckeditor5-engine';
-import { StickyPanelView, ToolbarView, MenuBarView } from 'toannv-ckeditor5-ui';
-import { Locale } from 'toannv-ckeditor5-utils';
-import { createViewRoot } from 'toannv-ckeditor5-engine/tests/view/_utils/createroot.js';
+import { EditingView } from '@ckeditor-nonkey/ckeditor5-engine';
+import { StickyPanelView, ToolbarView, MenuBarView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import { createViewRoot } from '@ckeditor-nonkey/ckeditor5-engine/tests/view/_utils/createroot.js';
 
 describe( 'ClassicEditorUIView', () => {
 	let locale, view, editingView, editingViewRoot;

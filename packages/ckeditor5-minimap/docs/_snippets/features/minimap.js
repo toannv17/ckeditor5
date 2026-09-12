@@ -26,7 +26,7 @@ import {
 	TableProperties,
 	Minimap,
 	_MinimapIframeView
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 import {
 	CS_CONFIG,
 	TOKEN_URL,

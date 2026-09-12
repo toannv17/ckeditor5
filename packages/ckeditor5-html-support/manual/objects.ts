@@ -3,16 +3,16 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold, Italic, Strikethrough, Underline, Subscript, Superscript, Code } from 'toannv-ckeditor5-basic-styles';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { List } from 'toannv-ckeditor5-list';
-import { Link } from 'toannv-ckeditor5-link';
-import { Table } from 'toannv-ckeditor5-table';
-import { Highlight } from 'toannv-ckeditor5-highlight';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold, Italic, Strikethrough, Underline, Subscript, Superscript, Code } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
+import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight';
 
 import { GeneralHtmlSupport } from '../src/generalhtmlsupport.js';
 

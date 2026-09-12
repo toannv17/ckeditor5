@@ -7,8 +7,8 @@
  * @module style/ui/stylepanelview
  */
 
-import { FocusCycler, View, ViewCollection } from 'toannv-ckeditor5-ui';
-import { FocusTracker, KeystrokeHandler, type Locale } from 'toannv-ckeditor5-utils';
+import { FocusCycler, View, ViewCollection } from '@ckeditor-nonkey/ckeditor5-ui';
+import { FocusTracker, KeystrokeHandler, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { StyleGroupView } from './stylegroupview.js';
 import { type StyleGridView } from './stylegridview.js';

@@ -7,7 +7,7 @@
  * @module mention/ui/mentionlistitemview
  */
 
-import { ListItemView } from 'toannv-ckeditor5-ui';
+import { ListItemView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 import type { MentionFeedItem } from '../mentionconfig.js';
 

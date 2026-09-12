@@ -7,7 +7,7 @@
  * @module paste-from-office/normalizer
  */
 
-import type { ClipboardInputTransformationData } from 'toannv-ckeditor5-clipboard';
+import type { ClipboardInputTransformationData } from '@ckeditor-nonkey/ckeditor5-clipboard';
 
 /**
  * Interface defining a content transformation pasted from an external editor.

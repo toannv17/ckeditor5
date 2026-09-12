@@ -7,7 +7,7 @@
  * @module table/tablecellproperties
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { TableCellPropertiesUI } from './tablecellproperties/tablecellpropertiesui.js';
 import { TableCellPropertiesEditing } from './tablecellproperties/tablecellpropertiesediting.js';

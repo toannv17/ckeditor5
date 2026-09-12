@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { ButtonView } from 'toannv-ckeditor5-ui';
-import { EventInfo } from 'toannv-ckeditor5-utils';
-import { ViewDocumentDomEventData } from 'toannv-ckeditor5-engine';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { EventInfo } from '@ckeditor-nonkey/ckeditor5-utils';
+import { ViewDocumentDomEventData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 import { LinkImage } from '../src/linkimage.js';
 import { LinkImageUI } from '../src/linkimageui.js';
-import { Image, ImageBlockEditing } from 'toannv-ckeditor5-image';
+import { Image, ImageBlockEditing } from '@ckeditor-nonkey/ckeditor5-image';
 
 describe( 'LinkImageUI', () => {
 	let editor, viewDocument, editorElement;

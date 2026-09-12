@@ -46,7 +46,7 @@ import {
 	type ObservableChangeEvent,
 	type IfTrue,
 	type ObservableMixinConstructor
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 import { injectUiElementHandling } from './uielement.js';
 import { injectQuirksHandling } from './filler.js';
 

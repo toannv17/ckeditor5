@@ -8,7 +8,7 @@
  */
 
 import { isWidget } from '../utils.js';
-import { _getCopyOnEnterAttributes } from 'toannv-ckeditor5-enter';
+import { _getCopyOnEnterAttributes } from '@ckeditor-nonkey/ckeditor5-enter';
 
 import {
 	ModelDocumentSelection,
@@ -18,7 +18,7 @@ import {
 	type ModelSchema,
 	type ModelSelection,
 	type ViewElement
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The name of the type around model selection attribute responsible for

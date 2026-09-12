@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconColorTileCheck } from 'toannv-ckeditor5-icons';
+import { IconColorTileCheck } from '@ckeditor-nonkey/ckeditor5-icons';
 import { ColorTileView } from '../../src/colorgrid/colortileview.js';
 import { ButtonView } from '../../src/button/buttonview.js';
-import { env } from 'toannv-ckeditor5-utils';
+import { env } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'ColorTileView', () => {
 	let colorTile;

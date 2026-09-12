@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ViewDowncastWriter, ViewDocument, ModelElement, StylesProcessor, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
-import { isWidget, getLabel } from 'toannv-ckeditor5-widget';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ViewDowncastWriter, ViewDocument, ModelElement, StylesProcessor, _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { isWidget, getLabel } from '@ckeditor-nonkey/ckeditor5-widget';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 import { ImageBlockEditing } from '../src/image/imageblockediting.js';
 import { ImageInlineEditing } from '../src/image/imageinlineediting.js';

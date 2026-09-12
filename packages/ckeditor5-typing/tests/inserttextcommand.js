@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { InsertTextCommand } from '../src/inserttextcommand.js';
 import { TypingChangeBuffer } from '../src/utils/changebuffer.js';
 import { Input } from '../src/input.js';

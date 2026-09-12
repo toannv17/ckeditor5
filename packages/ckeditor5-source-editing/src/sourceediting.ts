@@ -7,10 +7,10 @@
  * @module source-editing/sourceediting
  */
 
-import { Plugin, PendingActions, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { IconSource } from 'toannv-ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView, type Dialog } from 'toannv-ckeditor5-ui';
-import { CKEditorError, createElement, ElementReplacer, env, formatHtml } from 'toannv-ckeditor5-utils';
+import { Plugin, PendingActions, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconSource } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView, type Dialog } from '@ckeditor-nonkey/ckeditor5-ui';
+import { CKEditorError, createElement, ElementReplacer, env, formatHtml } from '@ckeditor-nonkey/ckeditor5-utils';
 
 const COMMAND_FORCE_DISABLE_ID = 'SourceEditingMode';
 

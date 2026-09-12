@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { global } from 'toannv-ckeditor5-utils';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 import { HighlightedTextView } from '../../src/highlightedtext/highlightedtextview.js';
 import { LabelWithHighlightView } from '../../src/highlightedtext/labelwithhighlightview.js';
 

@@ -17,7 +17,7 @@ import { type ModelDocumentSelection } from './documentselection.js';
 import { type ModelElement } from './element.js';
 import { type ModelItem } from './item.js';
 
-import { CKEditorError, EmitterMixin, isIterable, type EmitterMixinConstructor } from 'toannv-ckeditor5-utils';
+import { CKEditorError, EmitterMixin, isIterable, type EmitterMixinConstructor } from '@ckeditor-nonkey/ckeditor5-utils';
 
 const ModelSelectionBase: EmitterMixinConstructor<typeof ModelTypeCheckable> = /* #__PURE__ */ EmitterMixin( ModelTypeCheckable );
 

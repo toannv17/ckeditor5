@@ -7,9 +7,9 @@
  * @module media-embed/mediaembedtoolbar
  */
 
-import { Plugin, type PluginDependenciesOf, type ToolbarConfigItem } from 'toannv-ckeditor5-core';
-import type { ComponentFactory } from 'toannv-ckeditor5-ui';
-import { WidgetToolbarRepository } from 'toannv-ckeditor5-widget';
+import { Plugin, type PluginDependenciesOf, type ToolbarConfigItem } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ComponentFactory } from '@ckeditor-nonkey/ckeditor5-ui';
+import { WidgetToolbarRepository } from '@ckeditor-nonkey/ckeditor5-widget';
 
 import { getSelectedMediaViewWidget } from './utils.js';
 import { isMediaStyleDropdown } from './mediaembedstyle/utils.js';

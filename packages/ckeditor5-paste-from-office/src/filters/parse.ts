@@ -12,7 +12,7 @@ import {
 	ViewDocument,
 	type StylesProcessor,
 	type ViewDocumentFragment
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { normalizeSpacing, normalizeSpacerunSpans } from './space.js';
 

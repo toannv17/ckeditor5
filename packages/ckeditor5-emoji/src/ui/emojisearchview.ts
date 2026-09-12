@@ -8,8 +8,8 @@
  */
 
 import { escapeRegExp } from 'es-toolkit/compat';
-import { createLabeledInputText, SearchTextView, View, type SearchTextViewSearchEvent, type SearchInfoView } from 'toannv-ckeditor5-ui';
-import type { Locale } from 'toannv-ckeditor5-utils';
+import { createLabeledInputText, SearchTextView, View, type SearchTextViewSearchEvent, type SearchInfoView } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { type EmojiGridView } from './emojigridview.js';
 
 /**

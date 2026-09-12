@@ -15,7 +15,7 @@ import { ViewRawElement } from '../../../src/view/rawelement.js';
 import { ViewRange } from '../../../src/view/range.js';
 import { ViewPosition } from '../../../src/view/position.js';
 
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 import { StylesProcessor } from '../../../src/view/stylesmap.js';
 
 describe( 'DowncastWriter', () => {

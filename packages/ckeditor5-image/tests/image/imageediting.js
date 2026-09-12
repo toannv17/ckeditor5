@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { normalizeHtml } from 'toannv-ckeditor5-utils/tests/_utils/normalizehtml.js';
-import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { normalizeHtml } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/normalizehtml.js';
+import { _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { ImageEditing } from '../../src/image/imageediting.js';
 import { ImageLoadObserver } from '../../src/image/imageloadobserver.js';

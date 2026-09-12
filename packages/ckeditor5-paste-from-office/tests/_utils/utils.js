@@ -5,15 +5,15 @@
 
 import { describe, it, expect, vi, beforeAll, afterAll, beforeEach, afterEach } from 'vitest';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import {
 	_setModelData,
 	_stringifyModel,
 	_stringifyView
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { normalizeHtml } from 'toannv-ckeditor5-utils/tests/_utils/normalizehtml.js';
+import { normalizeHtml } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/normalizehtml.js';
 
 /**
  * Mocks dataTransfer object which can be used for simulating paste.

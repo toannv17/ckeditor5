@@ -9,13 +9,13 @@ import { ListEditing } from '../../../src/list/listediting.js';
 import { stubUid } from '../_utils/uid.js';
 import { modelList } from '../_utils/utils.js';
 
-import { Image } from 'toannv-ckeditor5-image';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Image } from '@ckeditor-nonkey/ckeditor5-image';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import {
 	_getModelData,
 	_setModelData
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'image plugin integration', () => {
 	let element;

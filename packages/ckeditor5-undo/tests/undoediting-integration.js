@@ -3,19 +3,19 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 
 import { UndoEditing } from '../src/undoediting.js';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Clipboard } from 'toannv-ckeditor5-clipboard';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { TableEditing } from 'toannv-ckeditor5-table';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Clipboard } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
 
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 

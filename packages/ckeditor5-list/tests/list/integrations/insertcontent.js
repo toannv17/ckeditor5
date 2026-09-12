@@ -9,23 +9,23 @@ import { ListEditing } from '../../../src/list/listediting.js';
 import { stubUid } from '../_utils/uid.js';
 import { modelList } from '../_utils/utils.js';
 
-import { IndentEditing } from 'toannv-ckeditor5-indent';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { MediaEmbedEditing } from 'toannv-ckeditor5-media-embed';
-import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
-import { Table } from 'toannv-ckeditor5-table';
-import { Image } from 'toannv-ckeditor5-image';
-import { HtmlEmbed } from 'toannv-ckeditor5-html-embed';
-import { PageBreak } from 'toannv-ckeditor5-page-break';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { Widget, WidgetTypeAround } from 'toannv-ckeditor5-widget';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { modelTable } from 'toannv-ckeditor5-table/tests/_utils/utils.js';
+import { IndentEditing } from '@ckeditor-nonkey/ckeditor5-indent';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { MediaEmbedEditing } from '@ckeditor-nonkey/ckeditor5-media-embed';
+import { CodeBlockEditing } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
+import { Image } from '@ckeditor-nonkey/ckeditor5-image';
+import { HtmlEmbed } from '@ckeditor-nonkey/ckeditor5-html-embed';
+import { PageBreak } from '@ckeditor-nonkey/ckeditor5-page-break';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { Widget, WidgetTypeAround } from '@ckeditor-nonkey/ckeditor5-widget';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { modelTable } from '@ckeditor-nonkey/ckeditor5-table/tests/_utils/utils.js';
 import {
 	_getModelData,
 	_setModelData
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Inserting widgets in document lists', () => {
 	let element;

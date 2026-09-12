@@ -7,7 +7,7 @@
  * @module core/editor/utils/securesourceelement
  */
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import type { Editor, EditorDestroyEvent } from '../editor.js';
 

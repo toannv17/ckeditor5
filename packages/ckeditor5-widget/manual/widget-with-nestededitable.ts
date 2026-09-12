@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 import { Widget } from '../src/widget.js';
 
 import { toWidget, toWidgetEditable } from '../src/utils.js';

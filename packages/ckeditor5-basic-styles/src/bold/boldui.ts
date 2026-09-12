@@ -7,9 +7,9 @@
  * @module basic-styles/bold/boldui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { IconBold } from 'toannv-ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconBold } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 import { getButtonCreator } from '../utils.js';
 
 const BOLD = 'bold';

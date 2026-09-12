@@ -14,7 +14,7 @@ import type {
 	ModelRange,
 	ViewElement,
 	ModelWriter
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 import { startCase, cloneDeep } from 'es-toolkit/compat';
 
 export interface GHSViewAttributes {

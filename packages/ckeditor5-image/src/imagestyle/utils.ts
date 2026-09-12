@@ -7,7 +7,7 @@
  * @module image/imagestyle/utils
  */
 
-import { logWarning } from 'toannv-ckeditor5-utils';
+import { logWarning } from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	IconObjectCenter,
 	IconObjectFullWidth,
@@ -16,8 +16,8 @@ import {
 	IconObjectInlineRight,
 	IconObjectLeft,
 	IconObjectRight
-} from 'toannv-ckeditor5-icons';
-import type { Editor, PluginCollection } from 'toannv-ckeditor5-core';
+} from '@ckeditor-nonkey/ckeditor5-icons';
+import type { Editor, PluginCollection } from '@ckeditor-nonkey/ckeditor5-core';
 import type { ImageStyleConfig, ImageStyleDropdownDefinition, ImageStyleOptionDefinition } from '../imageconfig.js';
 
 /**

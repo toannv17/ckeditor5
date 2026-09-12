@@ -7,7 +7,7 @@
  * @module paste-from-office/normalizers/mswordnormalizer
  */
 
-import type { ClipboardInputTransformationData } from 'toannv-ckeditor5-clipboard';
+import type { ClipboardInputTransformationData } from '@ckeditor-nonkey/ckeditor5-clipboard';
 
 import { transformBookmarks } from '../filters/bookmark.js';
 import { transformListItemLikeElementsIntoLists } from '../filters/list.js';
@@ -16,7 +16,7 @@ import { removeMSAttributes } from '../filters/removemsattributes.js';
 import { transformTables } from '../filters/table.js';
 import { removeInvalidTableWidth } from '../filters/removeinvalidtablewidth.js';
 import { replaceMSFootnotes } from '../filters/replacemsfootnotes.js';
-import { ViewUpcastWriter, type ViewDocument } from 'toannv-ckeditor5-engine';
+import { ViewUpcastWriter, type ViewDocument } from '@ckeditor-nonkey/ckeditor5-engine';
 import type { PasteFromOfficeNormalizer } from '../normalizer.js';
 
 const msWordMatch1 = /<meta\s*name="?generator"?\s*content="?microsoft\s*word\s*\d+"?\/?>/i;

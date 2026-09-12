@@ -7,8 +7,8 @@
  * @module table/tableproperties/tablepropertiesui
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { IconTableProperties } from 'toannv-ckeditor5-icons';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconTableProperties } from '@ckeditor-nonkey/ckeditor5-icons';
 import {
 	ButtonView,
 	ContextualBalloon,
@@ -16,7 +16,7 @@ import {
 	getLocalizedColorOptions,
 	normalizeColorOptions,
 	type LabeledFieldView
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
 import { debounce } from 'es-toolkit/compat';
 
@@ -36,8 +36,8 @@ import {
 	getNormalizedDefaultTableProperties,
 	type NormalizedDefaultProperties
 } from '../utils/table-properties.js';
-import type { Batch } from 'toannv-ckeditor5-engine';
-import type { EventInfo, ObservableChangeEvent } from 'toannv-ckeditor5-utils';
+import type { Batch } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { EventInfo, ObservableChangeEvent } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type TableBorderStyleCommand } from './commands/tableborderstylecommand.js';
 

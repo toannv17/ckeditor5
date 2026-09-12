@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Editor } from 'toannv-ckeditor5-core';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 import { cloneDeep } from 'es-toolkit/compat';
 
 describe( 'Accessibility', () => {

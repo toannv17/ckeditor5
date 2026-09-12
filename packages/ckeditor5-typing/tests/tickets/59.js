@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 import { Typing } from '../../src/typing.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Bug ckeditor5-typing#59', () => {
 	let editor;

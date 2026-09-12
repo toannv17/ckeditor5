@@ -3,21 +3,21 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Alignment } from 'toannv-ckeditor5-alignment';
-import { Underline, Code, Strikethrough, Subscript, Superscript } from 'toannv-ckeditor5-basic-styles';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { Font } from 'toannv-ckeditor5-font';
-import { Highlight } from 'toannv-ckeditor5-highlight';
-import { Indent } from 'toannv-ckeditor5-indent';
-import { Mention } from 'toannv-ckeditor5-mention';
-import { PasteFromOffice } from 'toannv-ckeditor5-paste-from-office';
-import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
-import { ImageUpload } from 'toannv-ckeditor5-image';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Alignment } from '@ckeditor-nonkey/ckeditor5-alignment';
+import { Underline, Code, Strikethrough, Subscript, Superscript } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { Font } from '@ckeditor-nonkey/ckeditor5-font';
+import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight';
+import { Indent } from '@ckeditor-nonkey/ckeditor5-indent';
+import { Mention } from '@ckeditor-nonkey/ckeditor5-mention';
+import { PasteFromOffice } from '@ckeditor-nonkey/ckeditor5-paste-from-office';
+import { RemoveFormat } from '@ckeditor-nonkey/ckeditor5-remove-format';
+import { ImageUpload } from '@ckeditor-nonkey/ckeditor5-image';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 declare global {
 	interface Window { editor: any }

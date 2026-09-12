@@ -9,8 +9,8 @@ import {
 	createLabeledInputText,
 	ButtonView,
 	submitHandler
-} from 'toannv-ckeditor5-ui';
-import { IconCheck, IconCancel } from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconCheck, IconCancel } from '@ckeditor-nonkey/ckeditor5-icons';
 
 export class FormView extends View {
 	constructor( locale ) {

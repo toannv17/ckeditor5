@@ -20,7 +20,7 @@ import {
 	type EditorReadyEvent,
 	type ViewRootElementDefinition,
 	type ElementApiMixinConstructor
-} from 'toannv-ckeditor5-core';
+} from '@ckeditor-nonkey/ckeditor5-core';
 
 import { InlineEditorUI } from './inlineeditorui.js';
 import { InlineEditorUIView } from './inlineeditoruiview.js';

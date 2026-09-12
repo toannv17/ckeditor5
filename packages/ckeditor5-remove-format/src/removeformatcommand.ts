@@ -7,9 +7,9 @@
  * @module remove-format/removeformatcommand
  */
 
-import type { ModelDocumentSelection, ModelItem, ModelRange, ModelWriter } from 'toannv-ckeditor5-engine';
-import { Command } from 'toannv-ckeditor5-core';
-import { first } from 'toannv-ckeditor5-utils';
+import type { ModelDocumentSelection, ModelItem, ModelRange, ModelWriter } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
+import { first } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The remove format command.

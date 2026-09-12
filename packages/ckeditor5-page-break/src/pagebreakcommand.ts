@@ -7,9 +7,9 @@
  * @module page-break/pagebreakcommand
  */
 
-import { Command } from 'toannv-ckeditor5-core';
-import { findOptimalInsertionRange } from 'toannv-ckeditor5-widget';
-import type { ModelDocumentSelection, ModelElement, Model, ModelSchema } from 'toannv-ckeditor5-engine';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
+import { findOptimalInsertionRange } from '@ckeditor-nonkey/ckeditor5-widget';
+import type { ModelDocumentSelection, ModelElement, Model, ModelSchema } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The page break command.

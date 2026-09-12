@@ -88,10 +88,10 @@ if ( globalThis.CKEDITOR_VERSION ) {
 	 * Examples of valid and invalid import paths:
 	 *
 	 * ```js
-	 * import { ClassicEditor, Highlight } from 'toannv-ckeditor5'; // ✅
-	 * import { Highlight } from 'toannv-ckeditor5-highlight/dist/index.js'; // ✅
-	 * import { Highlight } from 'toannv-ckeditor5-highlight/src/highlight.js'; // ❌
-	 * import { Highlight } from 'toannv-ckeditor5-highlight'; // ❌
+	 * import { ClassicEditor, Highlight } from '@ckeditor-nonkey/ckeditor5'; // ✅
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight/dist/index.js'; // ✅
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight/src/highlight.js'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight'; // ❌
 	 * import '@ckeditor/ckeditor5-highlight/build/highlight.js'; // ❌
 	 * ```
 	 * </details>
@@ -110,11 +110,11 @@ if ( globalThis.CKEDITOR_VERSION ) {
 	 * Examples of valid and invalid import paths:
 	 *
 	 * ```js
-	 * import { ClassicEditor } from 'toannv-ckeditor5-build-classic'; // ✅
-	 * import { Highlight } from 'toannv-ckeditor5'; // ❌
-	 * import { Highlight } from 'toannv-ckeditor5-highlight/dist/index.js'; // ❌
-	 * import { Highlight } from 'toannv-ckeditor5-highlight'; // ❌
-	 * import { Highlight } from 'toannv-ckeditor5-highlight/src/highlight'; // ❌
+	 * import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-build-classic'; // ✅
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight/dist/index.js'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight/src/highlight'; // ❌
 	 * import '@ckeditor/ckeditor5-highlight/build/highlight'; // ❌
 	 * ```
 	 *
@@ -136,11 +136,11 @@ if ( globalThis.CKEDITOR_VERSION ) {
 	 * Examples of valid and invalid import paths:
 	 *
 	 * ```js
-	 * import { ClassicEditor } from 'toannv-ckeditor5-editor-classic'; // ✅
-	 * import { Highlight } from 'toannv-ckeditor5-highlight'; // ✅
-	 * import { Highlight } from 'toannv-ckeditor5-highlight/src/highlight.js'; // ✅ (not recommended)
-	 * import { Highlight } from 'toannv-ckeditor5'; // ❌
-	 * import { Highlight } from 'toannv-ckeditor5-highlight/dist/index.js'; // ❌
+	 * import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic'; // ✅
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight'; // ✅
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight/src/highlight.js'; // ✅ (not recommended)
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight/dist/index.js'; // ❌
 	 * import '@ckeditor/ckeditor5-highlight/build/highlight'; // ❌
 	 * ```
 	 * </details>
@@ -157,10 +157,10 @@ if ( globalThis.CKEDITOR_VERSION ) {
 	 * import 'ckeditor5/build/ckeditor5-dll.js';// ✅
 	 * import '@ckeditor/ckeditor5-editor-classic/build/editor-classic.js';// ✅
 	 * import '@ckeditor/ckeditor5-highlight/build/highlight.js';// ✅
-	 * import { Highlight } from 'toannv-ckeditor5'; // ❌
-	 * import { Highlight } from 'toannv-ckeditor5-highlight/dist/index.js'; // ❌
-	 * import { Highlight } from 'toannv-ckeditor5-highlight'; // ❌
-	 * import { Highlight } from 'toannv-ckeditor5-highlight/src/highlight.js'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight/dist/index.js'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight'; // ❌
+	 * import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight/src/highlight.js'; // ❌
 	 * ```
 	 * </details>
 	 *

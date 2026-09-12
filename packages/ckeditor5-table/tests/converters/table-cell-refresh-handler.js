@@ -5,10 +5,10 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Delete } from 'toannv-ckeditor5-typing';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { _getViewData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Delete } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableEditing } from '../../src/tableediting.js';
 import { viewTable } from '../_utils/utils.js';

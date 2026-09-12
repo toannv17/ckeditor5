@@ -3,17 +3,17 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { TableEditing } from 'toannv-ckeditor5-table';
-import { ImageInlineEditing } from 'toannv-ckeditor5-image';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
-import { Plugin } from 'toannv-ckeditor5-core';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
+import { ImageInlineEditing } from '@ckeditor-nonkey/ckeditor5-image';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { CodeBlockEditing } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _parseModel } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _parseModel } from '@ckeditor-nonkey/ckeditor5-engine';
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
 import { ListEditing } from '../../src/list/listediting.js';

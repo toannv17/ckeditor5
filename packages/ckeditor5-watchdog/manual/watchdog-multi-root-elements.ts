@@ -3,8 +3,8 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
 
 import { EditorWatchdog } from '../src/editorwatchdog.js';
 

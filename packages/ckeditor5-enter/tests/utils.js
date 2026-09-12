@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 import { getCopyOnEnterAttributes } from '../src/utils.js';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
 
 describe( 'utils', () => {
 	describe( 'getCopyOnEnterAttributes()', () => {

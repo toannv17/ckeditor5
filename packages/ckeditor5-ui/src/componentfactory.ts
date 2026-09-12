@@ -7,8 +7,8 @@
  * @module ui/componentfactory
  */
 
-import { CKEditorError, type Locale } from 'toannv-ckeditor5-utils';
-import type { Editor } from 'toannv-ckeditor5-core';
+import { CKEditorError, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { type View } from './view.js';
 

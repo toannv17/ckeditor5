@@ -11,7 +11,7 @@ import { Template } from '../template.js';
 import { ViewCollection } from '../viewcollection.js';
 import { type View } from '../view.js';
 
-import { createElement, type Locale } from 'toannv-ckeditor5-utils';
+import { createElement, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * This is a special {@link module:ui/viewcollection~ViewCollection} dedicated to elements that are detached from the DOM structure of

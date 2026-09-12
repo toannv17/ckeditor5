@@ -7,8 +7,8 @@
  * @module ckbox/ckboxconfig
  */
 
-import type { TokenUrl } from 'toannv-ckeditor5-cloud-services';
-import type { ArrayOrItem } from 'toannv-ckeditor5-utils';
+import type { TokenUrl } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import type { ArrayOrItem } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The configuration of the {@link module:ckbox/ckbox~CKBox CKBox feature}.

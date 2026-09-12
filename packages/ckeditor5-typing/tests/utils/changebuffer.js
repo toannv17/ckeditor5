@@ -5,7 +5,7 @@
 
 import { describe, it, expect, beforeEach } from 'vitest';
 import { TypingChangeBuffer } from '../../src/utils/changebuffer.js';
-import { Model, Batch } from 'toannv-ckeditor5-engine';
+import { Model, Batch } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'ChangeBuffer', () => {
 	const CHANGE_LIMIT = 3;

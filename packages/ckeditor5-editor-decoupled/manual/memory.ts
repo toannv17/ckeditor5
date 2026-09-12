@@ -4,7 +4,7 @@
  */
 
 import { DecoupledEditor } from '../src/decouplededitor.js';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
 
 const editorData = '<h2>Hello world</h2><p>This is the decoupled editor.</p><img src="/images/sample.jpg" />';
 

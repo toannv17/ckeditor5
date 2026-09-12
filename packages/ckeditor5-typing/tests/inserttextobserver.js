@@ -8,9 +8,9 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { InsertTextObserver } from '../src/inserttextobserver.js';
 import { fireBeforeInputDomEvent, fireCompositionEndDomEvent } from './_utils/utils.js';
 
-import { EditingView, _setViewData } from 'toannv-ckeditor5-engine';
-import { createViewRoot } from 'toannv-ckeditor5-engine/tests/view/_utils/createroot.js';
-import { env } from 'toannv-ckeditor5-utils';
+import { EditingView, _setViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { createViewRoot } from '@ckeditor-nonkey/ckeditor5-engine/tests/view/_utils/createroot.js';
+import { env } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'InsertTextObserver', () => {
 	let view, viewDocument, insertTextEventSpy;

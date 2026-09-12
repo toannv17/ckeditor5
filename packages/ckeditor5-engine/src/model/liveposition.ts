@@ -15,7 +15,7 @@ import { type ModelItem } from './item.js';
 import { type Operation } from './operation/operation.js';
 import { type ModelRootElement } from './rootelement.js';
 
-import { CKEditorError, EmitterMixin, type EmitterMixinConstructor } from 'toannv-ckeditor5-utils';
+import { CKEditorError, EmitterMixin, type EmitterMixinConstructor } from '@ckeditor-nonkey/ckeditor5-utils';
 
 const ModelLivePositionBase: EmitterMixinConstructor<typeof ModelPosition> = /* #__PURE__ */ EmitterMixin( ModelPosition );
 

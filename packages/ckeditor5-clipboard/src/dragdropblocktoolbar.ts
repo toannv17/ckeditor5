@@ -7,7 +7,7 @@
  * @module clipboard/dragdropblocktoolbar
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
 import {
 	env,
@@ -15,9 +15,9 @@ import {
 	DomEmitterMixin,
 	type ObservableChangeEvent,
 	type DomEmitter
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
-import type { BlockToolbar } from 'toannv-ckeditor5-ui';
+import type { BlockToolbar } from '@ckeditor-nonkey/ckeditor5-ui';
 
 import { ClipboardObserver } from './clipboardobserver.js';
 

@@ -7,8 +7,8 @@
  * @module image/imagecaption/toggleimagecaptioncommand
  */
 
-import type { ModelElement, ModelWriter } from 'toannv-ckeditor5-engine';
-import { Command } from 'toannv-ckeditor5-core';
+import type { ModelElement, ModelWriter } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { ImageBlockEditing } from '../image/imageblockediting.js';
 import { isImageTypePlaceable } from '../image/utils.js';

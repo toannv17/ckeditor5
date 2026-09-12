@@ -7,7 +7,7 @@
  * @module ui/dropdown/menu/dropdownmenulistitemview
  */
 
-import type { Locale } from 'toannv-ckeditor5-utils';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { type DropdownMenuNestedMenuView } from './dropdownmenunestedmenuview.js';
 
 import { ListItemView } from '../../list/listitemview.js';

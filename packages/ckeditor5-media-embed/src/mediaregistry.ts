@@ -7,11 +7,11 @@
  * @module media-embed/mediaregistry
  */
 
-import { IconView, Template } from 'toannv-ckeditor5-ui';
-import { IconMediaPlaceholder } from 'toannv-ckeditor5-icons';
-import { logWarning, toArray, type Locale } from 'toannv-ckeditor5-utils';
+import { IconView, Template } from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconMediaPlaceholder } from '@ckeditor-nonkey/ckeditor5-icons';
+import { logWarning, toArray, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import type { ViewDowncastWriter, ViewElement } from 'toannv-ckeditor5-engine';
+import type { ViewDowncastWriter, ViewElement } from '@ckeditor-nonkey/ckeditor5-engine';
 import type { MediaEmbedConfig, MediaEmbedProvider } from './mediaembedconfig.js';
 import type { MediaOptions } from './utils.js';
 

@@ -5,10 +5,10 @@
 
 import { Widget } from '../src/widget.js';
 import { toWidget } from '../src/utils.js';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { type Editor } from 'toannv-ckeditor5-core';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { _getModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 
 declare global {
 	interface Window { editor: any }

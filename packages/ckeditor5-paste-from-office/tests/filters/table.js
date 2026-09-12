@@ -12,7 +12,7 @@ import {
 	StylesProcessor,
 	addBorderStylesRules,
 	addPaddingStylesRules
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 import { transformTables } from '../../src/filters/table.js';
 
 describe( 'PasteFromOffice - filters - transformTables', () => {

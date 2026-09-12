@@ -5,8 +5,8 @@
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { ViewCollection } from 'toannv-ckeditor5-ui';
-import { Locale, FocusTracker, KeystrokeHandler, keyCodes } from 'toannv-ckeditor5-utils';
+import { ViewCollection } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Locale, FocusTracker, KeystrokeHandler, keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { StyleGridButtonView } from '../../src/ui/stylegridbuttonview.js';
 import { StyleGridView } from '../../src/ui/stylegridview.js';

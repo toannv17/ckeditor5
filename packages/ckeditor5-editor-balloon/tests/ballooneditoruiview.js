@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { EditingView } from 'toannv-ckeditor5-engine';
+import { EditingView } from '@ckeditor-nonkey/ckeditor5-engine';
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { BalloonEditorUIView } from '../src/ballooneditoruiview.js';
-import { InlineEditableUIView, MenuBarView } from 'toannv-ckeditor5-ui';
-import { Locale } from 'toannv-ckeditor5-utils';
-import { createViewRoot } from 'toannv-ckeditor5-engine/tests/view/_utils/createroot.js';
+import { InlineEditableUIView, MenuBarView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import { createViewRoot } from '@ckeditor-nonkey/ckeditor5-engine/tests/view/_utils/createroot.js';
 
 describe( 'BalloonEditorUIView', () => {
 	let locale, view, editingView, editingViewRoot;

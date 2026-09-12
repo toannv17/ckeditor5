@@ -4,16 +4,16 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { global } from 'toannv-ckeditor5-utils';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { Typing } from '../src/typing.js';
 import { TextTransformation } from '../src/texttransformation.js';
-import { _setModelData, _getModelData, ViewDocumentDomEventData } from 'toannv-ckeditor5-engine';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold, Code } from 'toannv-ckeditor5-basic-styles';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { _setModelData, _getModelData, ViewDocumentDomEventData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold, Code } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
 
 describe( 'Text transformation feature', () => {
 	let editorElement, editor, model, doc;

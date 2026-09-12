@@ -7,8 +7,8 @@
  * @module table/tablecellproperties/tablecellpropertiesediting
  */
 
-import { priorities } from 'toannv-ckeditor5-utils';
-import { type Editor, Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { priorities } from '@ckeditor-nonkey/ckeditor5-utils';
+import { type Editor, Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	Matcher,
 	addBorderStylesRules,
@@ -21,7 +21,7 @@ import {
 	type UpcastConversionData,
 	type UpcastElementEvent,
 	type ModelElement
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	downcastAttributeToStyle,

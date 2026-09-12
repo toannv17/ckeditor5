@@ -65,7 +65,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 ### From npm
 
 ```js
-import { ClassicEditor, CKFinder, CKFinderUploadAdapter } from 'toannv-ckeditor5';
+import { ClassicEditor, CKFinder, CKFinderUploadAdapter } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

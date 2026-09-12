@@ -25,7 +25,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, HorizontalLine } from 'toannv-ckeditor5';
+import { ClassicEditor, HorizontalLine } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

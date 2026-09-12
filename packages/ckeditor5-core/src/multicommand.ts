@@ -13,7 +13,7 @@ import {
 	insertToPriorityArray,
 	type PriorityString,
 	type ObservableChangeEvent
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * A CKEditor command that aggregates other commands.

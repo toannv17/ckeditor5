@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
-import { Enter, ShiftEnter } from 'toannv-ckeditor5-enter';
-import { Input } from 'toannv-ckeditor5-typing';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { ModelRange, ViewDocumentDomEventData, _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { CodeBlockEditing } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { Enter, ShiftEnter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Input } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { ModelRange, ViewDocumentDomEventData, _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { LinkEditing } from '../src/linkediting.js';
 import { AutoLink } from '../src/autolink.js';
 

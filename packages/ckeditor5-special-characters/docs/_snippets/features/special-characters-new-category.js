@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { SpecialCharactersEssentials } from 'toannv-ckeditor5';
+import { SpecialCharactersEssentials } from '@ckeditor-nonkey/ckeditor5';
 import {
 	CS_CONFIG,
 	TOKEN_URL,

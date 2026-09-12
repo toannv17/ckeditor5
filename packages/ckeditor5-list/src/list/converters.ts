@@ -26,9 +26,9 @@ import {
 	type MapperModelToViewPositionEvent,
 	type ViewTreeWalker,
 	type ModelSchema
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import type { GetCallback } from 'toannv-ckeditor5-utils';
+import type { GetCallback } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import {
 	getAllListItemBlocks,

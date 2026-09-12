@@ -4,18 +4,18 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconBookmarkMedium, IconBookmarkSmall, IconLink } from 'toannv-ckeditor5-icons';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { IconBookmarkMedium, IconBookmarkSmall, IconLink } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 
-import { indexOf, keyCodes, env } from 'toannv-ckeditor5-utils';
-import { _getModelData, _setModelData, _getViewData, ClickObserver } from 'toannv-ckeditor5-engine';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { ContextualBalloon, ButtonView, View, MenuBarMenuListItemButtonView, ToolbarView } from 'toannv-ckeditor5-ui';
-import { toWidget } from 'toannv-ckeditor5-widget';
+import { indexOf, keyCodes, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { _getModelData, _setModelData, _getViewData, ClickObserver } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { ContextualBalloon, ButtonView, View, MenuBarMenuListItemButtonView, ToolbarView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { toWidget } from '@ckeditor-nonkey/ckeditor5-widget';
 
 import { LinkEditing } from '../src/linkediting.js';
 import { LinkUI } from '../src/linkui.js';

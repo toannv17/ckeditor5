@@ -7,7 +7,7 @@
  * @module widget/widgetresize/sizeview
  */
 
-import { View } from 'toannv-ckeditor5-ui';
+import { View } from '@ckeditor-nonkey/ckeditor5-ui';
 import type { WidgetResizerOptions } from '../widgetresize.js';
 import { type WidgetResizeState } from './resizerstate.js';
 

@@ -7,10 +7,10 @@
  * @module list/list/listutils
  */
 
-import type { ModelElement, ModelNode } from 'toannv-ckeditor5-engine';
-import type { ArrayOrItem } from 'toannv-ckeditor5-utils';
+import type { ModelElement, ModelNode } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { ArrayOrItem } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	type ListElement,
 	expandListBlocksToCompleteItems,

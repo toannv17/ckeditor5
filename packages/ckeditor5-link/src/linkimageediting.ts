@@ -7,7 +7,7 @@
  * @module link/linkimageediting
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	Matcher,
 	type UpcastElementEvent,
@@ -17,14 +17,14 @@ import {
 	type ViewElement,
 	type DowncastDispatcher,
 	type UpcastDispatcher
-} from 'toannv-ckeditor5-engine';
-import { type GetCallback, priorities, toMap } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-engine';
+import { type GetCallback, priorities, toMap } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { LinkEditing } from './linkediting.js';
 import { type LinkManualDecorator } from './utils/manualdecorator.js';
 import { type LinkCommand } from './linkcommand.js';
 
-import { ImageEditing, ImageUtils } from 'toannv-ckeditor5-image';
+import { ImageEditing, ImageUtils } from '@ckeditor-nonkey/ckeditor5-image';
 
 /**
  * The link image engine feature.

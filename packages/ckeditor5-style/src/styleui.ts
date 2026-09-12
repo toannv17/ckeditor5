@@ -7,9 +7,9 @@
  * @module style/styleui
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { createDropdown } from 'toannv-ckeditor5-ui';
-import type { DataSchema } from 'toannv-ckeditor5-html-support';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { createDropdown } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { DataSchema } from '@ckeditor-nonkey/ckeditor5-html-support';
 
 import { StylePanelView } from './ui/stylepanelview.js';
 import { StyleUtils } from './styleutils.js';

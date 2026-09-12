@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { EditingView, DomEventObserver, _setViewData } from 'toannv-ckeditor5-engine';
-import { createViewRoot } from 'toannv-ckeditor5-engine/tests/view/_utils/createroot.js';
+import { EditingView, DomEventObserver, _setViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { createViewRoot } from '@ckeditor-nonkey/ckeditor5-engine/tests/view/_utils/createroot.js';
 
 import { TodoCheckboxChangeObserver } from '../../src/todolist/todocheckboxchangeobserver.js';
 

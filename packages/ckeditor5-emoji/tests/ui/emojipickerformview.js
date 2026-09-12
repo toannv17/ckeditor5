@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ButtonView, FormHeaderView } from 'toannv-ckeditor5-ui';
-import { IconPreviousArrow } from 'toannv-ckeditor5-icons';
-import { keyCodes } from 'toannv-ckeditor5-utils';
+import { ButtonView, FormHeaderView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconPreviousArrow } from '@ckeditor-nonkey/ckeditor5-icons';
+import { keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
 import { EmojiPickerFormView } from '../../src/ui/emojipickerformview.js';
 
 describe( 'EmojiPickerFormView', () => {

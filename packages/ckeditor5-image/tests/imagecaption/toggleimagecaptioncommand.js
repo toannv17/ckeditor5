@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 import { ImageCaptionEditing } from '../../src/imagecaption/imagecaptionediting.js';
 import { ImageBlockEditing } from '../../src/image/imageblockediting.js';
 import { ImageInlineEditing } from '../../src/image/imageinlineediting.js';
 
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'ToggleImageCaptionCommand', () => {
 	let editor, model, command;

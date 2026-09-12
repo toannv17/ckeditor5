@@ -13,16 +13,16 @@ import {
 	InlineEditableUIView,
 	MenuBarView,
 	ToolbarView
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	Rect,
 	ResizeObserver,
 	toUnit,
 	type PositioningFunction,
 	type Locale
-} from 'toannv-ckeditor5-utils';
-import type { EditingView } from 'toannv-ckeditor5-engine';
-import type { ViewRootElementDefinition } from 'toannv-ckeditor5-core';
+} from '@ckeditor-nonkey/ckeditor5-utils';
+import type { EditingView } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { ViewRootElementDefinition } from '@ckeditor-nonkey/ckeditor5-core';
 
 const toPx = /* #__PURE__ */ toUnit( 'px' );
 

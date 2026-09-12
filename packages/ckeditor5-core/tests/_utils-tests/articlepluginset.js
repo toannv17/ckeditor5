@@ -8,18 +8,18 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { ArticlePluginSet } from '../_utils/articlepluginset.js';
 import { ClassicTestEditor } from '../_utils/classictesteditor.js';
 
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Autoformat } from 'toannv-ckeditor5-autoformat';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Image, ImageCaption, ImageStyle, ImageToolbar } from 'toannv-ckeditor5-image';
-import { Link } from 'toannv-ckeditor5-link';
-import { List } from 'toannv-ckeditor5-list';
-import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Table, TableToolbar } from 'toannv-ckeditor5-table';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Autoformat } from '@ckeditor-nonkey/ckeditor5-autoformat';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Image, ImageCaption, ImageStyle, ImageToolbar } from '@ckeditor-nonkey/ckeditor5-image';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { MediaEmbed } from '@ckeditor-nonkey/ckeditor5-media-embed';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Table, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
 
-import { normalizeHtml } from 'toannv-ckeditor5-utils/tests/_utils/normalizehtml.js';
+import { normalizeHtml } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/normalizehtml.js';
 
 describe( 'ArticlePluginSet', () => {
 	let editor, editorElement;

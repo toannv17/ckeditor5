@@ -9,15 +9,15 @@ import { ListEditing } from '../../../src/list/listediting.js';
 import { stubUid } from '../_utils/uid.js';
 import { modelList } from '../_utils/utils.js';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { IndentEditing, IndentBlock } from 'toannv-ckeditor5-indent';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { IndentEditing, IndentBlock } from '@ckeditor-nonkey/ckeditor5-indent';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { CodeBlockEditing } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import {
 	_getModelData,
 	_setModelData
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Indent MultiCommand integrations', () => {
 	const blocksChangedByCommands = [];

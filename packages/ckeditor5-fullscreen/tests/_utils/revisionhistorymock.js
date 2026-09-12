@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
 export class RevisionHistoryMock extends Plugin {
 	static get pluginName() {

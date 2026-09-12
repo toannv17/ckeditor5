@@ -7,7 +7,7 @@
  * @module widget/widget
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import {
 	PointerObserver,
@@ -34,9 +34,9 @@ import {
 	type Model,
 	type ModelSelection,
 	type ModelDocumentSelection
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Delete, type ViewDocumentDeleteEvent } from 'toannv-ckeditor5-typing';
+import { Delete, type ViewDocumentDeleteEvent } from '@ckeditor-nonkey/ckeditor5-typing';
 
 import {
 	env,
@@ -46,7 +46,7 @@ import {
 	compareArrays,
 	type EventInfo,
 	type KeystrokeInfo
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { WidgetTypeAround } from './widgettypearound/widgettypearound.js';
 import { getClosestTypeAroundDomButton, getTypeAroundFakeCaretPosition } from './widgettypearound/utils.js';

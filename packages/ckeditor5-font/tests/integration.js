@@ -5,10 +5,10 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { Font } from '../src/font.js';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
-import { Table } from 'toannv-ckeditor5-table';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
 
 describe( 'Integration test Font', () => {
 	let element, editor, model;

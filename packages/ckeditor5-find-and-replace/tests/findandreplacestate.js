@@ -5,11 +5,11 @@
 
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
-import { DecoupledEditor } from 'toannv-ckeditor5-editor-decoupled';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { Collection } from 'toannv-ckeditor5-utils';
+import { DecoupledEditor } from '@ckeditor-nonkey/ckeditor5-editor-decoupled';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Collection } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { FindAndReplace } from '../src/findandreplace.js';
 import { FindAndReplaceState } from '../src/findandreplacestate.js';

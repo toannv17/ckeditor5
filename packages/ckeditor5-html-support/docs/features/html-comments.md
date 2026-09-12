@@ -26,7 +26,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { HtmlComment } from 'toannv-ckeditor5';
+import { HtmlComment } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

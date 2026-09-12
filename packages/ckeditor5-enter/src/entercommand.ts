@@ -7,14 +7,14 @@
  * @module enter/entercommand
  */
 
-import { Command } from 'toannv-ckeditor5-core';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
 import { getCopyOnEnterAttributes } from './utils.js';
 
 import type {
 	ModelElement,
 	ModelPosition,
 	ModelWriter
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Enter command used by the {@link module:enter/enter~Enter Enter feature} to handle the <kbd>Enter</kbd> keystroke.

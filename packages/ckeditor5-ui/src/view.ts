@@ -22,7 +22,7 @@ import {
 	type LocaleTranslate,
 	type ObservableMixinConstructor,
 	type DomEmitterMixinConstructor
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 const ViewBase: DomEmitterMixinConstructor<ObservableMixinConstructor> =
 	/* #__PURE__ */ DomEmitterMixin( /* #__PURE__ */ ObservableMixin() );

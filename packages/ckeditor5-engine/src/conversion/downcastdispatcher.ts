@@ -11,7 +11,7 @@ import { ModelConsumable } from './modelconsumable.js';
 import { compareMarkersForDowncast } from './comparemarkers.js';
 import { ModelRange } from '../model/range.js';
 
-import { EmitterMixin, type EmitterMixinConstructor } from 'toannv-ckeditor5-utils';
+import { EmitterMixin, type EmitterMixinConstructor } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import type { Differ, DifferItem, DifferItemReinsert } from '../model/differ.js';
 import type { MarkerCollection, Marker } from '../model/markercollection.js';

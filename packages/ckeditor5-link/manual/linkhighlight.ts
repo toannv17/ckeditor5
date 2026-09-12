@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Typing } from 'toannv-ckeditor5-typing';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
 import { Link } from '../src/link.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Undo } from 'toannv-ckeditor5-undo';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
 
 declare global {
 	interface Window { editor: any }

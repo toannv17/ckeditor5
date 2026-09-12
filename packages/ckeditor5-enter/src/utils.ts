@@ -7,7 +7,7 @@
  * @module enter/utils
  */
 
-import type { ModelSchema } from 'toannv-ckeditor5-engine';
+import type { ModelSchema } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Returns attributes that should be preserved on the enter keystroke.

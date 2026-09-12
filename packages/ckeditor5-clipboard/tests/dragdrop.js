@@ -11,19 +11,19 @@ import { DragDropTarget } from '../src/dragdroptarget.js';
 import { PastePlainText } from '../src/pasteplaintext.js';
 import { DragDropBlockToolbar } from '../src/dragdropblocktoolbar.js';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
-import { Widget, WidgetToolbarRepository } from 'toannv-ckeditor5-widget';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Table } from 'toannv-ckeditor5-table';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { ShiftEnter } from 'toannv-ckeditor5-enter';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
-import { Image, ImageCaption } from 'toannv-ckeditor5-image';
-import { env, Rect } from 'toannv-ckeditor5-utils';
+import { Widget, WidgetToolbarRepository } from '@ckeditor-nonkey/ckeditor5-widget';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { ShiftEnter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Image, ImageCaption } from '@ckeditor-nonkey/ckeditor5-image';
+import { env, Rect } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { _getModelData, _setModelData, _getViewData, _stringifyView } from 'toannv-ckeditor5-engine';
+import { _getModelData, _setModelData, _getViewData, _stringifyView } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { CustomTitle } from './utils/customtitleplugin.js';
 

@@ -11,13 +11,13 @@ import type {
 	ModelElement,
 	ModelNode,
 	ModelWriter
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import { TableWalker } from '../tablewalker.js';
 import { isHeadingColumnCell } from '../utils/common.js';
 import { removeEmptyRowsColumns } from '../utils/structure.js';
-import type { ArrowKeyCodeDirection } from 'toannv-ckeditor5-utils';
+import type { ArrowKeyCodeDirection } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type TableUtils } from '../tableutils.js';
 

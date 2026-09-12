@@ -7,8 +7,8 @@
  * @module list/listproperties/converters
  */
 
-import type { UpcastElementEvent } from 'toannv-ckeditor5-engine';
-import type { GetCallback } from 'toannv-ckeditor5-utils';
+import type { UpcastElementEvent } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { GetCallback } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import type { AttributeStrategy } from './listpropertiesediting.js';
 

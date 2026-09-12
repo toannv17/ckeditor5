@@ -7,11 +7,11 @@
  * @module emoji/emojipicker
  */
 
-import { ButtonView, clickOutsideHandler, ContextualBalloon, Dialog, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
-import type { DomOptimalPositionOptions } from 'toannv-ckeditor5-utils';
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { IconEmoji } from 'toannv-ckeditor5-icons';
+import { ButtonView, clickOutsideHandler, ContextualBalloon, Dialog, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { DomOptimalPositionOptions } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { IconEmoji } from '@ckeditor-nonkey/ckeditor5-icons';
 
 import { EmojiCommand } from './emojicommand.js';
 import { EmojiRepository } from './emojirepository.js';

@@ -7,9 +7,9 @@
  * @module horizontal-line/horizontallineediting
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { toWidget } from 'toannv-ckeditor5-widget';
-import type { ViewDowncastWriter, ViewElement } from 'toannv-ckeditor5-engine';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { toWidget } from '@ckeditor-nonkey/ckeditor5-widget';
+import type { ViewDowncastWriter, ViewElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { HorizontalLineCommand } from './horizontallinecommand.js';
 

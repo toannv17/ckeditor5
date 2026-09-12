@@ -7,10 +7,10 @@
  * @module ckfinder/ckfinderediting
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { Notification } from 'toannv-ckeditor5-ui';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { Notification } from '@ckeditor-nonkey/ckeditor5-ui';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { CKFinderCommand } from './ckfindercommand.js';
 

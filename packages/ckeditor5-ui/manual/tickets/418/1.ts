@@ -3,13 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { List } from 'toannv-ckeditor5-list';
-import { Paragraph, ParagraphButtonUI } from 'toannv-ckeditor5-paragraph';
-import { Heading, HeadingButtonsUI } from 'toannv-ckeditor5-heading';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Link } from 'toannv-ckeditor5-link';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { Paragraph, ParagraphButtonUI } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Heading, HeadingButtonsUI } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
 
 import { BlockToolbar } from '../../../src/toolbar/block/blocktoolbar.js';
 import { BalloonToolbar } from '../../../src/toolbar/balloon/balloontoolbar.js';

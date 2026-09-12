@@ -5,11 +5,11 @@
 
 import { ShowBlocks } from '../src/showblocks.js';
 
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Essentials } from 'toannv-ckeditor5-essentials';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
 
 declare global {
 	interface Window { editor: any }

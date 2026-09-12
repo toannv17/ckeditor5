@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
 
 import { GeneralHtmlSupport } from '../src/generalhtmlsupport.js';
 

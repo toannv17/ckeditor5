@@ -3,17 +3,17 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Table, TableToolbar } from 'toannv-ckeditor5-table';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { Image, ImageUpload, ImageInsert, ImageStyle } from 'toannv-ckeditor5-image';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Table, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { Image, ImageUpload, ImageInsert, ImageStyle } from '@ckeditor-nonkey/ckeditor5-image';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
 
 import { StandardEditingMode } from '../src/standardeditingmode.js';
 import { RestrictedEditingMode } from '../src/restrictededitingmode.js';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 declare global {
 	interface Window { editor: any }

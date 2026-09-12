@@ -7,8 +7,8 @@
  * @module table/tableui
  */
 
-import { Plugin, type Command, type Editor } from 'toannv-ckeditor5-core';
-import { IconTable, IconTableColumn, IconTableRow, IconTableMergeCell } from 'toannv-ckeditor5-icons';
+import { Plugin, type Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconTable, IconTableColumn, IconTableRow, IconTableMergeCell } from '@ckeditor-nonkey/ckeditor5-icons';
 import {
 	addListToDropdown,
 	createDropdown,
@@ -18,8 +18,8 @@ import {
 	type DropdownView,
 	type ListDropdownItemDefinition,
 	MenuBarMenuView
-} from 'toannv-ckeditor5-ui';
-import { Collection, type ObservableChangeEvent, type Locale } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { Collection, type ObservableChangeEvent, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { InsertTableView } from './ui/inserttableview.js';
 

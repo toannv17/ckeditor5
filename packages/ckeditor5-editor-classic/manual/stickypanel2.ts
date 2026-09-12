@@ -4,13 +4,13 @@
  */
 
 import { ClassicEditor } from '../src/classiceditor.js';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Link } from 'toannv-ckeditor5-link';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { ButtonView } from 'toannv-ckeditor5-ui';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 declare global {
 	interface Window { editor: any }

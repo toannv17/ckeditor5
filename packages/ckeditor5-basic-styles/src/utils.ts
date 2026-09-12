@@ -7,9 +7,9 @@
  * @module basic-styles/utils
  */
 
-import type { Editor, Plugin } from 'toannv-ckeditor5-core';
+import type { Editor, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import { type AttributeCommand } from './attributecommand.js';
-import { MenuBarMenuListItemButtonView, type ButtonView } from 'toannv-ckeditor5-ui';
+import { MenuBarMenuListItemButtonView, type ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 /**
  * Returns a function that creates a (toolbar or menu bar) button for a basic style feature.

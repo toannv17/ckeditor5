@@ -9,17 +9,17 @@ import { ListEditing } from '../../../src/list/listediting.js';
 import { isListItemBlock } from '../../../src/list/utils/model.js';
 import { modelList } from '../_utils/utils.js';
 
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { ClipboardPipeline, PastePlainText } from 'toannv-ckeditor5-clipboard';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { TableEditing } from 'toannv-ckeditor5-table';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ImageBlockEditing, ImageInlineEditing } from 'toannv-ckeditor5-image';
-import { Widget } from 'toannv-ckeditor5-widget';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { ClipboardPipeline, PastePlainText } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ImageBlockEditing, ImageInlineEditing } from '@ckeditor-nonkey/ckeditor5-image';
+import { Widget } from '@ckeditor-nonkey/ckeditor5-widget';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import {
 	_getModelData,
 	_parseModel,
@@ -28,7 +28,7 @@ import {
 	_parseView,
 	_stringifyView,
 	ModelLiveRange
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { stubUid } from '../_utils/uid.js';
 

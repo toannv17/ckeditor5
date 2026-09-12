@@ -7,7 +7,7 @@
  * @module heading/utils
  */
 
-import type { Editor } from 'toannv-ckeditor5-core';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
 
 import type { HeadingOption } from './headingconfig.js';
 

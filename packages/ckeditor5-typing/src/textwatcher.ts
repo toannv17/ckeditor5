@@ -7,7 +7,7 @@
  * @module typing/textwatcher
  */
 
-import { ObservableMixin, type ObservableChangeEvent, type ObservableMixinConstructor } from 'toannv-ckeditor5-utils';
+import { ObservableMixin, type ObservableChangeEvent, type ObservableMixinConstructor } from '@ckeditor-nonkey/ckeditor5-utils';
 import { getLastTextLine } from './utils/getlasttextline.js';
 
 import type {
@@ -16,7 +16,7 @@ import type {
 	ModelRange,
 	ModelDocumentChangeEvent,
 	ModelDocumentSelectionChangeEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 const TextWatcherBase: ObservableMixinConstructor = /* #__PURE__ */ ObservableMixin();
 

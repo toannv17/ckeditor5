@@ -6,16 +6,16 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { MediaEmbed } from '../src/mediaembed.js';
 import { AutoMediaEmbed } from '../src/automediaembed.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Clipboard } from 'toannv-ckeditor5-clipboard';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Link } from 'toannv-ckeditor5-link';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Image, ImageCaption } from 'toannv-ckeditor5-image';
-import { Table } from 'toannv-ckeditor5-table';
-import { global } from 'toannv-ckeditor5-utils';
-import { ViewDocumentDomEventData, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Clipboard } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Image, ImageCaption } from '@ckeditor-nonkey/ckeditor5-image';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { ViewDocumentDomEventData, _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'AutoMediaEmbed - integration', () => {
 	let editorElement, editor;

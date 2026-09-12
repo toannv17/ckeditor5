@@ -7,9 +7,9 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 import { FullPage, HtmlComment, HtmlPageDataProcessor } from '../src/index.js';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 
 describe( 'FullPage', () => {
 	let editor;

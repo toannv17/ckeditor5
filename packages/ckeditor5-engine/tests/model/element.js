@@ -8,8 +8,8 @@ import { ModelNode } from '../../src/model/node.js';
 import { ModelElement } from '../../src/model/element.js';
 import { ModelText } from '../../src/model/text.js';
 import { ModelTextProxy } from '../../src/model/textproxy.js';
-import { count } from 'toannv-ckeditor5-utils';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { count } from '@ckeditor-nonkey/ckeditor5-utils';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'Element', () => {
 	describe( 'constructor()', () => {

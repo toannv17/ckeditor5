@@ -9,7 +9,7 @@
 
 import { View } from '../view.js';
 
-import { CKEditorError, type ObservableChangeEvent } from 'toannv-ckeditor5-utils';
+import { CKEditorError, type ObservableChangeEvent } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The icon view class.

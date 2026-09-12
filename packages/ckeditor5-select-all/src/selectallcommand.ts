@@ -7,8 +7,8 @@
  * @module select-all/selectallcommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import type { ModelElement, ModelSchema } from 'toannv-ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ModelElement, ModelSchema } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The select all command.

@@ -14,7 +14,7 @@ import {
 	type ViewElement,
 	type ViewNode,
 	type ViewText
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	convertCssLengthToPx,

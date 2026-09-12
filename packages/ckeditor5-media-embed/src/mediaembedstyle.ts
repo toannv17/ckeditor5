@@ -7,7 +7,7 @@
  * @module media-embed/mediaembedstyle
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import { MediaEmbedStyleEditing } from './mediaembedstyle/mediaembedstyleediting.js';
 import { MediaEmbedStyleUI } from './mediaembedstyle/mediaembedstyleui.js';
 

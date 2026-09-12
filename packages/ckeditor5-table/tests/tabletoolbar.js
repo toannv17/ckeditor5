@@ -4,17 +4,17 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 import { TableToolbar } from '../src/tabletoolbar.js';
 import { Table } from '../src/table.js';
-import { global } from 'toannv-ckeditor5-utils';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { ButtonView, View } from 'toannv-ckeditor5-ui';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { _setModelData } from 'toannv-ckeditor5-engine';
-import { WidgetToolbarRepository } from 'toannv-ckeditor5-widget';
-import { ImageToolbar, Image, ImageStyle } from 'toannv-ckeditor5-image';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { ButtonView, View } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { WidgetToolbarRepository } from '@ckeditor-nonkey/ckeditor5-widget';
+import { ImageToolbar, Image, ImageStyle } from '@ckeditor-nonkey/ckeditor5-image';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 
 describe( 'TableToolbar', () => {
 	it( 'should have `isOfficialPlugin` static flag set to `true`', () => {

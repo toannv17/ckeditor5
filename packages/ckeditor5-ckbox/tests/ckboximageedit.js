@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { PictureEditing, ImageUploadEditing, ImageUploadProgress } from 'toannv-ckeditor5-image';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { global } from 'toannv-ckeditor5-utils';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { PictureEditing, ImageUploadEditing, ImageUploadProgress } from '@ckeditor-nonkey/ckeditor5-image';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { CKBoxImageEdit } from '../src/ckboximageedit.js';
 import { CKBoxImageEditEditing } from '../src/ckboximageedit/ckboximageeditediting.js';

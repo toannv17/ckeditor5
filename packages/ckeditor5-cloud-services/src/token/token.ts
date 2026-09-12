@@ -7,7 +7,7 @@
  * @module cloud-services/token/token
  */
 
-import { ObservableMixin, CKEditorError, logWarning, type ObservableMixinConstructor } from 'toannv-ckeditor5-utils';
+import { ObservableMixin, CKEditorError, logWarning, type ObservableMixinConstructor } from '@ckeditor-nonkey/ckeditor5-utils';
 import type { TokenUrl } from '../cloudservicesconfig.js';
 
 const DEFAULT_OPTIONS = { autoRefresh: true };

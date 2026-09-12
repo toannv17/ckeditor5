@@ -7,7 +7,7 @@
  * @module link/linkediting
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import type {
 	ModelSchema,
 	ModelWriter,
@@ -18,17 +18,17 @@ import type {
 	ViewDowncastWriter,
 	DowncastAttributeEvent,
 	ModelItem
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 import {
 	Input,
 	TwoStepCaretMovement,
 	inlineHighlight
-} from 'toannv-ckeditor5-typing';
+} from '@ckeditor-nonkey/ckeditor5-typing';
 import {
 	ClipboardPipeline,
 	type ClipboardContentInsertionEvent
-} from 'toannv-ckeditor5-clipboard';
-import { keyCodes, env, type GetCallback, priorities } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { keyCodes, env, type GetCallback, priorities } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { LinkCommand } from './linkcommand.js';
 import { UnlinkCommand } from './unlinkcommand.js';

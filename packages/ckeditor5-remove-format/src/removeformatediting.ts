@@ -7,7 +7,7 @@
  * @module remove-format/removeformatediting
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { RemoveFormatCommand } from './removeformatcommand.js';
 

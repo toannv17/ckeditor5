@@ -14,7 +14,7 @@ import {
 	type ViewDocumentFragment,
 	type ViewElement,
 	type ViewNode
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Transforms `<br>` elements that are siblings to some block element into a paragraphs.

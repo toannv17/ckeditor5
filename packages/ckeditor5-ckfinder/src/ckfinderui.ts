@@ -7,10 +7,10 @@
  * @module ckfinder/ckfinderui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
-import { IconBrowseFiles, IconImageAssetManager } from 'toannv-ckeditor5-icons';
-import type { ImageInsertUI } from 'toannv-ckeditor5-image';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconBrowseFiles, IconImageAssetManager } from '@ckeditor-nonkey/ckeditor5-icons';
+import type { ImageInsertUI } from '@ckeditor-nonkey/ckeditor5-image';
 
 import { type CKFinderCommand } from './ckfindercommand.js';
 

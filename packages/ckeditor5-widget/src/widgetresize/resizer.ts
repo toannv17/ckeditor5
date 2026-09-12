@@ -7,7 +7,7 @@
  * @module widget/widgetresize/resizer
  */
 
-import { Template } from 'toannv-ckeditor5-ui';
+import { Template } from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	Rect,
 	ObservableMixin,
@@ -15,13 +15,13 @@ import {
 	type ObservableChangeEvent,
 	type DecoratedMethodEvent,
 	type ObservableMixinConstructor
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { WidgetResizeState } from './resizerstate.js';
 import { SizeView } from './sizeview.js';
 
 import type { WidgetResizerOptions } from '../widgetresize.js';
-import type { ViewElement } from 'toannv-ckeditor5-engine';
+import type { ViewElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 const WidgetResizerBase: ObservableMixinConstructor = /* #__PURE__ */ ObservableMixin();
 

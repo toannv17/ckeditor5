@@ -7,8 +7,8 @@
  * @module table/tableproperties/commands/tablebordercolorcommand
  */
 
-import type { ModelElement } from 'toannv-ckeditor5-engine';
-import type { Editor } from 'toannv-ckeditor5-core';
+import type { ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { TablePropertyCommand } from './tablepropertycommand.js';
 import { getSingleValue } from '../../utils/table-properties.js';

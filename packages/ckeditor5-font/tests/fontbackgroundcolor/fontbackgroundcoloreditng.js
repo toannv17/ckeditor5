@@ -5,12 +5,12 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { FontBackgroundColorEditing } from './../../src/fontbackgroundcolor/fontbackgroundcolorediting.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 import {
 	_getModelData,
 	_setModelData
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'FontBackgroundColorEditing', () => {
 	let editor, doc;

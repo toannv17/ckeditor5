@@ -5,8 +5,8 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach, afterAll } from 'vitest';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
 
 import { EditorUI } from '../../../src/editorui/editorui.js';
 import { BlockToolbar } from '../../../src/toolbar/block/blocktoolbar.js';
@@ -15,17 +15,17 @@ import { BalloonPanelView } from '../../../src/panel/balloon/balloonpanelview.js
 import { BlockButtonView } from '../../../src/toolbar/block/blockbuttonview.js';
 import { ButtonView } from '../../../src/button/buttonview.js';
 
-import { Heading, HeadingButtonsUI } from 'toannv-ckeditor5-heading';
-import { Paragraph, ParagraphButtonUI } from 'toannv-ckeditor5-paragraph';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Image, ImageCaption } from 'toannv-ckeditor5-image';
-import { global, ResizeObserver, keyCodes, Rect, env } from 'toannv-ckeditor5-utils';
-import { DragDropBlockToolbar } from 'toannv-ckeditor5-clipboard';
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Heading, HeadingButtonsUI } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Paragraph, ParagraphButtonUI } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Image, ImageCaption } from '@ckeditor-nonkey/ckeditor5-image';
+import { global, ResizeObserver, keyCodes, Rect, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { DragDropBlockToolbar } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { IconPilcrow, IconDragIndicator } from 'toannv-ckeditor5-icons';
+import { IconPilcrow, IconDragIndicator } from '@ckeditor-nonkey/ckeditor5-icons';
 
 describe( 'BlockToolbar', () => {
 	let editor, element, blockToolbar;

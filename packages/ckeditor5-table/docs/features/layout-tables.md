@@ -95,7 +95,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, Table, TableLayout } from 'toannv-ckeditor5';
+import { ClassicEditor, Table, TableLayout } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -116,7 +116,7 @@ By default, external tables are loaded using internal heuristics. This can be co
 
 <code-switcher>
 ```js
-import { ClassicEditor, Table, TableLayout } from 'toannv-ckeditor5';
+import { ClassicEditor, Table, TableLayout } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -139,7 +139,7 @@ By default, the `<figure>` wrapper is preserved on content tables. To strip the 
 
 <code-switcher>
 ```js
-import { ClassicEditor, Table, TableLayout } from 'toannv-ckeditor5';
+import { ClassicEditor, Table, TableLayout } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -172,7 +172,7 @@ When the {@link module:table/tableproperties~TableProperties} plugin is availabl
 <!-- Uodate main toolbar to table dropdown eventually. In both. -->
 <code-switcher>
 ```js
-import { ClassicEditor, Table, TableLayout, TableProperties, TableToolbar } from 'toannv-ckeditor5';
+import { ClassicEditor, Table, TableLayout, TableProperties, TableToolbar } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -198,7 +198,7 @@ If the `TableProperties` plugin is not available, you can use the dedicated `tab
 
 <code-switcher>
 ```js
-import { ClassicEditor, Table, TableLayout, TableToolbar } from 'toannv-ckeditor5';
+import { ClassicEditor, Table, TableLayout, TableToolbar } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -220,7 +220,7 @@ You can configure the main editor toolbar to use the content and layout tables s
 
 <code-switcher>
 ```js
-import { ClassicEditor, Table, TableLayout } from 'toannv-ckeditor5';
+import { ClassicEditor, Table, TableLayout } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

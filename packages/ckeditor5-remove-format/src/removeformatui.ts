@@ -7,9 +7,9 @@
  * @module remove-format/removeformatui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { IconRemoveFormat } from 'toannv-ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconRemoveFormat } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 import { type RemoveFormatCommand } from './removeformatcommand.js';
 

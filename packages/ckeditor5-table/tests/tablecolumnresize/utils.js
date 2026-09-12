@@ -4,12 +4,12 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ModelElement, _setModelData } from 'toannv-ckeditor5-engine';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { ModelElement, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 import { Table } from '../../src/table.js';
 import { modelTable } from '../_utils/utils.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 import { TableColumnResize } from '../../src/tablecolumnresize.js';
 import {

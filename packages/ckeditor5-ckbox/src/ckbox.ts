@@ -7,7 +7,7 @@
  * @module ckbox/ckbox
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { CKBoxUI } from './ckboxui.js';
 import { CKBoxEditing } from './ckboxediting.js';

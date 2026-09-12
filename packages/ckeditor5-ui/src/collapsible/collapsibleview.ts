@@ -7,12 +7,12 @@
  * @module ui/collapsible/collapsibleview
  */
 
-import { IconDropdownArrow } from 'toannv-ckeditor5-icons';
+import { IconDropdownArrow } from '@ckeditor-nonkey/ckeditor5-icons';
 import { View } from '../view.js';
 import { ButtonView } from '../button/buttonview.js';
 import { type ViewCollection } from '../viewcollection.js';
 import type { FocusableView } from '../focuscycler.js';
-import type { Locale } from 'toannv-ckeditor5-utils';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * A collapsible UI component. Consists of a labeled button and a container which can be collapsed

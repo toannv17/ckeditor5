@@ -7,14 +7,14 @@
  * @module font/fontcommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	ModelDocumentSelection,
 	type Batch,
 	type ModelWriter,
 	type ModelRange,
 	type ModelElement
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The base font command.

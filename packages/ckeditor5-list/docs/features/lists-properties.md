@@ -133,7 +133,7 @@ This feature is enabled by default. To disable it, use the following configurati
 
 <code-switcher>
 ```js
-import { ClassicEditor, List, Bold } from 'toannv-ckeditor5';
+import { ClassicEditor, List, Bold } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

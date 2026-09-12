@@ -4,18 +4,18 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { TableEditing } from 'toannv-ckeditor5-table';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { ListEditing } from 'toannv-ckeditor5-list';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { ListEditing } from '@ckeditor-nonkey/ckeditor5-list';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Clipboard } from '@ckeditor-nonkey/ckeditor5-clipboard';
 import { GeneralHtmlSupport } from '../src/generalhtmlsupport.js';
-import { _getModelData, _setModelData, _VIEW_INLINE_FILLER } from 'toannv-ckeditor5-engine';
+import { _getModelData, _setModelData, _VIEW_INLINE_FILLER } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { EmptyBlock } from '../src/emptyblock.js';
-import { toWidget, viewToModelPositionOutsideModelElement } from 'toannv-ckeditor5-widget';
+import { toWidget, viewToModelPositionOutsideModelElement } from '@ckeditor-nonkey/ckeditor5-widget';
 
 describe( 'EmptyBlock', () => {
 	let editor, model, element, view;

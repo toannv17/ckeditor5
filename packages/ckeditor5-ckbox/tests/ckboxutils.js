@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { LinkEditing, LinkImageEditing } from 'toannv-ckeditor5-link';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { LinkEditing, LinkImageEditing } from '@ckeditor-nonkey/ckeditor5-link';
 import {
 	PictureEditing,
 	ImageUploadEditing,
@@ -14,17 +14,17 @@ import {
 	ImageInlineEditing,
 	ImageCaptionEditing,
 	Image
-} from 'toannv-ckeditor5-image';
-import { CloudServices, Token } from 'toannv-ckeditor5-cloud-services';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { createFakeXHRServer } from 'toannv-ckeditor5-core/tests/_utils/fakexhrserver.js';
+} from '@ckeditor-nonkey/ckeditor5-image';
+import { CloudServices, Token } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { createFakeXHRServer } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/fakexhrserver.js';
 
 import { CKBoxEditing } from '../src/ckboxediting.js';
 import { CKBoxUploadAdapter } from '../src/ckboxuploadadapter.js';
-import { TokenMock } from 'toannv-ckeditor5-cloud-services/tests/_utils/tokenmock.js';
-import { mockCreateToken } from 'toannv-ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
+import { TokenMock } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/tokenmock.js';
+import { mockCreateToken } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
 import { CKBoxUtils } from '../src/ckboxutils.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 const CKBOX_API_URL = 'https://upload.example.com';
 

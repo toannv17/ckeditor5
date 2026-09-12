@@ -7,12 +7,12 @@
  * @module core/editor/editorconfig
  */
 
-import type { ArrayOrItem, Translations } from 'toannv-ckeditor5-utils';
+import type { ArrayOrItem, Translations } from '@ckeditor-nonkey/ckeditor5-utils';
 import { type Context } from '../context.js';
 import type { PluginConstructor } from '../plugin.js';
 import type { EditorRootAttributes, Editor } from './editor.js';
-import type { MenuBarConfig } from 'toannv-ckeditor5-ui';
-import type { EngineConfig } from 'toannv-ckeditor5-engine';
+import type { MenuBarConfig } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { EngineConfig } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * CKEditor configuration options.
@@ -208,7 +208,7 @@ export interface EditorConfig extends EngineConfig {
 	 * }
 	 * </script>
 	 * <script type="module">
-	 * import { ClassicEditor, Essentials, Paragraph } from 'toannv-ckeditor5';
+	 * import { ClassicEditor, Essentials, Paragraph } from '@ckeditor-nonkey/ckeditor5';
 	 * import { translations } from 'ckeditor5/dist/translations/pl.js';
 	 *
 	 * await ClassicEditor.create( {
@@ -228,7 +228,7 @@ export interface EditorConfig extends EngineConfig {
 	 * You can add translation using NPM as well.
 	 *
 	 * ```html
-	 * import { ClassicEditor, Essentials, Paragraph } from 'toannv-ckeditor5';
+	 * import { ClassicEditor, Essentials, Paragraph } from '@ckeditor-nonkey/ckeditor5';
 	 * import { translations } from 'ckeditor5/dist/translations/pl.js';
 	 *
 	 * import 'ckeditor5/dist/styles.css';
@@ -609,7 +609,7 @@ export interface EditorConfig extends EngineConfig {
 	 * 	Essentials,
 	 * // The bold plugin.
 	 * 	Bold
-	 * } from 'toannv-ckeditor5';
+	 * } from '@ckeditor-nonkey/ckeditor5';
 	 *
 	 * const config = {
 	 * 	plugins: [ Essentials, Bold ]

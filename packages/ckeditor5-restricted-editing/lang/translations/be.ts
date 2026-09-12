@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import type { Translations } from 'toannv-ckeditor5-utils';
+import type { Translations } from '@ckeditor-nonkey/ckeditor5-utils';
 
 const translations: Translations = {
 	'be': {

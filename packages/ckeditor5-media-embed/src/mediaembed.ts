@@ -7,8 +7,8 @@
  * @module media-embed/mediaembed
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { Widget } from 'toannv-ckeditor5-widget';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { Widget } from '@ckeditor-nonkey/ckeditor5-widget';
 
 import { MediaEmbedEditing } from './mediaembedediting.js';
 import { AutoMediaEmbed } from './automediaembed.js';

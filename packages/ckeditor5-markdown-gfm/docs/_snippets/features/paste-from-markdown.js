@@ -22,7 +22,7 @@ import {
 	AutoImage,
 	LinkImage,
 	Font
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 import { SourceEditingEnhanced } from 'ckeditor5-premium-features';
 import {
 	CS_CONFIG,

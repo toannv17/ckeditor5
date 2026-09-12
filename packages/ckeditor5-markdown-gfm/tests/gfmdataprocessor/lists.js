@@ -6,7 +6,7 @@
 import { describe, it, expect } from 'vitest';
 import { testDataProcessor } from '../_utils/utils.js';
 import { MarkdownGfmDataProcessor } from '../../src/gfmdataprocessor.js';
-import { HtmlDataProcessor, ViewDocument, StylesProcessor } from 'toannv-ckeditor5-engine';
+import { HtmlDataProcessor, ViewDocument, StylesProcessor } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'MarkdownGfmDataProcessor', () => {
 	describe( 'lists', () => {

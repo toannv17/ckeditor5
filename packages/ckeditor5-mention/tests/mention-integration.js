@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Table, TableToolbar } from 'toannv-ckeditor5-table';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { Link } from 'toannv-ckeditor5-link';
-import { Delete } from 'toannv-ckeditor5-typing';
-import { ViewDocumentDomEventData, _parseView, _getViewData, _setModelData } from 'toannv-ckeditor5-engine';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Table, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { Delete } from '@ckeditor-nonkey/ckeditor5-typing';
+import { ViewDocumentDomEventData, _parseView, _getViewData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { MentionEditing } from '../src/mentionediting.js';
 import { Mention } from '../src/mention.js';

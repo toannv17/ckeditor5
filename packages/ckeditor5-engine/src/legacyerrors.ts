@@ -7,7 +7,7 @@
  * @module engine/legacyerrors
  */
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 if ( false ) {
 	/**

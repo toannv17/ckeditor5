@@ -7,9 +7,9 @@
  * @module heading/title
  */
 
-import { Plugin, type Editor, type ElementApi, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { first, logWarning, type GetCallback } from 'toannv-ckeditor5-utils';
+import { Plugin, type Editor, type ElementApi, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { first, logWarning, type GetCallback } from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	ViewDowncastWriter,
 	enableViewPlaceholder,
@@ -28,7 +28,7 @@ import {
 	type ViewElement,
 	type ModelWriter,
 	type PlaceholderableViewElement
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 // A list of element names that should be treated by the Title plugin as title-like.
 // This means that an element of a type from this list will be changed to a title element

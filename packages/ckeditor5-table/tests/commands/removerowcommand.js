@@ -5,14 +5,14 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _setModelData, _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _setModelData, _getModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { RemoveRowCommand } from '../../src/commands/removerowcommand.js';
 import { TableSelection } from '../../src/tableselection.js';
 import { modelTable, viewTable } from '../_utils/utils.js';
 import { TableEditing } from '../../src/tableediting.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 describe( 'RemoveRowCommand', () => {
 	let editor, model, command;

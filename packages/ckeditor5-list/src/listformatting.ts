@@ -7,7 +7,7 @@
  * @module list/listformatting
  */
 
-import { type Editor, Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { type Editor, Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { ListItemBoldIntegration } from './listformatting/listitemboldintegration.js';
 import { ListItemItalicIntegration } from './listformatting/listitemitalicintegration.js';
@@ -19,7 +19,7 @@ import type {
 	Model,
 	ModelElement,
 	ModelWriter
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	isListItemBlock,

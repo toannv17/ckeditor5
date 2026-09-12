@@ -4,17 +4,17 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { global } from 'toannv-ckeditor5-utils';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableEditing } from '../../src/tableediting.js';
 import { TableCaptionEditing } from '../../src/tablecaption/tablecaptionediting.js';
 import { TableScrollEditing } from '../../src/tablescroll/tablescrollediting.js';
 import { modelTable } from '../_utils/utils.js';
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
 
 const DEFAULT_CONTAINER_WIDTH = 300;
 

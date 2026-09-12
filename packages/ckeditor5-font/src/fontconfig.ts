@@ -7,8 +7,8 @@
  * @module font/fontconfig
  */
 
-import type { ColorOption, ColorPickerConfig } from 'toannv-ckeditor5-ui';
-import type { MatcherPattern, ViewElementDefinition } from 'toannv-ckeditor5-engine';
+import type { ColorOption, ColorPickerConfig } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { MatcherPattern, ViewElementDefinition } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The configuration of the font color and font background color features.

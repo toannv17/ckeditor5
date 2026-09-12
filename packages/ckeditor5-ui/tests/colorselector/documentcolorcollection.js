@@ -5,7 +5,7 @@
 
 import { describe, it, expect, beforeEach } from 'vitest';
 import { DocumentColorCollection } from '../../src/colorselector/documentcolorcollection.js';
-import { Collection } from 'toannv-ckeditor5-utils';
+import { Collection } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'DocumentColorCollection', () => {
 	let documentColorCollection;

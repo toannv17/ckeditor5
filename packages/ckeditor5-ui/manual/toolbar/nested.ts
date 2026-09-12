@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Code, Strikethrough, Subscript, Superscript, Underline } from 'toannv-ckeditor5-basic-styles';
-import { FontBackgroundColor, FontColor, FontFamily, FontSize } from 'toannv-ckeditor5-font';
-import { Image, ImageInsert } from 'toannv-ckeditor5-image';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Code, Strikethrough, Subscript, Superscript, Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { FontBackgroundColor, FontColor, FontFamily, FontSize } from '@ckeditor-nonkey/ckeditor5-font';
+import { Image, ImageInsert } from '@ckeditor-nonkey/ckeditor5-image';
 
 ClassicEditor
 	.create( {

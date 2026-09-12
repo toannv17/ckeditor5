@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach, beforeAll } from 'vitest';
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import { EditorWatchdog } from '../src/editorwatchdog.js';
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Clipboard } from 'toannv-ckeditor5-clipboard';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Clipboard } from '@ckeditor-nonkey/ckeditor5-clipboard';
 import { stubWindowOnError } from './_utils/stubwindowonerror.js';
 
 class CommentsRepository extends Plugin {

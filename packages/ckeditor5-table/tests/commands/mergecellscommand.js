@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { MergeCellsCommand } from '../../src/commands/mergecellscommand.js';
 import { modelTable } from '../_utils/utils.js';
 import { TableSelection } from '../../src/tableselection.js';
 import { TableEditing } from '../../src/tableediting.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 describe( 'MergeCellsCommand', () => {
 	let editor, model, command, root, tableSelection;

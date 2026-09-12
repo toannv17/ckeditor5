@@ -4,18 +4,18 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import {
 	_getModelData,
 	_setModelData,
 	_stringifyModel,
-	ModelDocumentFragment } from 'toannv-ckeditor5-engine';
+	ModelDocumentFragment } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableEditing } from '../src/tableediting.js';
 import { TableSelection } from '../src/tableselection.js';
 import { assertSelectedCells, modelTable } from './_utils/utils.js';
-import { Typing } from 'toannv-ckeditor5-typing';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
 
 describe( 'TableSelection', () => {
 	let editorElement, editor, model, tableSelection, modelRoot;

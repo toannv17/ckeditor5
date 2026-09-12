@@ -3,26 +3,26 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
 
-import { ListProperties } from 'toannv-ckeditor5-list';
-import { Strikethrough, Underline } from 'toannv-ckeditor5-basic-styles';
-import { Table, TableToolbar, TableProperties, TableCellProperties, TableColumnResize } from 'toannv-ckeditor5-table';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { FontColor, FontBackgroundColor } from 'toannv-ckeditor5-font';
-import { PageBreak } from 'toannv-ckeditor5-page-break';
-import { ImageUpload } from 'toannv-ckeditor5-image';
-import { Bookmark } from 'toannv-ckeditor5-bookmark';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
-import { Indent, IndentBlock } from 'toannv-ckeditor5-indent';
+import { ListProperties } from '@ckeditor-nonkey/ckeditor5-list';
+import { Strikethrough, Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Table, TableToolbar, TableProperties, TableCellProperties, TableColumnResize } from '@ckeditor-nonkey/ckeditor5-table';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { FontColor, FontBackgroundColor } from '@ckeditor-nonkey/ckeditor5-font';
+import { PageBreak } from '@ckeditor-nonkey/ckeditor5-page-break';
+import { ImageUpload } from '@ckeditor-nonkey/ckeditor5-image';
+import { Bookmark } from '@ckeditor-nonkey/ckeditor5-bookmark';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
+import { Indent, IndentBlock } from '@ckeditor-nonkey/ckeditor5-indent';
 
 import { PasteFromOffice } from '../src/pastefromoffice.js';
 
-import { _stringifyView } from 'toannv-ckeditor5-engine';
+import { _stringifyView } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 declare global {
 	interface Window { editor: any }

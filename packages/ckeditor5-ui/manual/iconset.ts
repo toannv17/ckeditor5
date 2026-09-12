@@ -3,9 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import * as icons from 'toannv-ckeditor5-icons';
-import { ButtonView, ToolbarView } from 'toannv-ckeditor5-ui';
-import { Locale } from 'toannv-ckeditor5-utils';
+import * as icons from '@ckeditor-nonkey/ckeditor5-icons';
+import { ButtonView, ToolbarView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 const toolbar = new ToolbarView( new Locale() );
 

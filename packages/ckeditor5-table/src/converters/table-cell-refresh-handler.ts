@@ -12,7 +12,7 @@ import type {
 	ModelElement,
 	Mapper,
 	Model
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { isSingleParagraphWithoutAttributes } from './downcast.js';
 

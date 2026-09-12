@@ -5,7 +5,7 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { SpecialCharactersCategoriesView } from '../../src/ui/specialcharacterscategoriesview.js';
-import { View, LabeledFieldView } from 'toannv-ckeditor5-ui';
+import { View, LabeledFieldView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 describe( 'SpecialCharactersCategoriesView', () => {
 	let view, locale;

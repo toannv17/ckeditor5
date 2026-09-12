@@ -7,16 +7,16 @@
  * @module ui/editorui/accessibilityhelp/accessibilityhelp
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { IconAccessibility } from 'toannv-ckeditor5-icons';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconAccessibility } from '@ckeditor-nonkey/ckeditor5-icons';
 import { ButtonView } from '../../button/buttonview.js';
 import { Dialog } from '../../dialog/dialog.js';
 import { MenuBarMenuListItemButtonView } from '../../menubar/menubarmenulistitembuttonview.js';
 import { AccessibilityHelpContentView } from './accessibilityhelpcontentview.js';
-import { getEnvKeystrokeText } from 'toannv-ckeditor5-utils';
+import { getEnvKeystrokeText } from '@ckeditor-nonkey/ckeditor5-utils';
 import type { EditorUIReadyEvent } from '../../editorui/editorui.js';
-import type { AddRootEvent } from 'toannv-ckeditor5-editor-multi-root';
-import type { ViewDowncastWriter, ViewRootEditableElement } from 'toannv-ckeditor5-engine';
+import type { AddRootEvent } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
+import type { ViewDowncastWriter, ViewRootEditableElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * A plugin that brings the accessibility help dialog to the editor available under the <kbd>Alt</kbd>+<kbd>0</kbd>

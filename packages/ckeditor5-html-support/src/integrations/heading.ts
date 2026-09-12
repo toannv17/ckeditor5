@@ -7,9 +7,9 @@
  * @module html-support/integrations/heading
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import type { HeadingOption } from 'toannv-ckeditor5-heading';
-import { Enter } from 'toannv-ckeditor5-enter';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import type { HeadingOption } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
 
 import { DataSchema } from '../dataschema.js';
 

@@ -4,12 +4,12 @@
  */
 
 import { describe, it, beforeEach, afterEach, expect } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { ImageInsertUI } from '../src/imageinsert/imageinsertui.js';
 import { ImageInsertViaUrl } from '../src/imageinsertviaurl.js';
 import { ImageInsertViaUrlUI } from '../src/imageinsert/imageinsertviaurlui.js';
 
-import { global } from 'toannv-ckeditor5-utils';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'ImageInsertViaUrl', () => {
 	let editorElement, editor;

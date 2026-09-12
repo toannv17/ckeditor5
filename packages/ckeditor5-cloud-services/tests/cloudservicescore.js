@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Context } from 'toannv-ckeditor5-core';
-import { createFakeXHRServer } from 'toannv-ckeditor5-core/tests/_utils/fakexhrserver.js';
+import { Context } from '@ckeditor-nonkey/ckeditor5-core';
+import { createFakeXHRServer } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/fakexhrserver.js';
 import { CloudServicesCore } from '../src/cloudservicescore.js';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 import { UploadGateway } from '../src/uploadgateway/uploadgateway.js';
 import { Token } from '../src/token/token.js';
 

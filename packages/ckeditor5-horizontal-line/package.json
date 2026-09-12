@@ -1,5 +1,5 @@
 {
-  "name": "toannv-ckeditor5-horizontal-line",
+  "name": "@ckeditor-nonkey/ckeditor5-horizontal-line",
   "version": "48.5.0",
   "description": "Horizontal line feature for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -35,19 +35,19 @@
     }
   },
   "dependencies": {
-    "toannv-ckeditor5-core": "workspace:*",
-    "toannv-ckeditor5-engine": "workspace:*",
-    "toannv-ckeditor5-icons": "workspace:*",
-    "toannv-ckeditor5-ui": "workspace:*",
-    "toannv-ckeditor5-utils": "workspace:*",
-    "toannv-ckeditor5-widget": "workspace:*"
+    "@ckeditor-nonkey/ckeditor5-core": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-engine": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-icons": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-ui": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-utils": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-widget": "workspace:*"
   },
   "devDependencies": {
-    "toannv-ckeditor5-cloud-services": "workspace:*",
-    "toannv-ckeditor5-easy-image": "workspace:*",
-    "toannv-ckeditor5-editor-classic": "workspace:*",
-    "toannv-ckeditor5-image": "workspace:*",
-    "toannv-ckeditor5-paragraph": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-cloud-services": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-easy-image": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-editor-classic": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-image": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-paragraph": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

@@ -4,12 +4,12 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 import { Image } from '../../../src/image.js';
-import { global } from 'toannv-ckeditor5-utils';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { View, ContextualBalloon, BalloonPanelView } from 'toannv-ckeditor5-ui';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { View, ContextualBalloon, BalloonPanelView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { repositionContextualBalloon, getBalloonPositionData } from '../../../src/image/ui/utils.js';
 import { ImageCaption } from '../../../src/imagecaption.js';
 

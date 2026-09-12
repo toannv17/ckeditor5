@@ -3,40 +3,40 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
 
-import { Alignment } from 'toannv-ckeditor5-alignment';
-import { Code, Strikethrough, Subscript, Superscript, Underline, Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { FontBackgroundColor, FontColor, FontFamily, FontSize } from 'toannv-ckeditor5-font';
-import { Highlight } from 'toannv-ckeditor5-highlight';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { HtmlEmbed } from 'toannv-ckeditor5-html-embed';
-import { ImageResize, ImageUpload, Image, ImageCaption, ImageStyle, ImageToolbar } from 'toannv-ckeditor5-image';
-import { IndentBlock, Indent } from 'toannv-ckeditor5-indent';
-import { LinkImage, Link } from 'toannv-ckeditor5-link';
-import { Mention } from 'toannv-ckeditor5-mention';
-import { PageBreak } from 'toannv-ckeditor5-page-break';
-import { PasteFromOffice } from 'toannv-ckeditor5-paste-from-office';
-import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { TableCellProperties, TableProperties, TableCaption, Table, TableToolbar } from 'toannv-ckeditor5-table';
-import { TextTransformation } from 'toannv-ckeditor5-typing';
-import { TextPartLanguage } from 'toannv-ckeditor5-language';
-import { WordCount } from 'toannv-ckeditor5-word-count';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { List, ListProperties } from 'toannv-ckeditor5-list';
+import { Alignment } from '@ckeditor-nonkey/ckeditor5-alignment';
+import { Code, Strikethrough, Subscript, Superscript, Underline, Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { FontBackgroundColor, FontColor, FontFamily, FontSize } from '@ckeditor-nonkey/ckeditor5-font';
+import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { HtmlEmbed } from '@ckeditor-nonkey/ckeditor5-html-embed';
+import { ImageResize, ImageUpload, Image, ImageCaption, ImageStyle, ImageToolbar } from '@ckeditor-nonkey/ckeditor5-image';
+import { IndentBlock, Indent } from '@ckeditor-nonkey/ckeditor5-indent';
+import { LinkImage, Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { Mention } from '@ckeditor-nonkey/ckeditor5-mention';
+import { PageBreak } from '@ckeditor-nonkey/ckeditor5-page-break';
+import { PasteFromOffice } from '@ckeditor-nonkey/ckeditor5-paste-from-office';
+import { RemoveFormat } from '@ckeditor-nonkey/ckeditor5-remove-format';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { TableCellProperties, TableProperties, TableCaption, Table, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
+import { TextTransformation } from '@ckeditor-nonkey/ckeditor5-typing';
+import { TextPartLanguage } from '@ckeditor-nonkey/ckeditor5-language';
+import { WordCount } from '@ckeditor-nonkey/ckeditor5-word-count';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { List, ListProperties } from '@ckeditor-nonkey/ckeditor5-list';
 
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Autoformat } from 'toannv-ckeditor5-autoformat';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Autoformat } from '@ckeditor-nonkey/ckeditor5-autoformat';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { MediaEmbed } from '@ckeditor-nonkey/ckeditor5-media-embed';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 import { Style } from '../src/style.js';
 
 declare global {

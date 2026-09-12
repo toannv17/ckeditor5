@@ -8,15 +8,15 @@
  */
 
 import type { FontFamilyOption, FontSizeOption } from './fontconfig.js';
-import { ColorSelectorView, type ColorDefinition, type ColorPickerViewConfig, type DropdownView } from 'toannv-ckeditor5-ui';
-import type { ArrayOrItem } from 'toannv-ckeditor5-utils';
+import { ColorSelectorView, type ColorDefinition, type ColorPickerViewConfig, type DropdownView } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { ArrayOrItem } from '@ckeditor-nonkey/ckeditor5-utils';
 import type {
 	ViewAttributeElement,
 	ViewElement,
 	MatcherPattern,
 	ViewElementDefinition,
 	DowncastConversionApi
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The name of the font size plugin.

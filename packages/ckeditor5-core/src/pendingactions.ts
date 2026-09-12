@@ -16,7 +16,7 @@ import {
 	type CollectionAddEvent,
 	type CollectionRemoveEvent,
 	type Observable
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The list of pending editor actions.

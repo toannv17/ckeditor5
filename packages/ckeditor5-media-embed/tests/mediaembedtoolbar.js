@@ -4,16 +4,16 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { BalloonEditor } from 'toannv-ckeditor5-editor-balloon';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { BalloonEditor } from '@ckeditor-nonkey/ckeditor5-editor-balloon';
 import { MediaEmbed } from '../src/mediaembed.js';
 import { MediaEmbedStyle } from '../src/mediaembedstyle.js';
 import { MediaEmbedToolbar } from '../src/mediaembedtoolbar.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { _setModelData } from 'toannv-ckeditor5-engine';
-import { View, ButtonView } from 'toannv-ckeditor5-ui';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { View, ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
 describe( 'MediaEmbedToolbar', () => {
 	let editor, element, widgetToolbarRepository, balloon, toolbar, model;

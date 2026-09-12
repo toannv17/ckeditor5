@@ -7,7 +7,7 @@
  * @module core/plugincollection
  */
 
-import { CKEditorError, EmitterMixin, type EmitterMixinConstructor } from 'toannv-ckeditor5-utils';
+import { CKEditorError, EmitterMixin, type EmitterMixinConstructor } from '@ckeditor-nonkey/ckeditor5-utils';
 import type { LoadedPlugins, PluginClassConstructor, PluginConstructor, PluginInterface } from './plugin.js';
 
 const PluginCollectionBase: EmitterMixinConstructor = /* #__PURE__ */ EmitterMixin();

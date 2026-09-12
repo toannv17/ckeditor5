@@ -3,8 +3,8 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
 import { Table } from '../src/table.js';
 import { TableToolbar } from '../src/tabletoolbar.js';
 import { TableSelection } from '../src/tableselection.js';

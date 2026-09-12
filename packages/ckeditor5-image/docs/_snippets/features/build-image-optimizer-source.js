@@ -13,7 +13,7 @@ import {
 	LinkImage,
 	HorizontalLine,
 	Alignment
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 import { Uploadcare, UploadcareImageEdit } from 'ckeditor5-premium-features';
 import { ClassicEditor } from '@snippets/index.js';
 

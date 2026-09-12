@@ -17,9 +17,9 @@ import type {
 	UpcastElementEvent,
 	EditingView,
 	ViewElement
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { createElement, type GetCallback } from 'toannv-ckeditor5-utils';
+import { createElement, type GetCallback } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { generateLiInUl, injectViewList, positionAfterUiElements, findNestedList } from '../legacylist/legacyutils.js';
 

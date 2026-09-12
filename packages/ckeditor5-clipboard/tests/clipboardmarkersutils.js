@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
-import { ModelDocumentFragment, ModelPosition, ModelRange, _parseModel, _setModelData } from 'toannv-ckeditor5-engine';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ModelDocumentFragment, ModelPosition, ModelRange, _parseModel, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 import { Clipboard } from '../src/clipboard.js';
 import { ClipboardMarkersUtils } from '../src/clipboardmarkersutils.js';

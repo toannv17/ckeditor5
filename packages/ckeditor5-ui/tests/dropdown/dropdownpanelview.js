@@ -7,7 +7,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { ViewCollection } from '../../src/viewcollection.js';
 import { DropdownPanelView } from '../../src/dropdown/dropdownpanelview.js';
 import { View } from '../../src/view.js';
-import { LabeledFieldView, createLabeledInputText } from 'toannv-ckeditor5-ui';
+import { LabeledFieldView, createLabeledInputText } from '@ckeditor-nonkey/ckeditor5-ui';
 
 describe( 'DropdownPanelView', () => {
 	let view, locale;

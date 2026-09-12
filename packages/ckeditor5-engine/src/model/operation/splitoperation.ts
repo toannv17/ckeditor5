@@ -15,7 +15,7 @@ import { _insert, _move } from './utils.js';
 
 import { type ModelDocument } from '../document.js';
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 import type { ModelSelectable } from '../selection.js';
 
 /**

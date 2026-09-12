@@ -7,8 +7,8 @@
  * @module basic-styles/attributecommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import { ModelDocumentSelection, type ModelRange, type ModelElement } from 'toannv-ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { ModelDocumentSelection, type ModelRange, type ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * An extension of the base {@link module:core/command~Command} class, which provides utilities for a command

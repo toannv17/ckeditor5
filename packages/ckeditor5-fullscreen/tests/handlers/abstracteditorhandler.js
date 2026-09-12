@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { global, Rect } from 'toannv-ckeditor5-utils';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { BalloonEditor } from 'toannv-ckeditor5-editor-balloon';
-import { View, Dialog, DialogViewPosition, ContextualBalloon, BalloonPanelView } from 'toannv-ckeditor5-ui';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { Plugin } from 'toannv-ckeditor5-core';
+import { global, Rect } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { BalloonEditor } from '@ckeditor-nonkey/ckeditor5-editor-balloon';
+import { View, Dialog, DialogViewPosition, ContextualBalloon, BalloonPanelView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { RevisionHistoryMock } from '../_utils/revisionhistorymock.js';
 import { FullscreenAbstractEditorHandler } from '../../src/handlers/abstracteditorhandler.js';

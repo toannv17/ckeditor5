@@ -7,11 +7,11 @@
  * @module typing/inserttextcommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { TypingChangeBuffer } from './utils/changebuffer.js';
 
-import type { ModelDocumentSelection, ModelRange, ModelSelection } from 'toannv-ckeditor5-engine';
+import type { ModelDocumentSelection, ModelRange, ModelSelection } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The insert text command. Used by the {@link module:typing/input~Input input feature} to handle typing.

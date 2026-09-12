@@ -7,12 +7,12 @@
  * @module ui/dropdown/button/splitbuttonview
  */
 
-import { IconDropdownArrow } from 'toannv-ckeditor5-icons';
+import { IconDropdownArrow } from '@ckeditor-nonkey/ckeditor5-icons';
 import {
 	KeystrokeHandler,
 	FocusTracker,
 	type Locale
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 import { View } from '../../view.js';
 import { ButtonView } from '../../button/buttonview.js';
 import { type ViewCollection } from '../../viewcollection.js';

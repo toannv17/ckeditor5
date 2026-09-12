@@ -6,9 +6,9 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { HeadingEditing } from '../src/headingediting.js';
 import { HeadingCommand } from '../src/headingcommand.js';
-import { Paragraph, ParagraphCommand } from 'toannv-ckeditor5-paragraph';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _getModelData } from 'toannv-ckeditor5-engine';
+import { Paragraph, ParagraphCommand } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'HeadingEditing', () => {
 	let editor, model;

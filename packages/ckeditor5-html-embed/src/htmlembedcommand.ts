@@ -7,9 +7,9 @@
  * @module html-embed/htmlembedcommand
  */
 
-import type { ModelDocumentSelection, ModelElement, Model, ModelSchema, ModelSelection } from 'toannv-ckeditor5-engine';
-import { Command } from 'toannv-ckeditor5-core';
-import { findOptimalInsertionRange } from 'toannv-ckeditor5-widget';
+import type { ModelDocumentSelection, ModelElement, Model, ModelSchema, ModelSelection } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
+import { findOptimalInsertionRange } from '@ckeditor-nonkey/ckeditor5-widget';
 
 /**
  * The insert HTML embed element command.

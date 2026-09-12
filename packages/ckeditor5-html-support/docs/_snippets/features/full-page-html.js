@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { FullPage, GeneralHtmlSupport } from 'toannv-ckeditor5';
+import { FullPage, GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5';
 import {
 	TOKEN_URL,
 	CS_CONFIG,

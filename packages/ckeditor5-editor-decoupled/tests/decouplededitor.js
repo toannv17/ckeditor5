@@ -8,15 +8,15 @@ import { DecoupledEditor } from '../src/decouplededitor.js';
 import { DecoupledEditorUI } from '../src/decouplededitorui.js';
 import { DecoupledEditorUIView } from '../src/decouplededitoruiview.js';
 
-import { HtmlDataProcessor, ModelRootElement } from 'toannv-ckeditor5-engine';
+import { HtmlDataProcessor, ModelRootElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Context, Plugin } from 'toannv-ckeditor5-core';
-import { EditorWatchdog, ContextWatchdog } from 'toannv-ckeditor5-watchdog';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { Context, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { EditorWatchdog, ContextWatchdog } from '@ckeditor-nonkey/ckeditor5-watchdog';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { assertCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { assertCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 
 const editorData = '<p><strong>foo</strong> bar</p>';
 

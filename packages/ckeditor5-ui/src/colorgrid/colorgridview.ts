@@ -22,7 +22,7 @@ import {
 	type CollectionRemoveEvent,
 	type Locale,
 	type ObservableChangeEvent
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * A grid of {@link module:ui/colorgrid/colortileview~ColorTileView color tiles}.

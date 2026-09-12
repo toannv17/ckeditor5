@@ -6,10 +6,10 @@
 import { describe, it, beforeEach, afterEach, vi, expect } from 'vitest';
 
 import { MediaEmbed } from '../src/mediaembed.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _getViewData, enableViewPlaceholder } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _getViewData, enableViewPlaceholder } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'MediaEmbed integration', () => {
 	let element;

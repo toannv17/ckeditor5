@@ -7,7 +7,7 @@
  * @module image/imageupload/imageuploadediting
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import {
 	ViewUpcastWriter,
@@ -19,16 +19,16 @@ import {
 	type ModelNodeAttributes,
 	type DowncastAttributeEvent,
 	type UpcastElementEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Notification } from 'toannv-ckeditor5-ui';
+import { Notification } from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	ClipboardPipeline,
 	type ViewDocumentClipboardInputEvent,
 	type ClipboardInputTransformationEvent
-} from 'toannv-ckeditor5-clipboard';
-import { FileRepository, type UploadResponse, type FileLoader } from 'toannv-ckeditor5-upload';
-import { env } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { FileRepository, type UploadResponse, type FileLoader } from '@ckeditor-nonkey/ckeditor5-upload';
+import { env } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { ImageUtils } from '../imageutils.js';
 import { UploadImageCommand } from './uploadimagecommand.js';

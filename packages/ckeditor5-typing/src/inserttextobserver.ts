@@ -7,7 +7,7 @@
  * @module typing/inserttextobserver
  */
 
-import { env, EventInfo } from 'toannv-ckeditor5-utils';
+import { env, EventInfo } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import {
 	ViewDocumentDomEventData,
@@ -18,9 +18,9 @@ import {
 	type ViewDocumentInputEvent,
 	type ViewDocumentSelection,
 	type ViewSelection
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-// @if CK_DEBUG_TYPING // import { _buildLogMessage } from 'toannv-ckeditor5-engine/src/dev-utils/utils.js';
+// @if CK_DEBUG_TYPING // import { _buildLogMessage } from '@ckeditor-nonkey/ckeditor5-engine/src/dev-utils/utils.js';
 
 const TYPING_INPUT_TYPES = [
 	// For collapsed range:

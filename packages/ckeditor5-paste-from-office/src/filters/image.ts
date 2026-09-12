@@ -13,7 +13,7 @@ import {
 	type ViewDocumentFragment,
 	type ViewElement,
 	type ViewNode
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Replaces source attribute of all `<img>` elements representing regular

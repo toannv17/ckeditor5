@@ -7,11 +7,11 @@
  * @module style/integrations/link
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import type { ModelSelectable, ModelDocumentSelection, ModelRange, ModelPosition, Model } from 'toannv-ckeditor5-engine';
-import { findAttributeRange, findAttributeRangeBound } from 'toannv-ckeditor5-typing';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ModelSelectable, ModelDocumentSelection, ModelRange, ModelPosition, Model } from '@ckeditor-nonkey/ckeditor5-engine';
+import { findAttributeRange, findAttributeRangeBound } from '@ckeditor-nonkey/ckeditor5-typing';
 
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
 
 import {
 	StyleUtils,

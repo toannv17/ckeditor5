@@ -7,9 +7,9 @@
  * @module basic-styles/subscript/subscriptui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { IconSubscript } from 'toannv-ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconSubscript } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 import { getButtonCreator } from '../utils.js';
 
 const SUBSCRIPT = 'subscript';

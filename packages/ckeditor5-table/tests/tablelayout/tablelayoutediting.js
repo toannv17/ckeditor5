@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
 import {
 	_getModelData, _setModelData, _getViewData, _parseView, _stringifyModel, ViewDocumentFragment
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableLayoutEditing } from '../../src/tablelayout/tablelayoutediting.js';
 import { Table } from '../../src/table.js';

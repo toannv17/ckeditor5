@@ -7,8 +7,8 @@
  * @module table/tablecolumnresize/commands/tablecolumnwidthcommand
  */
 
-import { Command } from 'toannv-ckeditor5-core';
-import type { Batch } from 'toannv-ckeditor5-engine';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
+import type { Batch } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { type TableUtils } from '../../tableutils.js';
 import { addDefaultUnitToNumericValue } from '../../utils/table-properties.js';

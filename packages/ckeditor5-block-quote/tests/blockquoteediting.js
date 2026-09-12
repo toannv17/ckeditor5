@@ -6,12 +6,12 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
 import { BlockQuoteEditing } from '../src/blockquoteediting.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ListEditing } from 'toannv-ckeditor5-list';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ListEditing } from '@ckeditor-nonkey/ckeditor5-list';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { BlockQuoteCommand } from '../src/blockquotecommand.js';
 

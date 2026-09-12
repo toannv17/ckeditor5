@@ -5,21 +5,21 @@
 
 import { LegacyTodoListEditing } from '../../src/legacytodolist/legacytodolistediting.js';
 import { LegacyListEditing } from '../../src/legacylist/legacylistediting.js';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { Typing } from 'toannv-ckeditor5-typing';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
 import { LegacyListCommand } from '../../src/legacylist/legacylistcommand.js';
 import { LegacyCheckTodoListCommand } from '../../src/legacytodolist/legacychecktodolistcommand.js';
-import { ModelElement, _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { InlineEditableUIView } from 'toannv-ckeditor5-ui';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { Enter, ShiftEnter } from 'toannv-ckeditor5-enter';
+import { ModelElement, _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { InlineEditableUIView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { Enter, ShiftEnter } from '@ckeditor-nonkey/ckeditor5-enter';
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { getCode, env } from 'toannv-ckeditor5-utils';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { getCode, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 describe( 'LegacyTodoListEditing', () => {
 	let editor, model, modelDoc, modelRoot, view, viewDoc;

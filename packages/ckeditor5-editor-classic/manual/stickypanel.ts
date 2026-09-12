@@ -5,7 +5,7 @@
 
 import { ClassicEditor } from '../src/classiceditor.js';
 
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
 
 declare global {
 	interface Window { editor: any }

@@ -12,13 +12,13 @@ import {
 	ButtonView,
 	addKeyboardHandlingForGrid,
 	type ViewCollection
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	KeystrokeHandler,
 	FocusTracker,
 	global,
 	type Locale
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * A grid of character tiles. It allows browsing special characters and selecting the character to

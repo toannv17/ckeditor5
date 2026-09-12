@@ -7,16 +7,16 @@
  * @module link/linkimageui
  */
 
-import { ButtonView } from 'toannv-ckeditor5-ui';
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { IconLink } from 'toannv-ckeditor5-icons';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconLink } from '@ckeditor-nonkey/ckeditor5-icons';
 import type {
 	ModelDocumentSelection,
 	ModelSelection,
 	ViewDocumentClickEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { ImageBlockEditing, type ImageUtils } from 'toannv-ckeditor5-image';
+import { ImageBlockEditing, type ImageUtils } from '@ckeditor-nonkey/ckeditor5-image';
 
 import { LinkUI } from './linkui.js';
 import { LinkEditing } from './linkediting.js';

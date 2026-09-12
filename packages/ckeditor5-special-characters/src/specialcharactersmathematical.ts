@@ -7,7 +7,7 @@
  * @module special-characters/specialcharactersmathematical
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import { type SpecialCharacters } from './specialcharacters.js';
 
 /**

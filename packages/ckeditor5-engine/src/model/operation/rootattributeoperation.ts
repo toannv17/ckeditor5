@@ -12,7 +12,7 @@ import { Operation } from './operation.js';
 import { type ModelDocument } from '../document.js';
 import { type ModelRootElement } from '../rootelement.js';
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 import { isEqual } from 'es-toolkit/compat';
 import type { ModelSelectable } from '../selection.js';
 

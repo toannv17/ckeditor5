@@ -7,15 +7,15 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { Editor } from '../../src/editor/editor.js';
 import { Context } from '../../src/context.js';
 import { Plugin } from '../../src/plugin.js';
-import { Config, Locale, CKEditorError } from 'toannv-ckeditor5-utils';
-import { EditingController, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { Config, Locale, CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
+import { EditingController, _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { PluginCollection } from '../../src/plugincollection.js';
 import { CommandCollection } from '../../src/commandcollection.js';
 import { Command } from '../../src/command.js';
 import { EditingKeystrokeHandler } from '../../src/editingkeystrokehandler.js';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 import { Accessibility } from '../../src/accessibility.js';
-import { EditorWatchdog, ContextWatchdog } from 'toannv-ckeditor5-watchdog';
+import { EditorWatchdog, ContextWatchdog } from '@ckeditor-nonkey/ckeditor5-watchdog';
 
 class TestEditor extends Editor {
 	static create( config ) {

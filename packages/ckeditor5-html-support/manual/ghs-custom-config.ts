@@ -3,15 +3,15 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold, Italic, Strikethrough } from 'toannv-ckeditor5-basic-styles';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { List } from 'toannv-ckeditor5-list';
-import { Link } from 'toannv-ckeditor5-link';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold, Italic, Strikethrough } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
 
 import { GeneralHtmlSupport } from '../src/generalhtmlsupport.js';
 

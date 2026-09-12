@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { EditingView, ViewRootEditableElement } from 'toannv-ckeditor5-engine';
+import { EditingView, ViewRootEditableElement } from '@ckeditor-nonkey/ckeditor5-engine';
 import { EditableUIView } from '../../src/editableui/editableuiview.js';
 import { View } from '../../src/view.js';
-import { Locale } from 'toannv-ckeditor5-utils';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'EditableUIView', () => {
 	let view, editableElement, editingView, editingViewRoot, locale;

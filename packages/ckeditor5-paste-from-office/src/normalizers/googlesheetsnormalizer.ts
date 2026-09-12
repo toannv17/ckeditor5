@@ -7,8 +7,8 @@
  * @module paste-from-office/normalizers/googlesheetsnormalizer
  */
 
-import { ViewUpcastWriter, type ViewDocument } from 'toannv-ckeditor5-engine';
-import type { ClipboardInputTransformationData } from 'toannv-ckeditor5-clipboard';
+import { ViewUpcastWriter, type ViewDocument } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { ClipboardInputTransformationData } from '@ckeditor-nonkey/ckeditor5-clipboard';
 
 import { removeXmlns } from '../filters/removexmlns.js';
 import { removeGoogleSheetsTag } from '../filters/removegooglesheetstag.js';

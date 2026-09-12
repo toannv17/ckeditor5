@@ -7,8 +7,8 @@
  * @module style/styleediting
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { GeneralHtmlSupport, type DataSchema } from 'toannv-ckeditor5-html-support';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { GeneralHtmlSupport, type DataSchema } from '@ckeditor-nonkey/ckeditor5-html-support';
 
 import { StyleCommand } from './stylecommand.js';
 import { StyleUtils } from './styleutils.js';

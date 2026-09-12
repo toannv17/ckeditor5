@@ -7,9 +7,9 @@
  * @module media-embed/mediaembedstyle/mediaembedstyleui
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { ButtonView, createDropdown, addToolbarToDropdown, SplitButtonView } from 'toannv-ckeditor5-ui';
-import { logWarning } from 'toannv-ckeditor5-utils';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { ButtonView, createDropdown, addToolbarToDropdown, SplitButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { logWarning } from '@ckeditor-nonkey/ckeditor5-utils';
 import { MediaEmbedStyleEditing } from './mediaembedstyleediting.js';
 import { type MediaEmbedStyleCommand } from './mediaembedstylecommand.js';
 import { DEFAULT_DROPDOWN_DEFINITIONS } from './constants.js';

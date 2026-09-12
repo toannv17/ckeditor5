@@ -7,10 +7,10 @@
  * @module style/stylecommand
  */
 
-import type { ModelDocumentSelection, ModelElement } from 'toannv-ckeditor5-engine';
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import { logWarning, first } from 'toannv-ckeditor5-utils';
-import type { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import type { ModelDocumentSelection, ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { logWarning, first } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
 
 import {
 	StyleUtils,

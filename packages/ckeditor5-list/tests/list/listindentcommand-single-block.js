@@ -5,14 +5,14 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import { ListEditing } from '../../src/list/listediting.js';
 import { ListIndentCommand } from '../../src/list/listindentcommand.js';
 import { stubUid } from './_utils/uid.js';
 import { modelList } from './_utils/utils.js';
 
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'ListIndentCommand (multiBlock=false)', () => {
 	let editor, model, root;

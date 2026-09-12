@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconParagraph } from 'toannv-ckeditor5-icons';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { IconParagraph } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { Paragraph } from '../src/paragraph.js';
-import { Heading } from 'toannv-ckeditor5-heading';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
 import { ParagraphButtonUI } from '../src/paragraphbuttonui.js';
-import { _setModelData } from 'toannv-ckeditor5-engine';
-import { ButtonView } from 'toannv-ckeditor5-ui';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 describe( 'HeadingButtonUI', () => {
 	let editorElement, editor;

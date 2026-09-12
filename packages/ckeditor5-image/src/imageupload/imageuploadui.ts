@@ -7,14 +7,14 @@
  * @module image/imageupload/imageuploadui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	FileDialogButtonView,
 	MenuBarMenuListItemFileDialogButtonView,
 	type ButtonView,
 	type MenuBarMenuListItemButtonView
-} from 'toannv-ckeditor5-ui';
-import { IconImageUpload } from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconImageUpload } from '@ckeditor-nonkey/ckeditor5-icons';
 import { createImageTypeRegExp } from './utils.js';
 import { type ImageInsertUI } from '../imageinsert/imageinsertui.js';
 

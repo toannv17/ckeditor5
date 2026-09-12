@@ -12,9 +12,9 @@ import {
 	BubblingEventInfo,
 	ViewDocumentDomEventData,
 	type ViewDocumentKeyDownEvent
-} from 'toannv-ckeditor5-engine';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { keyCodes } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-engine';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
 import { DeleteCommand } from './deletecommand.js';
 import { DeleteObserver, type DeleteEventData, type ViewDocumentDeleteEvent } from './deleteobserver.js';
 

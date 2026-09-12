@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { GeneralHtmlSupport, ShowBlocks, CKBox, CKBoxImageEdit, ImageInsert, PictureEditing } from 'toannv-ckeditor5';
+import { GeneralHtmlSupport, ShowBlocks, CKBox, CKBoxImageEdit, ImageInsert, PictureEditing } from '@ckeditor-nonkey/ckeditor5';
 import { SourceEditingEnhanced } from 'ckeditor5-premium-features';
 import {
 	TOKEN_URL,

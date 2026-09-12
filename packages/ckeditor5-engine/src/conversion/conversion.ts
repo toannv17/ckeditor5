@@ -12,7 +12,7 @@ import {
 	toArray,
 	type ArrayOrItem,
 	type PriorityString
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { UpcastHelpers } from './upcasthelpers.js';
 import {

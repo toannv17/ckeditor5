@@ -7,7 +7,7 @@
  * @module clipboard/dragdrop
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import {
 	ModelLiveRange,
@@ -21,13 +21,13 @@ import {
 	type ViewDocumentDomEventData,
 	type ViewDocumentPointerDownEvent,
 	type ViewDocumentPointerUpEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	Widget,
 	isWidget,
 	type WidgetToolbarRepository
-} from 'toannv-ckeditor5-widget';
+} from '@ckeditor-nonkey/ckeditor5-widget';
 
 import {
 	env,
@@ -40,7 +40,7 @@ import {
 	type DelayedFunc,
 	type ObservableChangeEvent,
 	type DomEmitter
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import {
 	ClipboardPipeline,

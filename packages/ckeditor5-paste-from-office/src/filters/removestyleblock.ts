@@ -7,7 +7,7 @@
  * @module paste-from-office/filters/removestyleblock
  */
 
-import type { ViewUpcastWriter, ViewDocumentFragment } from 'toannv-ckeditor5-engine';
+import type { ViewUpcastWriter, ViewDocumentFragment } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Removes `<style>` block added by Google Sheets to a copied content.

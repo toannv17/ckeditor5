@@ -3,17 +3,17 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Code, Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Table, TablePropertiesEditing, TableCellPropertiesEditing } from 'toannv-ckeditor5-table';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Code, Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Table, TablePropertiesEditing, TableCellPropertiesEditing } from '@ckeditor-nonkey/ckeditor5-table';
 import { LegacyList } from '../src/legacylist.js';
 import { LegacyListProperties } from '../src/legacylistproperties.js';
-import { Indent, IndentBlock } from 'toannv-ckeditor5-indent';
+import { Indent, IndentBlock } from '@ckeditor-nonkey/ckeditor5-indent';
 import { LegacyTodoList } from '../src/legacytodolist.js';
-import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
+import { RemoveFormat } from '@ckeditor-nonkey/ckeditor5-remove-format';
 
 declare global {
 	interface Window { editor: any }

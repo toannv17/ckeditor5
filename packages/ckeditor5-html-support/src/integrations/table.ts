@@ -16,10 +16,10 @@ import type {
 	ViewElement,
 	ModelPostFixer,
 	Model
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import type { TableUtils } from 'toannv-ckeditor5-table';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import type { TableUtils } from '@ckeditor-nonkey/ckeditor5-table';
 
 import { updateViewAttributes, type GHSViewAttributes } from '../utils.js';
 import { DataFilter, type HtmlSupportDataFilterRegisterEvent } from '../datafilter.js';

@@ -3,16 +3,16 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Code, Strikethrough, Underline } from 'toannv-ckeditor5-basic-styles';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { HtmlEmbed } from 'toannv-ckeditor5-html-embed';
-import { LinkImage } from 'toannv-ckeditor5-link';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { ImageUpload } from 'toannv-ckeditor5-image';
-import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Code, Strikethrough, Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { HtmlEmbed } from '@ckeditor-nonkey/ckeditor5-html-embed';
+import { LinkImage } from '@ckeditor-nonkey/ckeditor5-link';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { ImageUpload } from '@ckeditor-nonkey/ckeditor5-image';
+import { RemoveFormat } from '@ckeditor-nonkey/ckeditor5-remove-format';
 
 import { GeneralHtmlSupport } from '../src/generalhtmlsupport.js';
 

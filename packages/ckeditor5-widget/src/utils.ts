@@ -7,14 +7,14 @@
  * @module widget/utils
  */
 
-import { IconDragHandle } from 'toannv-ckeditor5-icons';
+import { IconDragHandle } from '@ckeditor-nonkey/ckeditor5-icons';
 import {
 	Rect,
 	CKEditorError,
 	toArray,
 	type ObservableChangeEvent,
 	type GetCallback
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import {
 	type DowncastAddHighlightCallback,
@@ -30,9 +30,9 @@ import {
 	type ViewEditableElement,
 	type ViewElement,
 	type ViewTypeCheckable
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { IconView } from 'toannv-ckeditor5-ui';
+import { IconView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 import { WidgetHighlightStack, type WidgetHighlightStackChangeEvent } from './highlightstack.js';
 import { getTypeAroundFakeCaretPosition } from './widgettypearound/utils.js';

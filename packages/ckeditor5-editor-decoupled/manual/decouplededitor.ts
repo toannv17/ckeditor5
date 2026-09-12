@@ -4,13 +4,13 @@
  */
 
 import { DecoupledEditor } from '../src/decouplededitor.js';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { createObserver } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { createObserver } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 declare global {
 	interface Window {
 		editor: any;

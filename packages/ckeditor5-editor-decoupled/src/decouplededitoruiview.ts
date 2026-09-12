@@ -7,10 +7,10 @@
  * @module editor-decoupled/decouplededitoruiview
  */
 
-import { EditorUIView, InlineEditableUIView, MenuBarView, ToolbarView } from 'toannv-ckeditor5-ui';
-import type { Locale } from 'toannv-ckeditor5-utils';
-import type { EditingView } from 'toannv-ckeditor5-engine';
-import type { ViewRootElementDefinition } from 'toannv-ckeditor5-core';
+import { EditorUIView, InlineEditableUIView, MenuBarView, ToolbarView } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { EditingView } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { ViewRootElementDefinition } from '@ckeditor-nonkey/ckeditor5-core';
 
 /**
  * The decoupled editor UI view. It is a virtual view providing an inline

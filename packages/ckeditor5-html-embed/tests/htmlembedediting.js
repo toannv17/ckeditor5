@@ -5,12 +5,12 @@
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { HtmlEmbedEditing } from '../src/htmlembedediting.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { HtmlEmbedCommand } from '../src/htmlembedcommand.js';
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
-import { isWidget } from 'toannv-ckeditor5-widget';
-import { Clipboard } from 'toannv-ckeditor5-clipboard';
-import { ButtonView } from 'toannv-ckeditor5-ui';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { isWidget } from '@ckeditor-nonkey/ckeditor5-widget';
+import { Clipboard } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 describe( 'HtmlEmbedEditing', () => {
 	let element, editor, model, view, viewDocument;

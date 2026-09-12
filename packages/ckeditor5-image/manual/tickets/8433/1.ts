@@ -3,13 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { HtmlEmbed } from 'toannv-ckeditor5-html-embed';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { HtmlEmbed } from '@ckeditor-nonkey/ckeditor5-html-embed';
 import { ImageInsert } from '../../../src/imageinsert.js';
 import { ImageResize } from '../../../src/imageresize.js';
 
-import { UploadAdapterMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
+import { UploadAdapterMock } from '@ckeditor-nonkey/ckeditor5-upload/tests/_utils/mocks.js';
 
 ClassicEditor
 	.create( {

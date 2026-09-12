@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { global } from 'toannv-ckeditor5-utils';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
 import { UnlinkCommand } from '../src/unlinkcommand.js';
 import { LinkEditing } from '../src/linkediting.js';
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { LinkImageEditing } from '../src/linkimageediting.js';
-import { Image } from 'toannv-ckeditor5-image';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Image } from '@ckeditor-nonkey/ckeditor5-image';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 function checkAssertions( ...assertions ) {
 	const errors = [];

@@ -7,17 +7,17 @@
  * @module widget/widgettypearound/widgettypearound
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { IconReturnArrow } from 'toannv-ckeditor5-icons';
-import { Template } from 'toannv-ckeditor5-ui';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconReturnArrow } from '@ckeditor-nonkey/ckeditor5-icons';
+import { Template } from '@ckeditor-nonkey/ckeditor5-ui';
 
-import { Enter, type ViewDocumentEnterEvent } from 'toannv-ckeditor5-enter';
+import { Enter, type ViewDocumentEnterEvent } from '@ckeditor-nonkey/ckeditor5-enter';
 
 import {
 	Delete,
 	type ViewDocumentDeleteEvent,
 	type ViewDocumentInsertTextEvent
-} from 'toannv-ckeditor5-typing';
+} from '@ckeditor-nonkey/ckeditor5-typing';
 
 import {
 	env,
@@ -28,7 +28,7 @@ import {
 	type GetCallbackOptions,
 	type ObservableChangeEvent,
 	type KeystrokeInfo
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import type {
 	BubblingEventInfo,
@@ -48,7 +48,7 @@ import type {
 	ModelDeleteContentEvent,
 	ModelInsertContentEvent,
 	ModelInsertObjectEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	isTypeAroundWidget,
@@ -63,7 +63,7 @@ import {
 import { isWidget } from '../utils.js';
 import { type Widget } from '../widget.js';
 
-// @if CK_DEBUG_TYPING // import { _buildLogMessage } from 'toannv-ckeditor5-engine/src/dev-utils/utils.js';
+// @if CK_DEBUG_TYPING // import { _buildLogMessage } from '@ckeditor-nonkey/ckeditor5-engine/src/dev-utils/utils.js';
 
 const POSSIBLE_INSERTION_POSITIONS = [ 'before', 'after' ] as const;
 

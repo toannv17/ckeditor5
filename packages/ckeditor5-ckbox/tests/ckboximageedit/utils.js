@@ -5,7 +5,7 @@
 
 import { describe, it, expect, vi } from 'vitest';
 import { createEditabilityChecker } from '../../src/ckboximageedit/utils.js';
-import { ModelElement } from 'toannv-ckeditor5-engine';
+import { ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'image edit utils', () => {
 	describe( 'createEditabilityChecker()', () => {

@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import { Image } from '../src/image.js';
 import { ImageEditing } from '../src/image/imageediting.js';
-import { Widget } from 'toannv-ckeditor5-widget';
+import { Widget } from '@ckeditor-nonkey/ckeditor5-widget';
 import { ImageTextAlternative } from '../src/imagetextalternative.js';
-import { _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { global } from 'toannv-ckeditor5-utils';
+import { _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'Image', () => {
 	let editorElement, model, view, editor, document, viewDocument;

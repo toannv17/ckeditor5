@@ -22,6 +22,6 @@ export type {
 } from './multirooteditor.js';
 
 // Re-export for backward compatibility.
-export type { EditorRootAttributes as RootAttributes } from 'toannv-ckeditor5-core';
+export type { EditorRootAttributes as RootAttributes } from '@ckeditor-nonkey/ckeditor5-core';
 
 import './augmentation.js';

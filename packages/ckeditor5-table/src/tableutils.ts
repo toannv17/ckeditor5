@@ -7,8 +7,8 @@
  * @module table/tableutils
  */
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
-import { Plugin } from 'toannv-ckeditor5-core';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import type {
 	ModelDocumentSelection,
 	ModelElement,
@@ -17,7 +17,7 @@ import type {
 	ModelRange,
 	ModelSelection,
 	ModelWriter
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableWalker, type TableWalkerOptions } from './tablewalker.js';
 import { createEmptyTableCell, updateNumericAttribute, isEntireCellsLineHeader, isTableCellTypeEnabled } from './utils/common.js';

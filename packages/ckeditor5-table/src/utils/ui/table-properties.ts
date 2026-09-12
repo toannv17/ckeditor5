@@ -17,10 +17,10 @@ import {
 	type ToolbarView,
 	type View,
 	type ColorPickerConfig
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
-import { Collection, type LocaleTranslate } from 'toannv-ckeditor5-utils';
-import { isColorStyleValue, isLengthStyleValue, isPercentageStyleValue } from 'toannv-ckeditor5-engine';
+import { Collection, type LocaleTranslate } from '@ckeditor-nonkey/ckeditor5-utils';
+import { isColorStyleValue, isLengthStyleValue, isPercentageStyleValue } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { type TableCellPropertiesView } from '../../tablecellproperties/ui/tablecellpropertiesview.js';
 import { type TablePropertiesView } from '../../tableproperties/ui/tablepropertiesview.js';

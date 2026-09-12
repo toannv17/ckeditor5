@@ -3,23 +3,23 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Image, ImageUpload, ImageInsert } from 'toannv-ckeditor5-image';
-import { Link, LinkImage } from 'toannv-ckeditor5-link';
-import { List } from 'toannv-ckeditor5-list';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Table } from 'toannv-ckeditor5-table';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Image, ImageUpload, ImageInsert } from '@ckeditor-nonkey/ckeditor5-image';
+import { Link, LinkImage } from '@ckeditor-nonkey/ckeditor5-link';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
 
 import { Bookmark } from '../src/bookmark.js';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 declare global {
 	interface Window { editor: any }

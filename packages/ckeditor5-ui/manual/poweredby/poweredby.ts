@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { ImageResize } from 'toannv-ckeditor5-image';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ImageResize } from '@ckeditor-nonkey/ckeditor5-image';
 declare const CKEditorInspector: any;
 
 declare global {

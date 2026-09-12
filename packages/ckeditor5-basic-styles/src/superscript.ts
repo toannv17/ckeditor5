@@ -7,7 +7,7 @@
  * @module basic-styles/superscript
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import { SuperscriptEditing } from './superscript/superscriptediting.js';
 import { SuperscriptUI } from './superscript/superscriptui.js';
 

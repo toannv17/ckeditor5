@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { EmitterMixin } from 'toannv-ckeditor5-utils';
+import { EmitterMixin } from '@ckeditor-nonkey/ckeditor5-utils';
 
 export class UploadGatewayMock {
 	constructor( token, uploadUrl ) {

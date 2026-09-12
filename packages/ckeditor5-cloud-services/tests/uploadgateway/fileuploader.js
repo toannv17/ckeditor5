@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { createFakeXHRServer } from 'toannv-ckeditor5-core/tests/_utils/fakexhrserver.js';
+import { createFakeXHRServer } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/fakexhrserver.js';
 import { FileUploader } from '../../src/uploadgateway/fileuploader.js';
 import { Token } from '../../src/token/token.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 const API_ADDRESS = 'https://example.dev';
 const BASE_64_FILE = 'data:image/gif;base64,R0lGODlhCQAJAPIAAGFhYZXK/1FRUf///' +

@@ -4,7 +4,7 @@
  */
 
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { generateLicenseKey } from 'toannv-ckeditor5-core/tests/_utils/generatelicensekey.js';
+import { generateLicenseKey } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/generatelicensekey.js';
 import { MultiRootEditor } from '../src/multirooteditor.js';
 
 describe( 'MultiRootEditor - license check', () => {

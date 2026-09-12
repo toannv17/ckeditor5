@@ -5,13 +5,13 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { UnderlineEditing } from '../../src/underline/underlineediting.js';
 import { UnderlineUI } from '../../src/underline/underlineui.js';
-import { ButtonView } from 'toannv-ckeditor5-ui';
-import { env, keyCodes } from 'toannv-ckeditor5-utils';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { env, keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 describe( 'Underline', () => {
 	let editor, underlineView, editorElement;

@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
 import {
 	_setModelData,
 	ModelElement,
@@ -14,9 +14,9 @@ import {
 	ViewDocument,
 	ViewDowncastWriter,
 	ViewText
-} from 'toannv-ckeditor5-engine';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+} from '@ckeditor-nonkey/ckeditor5-engine';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
 import {
 	createLinkElement,

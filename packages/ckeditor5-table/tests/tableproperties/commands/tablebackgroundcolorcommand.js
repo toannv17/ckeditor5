@@ -5,10 +5,10 @@
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { assertTableStyle, modelTable } from '../../_utils/utils.js';
 import { TablePropertiesEditing } from '../../../src/tableproperties/tablepropertiesediting.js';

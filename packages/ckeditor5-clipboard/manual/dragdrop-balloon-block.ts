@@ -3,26 +3,26 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Bold, Italic, Code } from 'toannv-ckeditor5-basic-styles';
-import { Heading, HeadingButtonsUI } from 'toannv-ckeditor5-heading';
-import { Image, ImageCaption, ImageStyle, ImageToolbar, ImageResize, ImageInsert, AutoImage, ImageUpload } from 'toannv-ckeditor5-image';
-import { Link, LinkImage, AutoLink } from 'toannv-ckeditor5-link';
-import { List, ListProperties } from 'toannv-ckeditor5-list';
-import { Paragraph, ParagraphButtonUI } from 'toannv-ckeditor5-paragraph';
-import { Table, TableToolbar, TableProperties, TableCellProperties, TableCaption, TableColumnResize } from 'toannv-ckeditor5-table';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { HtmlEmbed } from 'toannv-ckeditor5-html-embed';
-import { Alignment } from 'toannv-ckeditor5-alignment';
-import { PageBreak } from 'toannv-ckeditor5-page-break';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { BalloonEditor } from 'toannv-ckeditor5-editor-balloon';
-import { BlockToolbar } from 'toannv-ckeditor5-ui';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Bold, Italic, Code } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Heading, HeadingButtonsUI } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Image, ImageCaption, ImageStyle, ImageToolbar, ImageResize, ImageInsert, AutoImage, ImageUpload } from '@ckeditor-nonkey/ckeditor5-image';
+import { Link, LinkImage, AutoLink } from '@ckeditor-nonkey/ckeditor5-link';
+import { List, ListProperties } from '@ckeditor-nonkey/ckeditor5-list';
+import { Paragraph, ParagraphButtonUI } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Table, TableToolbar, TableProperties, TableCellProperties, TableCaption, TableColumnResize } from '@ckeditor-nonkey/ckeditor5-table';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { HtmlEmbed } from '@ckeditor-nonkey/ckeditor5-html-embed';
+import { Alignment } from '@ckeditor-nonkey/ckeditor5-alignment';
+import { PageBreak } from '@ckeditor-nonkey/ckeditor5-page-break';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { BalloonEditor } from '@ckeditor-nonkey/ckeditor5-editor-balloon';
+import { BlockToolbar } from '@ckeditor-nonkey/ckeditor5-ui';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 declare const CKEditorInspector: any;
 
 declare global {

@@ -3,14 +3,14 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Table } from 'toannv-ckeditor5-table';
-import { List, ListProperties } from 'toannv-ckeditor5-list';
-import { Bold, Code, Italic } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
+import { List, ListProperties } from '@ckeditor-nonkey/ckeditor5-list';
+import { Bold, Code, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 import { EmptyBlock } from '../src/emptyblock.js';
 
 declare global {

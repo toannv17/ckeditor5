@@ -7,8 +7,8 @@
  * @module find-and-replace/findandreplaceui
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { IconFindReplace } from 'toannv-ckeditor5-icons';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconFindReplace } from '@ckeditor-nonkey/ckeditor5-icons';
 import {
 	ButtonView,
 	MenuBarMenuListItemButtonView,
@@ -19,7 +19,7 @@ import {
 	FormHeaderView,
 	CssTransitionDisablerMixin,
 	type ViewWithCssTransitionDisabler
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import { FindAndReplaceFormView } from './ui/findandreplaceformview.js';
 import { type FindAndReplaceEditing } from './findandreplaceediting.js';
 import { type FindNextCommand } from './findnextcommand.js';

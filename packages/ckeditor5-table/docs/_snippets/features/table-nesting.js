@@ -6,7 +6,7 @@
 import {
 	TableProperties,
 	TableCellProperties
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 import {
 	TOKEN_URL,
 	getViewportTopOffsetConfig,

@@ -7,9 +7,9 @@
  * @module ui/editorui/evaluationbadge
  */
 
-import type { Editor } from 'toannv-ckeditor5-core';
-import { type Locale } from 'toannv-ckeditor5-utils';
-// import { parseBase64EncodedObject, type Locale } from 'toannv-ckeditor5-utils';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+// import { parseBase64EncodedObject, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { View } from '../view.js';
 import { Badge, type BadgeConfig } from '../badge/badge.js';

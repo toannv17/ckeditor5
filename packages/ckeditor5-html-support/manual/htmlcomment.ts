@@ -3,17 +3,17 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { ImageUpload } from 'toannv-ckeditor5-image';
-import { PasteFromOffice } from 'toannv-ckeditor5-paste-from-office';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { Table, TableToolbar } from 'toannv-ckeditor5-table';
-import { TodoList } from 'toannv-ckeditor5-list';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { ImageUpload } from '@ckeditor-nonkey/ckeditor5-image';
+import { PasteFromOffice } from '@ckeditor-nonkey/ckeditor5-paste-from-office';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { Table, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
+import { TodoList } from '@ckeditor-nonkey/ckeditor5-list';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 import { HtmlComment } from '../src/htmlcomment.js';
 

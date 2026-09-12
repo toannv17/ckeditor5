@@ -12,7 +12,7 @@ import {
 	AutoImage,
 	LinkImage,
 	Alignment
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 import { ClassicEditor } from '@snippets/index.js';
 
 export class TextAlignmentEditor extends ClassicEditor {

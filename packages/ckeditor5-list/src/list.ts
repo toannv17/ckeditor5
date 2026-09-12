@@ -7,7 +7,7 @@
  * @module list/list
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import { ListEditing } from './list/listediting.js';
 import { ListUI } from './list/listui.js';
 

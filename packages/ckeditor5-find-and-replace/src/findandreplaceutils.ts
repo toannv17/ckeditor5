@@ -7,9 +7,9 @@
  * @module find-and-replace/findandreplaceutils
  */
 
-import type { ModelElement, ModelItem, Marker, Model, ModelRange } from 'toannv-ckeditor5-engine';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Collection, uid } from 'toannv-ckeditor5-utils';
+import type { ModelElement, ModelItem, Marker, Model, ModelRange } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Collection, uid } from '@ckeditor-nonkey/ckeditor5-utils';
 import { escapeRegExp } from 'es-toolkit/compat';
 import type { FindResultType } from './findandreplace.js';
 

@@ -7,7 +7,7 @@
  * @module table/commands/setheadercolumncommand
  */
 
-import { Command } from 'toannv-ckeditor5-core';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
 import { type TableUtils } from '../tableutils.js';
 
 import { isHeadingColumnCell } from '../utils/common.js';

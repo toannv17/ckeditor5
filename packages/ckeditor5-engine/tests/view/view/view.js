@@ -22,10 +22,10 @@ import { ViewPosition } from '../../../src/view/position.js';
 import { ViewSelection } from '../../../src/view/selection.js';
 import { StylesProcessor } from '../../../src/view/stylesmap.js';
 
-import { count, global, createElement, env, CKEditorError } from 'toannv-ckeditor5-utils';
+import { count, global, createElement, env, CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 import { createViewRoot } from '../_utils/createroot.js';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
-import { stubGeometry, assertScrollPosition } from 'toannv-ckeditor5-utils/tests/_utils/scroll.js';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
+import { stubGeometry, assertScrollPosition } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/scroll.js';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 describe( 'view', () => {

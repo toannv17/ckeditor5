@@ -7,7 +7,7 @@
  * @module table/tablecellproperties/commands/tablecellbackgroundcolorcommand
  */
 
-import type { Editor } from 'toannv-ckeditor5-core';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { TableCellPropertyCommand } from './tablecellpropertycommand.js';
 

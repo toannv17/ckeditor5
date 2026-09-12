@@ -7,8 +7,8 @@
  * @module minimap/minimapview
  */
 
-import { View } from 'toannv-ckeditor5-ui';
-import { Rect, type Locale } from 'toannv-ckeditor5-utils';
+import { View } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Rect, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { MinimapIframeView } from './minimapiframeview.js';
 import { MinimapPositionTrackerView } from './minimappositiontrackerview.js';

@@ -21,7 +21,7 @@ import {
 	type RootConfig,
 	type EditorRootAttributes,
 	type ViewRootElementDefinition
-} from 'toannv-ckeditor5-core';
+} from '@ckeditor-nonkey/ckeditor5-core';
 
 import {
 	CKEditorError,
@@ -32,7 +32,7 @@ import {
 	type CollectionAddEvent,
 	type DecoratedMethodEvent,
 	type Config
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { MultiRootEditorUI } from './multirooteditorui.js';
 import { MultiRootEditorUIView } from './multirooteditoruiview.js';
@@ -43,7 +43,7 @@ import {
 	type ViewRootEditableElement,
 	type ModelWriter,
 	type ModelCanEditAtEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The multi-root editor implementation.

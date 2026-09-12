@@ -7,7 +7,7 @@
  * @module ui/input/inputview
  */
 
-import { type Locale } from 'toannv-ckeditor5-utils';
+import { type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { InputBase } from './inputbase.js';
 
 /**

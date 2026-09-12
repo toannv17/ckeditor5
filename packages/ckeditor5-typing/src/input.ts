@@ -7,8 +7,8 @@
  * @module typing/input
  */
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
-import { env } from 'toannv-ckeditor5-utils';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { env } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { InsertTextCommand, type InsertTextCommandOptions } from './inserttextcommand.js';
 import { InsertTextObserver, type ViewDocumentInsertTextEvent } from './inserttextobserver.js';
@@ -28,11 +28,11 @@ import {
 	type ViewDocumentKeyDownEvent,
 	type ViewDocumentMutationsEvent,
 	type ViewDocumentInputEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { debounce } from 'es-toolkit/compat';
 
-// @if CK_DEBUG_TYPING // import { _debouncedLine, _buildLogMessage } from 'toannv-ckeditor5-engine/src/dev-utils/utils.js';
+// @if CK_DEBUG_TYPING // import { _debouncedLine, _buildLogMessage } from '@ckeditor-nonkey/ckeditor5-engine/src/dev-utils/utils.js';
 
 /**
  * Handles text input coming from the keyboard or other input methods.

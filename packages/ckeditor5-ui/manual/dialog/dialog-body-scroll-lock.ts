@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 import { ButtonView, Dialog, TextareaView } from '../../src/index.js';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
 declare global {
 	interface Window { editor: any }

@@ -5,11 +5,11 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { WidgetResize } from 'toannv-ckeditor5-widget';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { WidgetResize } from '@ckeditor-nonkey/ckeditor5-widget';
 
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { modelTable } from '../../_utils/utils.js';
 import { Table } from '../../../src/table.js';

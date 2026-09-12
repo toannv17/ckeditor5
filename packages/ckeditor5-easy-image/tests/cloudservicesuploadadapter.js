@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { CloudServicesUploadAdapter } from '../src/cloudservicesuploadadapter.js';
-import { FileRepository } from 'toannv-ckeditor5-upload';
-import { CloudServices, CloudServicesCore } from 'toannv-ckeditor5-cloud-services';
+import { FileRepository } from '@ckeditor-nonkey/ckeditor5-upload';
+import { CloudServices, CloudServicesCore } from '@ckeditor-nonkey/ckeditor5-cloud-services';
 
 import { UploadGatewayMock } from './_utils/uploadgatewaymock.js';
-import { createNativeFileMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
-import { TokenMock } from 'toannv-ckeditor5-cloud-services/tests/_utils/tokenmock.js';
-import { mockCreateToken } from 'toannv-ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
+import { createNativeFileMock } from '@ckeditor-nonkey/ckeditor5-upload/tests/_utils/mocks.js';
+import { TokenMock } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/tokenmock.js';
+import { mockCreateToken } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
 
 describe( 'CloudServicesUploadAdapter', () => {
 	let div;

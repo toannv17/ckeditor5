@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { Locale } from 'toannv-ckeditor5-utils';
-import { EditorUIView } from 'toannv-ckeditor5-ui';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import { EditorUIView } from '@ckeditor-nonkey/ckeditor5-ui';
 import { removeEditorBodyOrphans } from '../_utils/cleanup.js';
 
 describe( 'cleanup util', () => {

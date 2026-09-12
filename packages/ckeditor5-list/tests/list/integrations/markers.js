@@ -7,11 +7,11 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
 import { ListEditing } from '../../../src/list/listediting.js';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ImageBlockEditing } from 'toannv-ckeditor5-image';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ImageBlockEditing } from '@ckeditor-nonkey/ckeditor5-image';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { stubUid } from '../_utils/uid.js';
 

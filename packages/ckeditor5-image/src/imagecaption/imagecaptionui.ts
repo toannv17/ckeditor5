@@ -7,9 +7,9 @@
  * @module image/imagecaption/imagecaptionui
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { ButtonView } from 'toannv-ckeditor5-ui';
-import { IconCaption } from 'toannv-ckeditor5-icons';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconCaption } from '@ckeditor-nonkey/ckeditor5-icons';
 import { ImageCaptionUtils } from './imagecaptionutils.js';
 import { type ToggleImageCaptionCommand } from './toggleimagecaptioncommand.js';
 

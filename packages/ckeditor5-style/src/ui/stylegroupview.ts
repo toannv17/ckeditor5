@@ -7,8 +7,8 @@
  * @module style/ui/stylegroupview
  */
 
-import { LabelView, View } from 'toannv-ckeditor5-ui';
-import type { Locale } from 'toannv-ckeditor5-utils';
+import { LabelView, View } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { StyleGridView } from './stylegridview.js';
 import type { NormalizedStyleDefinition } from '../styleutils.js';

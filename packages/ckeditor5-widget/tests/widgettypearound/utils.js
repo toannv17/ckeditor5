@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { ModelSelection, ModelDocumentSelection, _setModelData } from 'toannv-ckeditor5-engine';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { ModelSelection, ModelDocumentSelection, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import {
 	TYPE_AROUND_SELECTION_ATTRIBUTE,
 	getTypeAroundFakeCaretPosition,

@@ -34,7 +34,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { Bold, ClassicEditor, Clipboard } from 'toannv-ckeditor5';
+import { Bold, ClassicEditor, Clipboard } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

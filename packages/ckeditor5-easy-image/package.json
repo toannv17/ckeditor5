@@ -1,5 +1,5 @@
 {
-  "name": "toannv-ckeditor5-easy-image",
+  "name": "@ckeditor-nonkey/ckeditor5-easy-image",
   "version": "48.5.0",
   "description": "Easy Image feature for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -35,16 +35,16 @@
     }
   },
   "dependencies": {
-    "toannv-ckeditor5-cloud-services": "workspace:*",
-    "toannv-ckeditor5-core": "workspace:*",
-    "toannv-ckeditor5-image": "workspace:*",
-    "toannv-ckeditor5-upload": "workspace:*",
-    "toannv-ckeditor5-utils": "workspace:*"
+    "@ckeditor-nonkey/ckeditor5-cloud-services": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-core": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-image": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-upload": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-utils": "workspace:*"
   },
   "devDependencies": {
-    "toannv-ckeditor5-clipboard": "workspace:*",
-    "toannv-ckeditor5-editor-classic": "workspace:*",
-    "toannv-ckeditor5-paragraph": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-clipboard": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-editor-classic": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-paragraph": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

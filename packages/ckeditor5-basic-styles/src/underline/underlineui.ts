@@ -7,9 +7,9 @@
  * @module basic-styles/underline/underlineui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { IconUnderline } from 'toannv-ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconUnderline } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 import { getButtonCreator } from '../utils.js';
 
 const UNDERLINE = 'underline';

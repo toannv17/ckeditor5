@@ -22,7 +22,7 @@ export interface GlobalType {
  * testing, i.e. stubbing native properties:
  *
  * ```ts
- * import { global } from 'toannv-ckeditor5';
+ * import { global } from '@ckeditor-nonkey/ckeditor5';
  *
  * // This stub will work for any code using global module.
  * vi.spyOn( global, 'window', 'get' ).mockReturnValue( {

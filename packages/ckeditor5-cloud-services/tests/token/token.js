@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { createFakeXHRServer } from 'toannv-ckeditor5-core/tests/_utils/fakexhrserver.js';
+import { createFakeXHRServer } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/fakexhrserver.js';
 import { Token } from '../../src/token/token.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'Token', () => {
 	let requests, fakeXHR;

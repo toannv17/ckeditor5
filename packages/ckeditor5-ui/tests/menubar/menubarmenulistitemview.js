@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Locale } from 'toannv-ckeditor5-utils';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	ListItemView,
 	MenuBarMenuListItemView,

@@ -8,9 +8,9 @@
  */
 
 import { isEqual } from 'es-toolkit/compat';
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import type { UpcastElementEvent, ViewElement, ModelItem } from 'toannv-ckeditor5-engine';
-import type { GetCallback } from 'toannv-ckeditor5-utils';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import type { UpcastElementEvent, ViewElement, ModelItem } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { GetCallback } from '@ckeditor-nonkey/ckeditor5-utils';
 import type {
 	ListEditing,
 	ListEditingPostFixerEvent,
@@ -18,7 +18,7 @@ import type {
 	ListIndentCommand,
 	ListType,
 	ListUtils
-} from 'toannv-ckeditor5-list';
+} from '@ckeditor-nonkey/ckeditor5-list';
 
 import { getHtmlAttributeName, setViewAttributes } from '../utils.js';
 import { DataFilter, type HtmlSupportDataFilterRegisterEvent } from '../datafilter.js';

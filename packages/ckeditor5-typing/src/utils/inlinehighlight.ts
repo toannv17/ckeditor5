@@ -8,8 +8,8 @@
  */
 
 import { findAttributeRange } from './findattributerange.js';
-import type { Editor } from 'toannv-ckeditor5-core';
-import type { ViewElement } from 'toannv-ckeditor5-engine';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ViewElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Adds a visual highlight style to an attribute element in which the selection is anchored.
@@ -26,7 +26,7 @@ import type { ViewElement } from 'toannv-ckeditor5-engine';
  * Usage:
  *
  * ```ts
- * import { inlineHighlight } from 'toannv-ckeditor5-typing/src/utils/inlinehighlight';
+ * import { inlineHighlight } from '@ckeditor-nonkey/ckeditor5-typing/src/utils/inlinehighlight';
  *
  * // Make `ck-link_selected` class be applied on an `a` element
  * // whenever the corresponding `linkHref` attribute element is selected.

@@ -15,11 +15,11 @@ import {
 	type EditorDestroyEvent,
 	type EditorReadyEvent,
 	type PluginDependenciesOf
-} from 'toannv-ckeditor5-core';
+} from '@ckeditor-nonkey/ckeditor5-core';
 
-import { DomEmitterMixin, type DomEmitter } from 'toannv-ckeditor5-utils';
+import { DomEmitterMixin, type DomEmitter } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import type { ModelDocumentChangeEvent } from 'toannv-ckeditor5-engine';
+import type { ModelDocumentChangeEvent } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { debounce } from 'es-toolkit/compat';
 

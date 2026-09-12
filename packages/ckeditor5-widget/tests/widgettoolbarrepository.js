@@ -4,19 +4,19 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { BalloonEditor } from 'toannv-ckeditor5-editor-balloon';
-import { BalloonPanelView, ButtonView, View, EditorUI } from 'toannv-ckeditor5-ui';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { BalloonEditor } from '@ckeditor-nonkey/ckeditor5-editor-balloon';
+import { BalloonPanelView, ButtonView, View, EditorUI } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
 import { Widget } from '../src/widget.js';
 import { WidgetToolbarRepository } from '../src/widgettoolbarrepository.js';
 import { isWidget, toWidget } from '../src/utils.js';
 
-import { _setModelData } from 'toannv-ckeditor5-engine';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'WidgetToolbarRepository', () => {
 	let editor, model, balloon, widgetToolbarRepository, editorElement, addToolbarSpy;

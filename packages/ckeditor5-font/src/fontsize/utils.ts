@@ -7,7 +7,7 @@
  * @module font/fontsize/utils
  */
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 import { type FontSizeOption } from '../fontconfig.js';
 
 /**

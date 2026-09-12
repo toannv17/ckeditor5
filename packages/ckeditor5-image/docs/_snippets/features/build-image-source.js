@@ -13,7 +13,7 @@ import {
 	LinkImage,
 	HorizontalLine,
 	Alignment
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 import { ClassicEditor, ArticlePluginSet } from '@snippets/index.js';
 
 export class ImageEditor extends ClassicEditor {

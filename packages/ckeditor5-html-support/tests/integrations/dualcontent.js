@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { ShiftEnter } from 'toannv-ckeditor5-enter';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { ImageInlineEditing } from 'toannv-ckeditor5-image';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { ShiftEnter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { ImageInlineEditing } from '@ckeditor-nonkey/ckeditor5-image';
 import { GeneralHtmlSupport } from '../../src/generalhtmlsupport.js';
 import { getModelDataWithAttributes } from '../_utils/utils.js';
-import { _getModelData } from 'toannv-ckeditor5-engine';
+import { _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { DualContentModelElementSupport } from '../../src/integrations/dualcontent.js';
 
 describe( 'DualContentModelElementSupport', () => {

@@ -4,18 +4,18 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { global } from 'toannv-ckeditor5-utils';
-import { Command, PendingActions } from 'toannv-ckeditor5-core';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Image, PictureEditing, ImageUploadEditing, ImageUploadProgress } from 'toannv-ckeditor5-image';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { _setModelData, _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { Notification } from 'toannv-ckeditor5-ui';
-import { TokenMock } from 'toannv-ckeditor5-cloud-services/tests/_utils/tokenmock.js';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Command, PendingActions } from '@ckeditor-nonkey/ckeditor5-core';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Image, PictureEditing, ImageUploadEditing, ImageUploadProgress } from '@ckeditor-nonkey/ckeditor5-image';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { _setModelData, _getModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Notification } from '@ckeditor-nonkey/ckeditor5-ui';
+import { TokenMock } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/tokenmock.js';
 import { isEqual as isEqualMock } from 'es-toolkit/compat';
 
 vi.mock( 'es-toolkit/compat', async importOriginal => {
@@ -28,8 +28,8 @@ vi.mock( 'es-toolkit/compat', async importOriginal => {
 		isEqual: isEqualFn
 	};
 } );
-import { mockCreateToken } from 'toannv-ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
-import { createFakeXHRServer } from 'toannv-ckeditor5-core/tests/_utils/fakexhrserver.js';
+import { mockCreateToken } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
+import { createFakeXHRServer } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/fakexhrserver.js';
 import { CKBoxEditing } from '../../src/ckboxediting.js';
 import { CKBoxImageEditEditing } from '../../src/ckboximageedit/ckboximageeditediting.js';
 

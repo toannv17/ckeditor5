@@ -7,9 +7,9 @@
  * @module html-support/integrations/dualcontent
  */
 
-import type { ViewElement } from 'toannv-ckeditor5-engine';
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { priorities } from 'toannv-ckeditor5-utils';
+import type { ViewElement } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { priorities } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import {
 	modelToViewBlockAttributeConverter,

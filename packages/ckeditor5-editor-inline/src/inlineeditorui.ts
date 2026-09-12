@@ -10,16 +10,16 @@
 import {
 	rootAcceptsBlocks,
 	type Editor
-} from 'toannv-ckeditor5-core';
+} from '@ckeditor-nonkey/ckeditor5-core';
 
 import {
 	EditorUI,
 	normalizeToolbarConfig,
 	type EditorUIReadyEvent,
 	type EditorUIUpdateEvent
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
-import { enableViewPlaceholder } from 'toannv-ckeditor5-engine';
+import { enableViewPlaceholder } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { type InlineEditorUIView } from './inlineeditoruiview.js';
 

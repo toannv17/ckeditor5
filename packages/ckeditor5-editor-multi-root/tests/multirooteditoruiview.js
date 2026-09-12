@@ -5,10 +5,10 @@
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { MultiRootEditorUIView } from '../src/multirooteditoruiview.js';
-import { EditingView } from 'toannv-ckeditor5-engine';
-import { ToolbarView, MenuBarView, InlineEditableUIView } from 'toannv-ckeditor5-ui';
-import { Locale } from 'toannv-ckeditor5-utils';
-import { createViewRoot } from 'toannv-ckeditor5-engine/tests/view/_utils/createroot.js';
+import { EditingView } from '@ckeditor-nonkey/ckeditor5-engine';
+import { ToolbarView, MenuBarView, InlineEditableUIView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import { createViewRoot } from '@ckeditor-nonkey/ckeditor5-engine/tests/view/_utils/createroot.js';
 
 describe( 'MultiRootEditorUIView', () => {
 	let locale, view, editingView, fooViewRoot, barViewRoot;

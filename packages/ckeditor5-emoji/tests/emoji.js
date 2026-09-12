@@ -5,10 +5,10 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { Emoji, EmojiMention, EmojiPicker } from '../src/index.js';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Mention } from 'toannv-ckeditor5-mention';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Mention } from '@ckeditor-nonkey/ckeditor5-mention';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 describe( 'Emoji', () => {
 	let editor, editorElement;

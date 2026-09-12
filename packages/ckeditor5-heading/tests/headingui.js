@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach, beforeAll, afterAll } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { Heading } from '../src/heading.js';
 import { HeadingEditing } from '../src/headingediting.js';
 import { HeadingUI } from '../src/headingui.js';
-import { DropdownView, MenuBarMenuListItemView, MenuBarMenuView } from 'toannv-ckeditor5-ui';
-import { add as addTranslations, _clearTranslations } from 'toannv-ckeditor5-utils';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { DropdownView, MenuBarMenuListItemView, MenuBarMenuView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { add as addTranslations, _clearTranslations } from '@ckeditor-nonkey/ckeditor5-utils';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'HeadingUI', () => {
 	let editor, editorElement;

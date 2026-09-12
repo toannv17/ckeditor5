@@ -6,15 +6,15 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { Typing } from '../src/typing.js';
 import { DeleteCommand } from '../src/deletecommand.js';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { List } from 'toannv-ckeditor5-list';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Image, ImageCaption } from 'toannv-ckeditor5-image';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Image, ImageCaption } from '@ckeditor-nonkey/ckeditor5-image';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Delete integration', () => {
 	let editor, model;

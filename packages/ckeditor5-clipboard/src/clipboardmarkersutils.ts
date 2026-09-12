@@ -8,8 +8,8 @@
  */
 import { mapValues } from 'es-toolkit/compat';
 
-import { uid } from 'toannv-ckeditor5-utils';
-import { Plugin, type NonEmptyArray } from 'toannv-ckeditor5-core';
+import { uid } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Plugin, type NonEmptyArray } from '@ckeditor-nonkey/ckeditor5-core';
 
 import {
 	ModelRange,
@@ -20,7 +20,7 @@ import {
 	type ModelSelection,
 	type ModelWriter,
 	type Marker
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Part of the clipboard logic. Responsible for collecting markers from selected fragments

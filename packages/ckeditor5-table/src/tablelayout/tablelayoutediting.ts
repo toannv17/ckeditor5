@@ -7,8 +7,8 @@
  * @module table/tablelayout/tablelayoutediting
  */
 
-import { type Editor, Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import type { ClipboardContentInsertionEvent, ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { type Editor, Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ClipboardContentInsertionEvent, ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 import type {
 	DowncastDispatcher,
 	UpcastDispatcher,
@@ -17,7 +17,7 @@ import type {
 	ModelSchemaContext,
 	ModelWriter,
 	ViewConsumable
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { InsertTableLayoutCommand } from './../commands/inserttablelayoutcommand.js';
 import { TableColumnResize } from '../tablecolumnresize.js';

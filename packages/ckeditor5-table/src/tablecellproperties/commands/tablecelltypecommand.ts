@@ -7,8 +7,8 @@
  * @module table/tablecellproperties/commands/tablecelltypecommand
  */
 
-import type { Editor } from 'toannv-ckeditor5-core';
-import type { ModelElement, ModelWriter } from 'toannv-ckeditor5-engine';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ModelElement, ModelWriter } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableUtils } from '../../tableutils.js';
 import {

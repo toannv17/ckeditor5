@@ -15,13 +15,13 @@ import {
 	SwitchButtonView,
 	View,
 	ViewCollection
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
 import {
 	FocusTracker,
 	KeystrokeHandler,
 	keyCodes
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'ListPropertiesView', () => {
 	let view, locale;

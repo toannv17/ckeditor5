@@ -17,9 +17,9 @@ import {
 	type ViewDowncastWriter,
 	type ViewElement,
 	_isParagraphableModelNode as isParagraphable
-} from 'toannv-ckeditor5-engine';
-import type { Editor } from 'toannv-ckeditor5-core';
-import { first } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-engine';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { first } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type ImageUtils } from '../imageutils.js';
 

@@ -7,8 +7,8 @@
  * @module list/listproperties/liststartcommand
  */
 
-import { Command } from 'toannv-ckeditor5-core';
-import { first } from 'toannv-ckeditor5-utils';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
+import { first } from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	expandListBlocksToCompleteList,
 	isListItemBlock,

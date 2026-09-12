@@ -22,7 +22,7 @@ import {
 	type FocusableView,
 	SwitchButtonView,
 	CollapsibleView
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
 import {
 	FocusTracker,
@@ -30,9 +30,9 @@ import {
 	Rect,
 	isVisible,
 	type Locale
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { IconPreviousArrow } from 'toannv-ckeditor5-icons';
+import { IconPreviousArrow } from '@ckeditor-nonkey/ckeditor5-icons';
 
 /**
  * The find and replace form view class.

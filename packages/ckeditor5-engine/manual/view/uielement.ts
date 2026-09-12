@@ -3,13 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Undo } from 'toannv-ckeditor5-undo';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
 import { ViewPosition } from '../../src/view/position.js';
 import type { ViewDowncastWriter } from '../../src/view/downcastwriter.js';
 

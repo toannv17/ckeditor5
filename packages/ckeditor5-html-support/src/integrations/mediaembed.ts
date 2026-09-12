@@ -7,7 +7,7 @@
  * @module html-support/integrations/mediaembed
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { DataFilter, type HtmlSupportDataFilterRegisterEvent } from '../datafilter.js';
 import { DataSchema } from '../dataschema.js';
@@ -18,8 +18,8 @@ import type {
 	ModelElement,
 	UpcastDispatcher,
 	UpcastElementEvent,
-	ViewElement } from 'toannv-ckeditor5-engine';
-import type { GetCallback } from 'toannv-ckeditor5-utils';
+	ViewElement } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { GetCallback } from '@ckeditor-nonkey/ckeditor5-utils';
 import { getDescendantElement } from './integrationutils.js';
 
 /**

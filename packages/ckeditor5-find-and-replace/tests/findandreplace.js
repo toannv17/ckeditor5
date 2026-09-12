@@ -5,12 +5,12 @@
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { Collection } from 'toannv-ckeditor5-utils';
-import { _getViewData, _stringifyModel } from 'toannv-ckeditor5-engine';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Collection } from '@ckeditor-nonkey/ckeditor5-utils';
+import { _getViewData, _stringifyModel } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { FindAndReplace } from '../src/findandreplace.js';
 import { FindAndReplaceUI } from '../src/findandreplaceui.js';

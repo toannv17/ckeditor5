@@ -30,10 +30,10 @@ import {
 	type ObservableSetEvent,
 	type DomEmitter,
 	type ObservableMixinConstructor
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
-import type { Editor, ViewportOffsetConfig } from 'toannv-ckeditor5-core';
-import type { ViewDocumentLayoutChangedEvent, ViewScrollToTheSelectionEvent } from 'toannv-ckeditor5-engine';
+import type { Editor, ViewportOffsetConfig } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ViewDocumentLayoutChangedEvent, ViewScrollToTheSelectionEvent } from '@ckeditor-nonkey/ckeditor5-engine';
 import type {
 	MenuBarView,
 	MenuBarConfigAddedGroup,

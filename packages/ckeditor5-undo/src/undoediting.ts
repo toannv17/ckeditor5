@@ -7,7 +7,7 @@
  * @module undo/undoediting
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
 import { UndoCommand } from './undocommand.js';
 import { RedoCommand } from './redocommand.js';
@@ -16,7 +16,7 @@ import { type UndoRedoBaseCommandRevertEvent } from './basecommand.js';
 import type {
 	Batch,
 	ModelApplyOperationEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The undo engine feature.

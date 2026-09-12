@@ -7,9 +7,9 @@
  * @module clipboard/pasteplaintext
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
-import type { ModelDocumentFragment, Model, ModelElement } from 'toannv-ckeditor5-engine';
+import type { ModelDocumentFragment, Model, ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { ClipboardObserver } from './clipboardobserver.js';
 import { ClipboardPipeline, type ClipboardContentInsertionEvent } from './clipboardpipeline.js';

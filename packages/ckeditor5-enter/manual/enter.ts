@@ -3,13 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 import { Enter } from '../src/enter.js';
 import { ShiftEnter } from '../src/shiftenter.js';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
 ClassicEditor
 	.create( {

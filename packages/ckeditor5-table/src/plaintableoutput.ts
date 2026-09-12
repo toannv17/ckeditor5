@@ -7,8 +7,8 @@
  * @module table/plaintableoutput
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import type { UpcastElementEvent } from 'toannv-ckeditor5-engine';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import type { UpcastElementEvent } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { Table } from './table.js';
 

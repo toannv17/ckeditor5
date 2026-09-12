@@ -6,11 +6,11 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { CloudServices } from '../src/cloudservices.js';
 import { CloudServicesCore } from '../src/cloudservicescore.js';
-import { Context } from 'toannv-ckeditor5-core';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Context } from '@ckeditor-nonkey/ckeditor5-core';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { TokenMock } from './_utils/tokenmock.js';
 import { mockCreateToken } from './_utils/mockcloudservicescoretoken.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'CloudServices', () => {
 	let element, createTokenSpy;

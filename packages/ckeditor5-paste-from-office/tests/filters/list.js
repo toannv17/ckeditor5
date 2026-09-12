@@ -5,7 +5,7 @@
 
 import { describe, it, expect, beforeEach } from 'vitest';
 
-import { HtmlDataProcessor, _stringifyView, ViewDocument, ViewUpcastWriter, StylesProcessor } from 'toannv-ckeditor5-engine';
+import { HtmlDataProcessor, _stringifyView, ViewDocument, ViewUpcastWriter, StylesProcessor } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	transformListItemLikeElementsIntoLists,

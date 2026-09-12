@@ -7,9 +7,9 @@
  * @module ckfinder/ckfindercommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
-import type { Notification } from 'toannv-ckeditor5-ui';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { Notification } from '@ckeditor-nonkey/ckeditor5-ui';
 
 /**
  * The CKFinder command. It is used by the {@link module:ckfinder/ckfinderediting~CKFinderEditing CKFinder editing feature}

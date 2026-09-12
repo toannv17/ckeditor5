@@ -7,7 +7,7 @@
  * @module core/editor/utils/editorusagedata
  */
 
-import { env, global, uid } from 'toannv-ckeditor5-utils';
+import { env, global, uid } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type Editor } from '../editor.js';
 import type { ToolbarConfig, ToolbarConfigItem } from '../editorconfig.js';

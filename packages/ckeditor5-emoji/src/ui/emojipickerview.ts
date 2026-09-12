@@ -14,13 +14,13 @@ import {
 	type FocusableView,
 	type ViewCollection,
 	type SearchTextViewSearchEvent
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	FocusTracker,
 	KeystrokeHandler,
 	type Locale,
 	type ObservableChangeEvent
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 import { EmojiGridView, type EmojiSearchQueryCallback } from './emojigridview.js';
 import { EmojiCategoriesView } from './emojicategoriesview.js';
 import { EmojiSearchView } from './emojisearchview.js';

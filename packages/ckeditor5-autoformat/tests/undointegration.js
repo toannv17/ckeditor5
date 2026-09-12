@@ -7,19 +7,19 @@ import { Autoformat } from '../src/autoformat.js';
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ListEditing, _ListItemUid as ListItemUid } from 'toannv-ckeditor5-list';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { BoldEditing, CodeEditing, StrikethroughEditing, ItalicEditing } from 'toannv-ckeditor5-basic-styles';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Delete } from 'toannv-ckeditor5-typing';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ListEditing, _ListItemUid as ListItemUid } from '@ckeditor-nonkey/ckeditor5-list';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { BoldEditing, CodeEditing, StrikethroughEditing, ItalicEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Delete } from '@ckeditor-nonkey/ckeditor5-typing';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
 
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 
-import { _setModelData, _getModelData, ViewDocumentDomEventData } from 'toannv-ckeditor5-engine';
+import { _setModelData, _getModelData, ViewDocumentDomEventData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Autoformat undo integration', () => {
 	let editor, model, doc;

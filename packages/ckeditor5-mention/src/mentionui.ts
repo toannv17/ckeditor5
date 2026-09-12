@@ -7,19 +7,19 @@
  * @module mention/mentionui
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import type {
 	ViewDocumentKeyDownEvent,
 	Marker,
 	ModelPosition
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	ButtonView,
 	ContextualBalloon,
 	clickOutsideHandler
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
 import {
 	CKEditorError,
@@ -29,9 +29,9 @@ import {
 	keyCodes,
 	logWarning,
 	type DomOptimalPositionOptions
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { TextWatcher, type TextWatcherMatchedEvent } from 'toannv-ckeditor5-typing';
+import { TextWatcher, type TextWatcherMatchedEvent } from '@ckeditor-nonkey/ckeditor5-typing';
 
 import { debounce } from 'es-toolkit/compat';
 

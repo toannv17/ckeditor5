@@ -21,7 +21,7 @@ import {
 	ImageStyle,
 	ImageToolbar,
 	LinkImage
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

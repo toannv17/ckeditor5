@@ -7,7 +7,7 @@
  * @module font/fontbackgroundcolor/fontbackgroundcolorcommand
  */
 
-import type { Editor } from 'toannv-ckeditor5-core';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import { FontCommand } from '../fontcommand.js';
 import { FONT_BACKGROUND_COLOR } from '../utils.js';
 

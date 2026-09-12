@@ -3,25 +3,25 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 
-import { Strikethrough, Code, Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { TableProperties, TableCellProperties, Table, TableToolbar } from 'toannv-ckeditor5-table';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { List, ListProperties } from 'toannv-ckeditor5-list';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Autoformat } from 'toannv-ckeditor5-autoformat';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Image, ImageCaption, ImageStyle, ImageToolbar } from 'toannv-ckeditor5-image';
-import { Indent } from 'toannv-ckeditor5-indent';
-import { Link } from 'toannv-ckeditor5-link';
-import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
+import { Strikethrough, Code, Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { TableProperties, TableCellProperties, Table, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { List, ListProperties } from '@ckeditor-nonkey/ckeditor5-list';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Autoformat } from '@ckeditor-nonkey/ckeditor5-autoformat';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Image, ImageCaption, ImageStyle, ImageToolbar } from '@ckeditor-nonkey/ckeditor5-image';
+import { Indent } from '@ckeditor-nonkey/ckeditor5-indent';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { MediaEmbed } from '@ckeditor-nonkey/ckeditor5-media-embed';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
 import { Markdown } from '../../src/markdown.js';
 import { PasteFromMarkdownExperimental } from '../../src/pastefrommarkdownexperimental.js';
-import { FontFamily } from 'toannv-ckeditor5-font';
+import { FontFamily } from '@ckeditor-nonkey/ckeditor5-font';
 
 declare global {
 	interface Window { editor: any }

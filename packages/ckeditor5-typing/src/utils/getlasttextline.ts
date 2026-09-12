@@ -7,7 +7,7 @@
  * @module typing/utils/getlasttextline
  */
 
-import type { Model, ModelRange } from 'toannv-ckeditor5-engine';
+import type { Model, ModelRange } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Returns the last text line from the given range.

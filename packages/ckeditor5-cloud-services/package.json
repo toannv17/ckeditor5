@@ -1,5 +1,5 @@
 {
-  "name": "toannv-ckeditor5-cloud-services",
+  "name": "@ckeditor-nonkey/ckeditor5-cloud-services",
   "version": "48.5.0",
   "description": "CKEditor 5's Cloud Services integration layer.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -34,12 +34,12 @@
     }
   },
   "dependencies": {
-    "toannv-ckeditor5-core": "workspace:*",
-    "toannv-ckeditor5-upload": "workspace:*",
-    "toannv-ckeditor5-utils": "workspace:*"
+    "@ckeditor-nonkey/ckeditor5-core": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-upload": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-utils": "workspace:*"
   },
   "devDependencies": {
-    "toannv-ckeditor5-editor-classic": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-editor-classic": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

@@ -8,7 +8,7 @@
  */
 
 import { ViewTypeCheckable } from './typecheckable.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type ViewDocument } from './document.js';
 import { type ViewDocumentFragment } from './documentfragment.js';

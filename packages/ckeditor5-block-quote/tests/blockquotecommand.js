@@ -8,10 +8,10 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { BlockQuoteEditing } from '../src/blockquoteediting.js';
 import { BlockQuoteCommand } from '../src/blockquotecommand.js';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Command } from 'toannv-ckeditor5-core';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
 
 describe( 'BlockQuoteCommand', () => {
 	let editor, model, command;

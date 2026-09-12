@@ -4,12 +4,12 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { CodeEditing } from '../../src/code/codeediting.js';
 import { CodeUI } from '../../src/code/codeui.js';
-import { ButtonView } from 'toannv-ckeditor5-ui';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 describe( 'CodeUI', () => {
 	let editor, codeView, editorElement;

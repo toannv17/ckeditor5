@@ -13,7 +13,7 @@ import { LabelView } from '../label/labelview.js';
 import type { FocusableView } from '../focuscycler.js';
 import { type ViewCollection } from '../viewcollection.js';
 
-import { uid, type Locale } from 'toannv-ckeditor5-utils';
+import { uid, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The labeled field view class. It can be used to enhance any view with the following features:

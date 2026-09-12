@@ -7,11 +7,11 @@
  * @module table/converters/table-structure-post-fixer
  */
 
-import type { Editor } from 'toannv-ckeditor5-core';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import type {
 	ModelElement,
 	ModelWriter
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableUtils } from '../tableutils.js';
 import { updateNumericAttribute } from '../utils/common.js';

@@ -7,8 +7,8 @@
  * @module list/list/listmergecommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import type { ModelDocumentSelection, ModelElement, ModelNode, ModelSelection } from 'toannv-ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ModelDocumentSelection, ModelElement, ModelNode, ModelSelection } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	getNestedListBlocks,

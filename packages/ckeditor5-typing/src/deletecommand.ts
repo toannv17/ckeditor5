@@ -7,13 +7,13 @@
  * @module typing/deletecommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import { count } from 'toannv-ckeditor5-utils';
-import type { ModelDocumentSelection, ModelElement, ModelSelection, ModelWriter } from 'toannv-ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { count } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { ModelDocumentSelection, ModelElement, ModelSelection, ModelWriter } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TypingChangeBuffer } from './utils/changebuffer.js';
 
-// @if CK_DEBUG_TYPING // import { _buildLogMessage } from 'toannv-ckeditor5-engine/src/dev-utils/utils.js';
+// @if CK_DEBUG_TYPING // import { _buildLogMessage } from '@ckeditor-nonkey/ckeditor5-engine/src/dev-utils/utils.js';
 
 /**
  * The delete command. Used by the {@link module:typing/delete~Delete delete feature} to handle the <kbd>Delete</kbd> and

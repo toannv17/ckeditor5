@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Editor } from 'toannv-ckeditor5-core';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Rect } from 'toannv-ckeditor5-utils';
-import { _setModelData } from 'toannv-ckeditor5-engine';
-import { generateLicenseKey } from 'toannv-ckeditor5-core/tests/_utils/generatelicensekey.js';
+import { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Rect } from '@ckeditor-nonkey/ckeditor5-utils';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { generateLicenseKey } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/generatelicensekey.js';
 
 import { EditorUI } from '../../src/editorui/editorui.js';
 import { BalloonPanelView } from '../../src/index.js';

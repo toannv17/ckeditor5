@@ -4,22 +4,22 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach, afterAll } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { EditorUI } from '../../../src/editorui/editorui.js';
 import { BalloonToolbar } from '../../../src/toolbar/balloon/balloontoolbar.js';
 import { ContextualBalloon } from '../../../src/panel/balloon/contextualballoon.js';
 import { BalloonPanelView } from '../../../src/panel/balloon/balloonpanelview.js';
 import { ToolbarView } from '../../../src/toolbar/toolbarview.js';
 import { ButtonView } from '../../../src/button/buttonview.js';
-import { FocusTracker, global, ResizeObserver, env, Rect, toUnit } from 'toannv-ckeditor5-utils';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Bold, Italic, Underline } from 'toannv-ckeditor5-basic-styles';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { TableEditing } from 'toannv-ckeditor5-table';
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
+import { FocusTracker, global, ResizeObserver, env, Rect, toUnit } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Bold, Italic, Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
 
-import { _setModelData, _stringifyView } from 'toannv-ckeditor5-engine';
+import { _setModelData, _stringifyView } from '@ckeditor-nonkey/ckeditor5-engine';
 
 const toPx = toUnit( 'px' );
 

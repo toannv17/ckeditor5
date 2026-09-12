@@ -5,12 +5,12 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { RemoveFormatCommand } from '../src/removeformatcommand.js';
-import { Command } from 'toannv-ckeditor5-core';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
 import {
 	_getModelData,
 	_setModelData
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'RemoveFormatCommand', () => {
 	let editor, model, command;

@@ -7,8 +7,8 @@
  * @module table/tableproperties/commands/tablepropertycommand
  */
 
-import type { Batch, ModelElement } from 'toannv-ckeditor5-engine';
-import { Command, type Editor } from 'toannv-ckeditor5-core';
+import type { Batch, ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import { getSelectionAffectedTable } from '../../utils/common.js';
 
 export interface TablePropertyCommandExecuteOptions {

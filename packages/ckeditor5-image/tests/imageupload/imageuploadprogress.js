@@ -4,18 +4,18 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import { ImageBlockEditing } from '../../src/image/imageblockediting.js';
 import { ImageUploadEditing } from '../../src/imageupload/imageuploadediting.js';
 import { ImageUploadProgress } from '../../src/imageupload/imageuploadprogress.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { FileRepository } from 'toannv-ckeditor5-upload';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { FileRepository } from '@ckeditor-nonkey/ckeditor5-upload';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 
-import { createNativeFileMock, NativeFileReaderMock, UploadAdapterMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
-import { _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { createNativeFileMock, NativeFileReaderMock, UploadAdapterMock } from '@ckeditor-nonkey/ckeditor5-upload/tests/_utils/mocks.js';
+import { _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { ImageInlineEditing } from '../../src/image/imageinlineediting.js';
 
 describe( 'ImageUploadProgress', () => {

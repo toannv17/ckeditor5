@@ -7,8 +7,8 @@
  * @module font/fontbackgroundcolor/fontbackgroundcolorediting
  */
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
-import { addBackgroundStylesRules } from 'toannv-ckeditor5-engine';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { addBackgroundStylesRules } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { FontBackgroundColorCommand } from './fontbackgroundcolorcommand.js';
 import { FONT_BACKGROUND_COLOR, renderDowncastElement, renderUpcastAttribute } from '../utils.js';

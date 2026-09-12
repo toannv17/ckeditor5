@@ -7,7 +7,7 @@
  * @module html-support/generalhtmlsupportconfig
  */
 
-import type { MatcherObjectPattern } from 'toannv-ckeditor5-engine';
+import type { MatcherObjectPattern } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The configuration of the General HTML Support feature.

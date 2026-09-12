@@ -7,18 +7,18 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 import { BalloonEditor } from '../src/ballooneditor.js';
 import { BalloonEditorUI } from '../src/ballooneditorui.js';
-import { EditorUI, BalloonToolbar } from 'toannv-ckeditor5-ui';
+import { EditorUI, BalloonToolbar } from '@ckeditor-nonkey/ckeditor5-ui';
 import { BalloonEditorUIView } from '../src/ballooneditoruiview.js';
-import { Image, ImageCaption, ImageToolbar } from 'toannv-ckeditor5-image';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Heading } from 'toannv-ckeditor5-heading';
+import { Image, ImageCaption, ImageToolbar } from '@ckeditor-nonkey/ckeditor5-image';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
 
-import { keyCodes } from 'toannv-ckeditor5-utils';
+import { keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
 import { isElement } from 'es-toolkit/compat';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _setModelData } from 'toannv-ckeditor5-engine';
-import { assertBinding } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
-import { normalizeRootsConfig, Plugin } from 'toannv-ckeditor5-core';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { assertBinding } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
+import { normalizeRootsConfig, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
 describe( 'BalloonEditorUI', () => {
 	let editor, view, ui, viewElement;

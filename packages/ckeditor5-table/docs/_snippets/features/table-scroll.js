@@ -17,7 +17,7 @@ import {
 	TableScroll,
 	TableToolbar,
 	Undo
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( document.querySelector( '#snippet-table-scroll' ), {

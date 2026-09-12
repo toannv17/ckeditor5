@@ -58,7 +58,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, GeneralHtmlSupport } from 'toannv-ckeditor5';
+import { ClassicEditor, GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -277,7 +277,7 @@ Base implementation example:
 
 <code-switcher>
 ```js
-import { ClassicEditor, Essentials, Paragraph, Plugin, SourceEditingEnhanced, GeneralHtmlSupport } from 'toannv-ckeditor5';
+import { ClassicEditor, Essentials, Paragraph, Plugin, SourceEditingEnhanced, GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5';
 
 /**
 * A plugin extending General HTML Support, for example, with custom HTML elements.

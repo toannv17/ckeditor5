@@ -31,7 +31,7 @@ import {
 	isValidAttributeName,
 	first,
 	env
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type ViewNode } from './node.js';
 import { type ViewDocument } from './document.js';

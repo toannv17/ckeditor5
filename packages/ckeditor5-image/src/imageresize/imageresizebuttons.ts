@@ -7,7 +7,7 @@
  * @module image/imageresize/imageresizebuttons
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	ButtonView,
 	DropdownButtonView,
@@ -15,15 +15,15 @@ import {
 	createDropdown,
 	addListToDropdown,
 	type ListDropdownItemDefinition
-} from 'toannv-ckeditor5-ui';
-import { CKEditorError, Collection, type Locale } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { CKEditorError, Collection, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	IconObjectSizeCustom,
 	IconObjectSizeFull,
 	IconObjectSizeLarge,
 	IconObjectSizeMedium,
 	IconObjectSizeSmall
-} from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-icons';
 
 import { ImageResizeEditing } from './imageresizeediting.js';
 

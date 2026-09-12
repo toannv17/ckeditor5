@@ -7,8 +7,8 @@
  * @module html-support/emptyblock
  */
 
-import type { ClipboardContentInsertionEvent, ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { Plugin } from 'toannv-ckeditor5-core';
+import type { ClipboardContentInsertionEvent, ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import type {
 	UpcastElementEvent,
 	ModelElement,
@@ -16,7 +16,7 @@ import type {
 	DowncastDispatcher,
 	UpcastDispatcher,
 	DowncastAttributeEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 const EMPTY_BLOCK_MODEL_ATTRIBUTE = 'htmlEmptyBlock';
 

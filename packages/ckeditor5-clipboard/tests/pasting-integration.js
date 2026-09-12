@@ -4,15 +4,15 @@
  */
 
 import { describe, it, beforeEach, afterEach, expect } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { Clipboard } from '../src/clipboard.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Link } from 'toannv-ckeditor5-link';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
 
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Pasting – integration', () => {
 	let element;

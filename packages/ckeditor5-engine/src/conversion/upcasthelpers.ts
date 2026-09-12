@@ -24,7 +24,7 @@ import { type ViewSelection } from '../view/selection.js';
 import { type ViewDocumentSelection } from '../view/documentselection.js';
 import { isParagraphable, wrapInParagraph } from '../model/utils/autoparagraphing.js';
 
-import { priorities, type EventInfo, type PriorityString } from 'toannv-ckeditor5-utils';
+import { priorities, type EventInfo, type PriorityString } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { cloneDeep } from 'es-toolkit/compat';
 

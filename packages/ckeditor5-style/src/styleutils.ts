@@ -7,17 +7,17 @@
  * @module style/styleutils
  */
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
-import type { ModelElement, MatcherObjectPattern, ModelDocumentSelection, ModelSelectable } from 'toannv-ckeditor5-engine';
-import type { DecoratedMethodEvent } from 'toannv-ckeditor5-utils';
-import type { TemplateDefinition } from 'toannv-ckeditor5-ui';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ModelElement, MatcherObjectPattern, ModelDocumentSelection, ModelSelectable } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { DecoratedMethodEvent } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { TemplateDefinition } from '@ckeditor-nonkey/ckeditor5-ui';
 
 import type {
 	DataFilter,
 	DataSchema,
 	GeneralHtmlSupport,
 	HtmlSupportDataSchemaBlockElementDefinition
-} from 'toannv-ckeditor5-html-support';
+} from '@ckeditor-nonkey/ckeditor5-html-support';
 
 import type { StyleDefinition } from './styleconfig.js';
 import { isObject } from 'es-toolkit/compat';

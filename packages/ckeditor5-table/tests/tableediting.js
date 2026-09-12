@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
-import { ImageBlockEditing } from 'toannv-ckeditor5-image';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { ImageBlockEditing } from '@ckeditor-nonkey/ckeditor5-image';
 
 import { TableEditing } from '../src/tableediting.js';
 import { modelTable } from './_utils/utils.js';
@@ -24,7 +24,7 @@ import { MergeCellCommand } from '../src/commands/mergecellcommand.js';
 import { SetHeaderRowCommand } from '../src/commands/setheaderrowcommand.js';
 import { SetHeaderColumnCommand } from '../src/commands/setheadercolumncommand.js';
 import { SetFooterRowCommand } from '../src/commands/setfooterrowcommand.js';
-import { MediaEmbedEditing } from 'toannv-ckeditor5-media-embed';
+import { MediaEmbedEditing } from '@ckeditor-nonkey/ckeditor5-media-embed';
 
 describe( 'TableEditing', () => {
 	let editor, model;

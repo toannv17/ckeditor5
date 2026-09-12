@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ImageBlockEditing, ImageResizeEditing } from 'toannv-ckeditor5-image';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ImageBlockEditing, ImageResizeEditing } from '@ckeditor-nonkey/ckeditor5-image';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 
 import { TableEditing } from '../../src/tableediting.js';
 import { TableLayoutEditing } from '../../src/tablelayout/tablelayoutediting.js';
@@ -25,7 +25,7 @@ import { TableWidthCommand } from '../../src/tableproperties/commands/tablewidth
 import { TableHeightCommand } from '../../src/tableproperties/commands/tableheightcommand.js';
 import { TableBackgroundColorCommand } from '../../src/tableproperties/commands/tablebackgroundcolorcommand.js';
 
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { assertTableStyle, assertTableClass, assertTRBLAttribute } from '../_utils/utils.js';
 
 describe( 'table properties', () => {

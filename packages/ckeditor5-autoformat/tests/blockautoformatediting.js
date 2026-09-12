@@ -5,11 +5,11 @@
 
 import { Autoformat } from '../src/autoformat.js';
 import { blockAutoformatEditing } from '../src/blockautoformatediting.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
-import { Command } from 'toannv-ckeditor5-core';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 describe( 'blockAutoformatEditing', () => {

@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _getModelData, _parseModel, _setModelData } from 'toannv-ckeditor5-engine';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _getModelData, _parseModel, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableEditing } from '../../src/tableediting.js';
 import { modelTable } from './../_utils/utils.js';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
 
 describe( 'Table layout post-fixer', () => {
 	let editor, model, root;

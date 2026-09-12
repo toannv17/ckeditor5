@@ -9,7 +9,7 @@
 
 import { ViewElement, type ViewElementAttributes } from './element.js';
 import { ViewNode } from './node.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type ViewDocument } from './document.js';
 import { type ViewItem } from './item.js';

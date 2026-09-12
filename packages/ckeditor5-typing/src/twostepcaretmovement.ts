@@ -7,9 +7,9 @@
  * @module typing/twostepcaretmovement
  */
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 
-import { keyCodes } from 'toannv-ckeditor5-utils';
+import { keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import {
 	MouseObserver,
@@ -25,7 +25,7 @@ import {
 	type ViewDocumentTouchStartEvent,
 	type ModelInsertContentEvent,
 	type ModelDeleteContentEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import type { ViewDocumentDeleteEvent } from './deleteobserver.js';
 

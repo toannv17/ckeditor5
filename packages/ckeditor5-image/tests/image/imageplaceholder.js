@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { _setModelData, _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { _setModelData, _getModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { ImagePlaceholder } from '../../src/image/imageplaceholder.js';
 import { ImageUtils } from '../../src/imageutils.js';

@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { FontColor, FontBackgroundColor, FontFamily, FontSize } from 'toannv-ckeditor5-font';
-import { Underline, Strikethrough } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { FontColor, FontBackgroundColor, FontFamily, FontSize } from '@ckeditor-nonkey/ckeditor5-font';
+import { Underline, Strikethrough } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
 import smallFixture from '../_data/small.html?raw';
 import mediumFixture from '../_data/medium.html?raw';

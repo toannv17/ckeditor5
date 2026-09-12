@@ -7,12 +7,12 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 import { BoldEditing } from '../../src/bold/boldediting.js';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import { AttributeCommand } from '../../src/attributecommand.js';
 
-import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { keyCodes, env } from 'toannv-ckeditor5-utils';
+import { _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { keyCodes, env } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'BoldEditing', () => {
 	let editor, model;

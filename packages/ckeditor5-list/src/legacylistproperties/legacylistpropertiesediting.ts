@@ -7,7 +7,7 @@
  * @module list/legacylistproperties/legacylistpropertiesediting
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import type {
 	DifferItem,
@@ -21,7 +21,7 @@ import type {
 	UpcastElementEvent,
 	ViewElement,
 	ModelWriter
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { LegacyListEditing } from '../legacylist/legacylistediting.js';
 import { LegacyListStyleCommand } from './legacyliststylecommand.js';

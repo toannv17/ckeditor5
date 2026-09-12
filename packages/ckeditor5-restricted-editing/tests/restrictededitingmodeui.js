@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconContentLock } from 'toannv-ckeditor5-icons';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { IconContentLock } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 
 import { RestrictedEditingModeEditing } from './../src/restrictededitingmodeediting.js';
 import { RestrictedEditingModeUI } from './../src/restrictededitingmodeui.js';

@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { BalloonPanelView, ContextualBalloon } from 'toannv-ckeditor5-ui';
-import { Rect, global } from 'toannv-ckeditor5-utils';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { BalloonPanelView, ContextualBalloon } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Rect, global } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { registerFullscreenBalloonOffsetCorrection } from '../../../src/handlers/integrations/contextualballoon.js';
 

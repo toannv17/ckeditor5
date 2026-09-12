@@ -3,9 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { IconAlignLeft, IconAlignCenter, IconAlignRight } from 'toannv-ckeditor5-icons';
+import { IconAlignLeft, IconAlignCenter, IconAlignRight } from '@ckeditor-nonkey/ckeditor5-icons';
 import { UIModel } from '../../src/model.js';
-import { Collection, type Locale } from 'toannv-ckeditor5-utils';
+import { Collection, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { testUtils } from '../../tests/_utils/utils.js';
 import { ButtonView } from '../../src/button/buttonview.js';

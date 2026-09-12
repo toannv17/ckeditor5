@@ -4,12 +4,12 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { IconPageBreak } from 'toannv-ckeditor5-icons';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { IconPageBreak } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { PageBreakEditing } from '../src/pagebreakediting.js';
 import { PageBreakUI } from '../src/pagebreakui.js';
-import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 describe( 'PageBreakUI', () => {
 	let editor, editorElement, button;

@@ -7,8 +7,8 @@
  * @module code-block/outdentcodeblockcommand
  */
 
-import type { Model, ModelPosition, ModelRange } from 'toannv-ckeditor5-engine';
-import { Command, type Editor } from 'toannv-ckeditor5-core';
+import type { Model, ModelPosition, ModelRange } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 
 import {
 	getLeadingWhiteSpaces,

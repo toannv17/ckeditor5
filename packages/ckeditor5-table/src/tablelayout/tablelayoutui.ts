@@ -7,8 +7,8 @@
  * @module table/tablelayout/tablelayoutui
  */
 
-import { type Editor, Plugin } from 'toannv-ckeditor5-core';
-import { IconTableLayout, IconTableProperties } from 'toannv-ckeditor5-icons';
+import { type Editor, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconTableLayout, IconTableProperties } from '@ckeditor-nonkey/ckeditor5-icons';
 import {
 	createDropdown,
 	addListToDropdown,
@@ -18,11 +18,11 @@ import {
 	UIModel,
 	type ListDropdownButtonDefinition,
 	type ButtonExecuteEvent
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	Collection,
 	type ObservableChangeEvent
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { InsertTableView } from '../ui/inserttableview.js';
 

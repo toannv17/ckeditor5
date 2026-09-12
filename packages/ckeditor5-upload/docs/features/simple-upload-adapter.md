@@ -19,7 +19,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, SimpleUploadAdapter } from 'toannv-ckeditor5';
+import { ClassicEditor, SimpleUploadAdapter } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

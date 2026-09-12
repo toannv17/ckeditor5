@@ -4,20 +4,20 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { View, EditorUI } from 'toannv-ckeditor5-ui';
+import { View, EditorUI } from '@ckeditor-nonkey/ckeditor5-ui';
 
 import { InlineEditorUI } from '../src/inlineeditorui.js';
 import { InlineEditorUIView } from '../src/inlineeditoruiview.js';
 import { InlineEditor } from '../src/inlineeditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Image, ImageCaption, ImageToolbar } from 'toannv-ckeditor5-image';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Image, ImageCaption, ImageToolbar } from '@ckeditor-nonkey/ckeditor5-image';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 
-import { keyCodes, env } from 'toannv-ckeditor5-utils';
-import { assertBinding } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { keyCodes, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { assertBinding } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 import { isElement } from 'es-toolkit/compat';
-import { _setModelData } from 'toannv-ckeditor5-engine';
-import { normalizeRootsConfig, Plugin } from 'toannv-ckeditor5-core';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { normalizeRootsConfig, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
 describe( 'InlineEditorUI', () => {
 	let editor, view, ui, viewElement;

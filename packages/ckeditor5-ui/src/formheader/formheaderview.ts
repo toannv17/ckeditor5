@@ -11,7 +11,7 @@ import { View } from '../view.js';
 import { type ViewCollection } from '../viewcollection.js';
 import { IconView } from '../icon/iconview.js';
 
-import type { Locale } from 'toannv-ckeditor5-utils';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The class component representing a form header view. It should be used in more advanced forms to

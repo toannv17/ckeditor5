@@ -151,7 +151,7 @@ See the result below:
 This set of buttons and styles is available by default in the document editor and does not require any additional customization:
 
 ```js
-import { DecoupledEditor } from 'toannv-ckeditor5';
+import { DecoupledEditor } from '@ckeditor-nonkey/ckeditor5';
 
 DecoupledEditor.create( {
 	root: {

@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { keyCodes } from 'toannv-ckeditor5-utils';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { MediaEmbedEditing } from '../../src/mediaembedediting.js';
 import { MediaEmbedResizeEditing } from '../../src/mediaembedresize/mediaembedresizeediting.js';

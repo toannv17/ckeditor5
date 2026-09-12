@@ -5,21 +5,21 @@
 
 import { ShowBlocks } from '../src/showblocks.js';
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Alignment } from 'toannv-ckeditor5-alignment';
-import { Autoformat } from 'toannv-ckeditor5-autoformat';
-import { Bold, Code, Italic, Strikethrough, Subscript, Superscript, Underline } from 'toannv-ckeditor5-basic-styles';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { FindAndReplace } from 'toannv-ckeditor5-find-and-replace';
-import { Font } from 'toannv-ckeditor5-font';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Highlight } from 'toannv-ckeditor5-highlight';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { HtmlEmbed } from 'toannv-ckeditor5-html-embed';
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Alignment } from '@ckeditor-nonkey/ckeditor5-alignment';
+import { Autoformat } from '@ckeditor-nonkey/ckeditor5-autoformat';
+import { Bold, Code, Italic, Strikethrough, Subscript, Superscript, Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { FindAndReplace } from '@ckeditor-nonkey/ckeditor5-find-and-replace';
+import { Font } from '@ckeditor-nonkey/ckeditor5-font';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { HtmlEmbed } from '@ckeditor-nonkey/ckeditor5-html-embed';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
 import {
 	AutoImage,
 	Image,
@@ -30,24 +30,24 @@ import {
 	ImageToolbar,
 	ImageUpload,
 	PictureEditing
-} from 'toannv-ckeditor5-image';
-import { Indent, IndentBlock } from 'toannv-ckeditor5-indent';
-import { AutoLink, Link, LinkImage } from 'toannv-ckeditor5-link';
-import { List, ListProperties } from 'toannv-ckeditor5-list';
-import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
-import { Mention } from 'toannv-ckeditor5-mention';
-import { PageBreak } from 'toannv-ckeditor5-page-break';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { PasteFromOffice } from 'toannv-ckeditor5-paste-from-office';
-import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { SpecialCharacters, SpecialCharactersEssentials } from 'toannv-ckeditor5-special-characters';
-import { Table, TableCaption, TableCellProperties, TableColumnResize, TableProperties, TableToolbar } from 'toannv-ckeditor5-table';
-import { TextTransformation } from 'toannv-ckeditor5-typing';
+} from '@ckeditor-nonkey/ckeditor5-image';
+import { Indent, IndentBlock } from '@ckeditor-nonkey/ckeditor5-indent';
+import { AutoLink, Link, LinkImage } from '@ckeditor-nonkey/ckeditor5-link';
+import { List, ListProperties } from '@ckeditor-nonkey/ckeditor5-list';
+import { MediaEmbed } from '@ckeditor-nonkey/ckeditor5-media-embed';
+import { Mention } from '@ckeditor-nonkey/ckeditor5-mention';
+import { PageBreak } from '@ckeditor-nonkey/ckeditor5-page-break';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { PasteFromOffice } from '@ckeditor-nonkey/ckeditor5-paste-from-office';
+import { RemoveFormat } from '@ckeditor-nonkey/ckeditor5-remove-format';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor-nonkey/ckeditor5-special-characters';
+import { Table, TableCaption, TableCellProperties, TableColumnResize, TableProperties, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
+import { TextTransformation } from '@ckeditor-nonkey/ckeditor5-typing';
 
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 declare global {
 	interface Window { editor: any }

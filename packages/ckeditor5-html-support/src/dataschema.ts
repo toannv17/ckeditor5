@@ -7,11 +7,11 @@
  * @module html-support/dataschema
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { toArray } from 'toannv-ckeditor5-utils';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { toArray } from '@ckeditor-nonkey/ckeditor5-utils';
 import { defaultConfig } from './schemadefinitions.js';
 import { mergeWith } from 'es-toolkit/compat';
-import type { ModelAttributeProperties, ModelSchemaItemDefinition } from 'toannv-ckeditor5-engine';
+import type { ModelAttributeProperties, ModelSchemaItemDefinition } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * Holds representation of the extended HTML document type definitions to be used by the

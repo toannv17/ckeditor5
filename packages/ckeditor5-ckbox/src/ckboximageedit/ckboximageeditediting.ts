@@ -7,9 +7,9 @@
  * @module ckbox/ckboximageedit/ckboximageeditediting
  */
 
-import { PendingActions, Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { Notification } from 'toannv-ckeditor5-ui';
-import { ImageEditing, ImageUtils } from 'toannv-ckeditor5-image';
+import { PendingActions, Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { Notification } from '@ckeditor-nonkey/ckeditor5-ui';
+import { ImageEditing, ImageUtils } from '@ckeditor-nonkey/ckeditor5-image';
 import { CKBoxImageEditCommand } from './ckboximageeditcommand.js';
 import { CKBoxEditing } from '../ckboxediting.js';
 import { CKBoxUtils } from '../ckboxutils.js';

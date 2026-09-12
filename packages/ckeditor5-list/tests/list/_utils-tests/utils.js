@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest';
-import { Model, _parseModel } from 'toannv-ckeditor5-engine';
+import { Model, _parseModel } from '@ckeditor-nonkey/ckeditor5-engine';
 import { modelList, stringifyList } from '../_utils/utils.js';
 
 describe( 'mockList()', () => {

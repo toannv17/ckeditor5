@@ -8,13 +8,13 @@ import { ClassicEditor } from '../src/classiceditor.js';
 import { ClassicEditorUI } from '../src/classiceditorui.js';
 import { ClassicEditorUIView } from '../src/classiceditoruiview.js';
 
-import { HtmlDataProcessor, ModelRootElement } from 'toannv-ckeditor5-engine';
+import { HtmlDataProcessor, ModelRootElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Context, Plugin } from 'toannv-ckeditor5-core';
-import { EditorWatchdog, ContextWatchdog } from 'toannv-ckeditor5-watchdog';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { Context, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { EditorWatchdog, ContextWatchdog } from '@ckeditor-nonkey/ckeditor5-watchdog';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'ClassicEditor', () => {
 	let editor, editorElement;

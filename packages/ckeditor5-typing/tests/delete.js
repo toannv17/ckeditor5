@@ -4,16 +4,16 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { Delete } from '../src/delete.js';
 import { Typing } from '../src/typing.js';
-import { Widget, toWidget, toWidgetEditable } from 'toannv-ckeditor5-widget';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { TodoList, List } from 'toannv-ckeditor5-list';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { ViewDocumentDomEventData, _setModelData, _getModelData, Batch } from 'toannv-ckeditor5-engine';
-import { EventInfo, env, getCode } from 'toannv-ckeditor5-utils';
+import { Widget, toWidget, toWidgetEditable } from '@ckeditor-nonkey/ckeditor5-widget';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { TodoList, List } from '@ckeditor-nonkey/ckeditor5-list';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { ViewDocumentDomEventData, _setModelData, _getModelData, Batch } from '@ckeditor-nonkey/ckeditor5-engine';
+import { EventInfo, env, getCode } from '@ckeditor-nonkey/ckeditor5-utils';
 import { fireBeforeInputDomEvent } from './_utils/utils.js';
 
 describe( 'Delete feature', () => {

@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { global } from 'toannv-ckeditor5-utils';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Essentials } from 'toannv-ckeditor5-essentials';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
 import { EmojiRepository } from '../src/emojirepository.js';
 import { EmojiUtils } from '../src/emojiutils.js';
-import { generateLicenseKey } from 'toannv-ckeditor5-core/tests/_utils/generatelicensekey.js';
+import { generateLicenseKey } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/generatelicensekey.js';
 
 // Mocks the emoji version supported by the operating system and marks the '🙂‍↔️' emoji as an unsupported ZWJ sequence.
 // Call it before `createTestEditor()` in a test that needs a deterministic emoji support detection.

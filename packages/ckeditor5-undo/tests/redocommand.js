@@ -4,12 +4,12 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { Batch } from 'toannv-ckeditor5-engine';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { Batch } from '@ckeditor-nonkey/ckeditor5-engine';
 import { UndoCommand } from '../src/undocommand.js';
 import { RedoCommand } from '../src/redocommand.js';
-import { itemAt, getText } from 'toannv-ckeditor5-engine/tests/model/_utils/utils.js';
-import { toArray } from 'toannv-ckeditor5-utils';
+import { itemAt, getText } from '@ckeditor-nonkey/ckeditor5-engine/tests/model/_utils/utils.js';
+import { toArray } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'RedoCommand', () => {
 	let editor, model, root, redo, undo;

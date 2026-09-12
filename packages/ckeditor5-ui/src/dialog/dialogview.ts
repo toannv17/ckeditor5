@@ -18,8 +18,8 @@ import {
 	type Locale,
 	type DecoratedMethodEvent,
 	type KeystrokeHandlerOptions
-} from 'toannv-ckeditor5-utils';
-import { IconCancel } from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-utils';
+import { IconCancel } from '@ckeditor-nonkey/ckeditor5-icons';
 import { ViewCollection } from '../viewcollection.js';
 import { View } from '../view.js';
 import { FormHeaderView } from '../formheader/formheaderview.js';
@@ -41,7 +41,7 @@ import { DialogContentView } from './dialogcontentview.js';
 import { type EditorUI } from '../editorui/editorui.js';
 
 import type { DialogPositionCallback } from './dialog.js';
-// @if CK_DEBUG_DIALOG // import { RectDrawer } from 'toannv-ckeditor5-utils/tests/_utils/rectdrawer.js';
+// @if CK_DEBUG_DIALOG // import { RectDrawer } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/rectdrawer.js';
 
 /**
  * Available dialog view positions:

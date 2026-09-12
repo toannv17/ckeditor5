@@ -7,8 +7,8 @@
  * @module link/unlinkcommand
  */
 
-import { Command } from 'toannv-ckeditor5-core';
-import { findAttributeRange } from 'toannv-ckeditor5-typing';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
+import { findAttributeRange } from '@ckeditor-nonkey/ckeditor5-typing';
 
 import { type LinkCommand } from './linkcommand.js';
 import { isLinkableElement } from './utils.js';

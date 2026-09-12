@@ -7,7 +7,7 @@
  * @module language/textpartlanguageui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	addListToDropdown,
 	createDropdown,
@@ -18,8 +18,8 @@ import {
 	MenuBarMenuListItemButtonView,
 	UIModel,
 	type ListDropdownItemDefinition
-} from 'toannv-ckeditor5-ui';
-import { Collection, type LanguageDirection } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { Collection, type LanguageDirection } from '@ckeditor-nonkey/ckeditor5-utils';
 import { stringifyLanguageAttribute } from './utils.js';
 import { type TextPartLanguageCommand } from './textpartlanguagecommand.js';
 

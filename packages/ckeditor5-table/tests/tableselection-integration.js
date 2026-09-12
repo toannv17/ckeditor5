@@ -4,21 +4,21 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Delete, Input } from 'toannv-ckeditor5-typing';
-import { Clipboard, ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Delete, Input } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Clipboard, ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
 
 import { TableEditing } from '../src/tableediting.js';
 import { TableSelection } from '../src/tableselection.js';
 import { TableClipboard } from '../src/tableclipboard.js';
 
-import { _getModelData, _setModelData, ViewDocumentDomEventData } from 'toannv-ckeditor5-engine';
+import { _getModelData, _setModelData, ViewDocumentDomEventData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { assertSelectedCells, modelTable } from './_utils/utils.js';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
 
 describe( 'TableSelection - integration', () => {
 	let editor, model, tableSelection, modelRoot, element, viewDocument;

@@ -7,13 +7,13 @@
  * @module fullscreen/handlers/integrations/contextualballoon
  */
 
-import { Rect, type GetCallback, type PositioningFunction } from 'toannv-ckeditor5-utils';
-import type { Editor } from 'toannv-ckeditor5-core';
+import { Rect, type GetCallback, type PositioningFunction } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	BalloonPanelView,
 	type ContextualBalloon,
 	type ContextualBalloonGetPositionOptionsEvent
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
 /**
  * Registers a `getPositionOptions` correction on the ContextualBalloon plugin so that

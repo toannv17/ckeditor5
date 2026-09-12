@@ -3,15 +3,15 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 import { FindAndReplace } from '../src/findandreplace.js';
 
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Highlight } from 'toannv-ckeditor5-highlight';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { FontColor } from 'toannv-ckeditor5-font';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { FontColor } from '@ckeditor-nonkey/ckeditor5-font';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
 
 declare global {
 	interface Window { editor: any }

@@ -7,13 +7,13 @@
  * @module image/imageresize/imagecustomresizeui
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	ContextualBalloon,
 	clickOutsideHandler,
 	CssTransitionDisablerMixin,
 	type ViewWithCssTransitionDisabler
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
 import { getBalloonPositionData } from '../image/ui/utils.js';
 import { getSelectedImageWidthInUnits } from './utils/getselectedimagewidthinunits.js';

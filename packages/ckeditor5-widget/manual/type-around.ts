@@ -3,15 +3,15 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
-import { TableProperties, TableCellProperties } from 'toannv-ckeditor5-table';
-import { ImageResize } from 'toannv-ckeditor5-image';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { MediaEmbed } from '@ckeditor-nonkey/ckeditor5-media-embed';
+import { TableProperties, TableCellProperties } from '@ckeditor-nonkey/ckeditor5-table';
+import { ImageResize } from '@ckeditor-nonkey/ckeditor5-image';
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
-import { ButtonView } from 'toannv-ckeditor5-ui';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 import { toWidget, viewToModelPositionOutsideModelElement } from '../src/utils.js';
 
 declare global {

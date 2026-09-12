@@ -7,10 +7,10 @@
  * @module editor-classic/classiceditoruiview
  */
 
-import { BoxedEditorUIView, InlineEditableUIView, MenuBarView, StickyPanelView, ToolbarView } from 'toannv-ckeditor5-ui';
-import type { Locale } from 'toannv-ckeditor5-utils';
-import type { EditingView } from 'toannv-ckeditor5-engine';
-import type { ViewRootElementDefinition } from 'toannv-ckeditor5-core';
+import { BoxedEditorUIView, InlineEditableUIView, MenuBarView, StickyPanelView, ToolbarView } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { EditingView } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { ViewRootElementDefinition } from '@ckeditor-nonkey/ckeditor5-core';
 
 /**
  * Classic editor UI view. Uses an inline editable and a sticky toolbar, all

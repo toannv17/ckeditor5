@@ -5,15 +5,15 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { Typing } from '../src/typing.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Enter } from 'toannv-ckeditor5-enter';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
 
-import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Typing – Input integration', () => {
 	let editor, model, doc, viewDocument, boldView, italicView, editorElement;

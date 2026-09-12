@@ -7,21 +7,21 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 import { Autoformat } from '../src/autoformat.js';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ListEditing, ListPropertiesEditing, TodoListEditing } from 'toannv-ckeditor5-list';
-import { stubUid } from 'toannv-ckeditor5-list/tests/list/_utils/uid.js';
-import { HeadingEditing, HeadingCommand } from 'toannv-ckeditor5-heading';
-import { BoldEditing, StrikethroughEditing, CodeEditing, ItalicEditing } from 'toannv-ckeditor5-basic-styles';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
-import { HorizontalLineEditing } from 'toannv-ckeditor5-horizontal-line';
-import { Enter, ShiftEnter } from 'toannv-ckeditor5-enter';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { Typing } from 'toannv-ckeditor5-typing';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ListEditing, ListPropertiesEditing, TodoListEditing } from '@ckeditor-nonkey/ckeditor5-list';
+import { stubUid } from '@ckeditor-nonkey/ckeditor5-list/tests/list/_utils/uid.js';
+import { HeadingEditing, HeadingCommand } from '@ckeditor-nonkey/ckeditor5-heading';
+import { BoldEditing, StrikethroughEditing, CodeEditing, ItalicEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { CodeBlockEditing } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { HorizontalLineEditing } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { Enter, ShiftEnter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Autoformat', () => {
 	let editor, model, doc;

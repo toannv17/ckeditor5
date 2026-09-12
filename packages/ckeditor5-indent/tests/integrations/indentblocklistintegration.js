@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { TableEditing } from 'toannv-ckeditor5-table';
-import { ListEditing } from 'toannv-ckeditor5-list';
-import { ModelElement, _setModelData, _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { keyCodes } from 'toannv-ckeditor5-utils';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
+import { ListEditing } from '@ckeditor-nonkey/ckeditor5-list';
+import { ModelElement, _setModelData, _getModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
 import { ListItemUid } from '../../../ckeditor5-list/src/list/utils/model.js';
 
 import { IndentEditing } from '../../src/indentediting.js';

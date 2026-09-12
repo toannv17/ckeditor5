@@ -236,7 +236,7 @@ npm install ckeditor5 ckbox
 Once the packages are installed, you can import the necessary modules directly into your application code and use them within your application:
 
 ```js
-import { ClassicEditor, Image, ImageUpload, LinkEditing, PictureEditing, CKBox, CKBoxImageEdit, CloudServices } from 'toannv-ckeditor5';
+import { ClassicEditor, Image, ImageUpload, LinkEditing, PictureEditing, CKBox, CKBoxImageEdit, CloudServices } from '@ckeditor-nonkey/ckeditor5';
 import * as ckbox from 'ckbox';
 import 'ckeditor5/ckeditor5.css';
 import 'ckbox/dist/styles/ckbox.css';

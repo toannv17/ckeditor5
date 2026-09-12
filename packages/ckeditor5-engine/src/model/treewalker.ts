@@ -20,7 +20,7 @@ import { type ModelDocumentFragment } from './documentfragment.js';
 import { type ModelItem } from './item.js';
 import { type ModelRange } from './range.js';
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * Position iterator class. It allows to iterate forward and backward over the document.

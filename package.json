@@ -111,7 +111,7 @@
     "build": "node scripts/nim/build-ckeditor5.mjs",
     "release:prepare-changelog": "node ./scripts/release/preparechangelog.mjs",
     "release:prepare-packages": "node ./scripts/release/preparepackages.mjs",
-    "release:publish-packages": "node ./scripts/release/publishpackages.mjs",
+    "release:publish-packages": "node ./scripts/release/publishpackages2.mjs",
     "release:deploy-cdn": "node ./scripts/release/deploycdn.mjs",
     "release:lint-packages": "node ./scripts/release/validatepackages.mjs",
     "release:switch-latest-npm": "node ./scripts/release/switchlatestnpm.mjs",

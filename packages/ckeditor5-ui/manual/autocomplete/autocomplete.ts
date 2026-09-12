@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { Locale } from 'toannv-ckeditor5-utils';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	ButtonView,
 	ListItemView,

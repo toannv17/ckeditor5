@@ -7,24 +7,24 @@ declare global {
 	interface Window { CKEditorInspector: any }
 }
 
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Autoformat } from 'toannv-ckeditor5-autoformat';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Image, ImageCaption, ImageStyle, ImageToolbar } from 'toannv-ckeditor5-image';
-import { Indent } from 'toannv-ckeditor5-indent';
-import { Link } from 'toannv-ckeditor5-link';
-import { List } from 'toannv-ckeditor5-list';
-import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Table, TableToolbar } from 'toannv-ckeditor5-table';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { FindAndReplace } from 'toannv-ckeditor5-find-and-replace';
-import { SpecialCharacters, SpecialCharactersEssentials } from 'toannv-ckeditor5-special-characters';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Autoformat } from '@ckeditor-nonkey/ckeditor5-autoformat';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Image, ImageCaption, ImageStyle, ImageToolbar } from '@ckeditor-nonkey/ckeditor5-image';
+import { Indent } from '@ckeditor-nonkey/ckeditor5-indent';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { MediaEmbed } from '@ckeditor-nonkey/ckeditor5-media-embed';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Table, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { FindAndReplace } from '@ckeditor-nonkey/ckeditor5-find-and-replace';
+import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor-nonkey/ckeditor5-special-characters';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
 import { ButtonView, Dialog, View } from '../../src/index.js';
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 
 class ViewWithEscSupport extends View {
 	declare public count: number;

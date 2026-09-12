@@ -7,8 +7,8 @@
  * @module font/ui/colorui
  */
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
-import type { Batch } from 'toannv-ckeditor5-engine';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { Batch } from '@ckeditor-nonkey/ckeditor5-engine';
 import {
 	createDropdown,
 	normalizeColorOptions,
@@ -19,7 +19,7 @@ import {
 	type ColorSelectorColorPickerShowEvent,
 	MenuBarMenuView,
 	ColorSelectorView
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 
 import {
 	addColorSelectorToDropdown,

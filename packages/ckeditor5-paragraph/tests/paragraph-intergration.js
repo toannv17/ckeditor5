@@ -5,14 +5,14 @@
 
 import { describe, it, expect } from 'vitest';
 import { Paragraph } from '../src/paragraph.js';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 import {
 	_getModelData,
 	_setModelData,
-	_parseView } from 'toannv-ckeditor5-engine';
+	_parseView } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Paragraph feature – integration', () => {
 	describe( 'with clipboard', () => {

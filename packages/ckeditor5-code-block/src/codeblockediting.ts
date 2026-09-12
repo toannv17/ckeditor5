@@ -7,8 +7,8 @@
  * @module code-block/codeblockediting
  */
 
-import { Plugin, type Editor, type MultiCommand, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { ShiftEnter, type ViewDocumentEnterEvent } from 'toannv-ckeditor5-enter';
+import { Plugin, type Editor, type MultiCommand, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { ShiftEnter, type ViewDocumentEnterEvent } from '@ckeditor-nonkey/ckeditor5-enter';
 
 import {
 	ViewUpcastWriter,
@@ -21,12 +21,12 @@ import {
 	type UpcastTextEvent,
 	type ModelElement,
 	type ModelSelectionChangeRangeEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 import {
 	ClipboardPipeline,
 	type ViewDocumentClipboardInputEvent,
 	type ClipboardContentInsertionEvent
-} from 'toannv-ckeditor5-clipboard';
+} from '@ckeditor-nonkey/ckeditor5-clipboard';
 
 import { CodeBlockCommand } from './codeblockcommand.js';
 import { IndentCodeBlockCommand } from './indentcodeblockcommand.js';

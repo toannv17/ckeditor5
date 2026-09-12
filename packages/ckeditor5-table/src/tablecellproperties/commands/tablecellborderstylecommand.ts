@@ -7,8 +7,8 @@
  * @module table/tablecellproperties/commands/tablecellborderstylecommand
  */
 
-import type { Editor } from 'toannv-ckeditor5-core';
-import type { ModelElement } from 'toannv-ckeditor5-engine';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableCellPropertyCommand } from './tablecellpropertycommand.js';
 import { getSingleValue } from '../../utils/table-properties.js';

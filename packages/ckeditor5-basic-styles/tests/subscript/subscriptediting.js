@@ -6,11 +6,11 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { SubscriptEditing } from '../../src/subscript/subscriptediting.js';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import { AttributeCommand } from '../../src/attributecommand.js';
 
-import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'SubscriptEditing', () => {
 	let editor, model;

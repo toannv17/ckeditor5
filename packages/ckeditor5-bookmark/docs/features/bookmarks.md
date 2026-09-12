@@ -49,7 +49,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, Bookmark } from 'toannv-ckeditor5';
+import { ClassicEditor, Bookmark } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

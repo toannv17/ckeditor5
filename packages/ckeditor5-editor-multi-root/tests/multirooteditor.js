@@ -8,18 +8,18 @@ import { MultiRootEditor } from '../src/multirooteditor.js';
 import { MultiRootEditorUI } from '../src/multirooteditorui.js';
 import { MultiRootEditorUIView } from '../src/multirooteditoruiview.js';
 
-import { HtmlDataProcessor, ModelRootElement } from 'toannv-ckeditor5-engine';
+import { HtmlDataProcessor, ModelRootElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Context, Plugin } from 'toannv-ckeditor5-core';
-import { EditorWatchdog, ContextWatchdog } from 'toannv-ckeditor5-watchdog';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Table } from 'toannv-ckeditor5-table';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { Context, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { EditorWatchdog, ContextWatchdog } from '@ckeditor-nonkey/ckeditor5-watchdog';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { assertCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { assertCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 
 const editorData = { foo: '<p>Foo</p>', bar: '<p>Bar</p>' };
 

@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Enter } from 'toannv-ckeditor5-enter';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
 import { Typing } from '../src/typing.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { _getModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 declare global {
 	interface Window { editor: any }

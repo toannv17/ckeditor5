@@ -7,7 +7,7 @@
  * @module image/imageresize/resizeimagecommand
  */
 
-import { Command } from 'toannv-ckeditor5-core';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
 import { type ImageUtils } from '../imageutils.js';
 
 /**

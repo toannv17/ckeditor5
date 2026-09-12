@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import { Widget } from '../src/widget.js';
 import { WidgetTypeAround } from '../src/widgettypearound/widgettypearound.js';
-import { Typing, Delete } from 'toannv-ckeditor5-typing';
+import { Typing, Delete } from '@ckeditor-nonkey/ckeditor5-typing';
 import {
 	MouseObserver,
 	PointerObserver,
@@ -19,9 +19,9 @@ import {
 	EditingView,
 	ViewRootEditableElement,
 	ViewEditableElement
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 import { toWidget } from '../src/utils.js';
-import { getCode, keyCodes, toArray, env } from 'toannv-ckeditor5-utils';
+import { getCode, keyCodes, toArray, env } from '@ckeditor-nonkey/ckeditor5-utils';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 describe( 'Widget', () => {

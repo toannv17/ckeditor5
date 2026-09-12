@@ -7,7 +7,7 @@
  * @module font/fontsize
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import { FontSizeEditing } from './fontsize/fontsizeediting.js';
 import { FontSizeUI } from './fontsize/fontsizeui.js';
 import { normalizeOptions } from './fontsize/utils.js';

@@ -5,16 +5,16 @@
 
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
-import { Command } from 'toannv-ckeditor5-core';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { ImageEditing, Image, ImageBlock, ImageInline } from 'toannv-ckeditor5-image';
-import { LinkEditing, Link } from 'toannv-ckeditor5-link';
-import { Notification } from 'toannv-ckeditor5-ui';
-import { global } from 'toannv-ckeditor5-utils';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ImageEditing, Image, ImageBlock, ImageInline } from '@ckeditor-nonkey/ckeditor5-image';
+import { LinkEditing, Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { Notification } from '@ckeditor-nonkey/ckeditor5-ui';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { CKFinder } from '../src/ckfinder.js';
 import { CKFinderEditing } from '../src/ckfinderediting.js';
-import { CKFinderUploadAdapter } from 'toannv-ckeditor5-adapter-ckfinder';
+import { CKFinderUploadAdapter } from '@ckeditor-nonkey/ckeditor5-adapter-ckfinder';
 
 describe( 'CKFinderEditing', () => {
 	let editorElement, editor;

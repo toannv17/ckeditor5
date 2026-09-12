@@ -15,7 +15,7 @@ import {
 	type KeystrokeHandler,
 	type KeystrokeHandlerOptions,
 	type EmitterMixinConstructor
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type View } from './view.js';
 import { type ViewCollection } from './viewcollection.js';

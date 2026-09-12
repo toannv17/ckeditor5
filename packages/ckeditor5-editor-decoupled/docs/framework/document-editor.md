@@ -21,7 +21,7 @@ Document editor can be created using the existing data container in the DOM. It 
 
 <code-switcher>
 ```js
-import { DecoupledEditor } from 'toannv-ckeditor5';
+import { DecoupledEditor } from '@ckeditor-nonkey/ckeditor5';
 
 DecoupledEditor.create( {
 	root: {

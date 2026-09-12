@@ -7,7 +7,7 @@
  * @module upload/filereader
  */
 
-import { ObservableMixin, type ObservableMixinConstructor } from 'toannv-ckeditor5-utils';
+import { ObservableMixin, type ObservableMixinConstructor } from '@ckeditor-nonkey/ckeditor5-utils';
 
 type DomFileReader = globalThis.FileReader;
 

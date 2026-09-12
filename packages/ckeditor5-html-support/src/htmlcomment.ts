@@ -7,9 +7,9 @@
  * @module html-support/htmlcomment
  */
 
-import type { Marker, ModelPosition, ModelRange, ModelElement } from 'toannv-ckeditor5-engine';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { uid } from 'toannv-ckeditor5-utils';
+import type { Marker, ModelPosition, ModelRange, ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { uid } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The HTML comment feature. It preserves the HTML comments (`<!-- -->`) in the editor data.

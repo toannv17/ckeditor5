@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, vi } from 'vitest';
-import { TokenMock } from 'toannv-ckeditor5-cloud-services/tests/_utils/tokenmock.js';
+import { TokenMock } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/tokenmock.js';
 import { getWorkspaceId, getImageUrls, blurHashToDataUrl, convertMimeTypeToExtension, getContentTypeOfUrl } from '../src/utils.js';
 
 describe( 'utils', () => {

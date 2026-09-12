@@ -5,8 +5,8 @@
 
 import { describe } from 'vitest';
 
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import { PasteFromOffice } from '../../src/pastefromoffice.js';
 
 import { generateTests } from '../_utils/utils.js';

@@ -8,9 +8,9 @@ import { describe, it, expect, vi, beforeEach, afterEach, beforeAll, afterAll } 
 import { DeleteObserver } from '../../src/deleteobserver.js';
 import { InsertTextObserver } from '../../src/inserttextobserver.js';
 
-import { EditingView, ViewDocumentDomEventData } from 'toannv-ckeditor5-engine';
-import { createViewRoot } from 'toannv-ckeditor5-engine/tests/view/_utils/createroot.js';
-import { env, getCode } from 'toannv-ckeditor5-utils';
+import { EditingView, ViewDocumentDomEventData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { createViewRoot } from '@ckeditor-nonkey/ckeditor5-engine/tests/view/_utils/createroot.js';
+import { env, getCode } from '@ckeditor-nonkey/ckeditor5-utils';
 import { fireBeforeInputDomEvent } from '../_utils/utils.js';
 
 describe( 'Bug ckeditor5-typing#11904', () => {

@@ -7,10 +7,10 @@
  * @module editor-balloon/ballooneditoruiview
  */
 
-import { EditorUIView, InlineEditableUIView, MenuBarView } from 'toannv-ckeditor5-ui';
-import type { Locale } from 'toannv-ckeditor5-utils';
-import type { EditingView } from 'toannv-ckeditor5-engine';
-import type { ViewRootElementDefinition } from 'toannv-ckeditor5-core';
+import { EditorUIView, InlineEditableUIView, MenuBarView } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import type { EditingView } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { ViewRootElementDefinition } from '@ckeditor-nonkey/ckeditor5-core';
 
 /**
  * Contextual editor UI view. Uses the {@link module:ui/editableui/inline/inlineeditableuiview~InlineEditableUIView}.

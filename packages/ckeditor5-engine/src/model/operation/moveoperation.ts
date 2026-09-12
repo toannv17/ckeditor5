@@ -13,7 +13,7 @@ import { ModelRange } from '../range.js';
 import { _move } from './utils.js';
 import type { ModelSelectable } from '../selection.js';
 
-import { CKEditorError, compareArrays } from 'toannv-ckeditor5-utils';
+import { CKEditorError, compareArrays } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type ModelDocument } from '../document.js';
 

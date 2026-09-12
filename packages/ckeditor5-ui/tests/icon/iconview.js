@@ -5,8 +5,8 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { IconView } from '../../src/icon/iconview.js';
-import { normalizeHtml } from 'toannv-ckeditor5-utils/tests/_utils/normalizehtml.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { normalizeHtml } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/normalizehtml.js';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'IconView', () => {
 	let view;

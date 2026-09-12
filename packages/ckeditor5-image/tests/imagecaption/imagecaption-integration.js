@@ -6,13 +6,13 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { Image } from '../../src/image.js';
 import { ImageCaption } from '../../src/imagecaption.js';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ViewDocumentDomEventData, _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
-import { Enter, ShiftEnter } from 'toannv-ckeditor5-enter';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Typing } from 'toannv-ckeditor5-typing';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ViewDocumentDomEventData, _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Enter, ShiftEnter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
 
-import { global } from 'toannv-ckeditor5-utils';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'ImageCaption integration', () => {
 	let editorElement, editor, model, view, viewDocument;

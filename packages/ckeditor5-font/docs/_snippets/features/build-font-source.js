@@ -12,7 +12,7 @@ import {
 	ImageResize,
 	AutoImage,
 	LinkImage
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 import { ClassicEditor } from '@snippets/index.js';
 
 export class FontEditor extends ClassicEditor {

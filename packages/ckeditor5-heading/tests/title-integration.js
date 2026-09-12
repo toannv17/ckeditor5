@@ -7,14 +7,14 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
 import { Title } from '../src/title.js';
 import { Heading } from '../src/heading.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _getModelData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
 
 describe( 'Title integration with feature', () => {
 	let editor, model, doc, element;

@@ -7,7 +7,7 @@
  * @module ui/bindings/csstransitiondisablermixin
  */
 
-import type { Constructor, Mixed } from 'toannv-ckeditor5-utils';
+import type { Constructor, Mixed } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type View } from '../view.js';
 

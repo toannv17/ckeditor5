@@ -3,17 +3,17 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { CodeBlockEditing } from 'toannv-ckeditor5-code-block';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { TableEditing } from 'toannv-ckeditor5-table';
-import { FontSizeEditing } from 'toannv-ckeditor5-font';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ModelElement, _setModelData, _getModelData, _stringifyModel, _getViewData } from 'toannv-ckeditor5-engine';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { CodeBlockEditing } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
+import { FontSizeEditing } from '@ckeditor-nonkey/ckeditor5-font';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ModelElement, _setModelData, _getModelData, _stringifyModel, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { env } from 'toannv-ckeditor5-utils';
+import { env } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { stubUid } from '../list/_utils/uid.js';
 import { ListEditing } from '../../src/list/listediting.js';

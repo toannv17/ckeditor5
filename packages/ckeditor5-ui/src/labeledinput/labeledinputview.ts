@@ -12,7 +12,7 @@ import { LabelView } from '../label/labelview.js';
 
 import type { InputView, InputViewInputEvent } from '../input/inputview.js';
 
-import { uid, type Locale } from 'toannv-ckeditor5-utils';
+import { uid, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The labeled input view class.

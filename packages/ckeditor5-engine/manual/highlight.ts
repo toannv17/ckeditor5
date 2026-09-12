@@ -3,18 +3,18 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { List } from 'toannv-ckeditor5-list';
-import { global } from 'toannv-ckeditor5-utils';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Table } from 'toannv-ckeditor5-table';
-import { Widget, toWidget } from 'toannv-ckeditor5-widget';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Table } from '@ckeditor-nonkey/ckeditor5-table';
+import { Widget, toWidget } from '@ckeditor-nonkey/ckeditor5-widget';
 
 declare global {
 	interface Window { editor: any }

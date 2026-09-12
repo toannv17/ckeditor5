@@ -7,11 +7,11 @@
  * @module ui/button/listitembuttonview
  */
 
-import type { ObservableChangeEvent, Locale } from 'toannv-ckeditor5-utils';
+import type { ObservableChangeEvent, Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { type ButtonLabel } from './buttonlabel.js';
 import { type ViewCollection } from '../viewcollection.js';
 
-import { IconCheck } from 'toannv-ckeditor5-icons';
+import { IconCheck } from '@ckeditor-nonkey/ckeditor5-icons';
 import { ButtonView } from './buttonview.js';
 import { ButtonLabelView } from './buttonlabelview.js';
 import { IconView } from '../icon/iconview.js';

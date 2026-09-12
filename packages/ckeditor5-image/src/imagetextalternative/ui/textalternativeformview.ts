@@ -19,9 +19,9 @@ import {
 	submitHandler,
 	type InputView,
 	type FocusableView
-} from 'toannv-ckeditor5-ui';
-import { FocusTracker, KeystrokeHandler, type Locale } from 'toannv-ckeditor5-utils';
-import { IconPreviousArrow } from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { FocusTracker, KeystrokeHandler, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
+import { IconPreviousArrow } from '@ckeditor-nonkey/ckeditor5-icons';
 
 /**
  * The TextAlternativeFormView class.

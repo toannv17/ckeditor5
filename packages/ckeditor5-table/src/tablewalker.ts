@@ -6,9 +6,9 @@
 /**
  * @module table/tablewalker
  */
-import type { ModelElement, ModelPosition } from 'toannv-ckeditor5-engine';
+import type { ModelElement, ModelPosition } from '@ckeditor-nonkey/ckeditor5-engine';
 
-// @if CK_DEBUG // import { CKEditorError } from 'toannv-ckeditor5-utils/src/ckeditorerror.js';
+// @if CK_DEBUG // import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/src/ckeditorerror.js';
 
 interface CellData {
 	cell: ModelElement;

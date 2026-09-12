@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { EditingView, ViewRootEditableElement } from 'toannv-ckeditor5-engine';
+import { EditingView, ViewRootEditableElement } from '@ckeditor-nonkey/ckeditor5-engine';
 import { InlineEditableUIView } from '../../../src/editableui/inline/inlineeditableuiview.js';
-import { Locale } from 'toannv-ckeditor5-utils';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'InlineEditableUIView', () => {
 	let view, editingView, editingViewRoot, locale;

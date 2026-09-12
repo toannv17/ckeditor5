@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconDropdownArrow } from 'toannv-ckeditor5-icons';
-import { Locale } from 'toannv-ckeditor5-utils';
+import { IconDropdownArrow } from '@ckeditor-nonkey/ckeditor5-icons';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { MenuBarMenuButtonView } from '../../src/menubar/menubarmenubuttonview.js';
 import { ButtonView, IconView } from '../../src/index.js';
 

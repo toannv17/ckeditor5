@@ -7,9 +7,9 @@
  * @module ckbox/ckboxcommand
  */
 
-import type { ModelWriter } from 'toannv-ckeditor5-engine';
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import { createElement, toMap } from 'toannv-ckeditor5-utils';
+import type { ModelWriter } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { createElement, toMap } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import type {
 	CKBoxAssetDefinition,

@@ -7,8 +7,8 @@
  * @module table/commands/selectcolumncommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import type { ModelRange } from 'toannv-ckeditor5-engine';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ModelRange } from '@ckeditor-nonkey/ckeditor5-engine';
 import { type TableUtils } from '../tableutils.js';
 
 import { TableWalker } from '../tablewalker.js';

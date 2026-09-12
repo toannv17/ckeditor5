@@ -18,10 +18,10 @@ import {
 	type ColorPickerColorSelectedEvent
 } from '../colorpicker/colorpickerview.js';
 
-import type { FocusTracker, KeystrokeHandler, Locale } from 'toannv-ckeditor5-utils';
+import type { FocusTracker, KeystrokeHandler, Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import type { ColorPickerViewConfig } from '../colorpicker/utils.js';
 import type { ColorSelectorColorPickerCancelEvent, ColorSelectorExecuteEvent } from './colorselectorview.js';
-import { IconCancel, IconCheck } from 'toannv-ckeditor5-icons';
+import { IconCancel, IconCheck } from '@ckeditor-nonkey/ckeditor5-icons';
 
 /**
  * One of the fragments of {@link module:ui/colorselector/colorselectorview~ColorSelectorView}.

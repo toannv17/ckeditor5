@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { normalizeHtml } from 'toannv-ckeditor5-utils/tests/_utils/normalizehtml.js';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { normalizeHtml } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/normalizehtml.js';
 import {
 	ImageCaptionEditing,
 	ImageBlockEditing,
@@ -15,7 +15,7 @@ import {
 	ImageEditing,
 	ImageUtils,
 	PictureEditing
-} from 'toannv-ckeditor5-image';
+} from '@ckeditor-nonkey/ckeditor5-image';
 
 import { LinkImageEditing } from '../src/linkimageediting.js';
 import { LinkEditing } from '../src/linkediting.js';

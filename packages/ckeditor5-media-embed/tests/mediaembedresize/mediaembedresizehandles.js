@@ -6,17 +6,17 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 // ClassicTestEditor can't be used, as it doesn't handle the focus, which is needed to test resizer visual cues.
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Widget, WidgetResize } from 'toannv-ckeditor5-widget';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Widget, WidgetResize } from '@ckeditor-nonkey/ckeditor5-widget';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import {
 	focusEditor,
 	resizerMouseSimulator,
 	getWidgetDomParts,
 	getHandleCenterPoint
-} from 'toannv-ckeditor5-widget/tests/widgetresize/_utils/utils.js';
+} from '@ckeditor-nonkey/ckeditor5-widget/tests/widgetresize/_utils/utils.js';
 
 import { MediaEmbedEditing } from '../../src/mediaembedediting.js';
 import { MediaEmbedResizeEditing } from '../../src/mediaembedresize/mediaembedresizeediting.js';

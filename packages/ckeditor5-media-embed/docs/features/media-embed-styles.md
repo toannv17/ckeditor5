@@ -19,7 +19,7 @@ The {@link module:media-embed/mediaembedstyle~MediaEmbedStyle} plugin is not loa
 
 <code-switcher>
 ```js
-import { ClassicEditor, MediaEmbed, MediaEmbedToolbar, MediaEmbedStyle } from 'toannv-ckeditor5';
+import { ClassicEditor, MediaEmbed, MediaEmbedToolbar, MediaEmbedStyle } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

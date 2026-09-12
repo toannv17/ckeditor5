@@ -3,14 +3,14 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Typing } from 'toannv-ckeditor5-typing';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
 import { Paragraph } from '../src/paragraph.js';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Clipboard } from 'toannv-ckeditor5-clipboard';
-import { Link } from 'toannv-ckeditor5-link';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Clipboard } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
 ClassicEditor
 	.create( {

@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { HtmlComment } from 'toannv-ckeditor5';
+import { HtmlComment } from '@ckeditor-nonkey/ckeditor5';
 import {
 	TOKEN_URL,
 	getViewportTopOffsetConfig,

@@ -11,21 +11,21 @@ import { LegacyListEditing } from '../../src/legacylist/legacylistediting.js';
 import { LegacyListCommand } from '../../src/legacylist/legacylistcommand.js';
 import { LegacyIndentCommand } from '../../src/legacylist/legacyindentcommand.js';
 
-import { ModelRange, _getModelData, _parseModel, _setModelData, _getViewData, _parseView } from 'toannv-ckeditor5-engine';
+import { ModelRange, _getModelData, _parseModel, _setModelData, _getViewData, _parseView } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { IndentEditing } from 'toannv-ckeditor5-indent';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { IndentEditing } from '@ckeditor-nonkey/ckeditor5-indent';
 
-import { getCode } from 'toannv-ckeditor5-utils';
-import { TableEditing, TableKeyboard } from 'toannv-ckeditor5-table';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { modelTable } from 'toannv-ckeditor5-table/tests/_utils/utils.js';
+import { getCode } from '@ckeditor-nonkey/ckeditor5-utils';
+import { TableEditing, TableKeyboard } from '@ckeditor-nonkey/ckeditor5-table';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { modelTable } from '@ckeditor-nonkey/ckeditor5-table/tests/_utils/utils.js';
 
 describe( 'LegacyListEditing', () => {
 	let editor, model, modelDoc, modelRoot, view, viewDoc, viewRoot;

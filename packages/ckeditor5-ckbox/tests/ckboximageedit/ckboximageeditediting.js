@@ -4,19 +4,19 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { global } from 'toannv-ckeditor5-utils';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { ImageEditing, ImageBlockEditing, ImageUploadEditing, ImageUploadProgress, PictureEditing } from 'toannv-ckeditor5-image';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { ImageEditing, ImageBlockEditing, ImageUploadEditing, ImageUploadProgress, PictureEditing } from '@ckeditor-nonkey/ckeditor5-image';
 
 import { CKBoxImageEditEditing } from '../../src/ckboximageedit/ckboximageeditediting.js';
 import { CKBoxImageEditCommand } from '../../src/ckboximageedit/ckboximageeditcommand.js';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { TokenMock } from 'toannv-ckeditor5-cloud-services/tests/_utils/tokenmock.js';
-import { mockCreateToken } from 'toannv-ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { TokenMock } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/tokenmock.js';
+import { mockCreateToken } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
 import { CKBoxUtils } from '../../src/ckboxutils.js';
 
 describe( 'CKBoxImageEditEditing', () => {

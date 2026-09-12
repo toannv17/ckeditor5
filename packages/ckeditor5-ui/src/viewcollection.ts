@@ -13,7 +13,7 @@ import {
 	type CollectionAddEvent,
 	type CollectionRemoveEvent,
 	type EmitterMixinDelegateChain
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type View } from './view.js';
 

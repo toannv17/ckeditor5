@@ -4,16 +4,16 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach, beforeAll, afterAll } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { ContextualBalloon } from '../../../src/panel/balloon/contextualballoon.js';
 import { BalloonPanelView } from '../../../src/panel/balloon/balloonpanelview.js';
 import { View } from '../../../src/view.js';
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { _setModelData } from 'toannv-ckeditor5-engine';
-import { add as addTranslations, _clearTranslations } from 'toannv-ckeditor5-utils';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { add as addTranslations, _clearTranslations } from '@ckeditor-nonkey/ckeditor5-utils';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'ContextualBalloon', () => {
 	let editor, editorElement, balloon, viewA, viewB, viewC, viewD;

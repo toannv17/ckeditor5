@@ -3,26 +3,26 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Alignment } from 'toannv-ckeditor5-alignment';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { AutoImage, ImageInsert } from 'toannv-ckeditor5-image';
-import { AutoLink, LinkImage } from 'toannv-ckeditor5-link';
-import { Code, Strikethrough, Subscript, Superscript, Underline } from 'toannv-ckeditor5-basic-styles';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { FontBackgroundColor, FontColor, FontFamily, FontSize } from 'toannv-ckeditor5-font';
-import { Highlight } from 'toannv-ckeditor5-highlight';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { IndentBlock } from 'toannv-ckeditor5-indent';
-import { Mention } from 'toannv-ckeditor5-mention';
-import { ShowBlocks } from 'toannv-ckeditor5-show-blocks';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { TextTransformation } from 'toannv-ckeditor5-typing';
-import { TextPartLanguage } from 'toannv-ckeditor5-language';
-import { TodoList } from 'toannv-ckeditor5-list';
-import { Style } from 'toannv-ckeditor5-style';
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
-import { Fullscreen } from 'toannv-ckeditor5-fullscreen';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Alignment } from '@ckeditor-nonkey/ckeditor5-alignment';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { AutoImage, ImageInsert } from '@ckeditor-nonkey/ckeditor5-image';
+import { AutoLink, LinkImage } from '@ckeditor-nonkey/ckeditor5-link';
+import { Code, Strikethrough, Subscript, Superscript, Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { FontBackgroundColor, FontColor, FontFamily, FontSize } from '@ckeditor-nonkey/ckeditor5-font';
+import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { IndentBlock } from '@ckeditor-nonkey/ckeditor5-indent';
+import { Mention } from '@ckeditor-nonkey/ckeditor5-mention';
+import { ShowBlocks } from '@ckeditor-nonkey/ckeditor5-show-blocks';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { TextTransformation } from '@ckeditor-nonkey/ckeditor5-typing';
+import { TextPartLanguage } from '@ckeditor-nonkey/ckeditor5-language';
+import { TodoList } from '@ckeditor-nonkey/ckeditor5-list';
+import { Style } from '@ckeditor-nonkey/ckeditor5-style';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
+import { Fullscreen } from '@ckeditor-nonkey/ckeditor5-fullscreen';
 
 declare global {
 	interface Window { editor: any }

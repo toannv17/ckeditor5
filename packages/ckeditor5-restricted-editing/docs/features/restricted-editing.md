@@ -70,7 +70,7 @@ To initialize the editor in the standard editing mode, add the {@link module:res
 
 <code-switcher>
 ```js
-import { ClassicEditor, StandardEditingMode } from 'toannv-ckeditor5';
+import { ClassicEditor, StandardEditingMode } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -93,7 +93,7 @@ To initialize the editor in the restricted editing mode, add the {@link module:r
 
 <code-switcher>
 ```js
-import { ClassicEditor, RestrictedEditingMode } from 'toannv-ckeditor5';
+import { ClassicEditor, RestrictedEditingMode } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {
@@ -134,7 +134,7 @@ The restricted editing mode allows modifying the editor content only in designat
 
 <code-switcher>
 ```js
-import { ClassicEditor, Plugin } from 'toannv-ckeditor5';
+import { ClassicEditor, Plugin } from '@ckeditor-nonkey/ckeditor5';
 
 class MyPlugin extends Plugin {
 	afterInit() {

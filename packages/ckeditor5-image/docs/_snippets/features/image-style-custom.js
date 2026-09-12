@@ -10,11 +10,11 @@ import {
 } from '@snippets/index.js';
 import { ImageEditor } from './build-image-source.js';
 
-import centerIcon from 'toannv-ckeditor5-image/docs/assets/img/icons/center.svg';
-import inlineIcon from 'toannv-ckeditor5-image/docs/assets/img/icons/inline.svg';
-import leftIcon from 'toannv-ckeditor5-image/docs/assets/img/icons/left.svg';
-import rightIcon from 'toannv-ckeditor5-image/docs/assets/img/icons/right.svg';
-import sideIcon from 'toannv-ckeditor5-image/docs/assets/img/icons/side.svg';
+import centerIcon from '@ckeditor-nonkey/ckeditor5-image/docs/assets/img/icons/center.svg';
+import inlineIcon from '@ckeditor-nonkey/ckeditor5-image/docs/assets/img/icons/inline.svg';
+import leftIcon from '@ckeditor-nonkey/ckeditor5-image/docs/assets/img/icons/left.svg';
+import rightIcon from '@ckeditor-nonkey/ckeditor5-image/docs/assets/img/icons/right.svg';
+import sideIcon from '@ckeditor-nonkey/ckeditor5-image/docs/assets/img/icons/side.svg';
 
 ImageEditor
 	.create( {

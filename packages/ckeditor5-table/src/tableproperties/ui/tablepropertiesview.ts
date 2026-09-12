@@ -26,8 +26,8 @@ import {
 	type NormalizedColorOption,
 	type ColorPickerConfig,
 	type FocusableView
-} from 'toannv-ckeditor5-ui';
-import { FocusTracker, KeystrokeHandler, type ObservableChangeEvent, type Locale } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { FocusTracker, KeystrokeHandler, type ObservableChangeEvent, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	IconObjectCenter,
 	IconObjectInlineLeft,
@@ -35,7 +35,7 @@ import {
 	IconObjectLeft,
 	IconObjectRight,
 	IconPreviousArrow
-} from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-icons';
 
 import {
 	fillToolbar,

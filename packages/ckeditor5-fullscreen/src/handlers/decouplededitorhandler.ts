@@ -7,7 +7,7 @@
  * @module fullscreen/handlers/decouplededitorhandler
  */
 
-import type { DecoupledEditor } from 'toannv-ckeditor5-editor-decoupled';
+import type { DecoupledEditor } from '@ckeditor-nonkey/ckeditor5-editor-decoupled';
 
 import { FullscreenAbstractEditorHandler } from './abstracteditorhandler.js';
 

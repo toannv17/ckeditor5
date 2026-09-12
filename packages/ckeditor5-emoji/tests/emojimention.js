@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { Mention } from 'toannv-ckeditor5-mention';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { Mention } from '@ckeditor-nonkey/ckeditor5-mention';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { EmojiMention } from '../src/emojimention.js';
 import { EmojiPicker } from '../src/emojipicker.js';

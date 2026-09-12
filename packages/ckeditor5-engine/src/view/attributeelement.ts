@@ -8,7 +8,7 @@
  */
 
 import { ViewElement, type ViewElementAttributes } from './element.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type ViewDocumentFragment } from './documentfragment.js';
 import { type ViewDocument } from './document.js';

@@ -3,36 +3,36 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Alignment } from 'toannv-ckeditor5-alignment';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { AutoImage, ImageResize, ImageUpload } from 'toannv-ckeditor5-image';
-import { AutoLink, LinkImage } from 'toannv-ckeditor5-link';
-import { Code, Strikethrough, Subscript, Superscript, Underline } from 'toannv-ckeditor5-basic-styles';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { FindAndReplace } from 'toannv-ckeditor5-find-and-replace';
-import { FontBackgroundColor, FontColor, FontFamily, FontSize } from 'toannv-ckeditor5-font';
-import { Highlight } from 'toannv-ckeditor5-highlight';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { HtmlEmbed } from 'toannv-ckeditor5-html-embed';
-import { HtmlComment } from 'toannv-ckeditor5-html-support';
-import { IndentBlock } from 'toannv-ckeditor5-indent';
-import { ListProperties, TodoList } from 'toannv-ckeditor5-list';
-import { Mention } from 'toannv-ckeditor5-mention';
-import { PageBreak } from 'toannv-ckeditor5-page-break';
-import { PasteFromOffice } from 'toannv-ckeditor5-paste-from-office';
-import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { SpecialCharacters, SpecialCharactersEssentials } from 'toannv-ckeditor5-special-characters';
-import { TableCellProperties, TableProperties, TableCaption, TableColumnResize } from 'toannv-ckeditor5-table';
-import { TextTransformation } from 'toannv-ckeditor5-typing';
-import { TextPartLanguage } from 'toannv-ckeditor5-language';
-import { WordCount } from 'toannv-ckeditor5-word-count';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Alignment } from '@ckeditor-nonkey/ckeditor5-alignment';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { AutoImage, ImageResize, ImageUpload } from '@ckeditor-nonkey/ckeditor5-image';
+import { AutoLink, LinkImage } from '@ckeditor-nonkey/ckeditor5-link';
+import { Code, Strikethrough, Subscript, Superscript, Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { FindAndReplace } from '@ckeditor-nonkey/ckeditor5-find-and-replace';
+import { FontBackgroundColor, FontColor, FontFamily, FontSize } from '@ckeditor-nonkey/ckeditor5-font';
+import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { HtmlEmbed } from '@ckeditor-nonkey/ckeditor5-html-embed';
+import { HtmlComment } from '@ckeditor-nonkey/ckeditor5-html-support';
+import { IndentBlock } from '@ckeditor-nonkey/ckeditor5-indent';
+import { ListProperties, TodoList } from '@ckeditor-nonkey/ckeditor5-list';
+import { Mention } from '@ckeditor-nonkey/ckeditor5-mention';
+import { PageBreak } from '@ckeditor-nonkey/ckeditor5-page-break';
+import { PasteFromOffice } from '@ckeditor-nonkey/ckeditor5-paste-from-office';
+import { RemoveFormat } from '@ckeditor-nonkey/ckeditor5-remove-format';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor-nonkey/ckeditor5-special-characters';
+import { TableCellProperties, TableProperties, TableCaption, TableColumnResize } from '@ckeditor-nonkey/ckeditor5-table';
+import { TextTransformation } from '@ckeditor-nonkey/ckeditor5-typing';
+import { TextPartLanguage } from '@ckeditor-nonkey/ckeditor5-language';
+import { WordCount } from '@ckeditor-nonkey/ckeditor5-word-count';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
 // import { MathType } from '@wiris/mathtype-ckeditor5/dist/index.js';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 declare global {
 	interface Window {
 		memoryTestEditor: any;

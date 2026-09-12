@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest';
-import { Model, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { Model, _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { canBeCodeBlock, getTextNodeAtLineStart } from '../src/utils.js';
 

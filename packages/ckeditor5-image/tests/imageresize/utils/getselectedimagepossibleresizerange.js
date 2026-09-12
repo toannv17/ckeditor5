@@ -5,10 +5,10 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Widget } from 'toannv-ckeditor5-widget';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Widget } from '@ckeditor-nonkey/ckeditor5-widget';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { ImageResizeEditing } from '../../../src/imageresize/imageresizeediting.js';
 import { ImageCaptionEditing } from '../../../src/imagecaption/imagecaptionediting.js';
 import { Image } from '../../../src/image.js';

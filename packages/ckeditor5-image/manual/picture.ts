@@ -3,17 +3,17 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { LinkImage } from 'toannv-ckeditor5-link';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { LinkImage } from '@ckeditor-nonkey/ckeditor5-link';
 import { AutoImage } from '../src/autoimage.js';
 import { ImageResize } from '../src/imageresize.js';
 import { ImageUpload } from '../src/imageupload.js';
 import { PictureEditing } from '../src/pictureediting.js';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
 ClassicEditor
 	.create( {

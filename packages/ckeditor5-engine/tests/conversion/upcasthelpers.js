@@ -32,7 +32,7 @@ import { ViewRange } from '../../src/view/range.js';
 import { StylesProcessor } from '../../src/view/stylesmap.js';
 import { ModelWriter } from '../../src/model/writer.js';
 
-import { toArray } from 'toannv-ckeditor5-utils';
+import { toArray } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'UpcastHelpers', () => {
 	let upcastDispatcher, model, schema, upcastHelpers, viewDocument;

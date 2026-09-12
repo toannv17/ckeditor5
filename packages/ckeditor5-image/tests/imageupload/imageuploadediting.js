@@ -4,26 +4,26 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
 import { ImageBlockEditing } from '../../src/image/imageblockediting.js';
 import { ImageInlineEditing } from '../../src/image/imageinlineediting.js';
 import { ImageUploadEditing } from '../../src/imageupload/imageuploadediting.js';
 import { UploadImageCommand } from '../../src/imageupload/uploadimagecommand.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { ViewDataTransfer, _setModelData, _getModelData, _getViewData, _stringifyView, ModelWriter } from 'toannv-ckeditor5-engine';
-import { EventInfo } from 'toannv-ckeditor5-utils';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { ViewDataTransfer, _setModelData, _getModelData, _getViewData, _stringifyView, ModelWriter } from '@ckeditor-nonkey/ckeditor5-engine';
+import { EventInfo } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { FileRepository } from 'toannv-ckeditor5-upload';
-import { UploadAdapterMock, createNativeFileMock, NativeFileReaderMock } from 'toannv-ckeditor5-upload/tests/_utils/mocks.js';
+import { FileRepository } from '@ckeditor-nonkey/ckeditor5-upload';
+import { UploadAdapterMock, createNativeFileMock, NativeFileReaderMock } from '@ckeditor-nonkey/ckeditor5-upload/tests/_utils/mocks.js';
 
-import { Notification } from 'toannv-ckeditor5-ui';
+import { Notification } from '@ckeditor-nonkey/ckeditor5-ui';
 import { downcastImageAttribute } from '../../src/image/converters.js';
-import { assertCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { assertCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'ImageUploadEditing', () => {
 	// eslint-disable-next-line @stylistic/max-len

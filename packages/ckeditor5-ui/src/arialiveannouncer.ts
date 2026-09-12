@@ -7,9 +7,9 @@
  * @module ui/arialiveannouncer
  */
 
-import type { ViewDomConverter } from 'toannv-ckeditor5-engine';
-import type { Editor } from 'toannv-ckeditor5-core';
-import type { Locale } from 'toannv-ckeditor5-utils';
+import type { ViewDomConverter } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { type ViewCollection } from './viewcollection.js';
 import { View } from './view.js';
 

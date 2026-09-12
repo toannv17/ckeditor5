@@ -4,15 +4,15 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _setModelData, ViewDocumentDomEventData } from 'toannv-ckeditor5-engine';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _setModelData, ViewDocumentDomEventData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableEditing } from '../src/tableediting.js';
 import { TableSelection } from '../src/tableselection.js';
 import { TableMouse } from '../src/tablemouse.js';
 import { assertSelectedCells, modelTable } from './_utils/utils.js';
-import { Typing } from 'toannv-ckeditor5-typing';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
 
 describe( 'TableMouse', () => {
 	let editorElement, editor, model, tableMouse, modelRoot, view, viewDocument;

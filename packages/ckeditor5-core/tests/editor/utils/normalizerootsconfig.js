@@ -10,8 +10,8 @@ import {
 	normalizeMultiRootEditorConstructorParams,
 	normalizeViewRootElementDefinition
 } from '../../../src/index.ts';
-import { Config } from 'toannv-ckeditor5-utils';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { Config } from '@ckeditor-nonkey/ckeditor5-utils';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'normalizeRootsConfig()', () => {
 	let config;

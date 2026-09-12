@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ColorSelectorView } from 'toannv-ckeditor5-ui';
-import { global } from 'toannv-ckeditor5-utils';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ColorSelectorView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 import { TestColorPlugin } from '../_utils/testcolorplugin.js';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
 describe( 'ColorSelectorView', () => {

@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { assertBinding } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
-import { FocusTracker, global, keyCodes, Locale, Collection } from 'toannv-ckeditor5-utils';
+import { assertBinding } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
+import { FocusTracker, global, keyCodes, Locale, Collection } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { UIModel } from '../../src/model.js';
 

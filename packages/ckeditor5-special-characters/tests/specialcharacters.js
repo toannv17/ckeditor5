@@ -4,18 +4,18 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconSpecialCharacters } from 'toannv-ckeditor5-icons';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { EventInfo } from 'toannv-ckeditor5-utils';
-import { Typing } from 'toannv-ckeditor5-typing';
+import { IconSpecialCharacters } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { EventInfo } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
 import { SpecialCharacters } from '../src/specialcharacters.js';
 import { SpecialCharactersMathematical } from '../src/specialcharactersmathematical.js';
 import { SpecialCharactersArrows } from '../src/specialcharactersarrows.js';
 import { CharacterGridView } from '../src/ui/charactergridview.js';
 import { CharacterInfoView } from '../src/ui/characterinfoview.js';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 import { SpecialCharactersCategoriesView } from '../src/ui/specialcharacterscategoriesview.js';
-import { Dialog } from 'toannv-ckeditor5-ui';
+import { Dialog } from '@ckeditor-nonkey/ckeditor5-ui';
 import { SpecialCharactersView } from '../src/ui/specialcharactersview.js';
 
 describe( 'SpecialCharacters', () => {

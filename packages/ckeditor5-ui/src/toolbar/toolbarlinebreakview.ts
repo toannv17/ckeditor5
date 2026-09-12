@@ -9,7 +9,7 @@
 
 import { View } from '../view.js';
 
-import type { Locale } from 'toannv-ckeditor5-utils';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The toolbar line break view class.

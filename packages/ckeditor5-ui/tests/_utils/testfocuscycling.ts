@@ -5,7 +5,7 @@
 
 import { expect, it, vi } from 'vitest';
 
-import { isVisible, parseKeystroke, wait } from 'toannv-ckeditor5-utils';
+import { isVisible, parseKeystroke, wait } from '@ckeditor-nonkey/ckeditor5-utils';
 import { View, type ViewCollection } from '../../src/index.js';
 import type { FocusableView, FocusCyclerActions, ViewWithFocusCycler } from '../../src/focuscycler.js';
 

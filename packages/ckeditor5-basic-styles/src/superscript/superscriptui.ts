@@ -7,9 +7,9 @@
  * @module basic-styles/superscript/superscriptui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { IconSuperscript } from 'toannv-ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconSuperscript } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 import { getButtonCreator } from '../utils.js';
 
 const SUPERSCRIPT = 'superscript';

@@ -7,9 +7,9 @@
  * @module image/imageinsert/imageinsertviaurlui
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { ButtonView, Dialog, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
-import { IconImageUrl } from 'toannv-ckeditor5-icons';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { ButtonView, Dialog, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconImageUrl } from '@ckeditor-nonkey/ckeditor5-icons';
 
 import { ImageInsertUI } from './imageinsertui.js';
 import { ImageInsertUrlView } from './ui/imageinserturlview.js';

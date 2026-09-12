@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { CKFinderUploadAdapter } from 'toannv-ckeditor5-adapter-ckfinder';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { ImageUpload } from 'toannv-ckeditor5-image';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { CKFinderUploadAdapter } from '@ckeditor-nonkey/ckeditor5-adapter-ckfinder';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ImageUpload } from '@ckeditor-nonkey/ckeditor5-image';
 
 import { CKFinder } from '../src/ckfinder.js';
 

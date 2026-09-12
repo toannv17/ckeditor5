@@ -27,7 +27,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, FindAndReplace } from 'toannv-ckeditor5';
+import { ClassicEditor, FindAndReplace } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

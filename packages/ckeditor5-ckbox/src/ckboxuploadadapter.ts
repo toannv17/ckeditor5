@@ -7,16 +7,16 @@
  * @module ckbox/ckboxuploadadapter
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	FileRepository,
 	type FileLoader,
 	type UploadAdapter,
 	type UploadResponse
-} from 'toannv-ckeditor5-upload';
+} from '@ckeditor-nonkey/ckeditor5-upload';
 
-import type { InitializedToken } from 'toannv-ckeditor5-cloud-services';
-import { ImageUploadEditing, ImageUploadProgress, type ImageUploadCompleteEvent } from 'toannv-ckeditor5-image';
+import type { InitializedToken } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { ImageUploadEditing, ImageUploadProgress, type ImageUploadCompleteEvent } from '@ckeditor-nonkey/ckeditor5-image';
 
 import { CKBoxEditing } from './ckboxediting.js';
 import {

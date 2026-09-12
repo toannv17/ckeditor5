@@ -6,11 +6,11 @@
 import { describe, it, beforeEach, afterEach, vi } from 'vitest';
 import { ListEditing } from '../../../src/list/listediting.js';
 
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { EmptyBlock } from 'toannv-ckeditor5-html-support';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { EmptyBlock } from '@ckeditor-nonkey/ckeditor5-html-support';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 import { setupTestHelpers } from '../_utils/utils.js';
 import { stubUid } from '../_utils/uid.js';
 

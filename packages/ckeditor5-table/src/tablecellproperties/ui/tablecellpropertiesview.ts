@@ -26,14 +26,14 @@ import {
 	type ListDropdownItemDefinition,
 	type NormalizedColorOption,
 	type ColorPickerConfig
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	Collection,
 	KeystrokeHandler,
 	FocusTracker,
 	type Locale,
 	type ObservableChangeEvent
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	IconAlignBottom,
 	IconAlignCenter,
@@ -43,7 +43,7 @@ import {
 	IconAlignRight,
 	IconAlignTop,
 	IconPreviousArrow
-} from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-icons';
 
 import {
 	fillToolbar,

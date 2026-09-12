@@ -3,19 +3,19 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { HeadingEditing } from 'toannv-ckeditor5-heading';
-import { IndentEditing } from 'toannv-ckeditor5-indent';
-import { TableEditing } from 'toannv-ckeditor5-table';
-import { AlignmentEditing } from 'toannv-ckeditor5-alignment';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { HeadingEditing } from '@ckeditor-nonkey/ckeditor5-heading';
+import { IndentEditing } from '@ckeditor-nonkey/ckeditor5-indent';
+import { TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
+import { AlignmentEditing } from '@ckeditor-nonkey/ckeditor5-alignment';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { stubUid } from '../list/_utils/uid.js';
 import { ListPropertiesEditing } from '../../src/listproperties/listpropertiesediting.js';
 import { modelList, setupTestHelpers } from '../list/_utils/utils.js';

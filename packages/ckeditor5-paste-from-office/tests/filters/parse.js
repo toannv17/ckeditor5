@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
-import { ViewDocumentFragment } from 'toannv-ckeditor5-engine';
+import { ViewDocumentFragment } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { parsePasteOfficeHtml } from '../../src/filters/parse.js';
 

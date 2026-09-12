@@ -7,9 +7,9 @@
  * @module media-embed/mediaembedresize/mediaembedresizehandles
  */
 
-import type { ModelElement, ViewContainerElement } from 'toannv-ckeditor5-engine';
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { WidgetResize } from 'toannv-ckeditor5-widget';
+import type { ModelElement, ViewContainerElement } from '@ckeditor-nonkey/ckeditor5-engine';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { WidgetResize } from '@ckeditor-nonkey/ckeditor5-widget';
 import type { ResizeMediaEmbedCommand } from './resizemediaembedcommand.js';
 import { RESIZED_MEDIA_CLASS } from './constants.js';
 

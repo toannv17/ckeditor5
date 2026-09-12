@@ -7,15 +7,15 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 import { ListEditing } from '../../../src/list/listediting.js';
 
-import { Delete } from 'toannv-ckeditor5-typing';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Widget, toWidget } from 'toannv-ckeditor5-widget';
+import { Delete } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Widget, toWidget } from '@ckeditor-nonkey/ckeditor5-widget';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import {
 	_getModelData,
 	_setModelData,
-	ViewDocumentDomEventData, BubblingEventInfo } from 'toannv-ckeditor5-engine';
+	ViewDocumentDomEventData, BubblingEventInfo } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { stubUid } from '../_utils/uid.js';
 import { modelList } from '../_utils/utils.js';

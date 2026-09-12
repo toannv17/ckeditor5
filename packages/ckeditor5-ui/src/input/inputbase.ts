@@ -13,7 +13,7 @@ import {
 	FocusTracker,
 	type Locale,
 	type ObservableChangeEvent
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The base input view class.

@@ -7,13 +7,13 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { CodeBlockEditing } from '../src/codeblockediting.js';
 import { CodeBlockCommand } from '../src/codeblockcommand.js';
 
-import { AlignmentEditing } from 'toannv-ckeditor5-alignment';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { AlignmentEditing } from '@ckeditor-nonkey/ckeditor5-alignment';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
 
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'CodeBlockCommand', () => {
 	let editor, model, command;

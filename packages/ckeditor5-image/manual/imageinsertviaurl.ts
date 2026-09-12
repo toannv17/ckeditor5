@@ -3,9 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { LinkImage } from 'toannv-ckeditor5-link';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { LinkImage } from '@ckeditor-nonkey/ckeditor5-link';
 import { ImageInsertViaUrl } from '../src/imageinsertviaurl.js';
 import { AutoImage } from '../src/autoimage.js';
 

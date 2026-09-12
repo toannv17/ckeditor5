@@ -4,12 +4,12 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Highlight } from 'toannv-ckeditor5-highlight';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Highlight } from '@ckeditor-nonkey/ckeditor5-highlight';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 import { FontSize } from '../../src/fontsize.js';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'FontSize - integration', () => {
 	let editor, model, element;

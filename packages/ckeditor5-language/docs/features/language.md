@@ -31,7 +31,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, TextPartLanguage } from 'toannv-ckeditor5';
+import { ClassicEditor, TextPartLanguage } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

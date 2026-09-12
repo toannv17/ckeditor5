@@ -7,7 +7,7 @@
  * @module editor-classic/classiceditorui
  */
 
-import { rootAcceptsBlocks, type Editor, type ElementApi } from 'toannv-ckeditor5-core';
+import { rootAcceptsBlocks, type Editor, type ElementApi } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	EditorUI,
 	DialogView,
@@ -16,12 +16,12 @@ import {
 	type Dialog,
 	type EditorUIReadyEvent,
 	type ContextualBalloonGetPositionOptionsEvent
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	enableViewPlaceholder,
 	type ViewScrollToTheSelectionEvent
-} from 'toannv-ckeditor5-engine';
-import { ElementReplacer, Rect, type EventInfo } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-engine';
+import { ElementReplacer, Rect, type EventInfo } from '@ckeditor-nonkey/ckeditor5-utils';
 import { type ClassicEditorUIView } from './classiceditoruiview.js';
 
 /**

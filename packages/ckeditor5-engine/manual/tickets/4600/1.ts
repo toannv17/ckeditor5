@@ -3,12 +3,12 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Essentials } from 'toannv-ckeditor5-essentials';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Widget, toWidget } from 'toannv-ckeditor5-widget';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Widget, toWidget } from '@ckeditor-nonkey/ckeditor5-widget';
 
 import { ClickObserver } from '../../../src/view/observer/clickobserver.js';
 import { CompositionObserver } from '../../../src/view/observer/compositionobserver.js';
@@ -16,11 +16,11 @@ import { FocusObserver } from '../../../src/view/observer/focusobserver.js';
 import { InputObserver } from '../../../src/view/observer/inputobserver.js';
 import { KeyObserver } from '../../../src/view/observer/keyobserver.js';
 import { MouseObserver } from '../../../src/view/observer/mouseobserver.js';
-import { _TableMouseEventsObserver } from 'toannv-ckeditor5-table';
-import { _DeleteObserver } from 'toannv-ckeditor5-typing';
-import { ClipboardObserver } from 'toannv-ckeditor5-clipboard';
-import { EnterObserver } from 'toannv-ckeditor5-enter';
-import { ImageLoadObserver } from 'toannv-ckeditor5-image';
+import { _TableMouseEventsObserver } from '@ckeditor-nonkey/ckeditor5-table';
+import { _DeleteObserver } from '@ckeditor-nonkey/ckeditor5-typing';
+import { ClipboardObserver } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { EnterObserver } from '@ckeditor-nonkey/ckeditor5-enter';
+import { ImageLoadObserver } from '@ckeditor-nonkey/ckeditor5-image';
 
 declare global {
 	interface Window { editor: any }

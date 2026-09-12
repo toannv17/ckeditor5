@@ -8,7 +8,7 @@
  */
 
 import { pick } from 'es-toolkit/compat';
-import { toArray } from 'toannv-ckeditor5-utils';
+import { toArray } from '@ckeditor-nonkey/ckeditor5-utils';
 import type { ListPropertiesConfig, ListPropertiesStyleListType } from '../../listconfig.js';
 
 /**

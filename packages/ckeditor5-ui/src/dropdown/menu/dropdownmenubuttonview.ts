@@ -7,10 +7,10 @@
  * @module ui/dropdown/menu/dropdownmenubuttonview
  */
 
-import { IconDropdownArrow } from 'toannv-ckeditor5-icons';
+import { IconDropdownArrow } from '@ckeditor-nonkey/ckeditor5-icons';
 import { IconView } from '../../icon/iconview.js';
 import { ListItemButtonView } from '../../button/listitembuttonview.js';
-import type { Locale } from 'toannv-ckeditor5-utils';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * Represents a view for a dropdown menu button.

@@ -17,9 +17,9 @@ import {
 	type EventInfo,
 	type DomEmitter,
 	type ObservableChangeEvent
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
 import type {
 	Batch,
@@ -31,7 +31,7 @@ import type {
 	ModelWriter,
 	ViewElement,
 	ViewNode
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { MouseEventsObserver } from '../tablemouse/mouseeventsobserver.js';
 import { TableEditing } from '../tableediting.js';

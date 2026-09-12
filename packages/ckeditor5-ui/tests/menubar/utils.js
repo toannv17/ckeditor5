@@ -8,7 +8,7 @@ import {
 	Locale,
 	keyCodes,
 	wait
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	ComponentFactory,
 	MenuBarMenuView,

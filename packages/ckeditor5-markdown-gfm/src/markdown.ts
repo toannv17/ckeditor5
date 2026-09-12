@@ -7,7 +7,7 @@
  * @module markdown-gfm/markdown
  */
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import { MarkdownGfmDataProcessor } from './gfmdataprocessor.js';
 
 /**

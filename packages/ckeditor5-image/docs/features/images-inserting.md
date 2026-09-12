@@ -28,7 +28,7 @@ Using the URL of an image, the user may paste it into the editor. To enable this
 
 <code-switcher>
 ```js
-import { ClassicEditor, Image, ImageInsert } from 'toannv-ckeditor5';
+import { ClassicEditor, Image, ImageInsert } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

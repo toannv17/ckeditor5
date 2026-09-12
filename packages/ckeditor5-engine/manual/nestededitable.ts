@@ -4,14 +4,14 @@
  */
 
 import { _getModelData } from '../src/dev-utils/model.js';
-import { global } from 'toannv-ckeditor5-utils';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Undo } from 'toannv-ckeditor5-undo';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
 
 import './nestededitable.css';
 

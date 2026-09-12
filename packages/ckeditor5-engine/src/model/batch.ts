@@ -7,7 +7,7 @@
  * @module engine/model/batch
  */
 
-import { logWarning } from 'toannv-ckeditor5-utils';
+import { logWarning } from '@ckeditor-nonkey/ckeditor5-utils';
 import { type Operation } from './operation/operation.js';
 
 /**

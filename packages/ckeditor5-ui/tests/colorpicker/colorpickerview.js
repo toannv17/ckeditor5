@@ -5,7 +5,7 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { ColorPickerView } from './../../src/colorpicker/colorpickerview.js';
-import { env, Locale } from 'toannv-ckeditor5-utils';
+import { env, Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'ColorPickerView', () => {
 	let locale, view;

@@ -3,13 +3,13 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { global } from 'toannv-ckeditor5-utils';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 import { Mention } from '../src/mention.js';
-import { Underline } from 'toannv-ckeditor5-basic-styles';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Font } from 'toannv-ckeditor5-font';
+import { Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Font } from '@ckeditor-nonkey/ckeditor5-font';
 
 declare global {
 	interface Window { editor: any }

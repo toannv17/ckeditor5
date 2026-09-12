@@ -4,14 +4,14 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { global, keyCodes, env } from 'toannv-ckeditor5-utils';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { global, keyCodes, env } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { FullscreenEditing } from '../src/fullscreenediting.js';
 import { FullscreenCommand } from '../src/fullscreencommand.js';
-import { ButtonView } from 'toannv-ckeditor5-ui';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 describe( 'FullscreenEditing', () => {
 	let domElement, editor;

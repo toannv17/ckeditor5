@@ -17,11 +17,11 @@ import { ViewDocument } from '../../src/view/document.js';
 import { _getModelData, _setModelData, _stringifyModel, _parseModel } from '../../src/dev-utils/model.js';
 import { _parseView, _stringifyView } from '../../src/dev-utils/view.js';
 
-import { count } from 'toannv-ckeditor5-utils';
+import { count } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { UpcastHelpers } from '../../src/conversion/upcasthelpers.js';
 import { DowncastHelpers } from '../../src/conversion/downcasthelpers.js';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 import { StylesProcessor } from '../../src/view/stylesmap.js';
 
 describe( 'DataController', () => {

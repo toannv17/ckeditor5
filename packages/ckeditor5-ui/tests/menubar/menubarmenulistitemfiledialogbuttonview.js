@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { Locale } from 'toannv-ckeditor5-utils';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { MenuBarMenuListItemFileDialogButtonView } from '../../src/index.js';
 import { FileDialogListItemButtonView } from '../../src/button/filedialogbuttonview.js';
 

@@ -13,8 +13,8 @@ import {
 	View,
 	createLabeledInputText,
 	submitHandler
-} from 'toannv-ckeditor5-ui';
-import { FocusTracker, KeystrokeHandler, type Locale } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { FocusTracker, KeystrokeHandler, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The media form view controller class.

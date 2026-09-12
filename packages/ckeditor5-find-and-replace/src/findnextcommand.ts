@@ -7,7 +7,7 @@
  * @module find-and-replace/findnextcommand
 */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import { type FindAndReplaceState } from './findandreplacestate.js';
 
 /**

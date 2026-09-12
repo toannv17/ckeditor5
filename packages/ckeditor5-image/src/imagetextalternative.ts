@@ -7,7 +7,7 @@
  * @module image/imagetextalternative
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import { ImageTextAlternativeEditing } from './imagetextalternative/imagetextalternativeediting.js';
 import { ImageTextAlternativeUI } from './imagetextalternative/imagetextalternativeui.js';
 

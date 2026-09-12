@@ -6,8 +6,8 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 import { BookmarkFormView } from '../../src/ui/bookmarkformview.js';
-import { View, FocusCycler, FormHeaderView, FormRowView, ViewCollection } from 'toannv-ckeditor5-ui';
-import { keyCodes, KeystrokeHandler, FocusTracker } from 'toannv-ckeditor5-utils';
+import { View, FocusCycler, FormHeaderView, FormRowView, ViewCollection } from '@ckeditor-nonkey/ckeditor5-ui';
+import { keyCodes, KeystrokeHandler, FocusTracker } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'BookmarkFormView', () => {
 	let view;

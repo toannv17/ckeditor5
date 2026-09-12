@@ -7,7 +7,7 @@
  * @module list/listconfig
  */
 
-import { type ArrayOrItem } from 'toannv-ckeditor5-utils';
+import { type ArrayOrItem } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * The configuration of the {@link module:list/list~List list} feature

@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, beforeAll } from 'vitest';
-import { HtmlDataProcessor, ViewUpcastWriter, ViewDocument, StylesProcessor } from 'toannv-ckeditor5-engine';
+import { HtmlDataProcessor, ViewUpcastWriter, ViewDocument, StylesProcessor } from '@ckeditor-nonkey/ckeditor5-engine';
 import { removeXmlns } from '../../src/filters/removexmlns.js';
 
 describe( 'PasteFromOffice - filters', () => {

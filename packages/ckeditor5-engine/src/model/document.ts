@@ -27,7 +27,7 @@ import {
 	isInsideSurrogatePair,
 	isInsideCombinedSymbol,
 	type EmitterMixinConstructor
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { clone } from 'es-toolkit/compat';
 

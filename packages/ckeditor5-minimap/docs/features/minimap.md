@@ -30,7 +30,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { DecoupledEditor, Minimap } from 'toannv-ckeditor5';
+import { DecoupledEditor, Minimap } from '@ckeditor-nonkey/ckeditor5';
 
 DecoupledEditor
 	.create( {

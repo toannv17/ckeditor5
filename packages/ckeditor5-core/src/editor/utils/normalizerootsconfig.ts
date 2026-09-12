@@ -19,7 +19,7 @@ import {
 	logWarning,
 	toArray,
 	type Config
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { isElement as _isElement, isPlainObject } from 'es-toolkit/compat';
 

@@ -7,7 +7,7 @@
  * @module editor-classic/classiceditor
  */
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 import { ClassicEditorUI } from './classiceditorui.js';
 import { ClassicEditorUIView } from './classiceditoruiview.js';
 
@@ -23,7 +23,7 @@ import {
 	type EditorReadyEvent,
 	type ViewRootElementDefinition,
 	type ElementApiMixinConstructor
-} from 'toannv-ckeditor5-core';
+} from '@ckeditor-nonkey/ckeditor5-core';
 
 import { isElement as _isElement } from 'es-toolkit/compat';
 

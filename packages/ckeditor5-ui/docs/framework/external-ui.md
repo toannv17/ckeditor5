@@ -52,7 +52,7 @@ import {
 	UnderlineEditing,
 	HeadingEditing,
 	CKEditorError
-} from 'toannv-ckeditor5';
+} from '@ckeditor-nonkey/ckeditor5';
 ```
 </code-switcher>
 

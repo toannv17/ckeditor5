@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 import { HorizontalLineEditing } from '../src/horizontallineediting.js';
 import { HorizontalLineCommand } from '../src/horizontallinecommand.js';
-import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { isWidget } from 'toannv-ckeditor5-widget';
+import { _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { isWidget } from '@ckeditor-nonkey/ckeditor5-widget';
 
 describe( 'HorizontalLineEditing', () => {
 	let editor, model, view, viewDocument;

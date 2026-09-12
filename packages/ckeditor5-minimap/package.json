@@ -1,5 +1,5 @@
 {
-  "name": "toannv-ckeditor5-minimap",
+  "name": "@ckeditor-nonkey/ckeditor5-minimap",
   "version": "48.5.0",
   "description": "Content minimap feature for CKEditor 5.",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -35,24 +35,24 @@
     }
   },
   "dependencies": {
-    "toannv-ckeditor5-core": "workspace:*",
-    "toannv-ckeditor5-engine": "workspace:*",
-    "toannv-ckeditor5-ui": "workspace:*",
-    "toannv-ckeditor5-utils": "workspace:*"
+    "@ckeditor-nonkey/ckeditor5-core": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-engine": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-ui": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-utils": "workspace:*"
   },
   "devDependencies": {
-    "toannv-ckeditor5-alignment": "workspace:*",
-    "toannv-ckeditor5-basic-styles": "workspace:*",
-    "toannv-ckeditor5-cloud-services": "workspace:*",
-    "toannv-ckeditor5-code-block": "workspace:*",
-    "toannv-ckeditor5-easy-image": "workspace:*",
-    "toannv-ckeditor5-editor-decoupled": "workspace:*",
-    "toannv-ckeditor5-font": "workspace:*",
-    "toannv-ckeditor5-fullscreen": "workspace:*",
-    "toannv-ckeditor5-image": "workspace:*",
-    "toannv-ckeditor5-indent": "workspace:*",
-    "toannv-ckeditor5-page-break": "workspace:*",
-    "toannv-ckeditor5-table": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-alignment": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-basic-styles": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-cloud-services": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-code-block": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-easy-image": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-editor-decoupled": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-font": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-fullscreen": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-image": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-indent": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-page-break": "workspace:*",
+    "@ckeditor-nonkey/ckeditor5-table": "workspace:*",
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"

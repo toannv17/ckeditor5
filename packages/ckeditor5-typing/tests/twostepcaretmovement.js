@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { DomEmitterMixin, EventInfo, keyCodes, toArray, priorities } from 'toannv-ckeditor5-utils';
-import { ViewDocumentDomEventData, ModelPosition, _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { DomEmitterMixin, EventInfo, keyCodes, toArray, priorities } from '@ckeditor-nonkey/ckeditor5-utils';
+import { ViewDocumentDomEventData, ModelPosition, _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { TwoStepCaretMovement } from '../src/twostepcaretmovement.js';
 
 import { Input } from '../src/input.js';

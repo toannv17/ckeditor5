@@ -6,7 +6,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { ElementApiMixin } from '../../../src/editor/utils/elementapimixin.js';
 import { Editor } from '../../../src/editor/editor.js';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 
 describe( 'ElementApiMixin', () => {
 	let editor;

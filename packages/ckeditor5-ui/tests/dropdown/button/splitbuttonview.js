@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { keyCodes } from 'toannv-ckeditor5-utils';
+import { keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
 import { ButtonView } from '../../../src/button/buttonview.js';
 import { SplitButtonView } from '../../../src/dropdown/button/splitbuttonview.js';
 

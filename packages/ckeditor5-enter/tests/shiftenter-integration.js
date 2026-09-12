@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { Delete } from 'toannv-ckeditor5-typing';
-import { BoldEditing } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { Delete } from '@ckeditor-nonkey/ckeditor5-typing';
+import { BoldEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 import { ShiftEnter } from '../src/shiftenter.js';
-import { _VIEW_INLINE_FILLER, _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { _VIEW_INLINE_FILLER, _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'ShiftEnter integration', () => {
 	let editor, model, div;

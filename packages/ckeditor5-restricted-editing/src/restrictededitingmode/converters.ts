@@ -7,7 +7,7 @@
  * @module restricted-editing/restrictededitingmode/converters
  */
 
-import type { Editor } from 'toannv-ckeditor5-core';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	Matcher,
 	type ViewDowncastWriter,
@@ -17,7 +17,7 @@ import {
 	type UpcastDispatcher,
 	type ModelWriter,
 	type ViewElement
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { getMarkerAtPosition } from './utils.js';
 

@@ -7,9 +7,9 @@
  * @module clipboard/clipboardpipeline
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 
-import { EventInfo } from 'toannv-ckeditor5-utils';
+import { EventInfo } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import type {
 	ViewDataTransfer,
@@ -20,7 +20,7 @@ import type {
 	ViewRange,
 	ModelSelection,
 	ModelDocumentSelection
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 import {
 	ClipboardObserver,

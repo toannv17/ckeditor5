@@ -7,7 +7,7 @@
  * @module list/legacylistproperties/legacyliststylecommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import { getListTypeFromListStyleType, getSelectedListItems } from '../legacylist/legacyutils.js';
 
 /**

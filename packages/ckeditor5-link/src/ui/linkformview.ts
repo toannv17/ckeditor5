@@ -21,13 +21,13 @@ import {
 	submitHandler,
 	type InputTextView,
 	type FocusableView
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import {
 	FocusTracker,
 	KeystrokeHandler,
 	type Locale
-} from 'toannv-ckeditor5-utils';
-import { IconPreviousArrow, IconSettings } from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-utils';
+import { IconPreviousArrow, IconSettings } from '@ckeditor-nonkey/ckeditor5-icons';
 
 /**
  * The link form view.

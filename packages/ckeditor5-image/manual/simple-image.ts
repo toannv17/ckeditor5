@@ -3,19 +3,19 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { EasyImage } from 'toannv-ckeditor5-easy-image';
-import { LinkImage } from 'toannv-ckeditor5-link';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { EasyImage } from '@ckeditor-nonkey/ckeditor5-easy-image';
+import { LinkImage } from '@ckeditor-nonkey/ckeditor5-link';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
 
-import { CS_CONFIG } from 'toannv-ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
+import { CS_CONFIG } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/cloud-services-config.js';
 
-import type { Editor } from 'toannv-ckeditor5-core';
-import type { ViewElement, ModelElement, UpcastElementEvent } from 'toannv-ckeditor5-engine';
-import { AutoImage, ImageInsert, ImageResize, type ImageUtils, ImageLoadObserver, type ImageLoadedEvent } from 'toannv-ckeditor5-image';
+import type { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ViewElement, ModelElement, UpcastElementEvent } from '@ckeditor-nonkey/ckeditor5-engine';
+import { AutoImage, ImageInsert, ImageResize, type ImageUtils, ImageLoadObserver, type ImageLoadedEvent } from '@ckeditor-nonkey/ckeditor5-image';
 
 declare global {
 	interface Window {

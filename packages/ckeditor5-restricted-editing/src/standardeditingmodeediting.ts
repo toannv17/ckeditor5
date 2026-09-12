@@ -7,8 +7,8 @@
  * @module restricted-editing/standardeditingmodeediting
  */
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
-import { Matcher, type ModelElement, type UpcastElementEvent } from 'toannv-ckeditor5-engine';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { Matcher, type ModelElement, type UpcastElementEvent } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { RestrictedEditingExceptionCommand } from './restrictededitingexceptioncommand.js';
 import { RestrictedEditingExceptionBlockCommand } from './restrictededitingexceptionblockcommand.js';

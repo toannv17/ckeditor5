@@ -7,20 +7,20 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 import { SourceEditing } from '../src/sourceediting.js';
 
-import { Plugin, PendingActions } from 'toannv-ckeditor5-core';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { ButtonView, MenuBarMenuListItemButtonView, InlineEditableUIView, Dialog } from 'toannv-ckeditor5-ui';
-import { Markdown } from 'toannv-ckeditor5-markdown-gfm';
-import { Heading } from 'toannv-ckeditor5-heading';
+import { Plugin, PendingActions } from '@ckeditor-nonkey/ckeditor5-core';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { ButtonView, MenuBarMenuListItemButtonView, InlineEditableUIView, Dialog } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Markdown } from '@ckeditor-nonkey/ckeditor5-markdown-gfm';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
-import { assertCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
-import { removeEditorBodyOrphans } from 'toannv-ckeditor5-core/tests/_utils/cleanup.js';
-import { _getEmitterListenedTo, _getEmitterId, env, keyCodes } from 'toannv-ckeditor5-utils';
-import { _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { assertCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
+import { removeEditorBodyOrphans } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/cleanup.js';
+import { _getEmitterListenedTo, _getEmitterId, env, keyCodes } from '@ckeditor-nonkey/ckeditor5-utils';
+import { _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'SourceEditing', () => {
 	let editor, editorElement, plugin, button;

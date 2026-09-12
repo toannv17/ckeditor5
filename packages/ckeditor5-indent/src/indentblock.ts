@@ -7,10 +7,10 @@
  * @module indent/indentblock
  */
 
-import { Plugin, type Editor, type MultiCommand, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import { addMarginStylesRules, type DowncastAttributeDescriptor, type ViewElement } from 'toannv-ckeditor5-engine';
+import { Plugin, type Editor, type MultiCommand, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import { addMarginStylesRules, type DowncastAttributeDescriptor, type ViewElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import type { HeadingOption } from 'toannv-ckeditor5-heading';
+import type { HeadingOption } from '@ckeditor-nonkey/ckeditor5-heading';
 import { IndentBlockCommand } from './indentblockcommand.js';
 import { IndentUsingOffset } from './indentcommandbehavior/indentusingoffset.js';
 import { IndentUsingClasses } from './indentcommandbehavior/indentusingclasses.js';

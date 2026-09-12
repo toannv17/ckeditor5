@@ -54,7 +54,7 @@ import {
 	type ArrayOrItem,
 	type EventInfo,
 	type PriorityString
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { cloneDeep } from 'es-toolkit/compat';
 

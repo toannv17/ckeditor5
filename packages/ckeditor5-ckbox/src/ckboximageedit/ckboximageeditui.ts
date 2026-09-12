@@ -7,9 +7,9 @@
  * @module ckbox/ckboximageedit/ckboximageeditui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { ButtonView } from 'toannv-ckeditor5-ui';
-import { IconCkboxImageEdit } from 'toannv-ckeditor5-icons';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconCkboxImageEdit } from '@ckeditor-nonkey/ckeditor5-icons';
 
 /**
  * The UI plugin of the CKBox image edit feature.

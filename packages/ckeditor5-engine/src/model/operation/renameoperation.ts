@@ -11,7 +11,7 @@ import { Operation } from './operation.js';
 import { ModelElement } from '../element.js';
 import { ModelPosition } from '../position.js';
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { type ModelDocument } from '../document.js';
 import type { ModelSelectable } from '../selection.js';

@@ -15,7 +15,7 @@ import {
 	type CollectionRemoveEvent,
 	type CollectionChangeEvent,
 	type ObservableMixinConstructor
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 const DocumentColorCollectionBase: ObservableMixinConstructor<typeof Collection<ColorDefinition>> =
 	/* #__PURE__ */ ObservableMixin( Collection<ColorDefinition> );

@@ -3,9 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { Bold, Italic, Underline } from 'toannv-ckeditor5-basic-styles';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { Bold, Italic, Underline } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 import { LinkImage } from '../src/linkimage.js';
 
 // Just to have nicely styles switchbutton;

@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { PageBreak, Alignment, CKBox, CKBoxImageEdit, PictureEditing, ImageInsert, ImageResize, AutoImage, LinkImage } from 'toannv-ckeditor5';
+import { PageBreak, Alignment, CKBox, CKBoxImageEdit, PictureEditing, ImageInsert, ImageResize, AutoImage, LinkImage } from '@ckeditor-nonkey/ckeditor5';
 import {
 	TOKEN_URL,
 	CS_CONFIG,

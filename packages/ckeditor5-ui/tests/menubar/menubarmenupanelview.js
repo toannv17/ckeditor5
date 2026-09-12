@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Locale } from 'toannv-ckeditor5-utils';
+import { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { MenuBarMenuPanelView } from '../../src/menubar/menubarmenupanelview.js';
 import { ViewCollection } from '../../src/viewcollection.js';
 import { View } from '../../src/view.js';

@@ -16,7 +16,7 @@ import { type ViewDocumentFragment } from './documentfragment.js';
 import { type ViewRange } from './range.js';
 import { type ViewNode } from './node.js';
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 /**
  * Position iterator class. It allows to iterate forward and backward over the document.

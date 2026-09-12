@@ -7,10 +7,10 @@
  * @module paragraph/paragraphcommand
  */
 
-import { Command, type Editor } from 'toannv-ckeditor5-core';
-import { first } from 'toannv-ckeditor5-utils';
+import { Command, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { first } from '@ckeditor-nonkey/ckeditor5-utils';
 
-import type { ModelSchema, ModelSelection, ModelDocumentSelection, ModelElement } from 'toannv-ckeditor5-engine';
+import type { ModelSchema, ModelSelection, ModelDocumentSelection, ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * The paragraph command.

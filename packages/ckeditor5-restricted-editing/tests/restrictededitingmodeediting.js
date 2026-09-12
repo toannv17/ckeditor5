@@ -5,24 +5,24 @@
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
-import { _getModelData, _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
-import { getCode, env } from 'toannv-ckeditor5-utils';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BoldEditing, StrikethroughEditing, ItalicEditing } from 'toannv-ckeditor5-basic-styles';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { SelectAllEditing } from 'toannv-ckeditor5-select-all';
-import { ImageInlineEditing, InsertImageCommand } from 'toannv-ckeditor5-image';
+import { _getModelData, _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { getCode, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BoldEditing, StrikethroughEditing, ItalicEditing } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { SelectAllEditing } from '@ckeditor-nonkey/ckeditor5-select-all';
+import { ImageInlineEditing, InsertImageCommand } from '@ckeditor-nonkey/ckeditor5-image';
 
-import { ClipboardPipeline } from 'toannv-ckeditor5-clipboard';
-import { Table, TableEditing } from 'toannv-ckeditor5-table';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClipboardPipeline } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Table, TableEditing } from '@ckeditor-nonkey/ckeditor5-table';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { RestrictedEditingModeEditing } from './../src/restrictededitingmodeediting.js';
 import { RestrictedEditingModeNavigationCommand } from '../src/restrictededitingmodenavigationcommand.js';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
-import { Command } from 'toannv-ckeditor5-core';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
 
 describe( 'RestrictedEditingModeEditing', () => {
 	let editor, model;

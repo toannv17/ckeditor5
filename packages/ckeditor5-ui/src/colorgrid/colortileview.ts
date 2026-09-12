@@ -7,8 +7,8 @@
  * @module ui/colorgrid/colortileview
  */
 
-import { IconColorTileCheck } from 'toannv-ckeditor5-icons';
-import { env, type Locale } from 'toannv-ckeditor5-utils';
+import { IconColorTileCheck } from '@ckeditor-nonkey/ckeditor5-icons';
+import { env, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { ButtonView } from '../button/buttonview.js';
 
 /**

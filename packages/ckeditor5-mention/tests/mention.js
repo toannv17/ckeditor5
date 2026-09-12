@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { global } from 'toannv-ckeditor5-utils';
-import { ViewElement, ViewText } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { global } from '@ckeditor-nonkey/ckeditor5-utils';
+import { ViewElement, ViewText } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { Mention } from '../src/mention.js';
 import { MentionEditing } from '../src/mentionediting.js';

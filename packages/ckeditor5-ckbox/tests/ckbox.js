@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { LinkEditing } from 'toannv-ckeditor5-link';
-import { PictureEditing, ImageUpload, ImageBlockEditing, ImageInlineEditing } from 'toannv-ckeditor5-image';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { mockCreateToken } from 'toannv-ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
+import { PictureEditing, ImageUpload, ImageBlockEditing, ImageInlineEditing } from '@ckeditor-nonkey/ckeditor5-image';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { mockCreateToken } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
 
 import { CKBox } from '../src/ckbox.js';
 import { CKBoxUI } from '../src/ckboxui.js';

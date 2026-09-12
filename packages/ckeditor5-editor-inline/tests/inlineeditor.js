@@ -8,15 +8,15 @@ import { InlineEditor } from '../src/inlineeditor.js';
 import { InlineEditorUI } from '../src/inlineeditorui.js';
 import { InlineEditorUIView } from '../src/inlineeditoruiview.js';
 
-import { HtmlDataProcessor, ModelRootElement } from 'toannv-ckeditor5-engine';
+import { HtmlDataProcessor, ModelRootElement } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { Context, Plugin } from 'toannv-ckeditor5-core';
-import { EditorWatchdog, ContextWatchdog } from 'toannv-ckeditor5-watchdog';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { Context, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { EditorWatchdog, ContextWatchdog } from '@ckeditor-nonkey/ckeditor5-watchdog';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
-import { assertCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { assertCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 describe( 'InlineEditor', () => {
 	let editor, editorElement;

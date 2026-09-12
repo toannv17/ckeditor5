@@ -7,7 +7,7 @@
  * @module ui/menubar/menubarmenulistitembuttonview
  */
 
-import type { Locale } from 'toannv-ckeditor5-utils';
+import type { Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 import { ListItemButtonView } from '../button/listitembuttonview.js';
 
 /**

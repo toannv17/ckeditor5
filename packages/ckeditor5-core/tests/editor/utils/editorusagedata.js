@@ -4,13 +4,13 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { global, env } from 'toannv-ckeditor5-utils';
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { BalloonToolbar, BlockToolbar } from 'toannv-ckeditor5-ui';
-import { Heading, HeadingButtonsUI } from 'toannv-ckeditor5-heading';
-import { Paragraph, ParagraphButtonUI } from 'toannv-ckeditor5-paragraph';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { global, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { BalloonToolbar, BlockToolbar } from '@ckeditor-nonkey/ckeditor5-ui';
+import { Heading, HeadingButtonsUI } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Paragraph, ParagraphButtonUI } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 import { ClassicTestEditor } from '../../_utils/classictesteditor.js';
 import { Plugin } from '../../../src/plugin.js';
 import { getEditorUsageData } from '../../../src/editor/utils/editorusagedata.js';

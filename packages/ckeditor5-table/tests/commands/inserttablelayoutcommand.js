@@ -5,9 +5,9 @@
 
 import { describe, beforeEach, afterEach, it, expect, vi } from 'vitest';
 
-import { ModelTestEditor } from 'toannv-ckeditor5-core/tests/_utils/modeltesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ModelDocumentSelection, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { ModelTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/modeltesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ModelDocumentSelection, _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TableEditing } from '../../src/tableediting.js';
 import { TableColumnResize } from '../../src/tablecolumnresize.js';

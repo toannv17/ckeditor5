@@ -39,7 +39,7 @@ import {
 	type Locale,
 	type ObservableChangeEvent,
 	type CollectionChangeEvent
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { ListItemGroupView } from '../list/listitemgroupview.js';
 import { ListItemButtonView } from '../button/listitembuttonview.js';

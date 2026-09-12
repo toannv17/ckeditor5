@@ -21,11 +21,11 @@ import type {
 	Model,
 	ModelPosition,
 	ViewContainerElement
-} from 'toannv-ckeditor5-engine';
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
-import { findOptimalInsertionRange, isWidget, toWidget } from 'toannv-ckeditor5-widget';
+} from '@ckeditor-nonkey/ckeditor5-engine';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { findOptimalInsertionRange, isWidget, toWidget } from '@ckeditor-nonkey/ckeditor5-widget';
 import { determineImageTypeForInsertionAtSelection } from './image/utils.js';
-import { DomEmitterMixin, type DomEmitter, global } from 'toannv-ckeditor5-utils';
+import { DomEmitterMixin, type DomEmitter, global } from '@ckeditor-nonkey/ckeditor5-utils';
 
 const IMAGE_WIDGETS_CLASSES_MATCH_REGEXP = /^(image|image-inline)$/;
 

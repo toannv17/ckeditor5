@@ -9,13 +9,13 @@ import {
 	KeystrokeHandler,
 	FocusTracker,
 	keyCodes
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	View,
 	FocusCycler,
 	ViewCollection,
 	SwitchButtonView
-} from 'toannv-ckeditor5-ui';
+} from '@ckeditor-nonkey/ckeditor5-ui';
 import { LinkPropertiesView } from '../../src/ui/linkpropertiesview.js';
 import { LinkManualDecorator } from '../../src/utils/manualdecorator.js';
 

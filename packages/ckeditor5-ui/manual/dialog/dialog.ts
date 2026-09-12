@@ -7,28 +7,28 @@ declare global {
 	interface Window { CKEditorInspector: any }
 }
 
-import { Essentials } from 'toannv-ckeditor5-essentials';
-import { Autoformat } from 'toannv-ckeditor5-autoformat';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Image, ImageCaption, ImageStyle, ImageToolbar } from 'toannv-ckeditor5-image';
-import { Indent } from 'toannv-ckeditor5-indent';
-import { Link } from 'toannv-ckeditor5-link';
-import { List } from 'toannv-ckeditor5-list';
-import { MediaEmbed } from 'toannv-ckeditor5-media-embed';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Table, TableToolbar } from 'toannv-ckeditor5-table';
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { InlineEditor } from 'toannv-ckeditor5-editor-inline';
-import { DecoupledEditor } from 'toannv-ckeditor5-editor-decoupled';
-import { MultiRootEditor } from 'toannv-ckeditor5-editor-multi-root';
-import { FindAndReplace } from 'toannv-ckeditor5-find-and-replace';
-import { SpecialCharacters, SpecialCharactersEssentials } from 'toannv-ckeditor5-special-characters';
-import { SourceEditing } from 'toannv-ckeditor5-source-editing';
+import { Essentials } from '@ckeditor-nonkey/ckeditor5-essentials';
+import { Autoformat } from '@ckeditor-nonkey/ckeditor5-autoformat';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Image, ImageCaption, ImageStyle, ImageToolbar } from '@ckeditor-nonkey/ckeditor5-image';
+import { Indent } from '@ckeditor-nonkey/ckeditor5-indent';
+import { Link } from '@ckeditor-nonkey/ckeditor5-link';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
+import { MediaEmbed } from '@ckeditor-nonkey/ckeditor5-media-embed';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Table, TableToolbar } from '@ckeditor-nonkey/ckeditor5-table';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { InlineEditor } from '@ckeditor-nonkey/ckeditor5-editor-inline';
+import { DecoupledEditor } from '@ckeditor-nonkey/ckeditor5-editor-decoupled';
+import { MultiRootEditor } from '@ckeditor-nonkey/ckeditor5-editor-multi-root';
+import { FindAndReplace } from '@ckeditor-nonkey/ckeditor5-find-and-replace';
+import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor-nonkey/ckeditor5-special-characters';
+import { SourceEditing } from '@ckeditor-nonkey/ckeditor5-source-editing';
 import { ButtonView, Dialog, DialogViewPosition, SwitchButtonView, View } from '../../src/index.js';
-import { Plugin } from 'toannv-ckeditor5-core';
-import { IconColorPalette } from 'toannv-ckeditor5-icons';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconColorPalette } from '@ckeditor-nonkey/ckeditor5-icons';
 
 // Necessary to insert into config all of the generated buttons.
 const POSSIBLE_DIALOG_POSITIONS: Array<string> = [];

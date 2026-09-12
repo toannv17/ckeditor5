@@ -7,7 +7,7 @@
  * @module enter/shiftentercommand
  */
 
-import { Command } from 'toannv-ckeditor5-core';
+import { Command } from '@ckeditor-nonkey/ckeditor5-core';
 import { getCopyOnEnterAttributes } from './utils.js';
 
 import type {
@@ -17,7 +17,7 @@ import type {
 	ModelSchema,
 	ModelElement,
 	ModelWriter
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
 /**
  * ShiftEnter command. It is used by the {@link module:enter/shiftenter~ShiftEnter ShiftEnter feature} to handle

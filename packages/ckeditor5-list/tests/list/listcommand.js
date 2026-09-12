@@ -9,8 +9,8 @@ import { ListCommand } from '../../src/list/listcommand.js';
 import { stubUid } from './_utils/uid.js';
 import { modelList } from './_utils/utils.js';
 
-import { Editor } from 'toannv-ckeditor5-core';
-import { Model, _setModelData, _getModelData } from 'toannv-ckeditor5-engine';
+import { Editor } from '@ckeditor-nonkey/ckeditor5-core';
+import { Model, _setModelData, _getModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'ListCommand', () => {
 	let editor, command, model, doc, root, changedBlocks, attributeNames;

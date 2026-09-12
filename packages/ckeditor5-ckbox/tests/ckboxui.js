@@ -5,8 +5,8 @@
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
-import { ButtonView, UIModel, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
-import { LinkEditing } from 'toannv-ckeditor5-link';
+import { ButtonView, UIModel, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { LinkEditing } from '@ckeditor-nonkey/ckeditor5-link';
 import {
 	PictureEditing,
 	ImageUploadEditing,
@@ -14,11 +14,11 @@ import {
 	ImageBlockEditing,
 	ImageInlineEditing,
 	ImageInsertUI
-} from 'toannv-ckeditor5-image';
-import { CloudServices } from 'toannv-ckeditor5-cloud-services';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { mockCreateToken } from 'toannv-ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
-import { IconImageAssetManager, IconBrowseFiles } from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-image';
+import { CloudServices } from '@ckeditor-nonkey/ckeditor5-cloud-services';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { mockCreateToken } from '@ckeditor-nonkey/ckeditor5-cloud-services/tests/_utils/mockcloudservicescoretoken.js';
+import { IconImageAssetManager, IconBrowseFiles } from '@ckeditor-nonkey/ckeditor5-icons';
 
 import { CKBoxUI } from '../src/ckboxui.js';
 import { CKBoxEditing } from '../src/ckboxediting.js';

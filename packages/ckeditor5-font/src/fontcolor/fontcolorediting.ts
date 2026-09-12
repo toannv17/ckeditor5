@@ -7,9 +7,9 @@
  * @module font/fontcolor/fontcolorediting
  */
 
-import { Plugin, type Editor } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor } from '@ckeditor-nonkey/ckeditor5-core';
 import { FontColorCommand } from './fontcolorcommand.js';
-import type { ViewElement } from 'toannv-ckeditor5-engine';
+import type { ViewElement } from '@ckeditor-nonkey/ckeditor5-engine';
 import { FONT_COLOR, renderDowncastElement, renderUpcastAttribute } from '../utils.js';
 
 /**

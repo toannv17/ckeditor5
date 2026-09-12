@@ -4,20 +4,20 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 import { GeneralHtmlSupport } from '../src/index.js';
-import { RemoveFormat } from 'toannv-ckeditor5-remove-format';
-import { SelectAll } from 'toannv-ckeditor5-select-all';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Image, ImageCaption } from 'toannv-ckeditor5-image';
-import { Table, TableCaption, TableCellProperties, TableColumnResize, TableProperties } from 'toannv-ckeditor5-table';
-import { PageBreak } from 'toannv-ckeditor5-page-break';
-import { CodeBlock } from 'toannv-ckeditor5-code-block';
-import { List, ListProperties } from 'toannv-ckeditor5-list';
-import { stubUid } from 'toannv-ckeditor5-list/tests/list/_utils/uid.js';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { _getModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { RemoveFormat } from '@ckeditor-nonkey/ckeditor5-remove-format';
+import { SelectAll } from '@ckeditor-nonkey/ckeditor5-select-all';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Image, ImageCaption } from '@ckeditor-nonkey/ckeditor5-image';
+import { Table, TableCaption, TableCellProperties, TableColumnResize, TableProperties } from '@ckeditor-nonkey/ckeditor5-table';
+import { PageBreak } from '@ckeditor-nonkey/ckeditor5-page-break';
+import { CodeBlock } from '@ckeditor-nonkey/ckeditor5-code-block';
+import { List, ListProperties } from '@ckeditor-nonkey/ckeditor5-list';
+import { stubUid } from '@ckeditor-nonkey/ckeditor5-list/tests/list/_utils/uid.js';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { _getModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'GeneralHtmlSupport', () => {
 	let editor, element, dataSchema, generalHtmlSupport;

@@ -15,9 +15,9 @@ import {
 	type ViewDocumentInputEvent,
 	type BubblingEvent,
 	type ViewDocumentKeyDownEvent
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { env } from 'toannv-ckeditor5-utils';
+import { env } from '@ckeditor-nonkey/ckeditor5-utils';
 
 const ENTER_EVENT_TYPES: Record<string, { isSoft: boolean }> = {
 	insertParagraph: { isSoft: false },

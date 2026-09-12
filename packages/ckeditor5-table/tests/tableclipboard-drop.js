@@ -5,11 +5,11 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Clipboard } from 'toannv-ckeditor5-clipboard';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { ImageBlockEditing, ImageCaptionEditing } from 'toannv-ckeditor5-image';
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Clipboard } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { ImageBlockEditing, ImageCaptionEditing } from '@ckeditor-nonkey/ckeditor5-image';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 import { modelTable, viewTable } from './_utils/utils.js';
 
 import { TableEditing } from '../src/tableediting.js';

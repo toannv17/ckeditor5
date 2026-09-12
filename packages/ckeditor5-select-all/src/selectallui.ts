@@ -7,9 +7,9 @@
  * @module select-all/selectallui
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
-import { IconSelectAll } from 'toannv-ckeditor5-icons';
-import { ButtonView, MenuBarMenuListItemButtonView } from 'toannv-ckeditor5-ui';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { IconSelectAll } from '@ckeditor-nonkey/ckeditor5-icons';
+import { ButtonView, MenuBarMenuListItemButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
 
 /**
  * The select all UI feature.

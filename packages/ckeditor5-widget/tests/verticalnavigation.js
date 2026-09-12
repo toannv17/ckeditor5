@@ -6,15 +6,15 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { toWidget, toWidgetEditable } from '../src/utils.js';
 
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { BlockQuote } from 'toannv-ckeditor5-block-quote';
-import { HorizontalLine } from 'toannv-ckeditor5-horizontal-line';
-import { Image, ImageCaption } from 'toannv-ckeditor5-image';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Bold } from 'toannv-ckeditor5-basic-styles';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { BlockQuote } from '@ckeditor-nonkey/ckeditor5-block-quote';
+import { HorizontalLine } from '@ckeditor-nonkey/ckeditor5-horizontal-line';
+import { Image, ImageCaption } from '@ckeditor-nonkey/ckeditor5-image';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Bold } from '@ckeditor-nonkey/ckeditor5-basic-styles';
 
-import { getCode, global, env } from 'toannv-ckeditor5-utils';
-import { _getModelData, _setModelData } from 'toannv-ckeditor5-engine';
+import { getCode, global, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { _getModelData, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 describe( 'Widget - vertical keyboard navigation near widgets', () => {
 	let editorElement, editor, model, styleElement;

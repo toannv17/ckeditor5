@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { ArticlePluginSet } from 'toannv-ckeditor5-core/tests/_utils/articlepluginset.js';
-import { ButtonView } from 'toannv-ckeditor5-ui';
-import type { Editor, EditorConfig } from 'toannv-ckeditor5-core';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { ArticlePluginSet } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/articlepluginset.js';
+import { ButtonView } from '@ckeditor-nonkey/ckeditor5-ui';
+import type { Editor, EditorConfig } from '@ckeditor-nonkey/ckeditor5-core';
 import type { UpcastDispatcher } from '../src/index.js';
 
 declare global {

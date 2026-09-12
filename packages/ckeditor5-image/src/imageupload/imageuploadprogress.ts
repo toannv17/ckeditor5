@@ -7,10 +7,10 @@
  * @module image/imageupload/imageuploadprogress
  */
 
-import { type Editor, Plugin } from 'toannv-ckeditor5-core';
-import { FileRepository, type FileLoader } from 'toannv-ckeditor5-upload';
+import { type Editor, Plugin } from '@ckeditor-nonkey/ckeditor5-core';
+import { FileRepository, type FileLoader } from '@ckeditor-nonkey/ckeditor5-upload';
 
-import type { GetCallback } from 'toannv-ckeditor5-utils';
+import type { GetCallback } from '@ckeditor-nonkey/ckeditor5-utils';
 import type {
 	ViewDowncastWriter,
 	EditingView,
@@ -19,7 +19,7 @@ import type {
 	ViewUIElement,
 	DowncastAttributeEvent,
 	ModelElement
-} from 'toannv-ckeditor5-engine';
+} from '@ckeditor-nonkey/ckeditor5-engine';
 import { type ImageUtils } from '../imageutils.js';
 
 /**

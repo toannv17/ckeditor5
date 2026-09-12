@@ -7,12 +7,12 @@
  * @module image/imageinsert/imageinsertui
  */
 
-import { Plugin, type Editor, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
+import { Plugin, type Editor, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
 import {
 	logWarning,
 	type Locale,
 	type Observable
-} from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-utils';
 import {
 	createDropdown,
 	type ButtonView,
@@ -25,8 +25,8 @@ import {
 	MenuBarMenuView,
 	SplitButtonView,
 	type View
-} from 'toannv-ckeditor5-ui';
-import { IconImage } from 'toannv-ckeditor5-icons';
+} from '@ckeditor-nonkey/ckeditor5-ui';
+import { IconImage } from '@ckeditor-nonkey/ckeditor5-icons';
 
 import { ImageInsertFormView } from './ui/imageinsertformview.js';
 import { ImageUtils } from '../imageutils.js';

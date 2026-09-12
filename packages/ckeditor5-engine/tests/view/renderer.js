@@ -24,11 +24,11 @@ import { ViewDowncastWriter } from '../../src/view/downcastwriter.js';
 
 import { _parseView, _stringifyView, _setViewData, _getViewData } from '../../src/dev-utils/view.js';
 import { BR_FILLER, INLINE_FILLER, INLINE_FILLER_LENGTH } from '../../src/view/filler.js';
-import { testUtils } from 'toannv-ckeditor5-core/tests/_utils/utils.js';
+import { testUtils } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/utils.js';
 import { createViewRoot } from './_utils/createroot.js';
-import { createElement, env } from 'toannv-ckeditor5-utils';
-import { normalizeHtml } from 'toannv-ckeditor5-utils/tests/_utils/normalizehtml.js';
-import { expectToThrowCKEditorError } from 'toannv-ckeditor5-utils/tests/_utils/utils.js';
+import { createElement, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { normalizeHtml } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/normalizehtml.js';
+import { expectToThrowCKEditorError } from '@ckeditor-nonkey/ckeditor5-utils/tests/_utils/utils.js';
 import { StylesProcessor } from '../../src/view/stylesmap.js';
 
 describe( 'Renderer', () => {

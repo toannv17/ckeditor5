@@ -6,9 +6,9 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 // ClassicTestEditor can't be used, as it doesn't handle the focus, which is needed to test resizer visual cues.
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
 
 import { Image } from '../../src/image.js';
 import { ImageResizeEditing } from '../../src/imageresize/imageresizeediting.js';
@@ -17,9 +17,9 @@ import { ImageStyle } from '../../src/imagestyle.js';
 import { ImageBlockEditing } from '../../src/image/imageblockediting.js';
 import { ImageInlineEditing } from '../../src/image/imageinlineediting.js';
 
-import { _setModelData, _getViewData } from 'toannv-ckeditor5-engine';
+import { _setModelData, _getViewData } from '@ckeditor-nonkey/ckeditor5-engine';
 
-import { focusEditor } from 'toannv-ckeditor5-widget/tests/widgetresize/_utils/utils.js';
+import { focusEditor } from '@ckeditor-nonkey/ckeditor5-widget/tests/widgetresize/_utils/utils.js';
 import { IMAGE_SRC_FIXTURE } from './_utils/utils.js';
 
 describe( 'ImageResizeEditing', () => {

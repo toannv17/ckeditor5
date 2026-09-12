@@ -7,7 +7,7 @@
  * @module mention/mentionediting
  */
 
-import { Plugin } from 'toannv-ckeditor5-core';
+import { Plugin } from '@ckeditor-nonkey/ckeditor5-core';
 import type {
 	ModelElement,
 	ModelText,
@@ -20,8 +20,8 @@ import type {
 	ModelSchema,
 	DowncastAttributeEvent,
 	ModelItem
-} from 'toannv-ckeditor5-engine';
-import { uid } from 'toannv-ckeditor5-utils';
+} from '@ckeditor-nonkey/ckeditor5-engine';
+import { uid } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { MentionCommand } from './mentioncommand.js';
 import type { MentionAttribute } from './mention.js';

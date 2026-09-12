@@ -9,7 +9,7 @@
 
 import { isFunction } from 'es-toolkit/compat';
 
-import { CKEditorError } from 'toannv-ckeditor5-utils';
+import { CKEditorError } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import type { Editor, EditorDestroyEvent } from '../editor.js';
 import type { ElementApi } from './elementapimixin.js';

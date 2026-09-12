@@ -3,16 +3,16 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 
-import { ClassicEditor } from 'toannv-ckeditor5-editor-classic';
-import { Enter } from 'toannv-ckeditor5-enter';
-import { Typing } from 'toannv-ckeditor5-typing';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { Heading } from 'toannv-ckeditor5-heading';
-import { Image, ImageCaption, ImageToolbar, ImageStyle, ImageUpload } from 'toannv-ckeditor5-image';
-import { Undo } from 'toannv-ckeditor5-undo';
-import { Clipboard } from 'toannv-ckeditor5-clipboard';
-import { Bold, Italic } from 'toannv-ckeditor5-basic-styles';
-import { List } from 'toannv-ckeditor5-list';
+import { ClassicEditor } from '@ckeditor-nonkey/ckeditor5-editor-classic';
+import { Enter } from '@ckeditor-nonkey/ckeditor5-enter';
+import { Typing } from '@ckeditor-nonkey/ckeditor5-typing';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { Heading } from '@ckeditor-nonkey/ckeditor5-heading';
+import { Image, ImageCaption, ImageToolbar, ImageStyle, ImageUpload } from '@ckeditor-nonkey/ckeditor5-image';
+import { Undo } from '@ckeditor-nonkey/ckeditor5-undo';
+import { Clipboard } from '@ckeditor-nonkey/ckeditor5-clipboard';
+import { Bold, Italic } from '@ckeditor-nonkey/ckeditor5-basic-styles';
+import { List } from '@ckeditor-nonkey/ckeditor5-list';
 import { CKFinderUploadAdapter } from '../src/uploadadapter.js';
 
 ClassicEditor

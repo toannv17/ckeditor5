@@ -4,10 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { DropdownView, MenuBarMenuView } from 'toannv-ckeditor5-ui';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { DropdownView, MenuBarMenuView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 import { TextPartLanguageEditing } from '../src/textpartlanguageediting.js';
 import { TextPartLanguageUI } from '../src/textpartlanguageui.js';

@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { ViewContainerElement, ViewDowncastWriter, _setModelData } from 'toannv-ckeditor5-engine';
-import { VirtualTestEditor } from 'toannv-ckeditor5-core/tests/_utils/virtualtesteditor.js';
+import { ViewContainerElement, ViewDowncastWriter, _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
+import { VirtualTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/virtualtesteditor.js';
 
 import { LegacyListEditing } from '../../src/legacylist/legacylistediting.js';
 import { LegacyListPropertiesEditing } from '../../src/legacylistproperties/legacylistpropertiesediting.js';
@@ -17,8 +17,8 @@ import {
 	getSiblingNodes
 } from '../../src/legacylist/legacyutils.js';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { BlockQuoteEditing } from 'toannv-ckeditor5-block-quote';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { BlockQuoteEditing } from '@ckeditor-nonkey/ckeditor5-block-quote';
 
 describe( 'legacy utils', () => {
 	let writer;

@@ -17,8 +17,8 @@ import type {
 	ViewDocumentSelection,
 	ViewElement,
 	ModelDocumentSelection
-} from 'toannv-ckeditor5-engine';
-import { isWidget, toWidget } from 'toannv-ckeditor5-widget';
+} from '@ckeditor-nonkey/ckeditor5-engine';
+import { isWidget, toWidget } from '@ckeditor-nonkey/ckeditor5-widget';
 import { type MediaRegistry } from './mediaregistry.js';
 
 /**

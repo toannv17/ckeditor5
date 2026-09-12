@@ -5,9 +5,9 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { UndoEditing } from 'toannv-ckeditor5-undo';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { UndoEditing } from '@ckeditor-nonkey/ckeditor5-undo';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
 
 import { TextTransformation } from '../src/texttransformation.js';
 import { Typing } from '../src/typing.js';

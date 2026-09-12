@@ -7,8 +7,8 @@
  * @module style/ui/stylegridview
  */
 
-import { View, addKeyboardHandlingForGrid, type ViewCollection, type FocusableView } from 'toannv-ckeditor5-ui';
-import { FocusTracker, KeystrokeHandler, type Locale } from 'toannv-ckeditor5-utils';
+import { View, addKeyboardHandlingForGrid, type ViewCollection, type FocusableView } from '@ckeditor-nonkey/ckeditor5-ui';
+import { FocusTracker, KeystrokeHandler, type Locale } from '@ckeditor-nonkey/ckeditor5-utils';
 
 import { StyleGridButtonView } from './stylegridbuttonview.js';
 import type { NormalizedStyleDefinition } from '../styleutils.js';

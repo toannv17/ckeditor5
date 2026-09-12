@@ -7,12 +7,12 @@
  * @module style/integrations/list
  */
 
-import { Plugin, type PluginDependenciesOf } from 'toannv-ckeditor5-core';
-import type { ModelElement } from 'toannv-ckeditor5-engine';
-import type { ListType, ListUtils } from 'toannv-ckeditor5-list';
-import type { TemplateDefinition } from 'toannv-ckeditor5-ui';
+import { Plugin, type PluginDependenciesOf } from '@ckeditor-nonkey/ckeditor5-core';
+import type { ModelElement } from '@ckeditor-nonkey/ckeditor5-engine';
+import type { ListType, ListUtils } from '@ckeditor-nonkey/ckeditor5-list';
+import type { TemplateDefinition } from '@ckeditor-nonkey/ckeditor5-ui';
 
-import { GeneralHtmlSupport } from 'toannv-ckeditor5-html-support';
+import { GeneralHtmlSupport } from '@ckeditor-nonkey/ckeditor5-html-support';
 
 import {
 	StyleUtils,

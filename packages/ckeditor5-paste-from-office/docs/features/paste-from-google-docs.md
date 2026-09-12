@@ -47,7 +47,7 @@ After {@link getting-started/integrations-cdn/quick-start installing the editor}
 
 <code-switcher>
 ```js
-import { ClassicEditor, PasteFromOffice } from 'toannv-ckeditor5';
+import { ClassicEditor, PasteFromOffice } from '@ckeditor-nonkey/ckeditor5';
 
 ClassicEditor
 	.create( {

@@ -4,17 +4,17 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { IconEraser, IconCheck, IconCancel } from 'toannv-ckeditor5-icons';
+import { IconEraser, IconCheck, IconCancel } from '@ckeditor-nonkey/ckeditor5-icons';
 import { ColorSelectorView } from './../../src/colorselector/colorselectorview.js';
 import { ColorTileView } from '../../src/colorgrid/colortileview.js';
 import { FocusCycler } from '../../src/focuscycler.js';
 import { ColorPickerView } from '../../src/colorpicker/colorpickerview.js';
 import { ColorGridsFragmentView } from '../../src/colorselector/colorgridsfragmentview.js';
 
-import { Collection, FocusTracker, KeystrokeHandler, keyCodes, env } from 'toannv-ckeditor5-utils';
-import { ClassicTestEditor } from 'toannv-ckeditor5-core/tests/_utils/classictesteditor.js';
-import { Paragraph } from 'toannv-ckeditor5-paragraph';
-import { _setModelData } from 'toannv-ckeditor5-engine';
+import { Collection, FocusTracker, KeystrokeHandler, keyCodes, env } from '@ckeditor-nonkey/ckeditor5-utils';
+import { ClassicTestEditor } from '@ckeditor-nonkey/ckeditor5-core/tests/_utils/classictesteditor.js';
+import { Paragraph } from '@ckeditor-nonkey/ckeditor5-paragraph';
+import { _setModelData } from '@ckeditor-nonkey/ckeditor5-engine';
 
 const colorDefinitions = [
 	{
